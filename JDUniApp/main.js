@@ -1,8 +1,26 @@
-import App from './App'
-
-// #ifndef VUE3
 import Vue from 'vue'
-Vue.config.productionTip = false
+import App from './App'
+// 引入全局存储
+
+// 引入全局配置
+
+// 引入全局方法]
+
+// 全局组件
+import jdTabbar from '@/components/jd-tabbar';
+import jdSafearea from '@/components/jd-safearea';
+
+// 引入国际化语言包
+
+// 挂载全局自定义方法
+Vue.component('jd-tabbar', jdTabbar);
+Vue.component('jd-safearea', jdSafearea);
+
+if (process.env.NODE_ENV === 'production') {
+	Vue.config.productionTip = false;
+}
+
+// 路由导航
 App.mpType = 'app'
 
 try {
@@ -37,14 +55,3 @@ const app = new Vue({
   ...App
 })
 app.$mount()
-// #endif
-
-// #ifdef VUE3
-import { createSSRApp } from 'vue'
-export function createApp() {
-  const app = createSSRApp(App)
-  return {
-    app
-  }
-}
-// #endif

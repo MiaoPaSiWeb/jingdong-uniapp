@@ -1,0 +1,1 @@
+<view><view><block wx:for="{{200}}" wx:for-item="index" wx:for-index="__i0__" wx:key="*this"><view>{{'趋势 - '+index+''}}</view></block><view style="border:1px solid green;height:70px;">????</view><jd-safearea vue-id="6e709804-1" bind:__l="__l"></jd-safearea></view><jd-tabbar vue-id="6e709804-2" pagePath="pages/trend/trend" bind:__l="__l"></jd-tabbar></view>

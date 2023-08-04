@@ -1,0 +1,1 @@
+<view><view><block wx:for="{{200}}" wx:for-item="index" wx:for-index="__i0__" wx:key="*this"><view>{{'category - '+index+''}}</view></block><view style="border:1px solid green;height:70px;">????</view><jd-safearea vue-id="9d275500-1" bind:__l="__l"></jd-safearea></view><jd-tabbar vue-id="9d275500-2" pagePath="pages/category/category" bind:__l="__l"></jd-tabbar></view>

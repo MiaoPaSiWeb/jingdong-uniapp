@@ -1,10 +1,18 @@
+
 <script>
 	export default {
+		data(){
+			return {
+				
+			}
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},
 		onShow: function() {
 			console.log('App Show')
+			
+			// uni.hideTabBar();
 		},
 		onHide: function() {
 			console.log('App Hide')

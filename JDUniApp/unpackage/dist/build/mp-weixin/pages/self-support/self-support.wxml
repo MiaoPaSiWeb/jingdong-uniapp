@@ -1,0 +1,1 @@
+<view><view><block wx:for="{{200}}" wx:for-item="index" wx:for-index="__i0__" wx:key="*this"><view>{{'自营 - '+index+''}}</view></block><view style="border:1px solid green;height:70px;">????</view><jd-safearea vue-id="48b0d300-1" bind:__l="__l"></jd-safearea></view><jd-tabbar vue-id="48b0d300-2" pagePath="pages/self-support/self-support" bind:__l="__l"></jd-tabbar></view>
