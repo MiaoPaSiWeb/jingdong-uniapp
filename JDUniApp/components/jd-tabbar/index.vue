@@ -3,7 +3,7 @@
 		<view class="uni-tabbar">
 			<view class="content">
 				<!-- 遍历tabbar -->
-				<view class="uni-tabbar__item" v-for="(item,index) in tabbarList" :key="index" @tap="changeTab(item)">
+				<view class="uni-tabbar__item" v-for="(item,index) in tabbarList" :key="index" @tap="switchTab(item)">
 					<view class="uni-tabbar__icon">
 						<!-- 判断tabbar点击过后的图片路径 -->
 						<image v-if="item.pagePath == pagePath" class="icon-img" :src="item.selectedIcon"></image>
@@ -24,9 +24,6 @@
 		},
 		data() {
 			return {
-				// page: '',
-				showPage: false,
-				containerHeight: 400,
 				//公共的tabbar
 				bottomNavigationBar: {
 					"backgroundColor": "#FFFFFF",
@@ -164,14 +161,13 @@
 			// }
 		},
 		methods: {
-			changeTab(item) {
+			switchTab(item) {
 				this.page = item.pagePath;
-				// 使用reLaunch关闭所有的页面，打开新的栏目页面
-				console.log(item.pagePath)
-				console.log(this.page)
-				uni.reLaunch({
-					url: '/' + this.page,
-				});
+				/*
+				首次会闪烁的原因是dom切换，还没编译生成dom树，到渲染完成过程，才算是一个页面的构建完成。
+				所以我们可以把自定义tabbar当成主页面 其他的东西当成组件引进来 这样子也可以解决善烁。(没有实际试过，感觉可行)，
+				*/
+				uni.switchTab({url: '/' + this.page});
 			},
 		},
 		computed: {

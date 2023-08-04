@@ -145,9 +145,6 @@ var _default = {
   },
   data: function data() {
     return {
-      // page: '',
-      showPage: false,
-      containerHeight: 400,
       //公共的tabbar
       bottomNavigationBar: {
         "backgroundColor": "#FFFFFF",
@@ -280,12 +277,13 @@ var _default = {
     // }
   },
   methods: {
-    changeTab: function changeTab(item) {
+    switchTab: function switchTab(item) {
       this.page = item.pagePath;
-      // 使用reLaunch关闭所有的页面，打开新的栏目页面
-      console.log(item.pagePath);
-      console.log(this.page);
-      uni.reLaunch({
+      /*
+      首次会闪烁的原因是dom切换，还没编译生成dom树，到渲染完成过程，才算是一个页面的构建完成。
+      所以我们可以把自定义tabbar当成主页面 其他的东西当成组件引进来 这样子也可以解决善烁。(没有实际试过，感觉可行)，
+      */
+      uni.switchTab({
         url: '/' + this.page
       });
     }

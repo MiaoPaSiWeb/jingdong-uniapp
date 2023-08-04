@@ -11,8 +11,7 @@
 				"navigationBarTitleText": "分类",
 				"enablePullDownRefresh": false
 			}
-		}
-		, {
+		}, {
 			"path": "pages/trend/trend",
 			"style": {
 				"navigationBarTitleText": "趋势",
@@ -32,17 +31,15 @@
 				"navigationBarTitleText": "国家馆",
 				"enablePullDownRefresh": false
 			}
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	    ,{
-            "path" : "pages/detail/detail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "详情",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -50,21 +47,18 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {},
+	/* 增加原生tabbar 配合自定义tabbar使用 解决自定义tabbar闪烁问题 */
 	"tabBar": {
-		"custom":true,
-		"color": "#7A7E83",
-		"selectedColor": "#3cc51f",
-		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
+		"custom": true,//隐藏官方选项卡
 		"list": [{
 			"pagePath": "pages/index/index"
 		}, {
 			"pagePath": "pages/category/category"
-		},{
+		}, {
 			"pagePath": "pages/trend/trend"
-		},{
+		}, {
 			"pagePath": "pages/self-support/self-support"
-		},{
+		}, {
 			"pagePath": "pages/national-pavilion/national-pavilion"
 		}]
 	}
