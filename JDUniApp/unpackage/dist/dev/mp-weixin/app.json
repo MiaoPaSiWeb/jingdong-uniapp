@@ -35,7 +35,8 @@
     ]
   },
   "usingComponents": {
-    "jd-tabbar": "/components/jd-tabbar/index",
-    "jd-safearea": "/components/jd-safearea/index"
+    "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
+    "jd-safearea": "/components/jd-safearea/jd-safearea",
+    "jd-image": "/components/jd-image/jd-image"
   }
 }

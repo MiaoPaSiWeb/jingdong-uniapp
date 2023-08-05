@@ -18,6 +18,7 @@
 </template>
 <script>
 	export default {
+		name:'jDTabbar',
 		props: {
 			//从父级继承过来的属性 需要在父级中使用:pagePath='pagePath',
 			pagePath: String

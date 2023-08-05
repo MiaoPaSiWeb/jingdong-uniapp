@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/jd-safearea/index":1,"components/jd-tabbar/index":1};
+/******/ 		var cssChunks = {"components/jd-image/jd-image":1,"components/jd-safearea/jd-safearea":1,"components/jd-tabbar/jd-tabbar":1,"pages/index/components/in-ad-banner/index":1,"pages/index/components/in-grid-floor/index":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/jd-safearea/index":"components/jd-safearea/index","components/jd-tabbar/index":"components/jd-tabbar/index"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/jd-image/jd-image":"components/jd-image/jd-image","components/jd-safearea/jd-safearea":"components/jd-safearea/jd-safearea","components/jd-tabbar/jd-tabbar":"components/jd-tabbar/jd-tabbar","pages/index/components/in-ad-banner/index":"pages/index/components/in-ad-banner/index","pages/index/components/in-grid-floor/index":"pages/index/components/in-grid-floor/index"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

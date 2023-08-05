@@ -1,0 +1,1 @@
+<view><block wx:for="{{fdata.gridFloor.items}}" wx:for-item="item" wx:for-index="__i0__" wx:key="advertId"><view><view class="image-content"><jd-image vue-id="{{'41540d99-1-'+__i0__}}" src="{{item.imageUrl}}" bind:__l="__l"></jd-image></view></view></block></view>

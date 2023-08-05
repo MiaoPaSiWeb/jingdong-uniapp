@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "首页",
-  "usingComponents": {}
+  "usingComponents": {
+    "jd-safearea": "/components/jd-safearea/jd-safearea",
+    "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
+    "in-grid-floor": "/pages/index/components/in-grid-floor/index",
+    "in-ad-banner": "/pages/index/components/in-ad-banner/index"
+  }
 }

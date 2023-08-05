@@ -16,25 +16,37 @@ var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/hel
 __webpack_require__(/*! uni-pages */ 26);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 27));
+var _assetsConfig = _interopRequireDefault(__webpack_require__(/*! @/config/assets.config.js */ 33));
+var _request = __webpack_require__(/*! @/utils/request */ 34);
+var _helper = _interopRequireDefault(__webpack_require__(/*! @/utils/helper */ 39));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // @ts-ignore
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 var jdTabbar = function jdTabbar() {
-  __webpack_require__.e(/*! require.ensure | components/jd-tabbar/index */ "components/jd-tabbar/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-tabbar */ 69));
+  __webpack_require__.e(/*! require.ensure | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then((function () {
+    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 77));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdSafearea = function jdSafearea() {
-  __webpack_require__.e(/*! require.ensure | components/jd-safearea/index */ "components/jd-safearea/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-safearea */ 76));
+  __webpack_require__.e(/*! require.ensure | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then((function () {
+    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 84));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var jdImage = function jdImage() {
+  Promise.all(/*! require.ensure | components/jd-image/jd-image */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jd-image/jd-image")]).then((function () {
+    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 91));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 // 引入国际化语言包
 
 // 挂载全局自定义方法
+_vue.default.prototype.$http = _request.http;
+_vue.default.prototype.$mAssetsPath = _assetsConfig.default;
+_vue.default.prototype.$mHelper = _helper.default;
 _vue.default.component('jd-tabbar', jdTabbar);
 _vue.default.component('jd-safearea', jdSafearea);
+_vue.default.component('jd-image', jdImage);
 if (false) {}
 
 // 路由导航

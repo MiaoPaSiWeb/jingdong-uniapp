@@ -9599,6 +9599,1580 @@ function normalizeComponent (
 }
 
 
+/***/ }),
+/* 33 */
+/*!*****************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/config/assets.config.js ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var PATH = "/static";
+console.log("ASSETS_PATHPATH", PATH);
+/*
+ * 图片静态资源表，所有图片资源路径在这统一管理，不应该写死在页面中，该数据挂载到Vue原型中。
+ * 页面使用：this.$mAssetsPath.grid_1
+ * CSS背景：应尽量使用:style="" 行内样式设置背景图
+ * PATH说明：本地路径或者服务器路径
+ *
+ * 举例：<image :src="grid_1">  需要在data中映射 grid_1: this.$mAssetsPath.grid_1
+ *
+ * 特别注意：经测试小程序中不支持 <image :src="$mAssetsPath.grid_1"> 该用法
+ */
+var _default = {
+  // 出错填充图片
+  errorImage: PATH + '/errorImage.jpg',
+  // 500
+  noNetWorkImg: PATH + '/noNetWork.png',
+  // 404
+  notFoundImg: PATH + '/notFound.png'
+  // // 默认头像
+  // headImg: PATH + '/missing-face.png',
+
+  // // 品牌logo
+  // logo: PATH + '/logo.png',
+
+  // // 商城新闻
+  // newsBg: PATH + '/news.png',
+
+  // // 商城新闻
+  // userBg: PATH + '/user-bg.png',
+
+  // // vip背景
+  // vipCardBg: PATH + '/vip-card.png',
+
+  // // vip价格
+  // vipPrice: PATH + '/vip-price.png',
+
+  // // 弧形背景
+  // arc: PATH + '/arc.png',
+
+  // // 升级图标
+  // upgradeTop: PATH + '/upgrade-top.png',
+
+  // // 返回顶部
+  // backTop: PATH + '/top.png',
+
+  // // 分享引导背景
+  // shareBg: PATH + '/share-bg.png',
+
+  // // 分销tag
+  // distribution: PATH + '/distribution.png',
+
+  // // 包邮tag
+  // pinkage: PATH + '/pinkage.png',
+
+  // // 预售tag
+  // presale: PATH + '/presale.png',
+
+  // // 开放站点
+  // openSiteBg: PATH + '/open-site-bg.png',
+
+  // // 虚拟tag
+  // virtual: PATH + '/virtual.png',
+
+  // // 登录背景
+  // loginBg: PATH + '/login-bg.png',
+
+  // // 登录插画
+  // loginPic: PATH + '/login-pic.png',
+
+  // // 砍价标签
+  // wholesaleTag: PATH + '/wholesale-tag.png',
+
+  // // 拼团标签
+  // groupTag: PATH + '/group-tag.png',
+
+  // // 砍价标签
+  // bargainTag: PATH + '/bargain-tag.png',
+
+  // // 砍价标签
+  // discountTag: PATH + '/discount-tag.png',
+
+  // // 微信授权登录
+  // wechat: PATH + '/wechat.png',
+
+  // // 微信授权登录
+  // apple: PATH + '/apple.png',
+
+  // // 微信授权登录
+  // money: PATH + '/money.png',
+
+  // // 微信授权登录
+  // moneyBg: PATH + '/money-bg.png'
+};
+exports.default = _default;
+
+/***/ }),
+/* 34 */
+/*!****************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/utils/request/index.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.http = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+var _request = _interopRequireDefault(__webpack_require__(/*! ./request */ 35));
+var _helper = _interopRequireDefault(__webpack_require__(/*! @/utils/helper */ 39));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+var http = new _request.default();
+
+// request全局参数设置
+exports.http = http;
+http.setConfig(function (config) {
+  var baseURL = "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/";
+  console.log("baseURL:" + baseURL);
+
+  /* 设置全局配置 */
+  config.baseUrl = baseURL; /* 根域名不同 */
+  var systemInfo = uni.getSystemInfoSync();
+  var systemInfoHeaders = {
+    'device-name': systemInfo.brand,
+    // 设备名称
+    width: systemInfo.screenWidth,
+    // 屏幕宽度
+    height: systemInfo.screenHeight,
+    // 屏幕高度
+    os: systemInfo.platform,
+    // 客户端平台
+    'os-version': systemInfo.system // 操作系统版本
+  };
+
+  config.header = _objectSpread(_objectSpread({}, config.header), systemInfoHeaders);
+  return config;
+});
+var isRefreshing = false;
+var requests = [];
+http.interceptor.request(function (config) {
+  // /* 请求之前拦截器 */
+  // config.header['x-api-key'] = uni.getStorageSync('accessToken');
+  // 单商户
+  // config.header['merchant-id'] = uni.getStorageSync('merchantId') || 1;
+  // console.log("interceptor.request:"+ config);
+  return config;
+}, function (error) {
+  return Promise.reject(error);
+});
+
+// 刷新refreshToken
+// async function handleRefreshToken(refresh_token) {
+// 	const params = {};
+// 	params.group = mHelper.platformGroupFilter();
+// 	params.refresh_token = refresh_token;
+// 	await http.post(refreshToken, params).then(async r => {
+// 		store.commit('login', r.data);
+// 		isRefreshing = false;
+// 	});
+// }
+// http.interceptor.response(
+// 	async response => {
+// 			/* 请求之后拦截器 */
+// 			switch (response.data.code) {
+// 				case 200:
+// 					return response.data;
+// 				case 400:
+// 					mHelper.toast('错误的请求');
+// 					return Promise.reject(response.data.message);
+// 					break;
+// 				case 401:
+// 					mHelper.toast('会话已过期');
+// 					return Promise.reject(response.data.message);
+// 					// isRefreshing = false;
+// 					// // refreshToken 的返回状态为401
+// 					// if (response.config.url === refreshToken) {
+// 					// 	uni.removeStorageSync('accessToken');
+// 					// 	await store.commit('logout');
+// 					// 	uni.showModal({
+// 					// 		content: '会话已过期，是否跳转登录页面？',
+// 					// 		success: confirmRes => {
+// 					// 			if (confirmRes.confirm) {
+// 					// 				mHelper.backToLogin();
+// 					// 				throw response.data.message;
+// 					// 			}
+// 					// 		}
+// 					// 	});
+// 					// 	break;
+// 					// } else {
+// 					// 	// 如果refreshToken为空 则直接跳转登录
+// 					// 	if (!store.state.refreshToken) {
+// 					// 		uni.removeStorageSync('accessToken');
+// 					// 		await store.commit('logout');
+// 					// 		uni.showModal({
+// 					// 			content: '会话已过期，是否跳转登录页面？',
+// 					// 			success: confirmRes => {
+// 					// 				if (confirmRes.confirm) {
+// 					// 					mHelper.backToLogin();
+// 					// 					throw response.data.message;
+// 					// 				}
+// 					// 			}
+// 					// 		});
+// 					// 		throw response.data.message;
+// 					// 	} else {
+// 					// 		// isRefreshing同一个页面只执行一次
+// 					// 		if (!isRefreshing) {
+// 					// 			isRefreshing = true;
+// 					// 			// 刷新token
+// 					// 			await handleRefreshToken(store.state.refreshToken, response);
+// 					// 			requests.forEach(cb => cb());
+// 					// 			requests = [];
+// 					// 			isRefreshing = false;
+// 					// 			return http.request(response.config);
+// 					// 		} else {
+// 					// 			return new Promise(resolve => {
+// 					// 				// 将resolve放进队列，用一个函数形式来保存，等token刷新后直接执行
+// 					// 				requests.push(() => {
+// 					// 					resolve(http.request(response.config));
+// 					// 				});
+// 					// 			});
+// 					// 		}
+// 					// 	}
+// 					// }
+// 					// break;
+// 				case 405:
+// 					mHelper.toast('当前操作不被允许');
+// 					return Promise.reject(response.data.message);
+// 				case 404:
+// 					mHelper.toast(response.data.message);
+// 					return Promise.reject(response.data.message);
+// 				case 429:
+// 					mHelper.toast('请求过多，先休息一下吧');
+// 					return Promise.reject(response.data.message);
+// 				case 500:
+// 					mHelper.toast('服务器打瞌睡了');
+// 					return Promise.reject(response.data.message);
+// 				default:
+// 					mHelper.toast(response.data.message);
+// 					return Promise.reject(response.data.message);
+// 			}
+// 		},
+// 		error => {
+// 			return Promise.reject(error);
+// 		}
+// );
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 35 */
+/*!******************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/utils/request/request.js ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 36));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 38));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+/**
+ * Request 1.0.6
+ * @Class Request
+ * @description luch-request 1.0.6 http请求插件
+ * @Author lu-ch
+ * @Date 2020-03-17
+ * @Email webwork.s@qq.com
+ * http://ext.dcloud.net.cn/plugin?id=392
+ */
+var Request = /*#__PURE__*/function () {
+  function Request() {
+    var _this = this;
+    (0, _classCallCheck2.default)(this, Request);
+    (0, _defineProperty2.default)(this, "config", {
+      baseUrl: '',
+      header: {
+        'content-type': 'application/json'
+      },
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      custom: {}
+    });
+    (0, _defineProperty2.default)(this, "interceptor", {
+      /**
+       * @param {Request~requestCallback} cb - 请求之前拦截,接收一个函数（config, cancel）=> {return config}。第一个参数为全局config,第二个参数为函数，调用则取消本次请求。
+       */
+      request: function request(cb) {
+        if (cb) {
+          _this.requestBeforeFun = cb;
+        }
+      },
+      /**
+       * @param {Request~responseCallback} cb 响应拦截器，对响应数据做点什么
+       * @param {Request~responseErrCallback} ecb 响应拦截器，对响应错误做点什么
+       */
+      response: function response(cb, ecb) {
+        if (cb) {
+          _this.requestComFun = cb;
+        }
+        if (ecb) {
+          _this.requestComFail = ecb;
+        }
+      }
+    });
+  }
+  (0, _createClass2.default)(Request, [{
+    key: "requestBeforeFun",
+    value: function requestBeforeFun(config) {
+      return config;
+    }
+  }, {
+    key: "requestComFun",
+    value: function requestComFun(response) {
+      return response;
+    }
+  }, {
+    key: "requestComFail",
+    value: function requestComFail(response) {
+      return response;
+    }
+
+    /**
+     * 自定义验证器，如果返回true 则进入响应拦截器的响应成功函数(resolve)，否则进入响应拦截器的响应错误函数(reject)
+     * @param { Number } statusCode - 请求响应体statusCode（只读）
+     * @return { Boolean } 如果为true,则 resolve, 否则 reject
+     */
+  }, {
+    key: "validateStatus",
+    value: function validateStatus(statusCode) {
+      return statusCode === 200;
+    }
+
+    /**
+     * @Function
+     * @param {Request~setConfigCallback} f - 设置全局默认配置
+     */
+  }, {
+    key: "setConfig",
+    value: function setConfig(f) {
+      this.config = f(this.config);
+    }
+
+    /**
+     * @Function
+     * @param {Object} options - 请求配置项
+     * @prop {String} options.url - 请求路径
+     * @prop {Object} options.data - 请求参数
+     * @prop {Object} [options.responseType = config.responseType] [text|arraybuffer] - 响应的数据类型
+     * @prop {Object} [options.dataType = config.dataType] - 如果设为 json，会尝试对返回的数据做一次 JSON.parse
+     * @prop {Object} [options.header = config.header] - 请求header
+     * @prop {Object} [options.method = config.method] - 请求方法
+     * @returns {Promise<unknown>}
+     */
+  }, {
+    key: "request",
+    value: function () {
+      var _request = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+        var _this2 = this;
+        var options,
+          _args = arguments;
+        return _regenerator.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                options = _args.length > 0 && _args[0] !== undefined ? _args[0] : {};
+                options.baseUrl = this.config.baseUrl;
+                options.dataType = options.dataType || this.config.dataType;
+                options.responseType = options.responseType || this.config.responseType;
+                options.url = options.url || '';
+                options.data = options.data || {};
+                options.params = options.params || {};
+                options.header = options.header || this.config.header;
+                options.method = options.method || this.config.method;
+                options.custom = _objectSpread(_objectSpread({}, this.config.custom), options.custom || {});
+                options.getTask = options.getTask || this.config.getTask;
+                return _context.abrupt("return", new Promise(function (resolve, reject) {
+                  var next = true;
+                  var cancel = function cancel() {
+                    var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'handle cancel';
+                    var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : options;
+                    var err = {
+                      errMsg: t,
+                      config: config
+                    };
+                    reject(err);
+                    next = false;
+                  };
+                  var handleRe = _objectSpread({}, _this2.requestBeforeFun(options, cancel));
+                  var _config = _objectSpread({}, handleRe);
+                  if (!next) return;
+                  var requestTask = uni.request({
+                    url: Request.mergeUrl(_config.url, _config.baseUrl, _config.params),
+                    data: _config.data,
+                    header: _config.header,
+                    method: _config.method,
+                    dataType: _config.dataType,
+                    responseType: _config.responseType,
+                    complete: function complete(response) {
+                      response.config = handleRe;
+                      if (_this2.validateStatus(response.statusCode)) {
+                        // 成功
+                        response = _this2.requestComFun(response);
+                        resolve(response);
+                      } else {
+                        response = _this2.requestComFail(response);
+                        reject(response);
+                      }
+                    }
+                  });
+                  if (handleRe.getTask) {
+                    handleRe.getTask(requestTask, handleRe);
+                  }
+                }));
+              case 12:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+      function request() {
+        return _request.apply(this, arguments);
+      }
+      return request;
+    }()
+  }, {
+    key: "get",
+    value: function get(url) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var options = {};
+      options.params = params;
+      return this.request(_objectSpread({
+        url: url,
+        method: 'GET'
+      }, options));
+    }
+  }, {
+    key: "post",
+    value: function post(url, data) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'POST'
+      }, options));
+    }
+  }, {
+    key: "put",
+    value: function put(url, data) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'PUT'
+      }, options));
+    }
+  }, {
+    key: "delete",
+    value: function _delete(url, data) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'DELETE'
+      }, options));
+    }
+  }, {
+    key: "connect",
+    value: function connect(url, data) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'CONNECT'
+      }, options));
+    }
+  }, {
+    key: "head",
+    value: function head(url, data) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'HEAD'
+      }, options));
+    }
+  }, {
+    key: "options",
+    value: function options(url, data) {
+      var _options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'OPTIONS'
+      }, _options));
+    }
+  }, {
+    key: "trace",
+    value: function trace(url, data) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return this.request(_objectSpread({
+        url: url,
+        data: data,
+        method: 'TRACE'
+      }, options));
+    }
+  }, {
+    key: "upload",
+    value: function upload(url, _ref) {
+      var _this3 = this;
+      var filePath = _ref.filePath,
+        name = _ref.name,
+        header = _ref.header,
+        _ref$formData = _ref.formData,
+        formData = _ref$formData === void 0 ? {} : _ref$formData,
+        _ref$custom = _ref.custom,
+        custom = _ref$custom === void 0 ? {} : _ref$custom,
+        _ref$params = _ref.params,
+        params = _ref$params === void 0 ? {} : _ref$params,
+        getTask = _ref.getTask;
+      return new Promise(function (resolve, reject) {
+        var next = true;
+        var globalHeader = _objectSpread({}, _this3.config.header);
+        delete globalHeader['content-type'];
+        delete globalHeader['Content-Type'];
+        var pubConfig = {
+          baseUrl: _this3.config.baseUrl,
+          url: url,
+          filePath: filePath,
+          method: 'UPLOAD',
+          name: name,
+          header: header || globalHeader,
+          formData: formData,
+          params: params,
+          custom: _objectSpread(_objectSpread({}, _this3.config.custom), custom),
+          getTask: getTask || _this3.config.getTask
+        };
+        var cancel = function cancel() {
+          var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'handle cancel';
+          var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : pubConfig;
+          var err = {
+            errMsg: t,
+            config: config
+          };
+          reject(err);
+          next = false;
+        };
+        var handleRe = _objectSpread({}, _this3.requestBeforeFun(pubConfig, cancel));
+        var _config = {
+          url: Request.mergeUrl(handleRe.url, handleRe.baseUrl, handleRe.params),
+          filePath: handleRe.filePath,
+          name: handleRe.name,
+          header: handleRe.header,
+          formData: handleRe.formData,
+          complete: function complete(response) {
+            response.config = handleRe;
+            if (typeof response.data === 'string') {
+              response.data = JSON.parse(response.data);
+            }
+            if (_this3.validateStatus(response.statusCode)) {
+              // 成功
+              response = _this3.requestComFun(response);
+              resolve(response);
+            } else {
+              response = _this3.requestComFail(response);
+              reject(response);
+            }
+          }
+        };
+        if (!next) return;
+        var requestTask = uni.uploadFile(_config);
+        if (handleRe.getTask) {
+          handleRe.getTask(requestTask, handleRe);
+        }
+      });
+    }
+  }, {
+    key: "download",
+    value: function download(url) {
+      var _this4 = this;
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      return new Promise(function (resolve, reject) {
+        var next = true;
+        var pubConfig = {
+          baseUrl: _this4.config.baseUrl,
+          url: url,
+          method: 'DOWNLOAD',
+          header: options.header || _this4.config.header,
+          params: options.params || {},
+          custom: _objectSpread(_objectSpread({}, _this4.config.custom), options.custom || {}),
+          getTask: options.getTask || _this4.config.getTask
+        };
+        var cancel = function cancel() {
+          var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'handle cancel';
+          var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : pubConfig;
+          var err = {
+            errMsg: t,
+            config: config
+          };
+          reject(err);
+          next = false;
+        };
+        var handleRe = _objectSpread({}, _this4.requestBeforeFun(pubConfig, cancel));
+        if (!next) return;
+        var requestTask = uni.downloadFile({
+          url: Request.mergeUrl(handleRe.url, handleRe.baseUrl, handleRe.params),
+          header: handleRe.header,
+          complete: function complete(response) {
+            response.config = handleRe;
+            if (_this4.validateStatus(response.statusCode)) {
+              // 成功
+              response = _this4.requestComFun(response);
+              resolve(response);
+            } else {
+              response = _this4.requestComFail(response);
+              reject(response);
+            }
+          }
+        });
+        if (handleRe.getTask) {
+          handleRe.getTask(requestTask, handleRe);
+        }
+      });
+    }
+  }], [{
+    key: "posUrl",
+    value: function posUrl(url) {
+      /* 判断url是否为绝对路径 */
+      return /(http|https):\/\/([\w.]+\/?)\S*/.test(url);
+    }
+  }, {
+    key: "mergeUrl",
+    value: function mergeUrl(url, baseUrl, params) {
+      var mergeUrl = Request.posUrl(url) ? url : "".concat(baseUrl).concat(url);
+      if (Object.keys(params).length !== 0) {
+        var paramsH = Request.addQueryString(params);
+        mergeUrl += mergeUrl.includes('?') ? "&".concat(paramsH) : "?".concat(paramsH);
+      }
+      return mergeUrl;
+    }
+  }, {
+    key: "addQueryString",
+    value: function addQueryString(params) {
+      var paramsData = '';
+      Object.keys(params).forEach(function (key) {
+        paramsData += key + '=' + encodeURIComponent(params[key]) + '&';
+      });
+      return paramsData.substring(0, paramsData.length - 1);
+    }
+
+    /**
+     * @property {Function} request 请求拦截器
+     * @property {Function} response 响应拦截器
+     * @type {{request: Request.interceptor.request, response: Request.interceptor.response}}
+     */
+  }]);
+  return Request;
+}();
+/**
+ * setConfig回调
+ * @return {Object} - 返回操作后的config
+ * @callback Request~setConfigCallback
+ * @param {Object} config - 全局默认config
+ */
+/**
+ * 请求拦截器回调
+ * @return {Object} - 返回操作后的config
+ * @callback Request~requestCallback
+ * @param {Object} config - 全局config
+ * @param {Function} [cancel] - 取消请求钩子，调用会取消本次请求
+ */
+/**
+ * 响应拦截器回调
+ * @return {Object} - 返回操作后的response
+ * @callback Request~responseCallback
+ * @param {Object} response - 请求结果 response
+ */
+/**
+ * 响应错误拦截器回调
+ * @return {Object} - 返回操作后的response
+ * @callback Request~responseErrCallback
+ * @param {Object} response - 请求结果 response
+ */
+exports.default = Request;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 36 */
+/*!************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// TODO(Babel 8): Remove this file.
+
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 37)();
+module.exports = runtime;
+
+/***/ }),
+/* 37 */
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 13)["default"];
+function _regeneratorRuntime() {
+  "use strict";
+
+  /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+  module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
+    return exports;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  var exports = {},
+    Op = Object.prototype,
+    hasOwn = Op.hasOwnProperty,
+    defineProperty = Object.defineProperty || function (obj, key, desc) {
+      obj[key] = desc.value;
+    },
+    $Symbol = "function" == typeof Symbol ? Symbol : {},
+    iteratorSymbol = $Symbol.iterator || "@@iterator",
+    asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator",
+    toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+  function define(obj, key, value) {
+    return Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }), obj[key];
+  }
+  try {
+    define({}, "");
+  } catch (err) {
+    define = function define(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator,
+      generator = Object.create(protoGenerator.prototype),
+      context = new Context(tryLocsList || []);
+    return defineProperty(generator, "_invoke", {
+      value: makeInvokeMethod(innerFn, self, context)
+    }), generator;
+  }
+  function tryCatch(fn, obj, arg) {
+    try {
+      return {
+        type: "normal",
+        arg: fn.call(obj, arg)
+      };
+    } catch (err) {
+      return {
+        type: "throw",
+        arg: err
+      };
+    }
+  }
+  exports.wrap = wrap;
+  var ContinueSentinel = {};
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+  var IteratorPrototype = {};
+  define(IteratorPrototype, iteratorSymbol, function () {
+    return this;
+  });
+  var getProto = Object.getPrototypeOf,
+    NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype);
+  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function (method) {
+      define(prototype, method, function (arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if ("throw" !== record.type) {
+        var result = record.arg,
+          value = result.value;
+        return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) {
+          invoke("next", value, resolve, reject);
+        }, function (err) {
+          invoke("throw", err, resolve, reject);
+        }) : PromiseImpl.resolve(value).then(function (unwrapped) {
+          result.value = unwrapped, resolve(result);
+        }, function (error) {
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+      reject(record.arg);
+    }
+    var previousPromise;
+    defineProperty(this, "_invoke", {
+      value: function value(method, arg) {
+        function callInvokeWithMethodAndArg() {
+          return new PromiseImpl(function (resolve, reject) {
+            invoke(method, arg, resolve, reject);
+          });
+        }
+        return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+      }
+    });
+  }
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = "suspendedStart";
+    return function (method, arg) {
+      if ("executing" === state) throw new Error("Generator is already running");
+      if ("completed" === state) {
+        if ("throw" === method) throw arg;
+        return doneResult();
+      }
+      for (context.method = method, context.arg = arg;;) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+        if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) {
+          if ("suspendedStart" === state) throw state = "completed", context.arg;
+          context.dispatchException(context.arg);
+        } else "return" === context.method && context.abrupt("return", context.arg);
+        state = "executing";
+        var record = tryCatch(innerFn, self, context);
+        if ("normal" === record.type) {
+          if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue;
+          return {
+            value: record.arg,
+            done: context.done
+          };
+        }
+        "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg);
+      }
+    };
+  }
+  function maybeInvokeDelegate(delegate, context) {
+    var methodName = context.method,
+      method = delegate.iterator[methodName];
+    if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel;
+    var record = tryCatch(method, delegate.iterator, context.arg);
+    if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel;
+    var info = record.arg;
+    return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel);
+  }
+  function pushTryEntry(locs) {
+    var entry = {
+      tryLoc: locs[0]
+    };
+    1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry);
+  }
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal", delete record.arg, entry.completion = record;
+  }
+  function Context(tryLocsList) {
+    this.tryEntries = [{
+      tryLoc: "root"
+    }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0);
+  }
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) return iteratorMethod.call(iterable);
+      if ("function" == typeof iterable.next) return iterable;
+      if (!isNaN(iterable.length)) {
+        var i = -1,
+          next = function next() {
+            for (; ++i < iterable.length;) {
+              if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next;
+            }
+            return next.value = undefined, next.done = !0, next;
+          };
+        return next.next = next;
+      }
+    }
+    return {
+      next: doneResult
+    };
+  }
+  function doneResult() {
+    return {
+      value: undefined,
+      done: !0
+    };
+  }
+  return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", {
+    value: GeneratorFunctionPrototype,
+    configurable: !0
+  }), defineProperty(GeneratorFunctionPrototype, "constructor", {
+    value: GeneratorFunction,
+    configurable: !0
+  }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) {
+    var ctor = "function" == typeof genFun && genFun.constructor;
+    return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name));
+  }, exports.mark = function (genFun) {
+    return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun;
+  }, exports.awrap = function (arg) {
+    return {
+      __await: arg
+    };
+  }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+    return this;
+  }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    void 0 === PromiseImpl && (PromiseImpl = Promise);
+    var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
+    return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) {
+      return result.done ? result.value : iter.next();
+    });
+  }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () {
+    return this;
+  }), define(Gp, "toString", function () {
+    return "[object Generator]";
+  }), exports.keys = function (val) {
+    var object = Object(val),
+      keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    return keys.reverse(), function next() {
+      for (; keys.length;) {
+        var key = keys.pop();
+        if (key in object) return next.value = key, next.done = !1, next;
+      }
+      return next.done = !0, next;
+    };
+  }, exports.values = values, Context.prototype = {
+    constructor: Context,
+    reset: function reset(skipTempReset) {
+      if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) {
+        "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined);
+      }
+    },
+    stop: function stop() {
+      this.done = !0;
+      var rootRecord = this.tryEntries[0].completion;
+      if ("throw" === rootRecord.type) throw rootRecord.arg;
+      return this.rval;
+    },
+    dispatchException: function dispatchException(exception) {
+      if (this.done) throw exception;
+      var context = this;
+      function handle(loc, caught) {
+        return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught;
+      }
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i],
+          record = entry.completion;
+        if ("root" === entry.tryLoc) return handle("end");
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc"),
+            hasFinally = hasOwn.call(entry, "finallyLoc");
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+          } else {
+            if (!hasFinally) throw new Error("try statement without catch or finally");
+            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+          }
+        }
+      }
+    },
+    abrupt: function abrupt(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+      finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null);
+      var record = finallyEntry ? finallyEntry.completion : {};
+      return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record);
+    },
+    complete: function complete(record, afterLoc) {
+      if ("throw" === record.type) throw record.arg;
+      return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel;
+    },
+    finish: function finish(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel;
+      }
+    },
+    "catch": function _catch(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if ("throw" === record.type) {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+      throw new Error("illegal catch attempt");
+    },
+    delegateYield: function delegateYield(iterable, resultName, nextLoc) {
+      return this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      }, "next" === this.method && (this.arg = undefined), ContinueSentinel;
+    }
+  }, exports;
+}
+module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 38 */
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+  if (info.done) {
+    resolve(value);
+  } else {
+    Promise.resolve(value).then(_next, _throw);
+  }
+}
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+      args = arguments;
+    return new Promise(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+      _next(undefined);
+    });
+  };
+}
+module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 39 */
+/*!*********************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/utils/helper.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 36));
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 38));
+//常用方法集合
+var _default = {
+  /**
+   * toast提示
+   */
+  toast: function toast(title) {
+    var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3000;
+    var mask = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    var icon = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'none';
+    if (Boolean(title) === false) {
+      return;
+    }
+    uni.showToast({
+      title: title,
+      duration: duration,
+      mask: mask,
+      icon: icon
+    });
+  },
+  /**
+   * 开发环境全局打印日志
+   * @param {Object} title
+   */
+  log: function log(title) {
+    if ( true && Boolean(title) === true) {
+      console.log(JSON.stringify(title));
+    }
+  },
+  /**
+   * 异步获取设备信息
+   */
+  getInfoAsync: function getInfoAsync() {
+    return new Promise(function (resolve, reject) {
+      plus.device.getInfo({
+        success: function success(e) {
+          resolve(e);
+        },
+        fail: function fail(e) {
+          reject(e.message);
+        }
+      });
+    });
+  },
+  /**
+   * 安卓10不支持IMEI,则获取OAID
+   */
+  getOaidAsync: function getOaidAsync() {
+    return new Promise(function (resolve, reject) {
+      plus.device.getOAID({
+        success: function success(e) {
+          resolve(e);
+        },
+        fail: function fail(e) {
+          reject(e.message);
+        }
+      });
+    });
+  },
+  /**
+   * 获取一个随机数
+   * @param {Object} min
+   * @param {Object} max
+   */
+  random: function random(min, max) {
+    switch (arguments.length) {
+      case 1:
+        return parseInt(Math.random() * min + 1, 10);
+        break;
+      case 2:
+        return parseInt(Math.random() * (max - min + 1) + min, 10);
+        break;
+      default:
+        return 0;
+        break;
+    }
+  },
+  /**
+   * 获取ios的IDFA
+   */
+  getIdfa: function getIdfa() {
+    var idfa = '';
+    try {
+      if ('iOS' == plus.os.name) {
+        var manager = plus.ios.invoke('ASIdentifierManager', 'sharedManager');
+        if (plus.ios.invoke(manager, 'isAdvertisingTrackingEnabled')) {
+          var identifier = plus.ios.invoke(manager, 'advertisingIdentifier');
+          idfa = plus.ios.invoke(identifier, 'UUIDString');
+          plus.ios.deleteObject(identifier);
+        }
+        plus.ios.deleteObject(manager);
+      }
+    } catch (e) {
+      console.error('获取idfa失败');
+    }
+    return idfa;
+  },
+  /*
+   * obj 转 params字符串参数
+   * 例子：{a:1,b:2} => a=1&b=2
+   */
+  objParseParam: function objParseParam(obj) {
+    var paramsStr = '';
+    if (obj instanceof Array) return paramsStr;
+    if (!(obj instanceof Object)) return paramsStr;
+    for (var key in obj) {
+      paramsStr += "".concat(key, "=").concat(obj[key], "&");
+    }
+    return paramsStr.substring(0, paramsStr.length - 1);
+  },
+  /*
+   * obj 转 路由地址带参数
+   * 例子：{a:1,b:2} => /pages/index/index?a=1&b=2
+   */
+  objParseUrlAndParam: function objParseUrlAndParam(path, obj) {
+    var url = path || '/';
+    var paramsStr = '';
+    if (obj instanceof Array) return url;
+    if (!(obj instanceof Object)) return url;
+    paramsStr = this.objParseParam(obj);
+    paramsStr && (url += '?');
+    url += paramsStr;
+    return url;
+  },
+  /*
+   * 获取url字符串参数
+   */
+  getRequestParameters: function getRequestParameters(locationhref) {
+    var href = locationhref || '';
+    var theRequest = new Object();
+    var str = href.split('?')[1];
+    if (str != undefined) {
+      var strs = str.split('&');
+      for (var i = 0; i < strs.length; i++) {
+        theRequest[strs[i].split('=')[0]] = strs[i].split('=')[1];
+      }
+    }
+    return theRequest;
+  },
+  /**
+   * 加密字符串
+   */
+  strEncode: function strEncode(str) {
+    var key = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var l = key.length;
+    var a = key.split('');
+    var s = '',
+      b,
+      b1,
+      b2,
+      b3;
+    for (var i = 0; i < str.length; i++) {
+      b = str.charCodeAt(i);
+      b1 = b % l;
+      b = (b - b1) / l;
+      b2 = b % l;
+      b = (b - b2) / l;
+      b3 = b % l;
+      s += a[b3] + a[b2] + a[b1];
+    }
+    return s;
+  },
+  /**
+   * 解密字符串
+   */
+  strDecode: function strDecode(str) {
+    var key = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var l = key.length;
+    var b,
+      b1,
+      b2,
+      b3,
+      d = 0,
+      s;
+    s = new Array(Math.floor(str.length / 3));
+    b = s.length;
+    for (var i = 0; i < b; i++) {
+      b1 = key.indexOf(str.charAt(d));
+      d++;
+      b2 = key.indexOf(str.charAt(d));
+      d++;
+      b3 = key.indexOf(str.charAt(d));
+      d++;
+      s[i] = b1 * l * l + b2 * l + b3;
+    }
+    b = eval('String.fromCharCode(' + s.join(',') + ')');
+    return b;
+  },
+  /**
+   * 比较版本号
+   */
+  compareVersion: function compareVersion(reqV, curV) {
+    if (curV && reqV) {
+      var arr1 = curV.split('.'),
+        arr2 = reqV.split('.');
+      var minLength = Math.min(arr1.length, arr2.length),
+        position = 0,
+        diff = 0;
+      while (position < minLength && (diff = parseInt(arr1[position]) - parseInt(arr2[position])) == 0) {
+        position++;
+      }
+      diff = diff != 0 ? diff : arr1.length - arr2.length;
+      if (diff > 0) {
+        if (position == minLength - 1) {
+          return 1;
+        } else {
+          return 2;
+        }
+      } else {
+        return 0;
+      }
+    } else {
+      return 0;
+    }
+  },
+  /**
+   * H5复制
+   */
+  h5Copy: function h5Copy(content) {
+    var textarea = document.createElement('textarea');
+    textarea.value = content;
+    textarea.readOnly = 'readOnly';
+    document.body.appendChild(textarea);
+    textarea.select(); // 选择对象
+    textarea.setSelectionRange(0, content.length); //核心
+    var result = document.execCommand('Copy'); // 执行浏览器复制命令
+    textarea.remove();
+    var msg = result ? '复制成功' : '复制失败';
+    this.toast(msg);
+  },
+  /**
+   * app分享
+   */
+  handleAppShare: function handleAppShare(shareUrl, shareTitle, shareContent, shareImg) {
+    var shareData = {
+      shareUrl: shareUrl,
+      shareTitle: shareTitle,
+      shareContent: shareContent,
+      shareImg: shareImg
+    };
+    appShare(shareData, function (res) {});
+  },
+  handleWxH5Share: function handleWxH5Share(title, desc, link, imgUrl) {
+    return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+      return _regenerator.default.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  },
+  // 去掉字符串中的空格
+  trim: function trim(str) {
+    if (!str) {
+      return '';
+    }
+    return str.replace(/\s*/g, '');
+  },
+  // 判断两个对象是否相同
+  isObjectValueEqual: function isObjectValueEqual(x, y) {
+    // 指向同一内存时
+    if (x === y) {
+      return true;
+    } else if ((0, _typeof2.default)(x) == 'object' && x != null && (0, _typeof2.default)(y) == 'object' && y != null) {
+      if (Object.keys(x).length != Object.keys(y).length) return false;
+      for (var prop in x) {
+        if (y.hasOwnProperty(prop)) {
+          if (!this.isObjectValueEqual(x[prop], y[prop])) return false;
+        } else return false;
+      }
+      return true;
+    } else return false;
+  },
+  platformGroupFilter: function platformGroupFilter() {
+    var platformGroup = 'tinyShop';
+    platformGroup = 'tinyShopWechatMp';
+    return platformGroup;
+  },
+  // 广告图跳转封装
+  handleBannerNavTo: function handleBannerNavTo(data, id, advId) {
+    var url;
+    http.get(advView, {
+      id: advId
+    });
+    switch (data) {
+      case 'notify_announce_view':
+        // 公告详情
+        url = "/pages/index/notice/detail?id=".concat(id);
+        break;
+      case 'product_view':
+        // 产品详情
+        url = "/pages/product/product?id=".concat(id);
+        break;
+      case 'combination_view':
+        // 某分类下产品列表
+        url = "/pages/marketing/combination/list?id=".concat(id);
+        break;
+      case 'coupon_view':
+        // 优惠券详情
+        url = "/pages/user/coupon/detail?id=".concat(id);
+        break;
+      case 'helper_view':
+        // 站点帮助详情
+        url = '/pages/set/helper/index';
+        break;
+      case 'bargain_list':
+        // 砍价列表
+        url = '/pages/marketing/bargain/list';
+        break;
+      case 'discount_list':
+        // 限时折扣
+        url = '/pages/marketing/discount/list';
+        break;
+      case 'group_buy_list':
+        // 团购列表
+        url = '/pages/marketing/group/list';
+        break;
+      case 'wholesale_list':
+        // 拼团列表
+        url = '/pages/marketing/wholesale/list';
+        break;
+      case 'product_list_for_cate':
+        // 某分类下产品列表
+        url = "/pages/product/list?cate_id=".concat(id);
+        break;
+      case 'mini_program_live_view':
+        // 跳转至带货直播间
+
+        url = "plugin-private://wx2b03c6e691cd7370/pages/live-player-plugin?room_id=".concat([id]);
+        break;
+      default:
+        break;
+    }
+    if (url) {
+      mRouter.push({
+        route: url
+      });
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */
+/*!*****************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/api/home.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.searchpromptwords = exports.queryChannelData = exports.pbReferer = exports.feedtab = void 0;
+/*
+顶部  tab/index/pbReferer.json
+楼层信息 tab/index/queryChannelData.json
+推荐模块儿   tab/index/recommend_like_m.json
+*/
+// 底部四个tab数据
+var pbReferer = 'mock-data/tab/index/pbReferer.json';
+exports.pbReferer = pbReferer;
+var searchpromptwords = 'mock-data/tab/index/searchpromptwords.json';
+exports.searchpromptwords = searchpromptwords;
+var queryChannelData = 'mock-data/tab/index/queryChannelData.json';
+exports.queryChannelData = queryChannelData;
+var feedtab = 'mock-data/tab/index/feedtab';
+exports.feedtab = feedtab;
+
+/***/ }),
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */
+/*!******************************************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mock-data/tab/index/queryChannelData.json ***!
+  \******************************************************************************************************************/
+/*! exports provided: result, code, success, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"result\":{\"styleVersion\":\"1119876\",\"data\":[{\"floorId\":\"888\",\"gridFloor\":{\"groupId\":\"06608216\",\"items\":[{\"advertId\":\"0901745674\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/222536/2/23981/7360/63f432fdF90317c2e/ea0216e3e2f92ea5.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":0,\"picHeight\":0,\"name\":\"2\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4B4rLJxmKs3aY3ayBiPACW8T2qPz\",\"id\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"\",\"groupId\":\"\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]},\"floorType\":\"GRID_FLOOR\",\"floorIndex\":0},{\"floorId\":\"83595811\",\"floorType\":\"AD_BANNER\",\"adBannerFloor\":{\"banners\":[{\"advertId\":\"9301804457\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/211275/10/38876/96331/64c9eec4Fad3eebb7/6d7ca8879ec1b56d.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"下雨专题\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4Q38ZNQk4enXEXKFo8ahjcjTt3wS\",\"id\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301799848\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/219836/21/32831/36477/64bf41ccF3bc30f43/80b0899b1db3652e.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\",\"toPageId\":\"\",\"themeColor\":\"#aura4\",\"picWidth\":498,\"picHeight\":693,\"name\":\"aura4\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4RW5MxgJWbS1iMkCq4Uemkn7FPyn\",\"id\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"JBL PULSE4 音乐脉动四代便携式蓝牙音箱全面屏炫彩小音箱+低音炮超长续航防水设计 黑色\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/207789/34/4194/36181/61601344E20c6e18e/44b8281cb88b2000.jpg.dpg\",\"skuId\":\"100010838370\",\"jump\":{\"params\":{\"skuId\":\"100010838370\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"哈曼卡顿（Harman/Kardon）Aura Studio4 音乐琉璃四代4代  360°环绕立体声 菱形氛围灯效  桌面蓝牙音箱 \",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/138807/32/38311/65175/64c77201Fb75b7ac8/01b4a945184b4868.jpg.dpg\",\"skuId\":\"100057072838\",\"jump\":{\"params\":{\"skuId\":\"100057072838\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301799849\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/123060/24/35434/43944/64bf44b9F81a179e3/ad79fb8c0006bb87.jpg.dpg\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\",\"toPageId\":\"\",\"themeColor\":\"#123\",\"picWidth\":498,\"picHeight\":693,\"name\":\"123\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4TFvyrd4fqQdCKu2kSefnV6T5pMq\",\"id\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301793132\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/179799/1/35279/71974/64b1105dF66c89d0f/62db75752ee2d1b3.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"新品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"Fojkg1ML7NffG6Mvt5b3GcFTcDK\",\"id\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"铁三角（Audio-technica）【日本直邮】铁三角运动耳机无线耳机防水/运动蓝牙遥控/带麦克风可插内存卡颈挂式蓝牙耳机 颈挂式蓝牙耳机60BT 黑色\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/97634/28/40751/16651/64aa911bF27f6ee55/ab10c61f07d3751e.jpg.dpg\",\"skuId\":\"10077407157272\",\"jump\":{\"params\":{\"skuId\":\"10077407157272\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"拉夫劳伦（Ralph Lauren）男士Polo衫短袖 商务休闲 送男友礼物 710548797 005红色 L \",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/97839/13/32575/11939/64c33705F16432341/cd7c7249d6a74d35.jpg.dpg\",\"skuId\":\"100045354180\",\"jump\":{\"params\":{\"skuId\":\"100045354180\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301796334\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/145478/30/33793/66221/64bf9dabF1547228a/dd5af8efd79d4743.jpg.dpg\",\"toUrl\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\",\"toPageId\":\"\",\"themeColor\":\"#11\",\"picWidth\":498,\"picHeight\":693,\"name\":\"11\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"455ipHDNRBzvnCG8e9YvD8wGDAdJ\",\"id\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301676394\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/63387/22/22477/72886/63463837Ed268024d/1da5f454bf7f7ddf.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物3C\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4VYzCcUvzsyjbMQqtmY3U6Mqzaoe\",\"id\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"谷心(GX.Diffuser) 注氧仪 家用美容仪 纳米喷雾器 保湿补水仪 情人节 61节送女朋友生日礼物\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/220298/18/36101/101047/64c85751F04a762cc/e1541a394b258635.jpg.dpg\",\"skuId\":\"100025427750\",\"jump\":{\"params\":{\"skuId\":\"100025427750\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301676395\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/145294/39/30411/34835/6346385dE9c63db3b/8aa72b922c9f8f77.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物彩妆\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"VNcaArZTsYo1c859NxrfwC4zWvM\",\"id\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"NYX闪亮液体眼影新碎钻细闪珠光卧蚕高光提亮液牛郎眼妆 #03银河碎钻\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/196363/16/35121/97456/64c75818F88ea8c80/7146da50df4033d8.jpg.dpg\",\"skuId\":\"100028638943\",\"jump\":{\"params\":{\"skuId\":\"100028638943\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"ZELENSYouth青春焕彩水润通透粉底液30ml Cloud云朵色 粉一白友好彩妆\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/140657/39/38509/71482/64c85dbbF56cb7d7c/159b4b1388bc9da9.jpg.dpg\",\"skuId\":\"100035004962\",\"jump\":{\"params\":{\"skuId\":\"100035004962\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301676392\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/151356/40/30581/230742/63f5e5d3Fe5ae3d6f/4005d11a89b19c48.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物洗发水\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3ymudAKQi4hj3CQvA8o4YUtG2D45\",\"id\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301749287\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/214137/16/29399/49432/64472b39Fb55f2b8f/b4a68a01c7767770.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"宠物\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2gYadarGrQGK5ucUkbXHuP6a6QT6\",\"id\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"美士（Nutro）猫粮进口成猫粮干粮高蛋白宠物猫粮三文鱼鲜猫粮5磅2.27kg\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/199860/21/13662/88431/616e8a2aEfefe498b/86b8be54cbe9e57a.jpg.dpg\",\"skuId\":\"100012157084\",\"jump\":{\"params\":{\"skuId\":\"100012157084\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"美士进口猫罐头一分为二餐盒湿粮三文鱼鸡肉无谷猫主食罐75g*12\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/224044/24/9301/219509/626b53b0Eb0263e9e/d46a7af6ed61eded.jpg.dpg\",\"skuId\":\"100016818589\",\"jump\":{\"params\":{\"skuId\":\"100016818589\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301735202\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/156541/13/36039/33421/6414410cF96bd09e1/5a032a01b4fb9261.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"美妆药妆\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"xBcHMzhVAaRB7SSZLm5wWZdCn26\",\"id\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]},\"floorIndex\":1},{\"floorId\":\"83595815\",\"flexFloor\":{\"viewGroups\":[{\"id\":\"1607515022454\",\"imageViews\":[{\"picUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/216971/3/5617/35136/619f4469E2a328821/17b060dee0370fa3.jpg\",\"id\":\"1607515379482\",\"jump\":{\"des\":\"m\",\"srv\":\"\",\"params\":{\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html\"}}}]}]},\"floorType\":\"FLEX_WIDGET\",\"floorIndex\":7},{\"floorId\":\"83595814\",\"floorType\":\"CHANNEL_WIDGET\",\"floorIndex\":8,\"channelFloor\":{\"channels\":[{\"advertId\":\"7301795171\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/146830/32/34493/8800/6419585fF0357671a/f650fe654a4fe7cf.png\",\"toUrl\":\"https://shop.m.jd.com/?shopId=1000348121\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"国际会员店\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"shop.m.jd.com\",\"id\":\"https://shop.m.jd.com/?shopId=1000348121\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://shop.m.jd.com/?shopId=1000348121\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795172\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/206810/35/7299/27836/617ac034E667d1db3/3eee669b28fe906c.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"母婴玩具\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2WgiuefFEuSGcCwtk8vnUvrTPFf\",\"id\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795173\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/201366/25/236/12528/610bb021Eb63dbe9c/ea7093be7685ea91.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"美妆护肤\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4DtiBMHCHioVpP4yNGB9g2fGVvPv\",\"id\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795174\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/182830/4/11669/25146/60df0375E90132fee/26a9d26d9f7ecb34.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"居家生活\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2a6tjtybuyn9JDRZ21EJCrMUb1Wf\",\"id\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795175\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/206046/12/12838/11720/61795544E1ebada7b/d18005bbb4d1c517.png\",\"toUrl\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"海南免税\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"43jbUjooWAFMtH7UP7SqYhJ2WQfx\",\"id\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795176\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/186772/11/3974/26709/60a39687E10c8443d/f4c6bc884f66ae16.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"营养保健\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"hGrMs6gRF8otvwtyx7dda9eXzRa\",\"id\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795177\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/194827/25/3735/16373/60a3961dE37358b09/9124bcb07ed2d276.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"数码家电\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3A6TPyJ8bgDqJnvXLgT1StV9n4iS\",\"id\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795178\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/182064/19/5654/35130/60ab601fE7328eff8/bd552a411d82aa77.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"时尚轻奢\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2nB9QKEB6g3Z6RBYB69mQh25v3x3\",\"id\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795179\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/187469/7/3815/27366/60a3966cEaf536199/0dc7c172c00d851f.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"食品酒水\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"tAZGEw7vEx36voyWL63VPVUwFPz\",\"id\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795180\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/157049/5/34948/15520/640068deF71389601/50e651751633a8a2.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":120,\"picHeight\":120,\"name\":\"进口个护\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2zZDbqRmVNgQK1gnzyasb6Xn29pg\",\"id\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795182\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/180905/30/5651/52821/60ab619aE9b6aabe8/74ba4c8dfa9a2f6a.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"官方直营\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"33BBufvejVoBM7FQeSD2ZmGW69jk\",\"id\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795183\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/132700/27/18212/90823/60ab630eEc776c6fe/16c0ced4bba6da6c.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"家有萌宠\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2Mxgei9N257HqGYZePVCuNZVhYYH\",\"id\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795184\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/193083/36/4727/105063/60ab634aE17ddda07/3dfd5536f9bef1ad.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"进口汽品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"VB8TW8eWnrNovEqj9RLfnVmQHNj\",\"id\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795185\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/173487/18/11121/65440/60ab65c6E617248a3/f4e92c0bf3b9cfff.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"全球直购\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3pNpoWbnFmViXhUcRrQDvsvookUA\",\"id\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795186\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/152377/35/26392/18570/6342886aE9a18cda6/01b7aa2e7cdc2573.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":120,\"picHeight\":120,\"name\":\"清洁纸品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"23Xrp3p7PeU2JBPqBn772ywA6TT5\",\"id\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795187\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/95468/9/29180/17271/63044ce1E1999d81c/05601b78cde94a5f.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"买手代购\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"bwGJPfaUGvRkRb6eYdETzcum1HD\",\"id\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]}},{\"floorId\":\"5651049\",\"floorType\":\"FLASH_SALE_COUPON_WIDGET\",\"floorIndex\":13,\"flashSaleCouponFloor\":{\"couponList\":[{\"money\":\"100\",\"useDiscount\":\"满3888可用\",\"useDescription\":\"限购 [有明保健品海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943829946\",\"roleId\":\"117335130\",\"key\":\"B//lDbexJzWha/fdizW8ri7NWBiK6C6Dxec6RHw6bBha1VELwMttgpzZMVqupeYc\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满3888可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943829946\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-08-31使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/142950/35/37519/61384/64c21f7eF30dac4d8/c778fa6ce2cf6f1f.jpg\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-08-31\",\"wareInfoList\":[{\"skuId\":\"10081662209743\",\"jump\":{\"params\":{\"skuId\":\"10081662209743\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117335130\",\"tabName\":\"\"},{\"money\":\"220\",\"useDiscount\":\"满12500可用\",\"useDescription\":\"限购 [右丞象海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943350734\",\"roleId\":\"117197017\",\"key\":\"EbQor6uyn5tWwjY5fuCbVejRMJAu5ry1LXThL6Vyv35e0lsEKfAtH2YoAW8INQy7\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满12500可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943350734\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-10-01使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/113626/28/35259/27493/6424115dFeb4f95da/7fd5831cbc020694.png\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-10-01\",\"wareInfoList\":[{\"skuId\":\"10071948312069\",\"jump\":{\"params\":{\"skuId\":\"10071948312069\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117197017\",\"tabName\":\"\"},{\"money\":\"280\",\"useDiscount\":\"满1599可用\",\"useDescription\":\"限购 [潮领礼品箱包海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943326930\",\"roleId\":\"117166792\",\"key\":\"qEWlXv5CzFkjKIWefcQEISm2095Hl1TiflEfMGAJ0P1TfFC1rhP0cZkoL1Xh/HfI\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满1599可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943326930\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-08-14使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/130943/28/40180/99696/64cb3f5eFb6ef51bd/4cf336edad9628c8.jpg\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-08-14\",\"wareInfoList\":[{\"skuId\":\"10038491691818\",\"jump\":{\"params\":{\"skuId\":\"10038491691818\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117166792\",\"tabName\":\"\"},{\"money\":\"50\",\"useDiscount\":\"满1199可用\",\"useDescription\":\"限购 [KENSLY医药海外官方旗舰店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"1032545633\",\"roleId\":\"115392033\",\"key\":\"t54t7LEdsPMJ5cnJl+mb5zYahJEqEslMbY9El6LwwugiHqmg5eYsPr8nnCA7TQgN\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满1199可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"1032545633\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-07-11~2023-09-01使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/87496/24/40507/68895/6482ee36Fa9b225f3/8c280c214b04c379.jpg\",\"typeName\":\"东券\",\"time\":\"2023-07-11~2023-09-01\",\"wareInfoList\":[{\"skuId\":\"10075975276834\",\"jump\":{\"params\":{\"skuId\":\"10075975276834\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"115392033\",\"tabName\":\"\"}],\"stageInfoList\":[{\"stageTime\":\"2023-05-22 04:00:00\",\"beginTime\":\"04:00\",\"stageStatus\":\"0\",\"remainBeginTime\":\"0\",\"remainEndTime\":\"6339584982\",\"timeEnd\":\"1684727999000\",\"productInfoList\":[{\"skuId\":\"100017243042\",\"name\":\"虎牌日本进口虎牌(Tiger)儿童保温保冷杯MBR-C08G-KL 800ml 黑色狮子\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/140238/19/36434/74852/64a22abaFece3c7f5/d41de6d763e95c6d.jpg.dpg\",\"picUrl\":\"jfs/t1/140238/19/36434/74852/64a22abaFece3c7f5/d41de6d763e95c6d.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100017243042\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"100000条评价, 好评率97%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100035021629\",\"name\":\"荷高（Globemilk）荷兰原装进口全脂纯牛奶1L*6盒 整箱装 高钙3.7优质乳蛋白 \",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/155989/26/33152/88572/63b679b1F854d80dc/c503724d3550149e.jpg.dpg\",\"picUrl\":\"jfs/t1/155989/26/33152/88572/63b679b1F854d80dc/c503724d3550149e.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100035021629\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"20000条评价, 好评率99%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100003298876\",\"name\":\"Calvin Klein CK 男士平角内裤套装 3条装 送男友礼物 U2664G 001黑色 L \",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/191359/12/28457/55680/63200001Eadf838e3/769c4483cd23b726.jpg.dpg\",\"picUrl\":\"jfs/t1/191359/12/28457/55680/63200001Eadf838e3/769c4483cd23b726.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100003298876\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"50000条评价, 好评率92%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"1995375219\",\"name\":\"雅漾（Avene） 舒护活泉喷雾 300ml 定妆化妆水\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/131758/35/39722/34387/64c91c98Ff9764745/3cfcc23c8c82192a.jpg.dpg\",\"picUrl\":\"jfs/t1/131758/35/39722/34387/64c91c98Ff9764745/3cfcc23c8c82192a.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"1995375219\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"20000条评价, 好评率99%\",\"fixTitle\":\"10天最低价\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagName\":\"多买优惠\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"1992363262\",\"name\":\"芳珂 FANCL防晒霜60ml 保湿防护乳霜  防水隔离清爽不油腻  透亮倍护 SPF50+\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/138612/15/37286/26336/64c91c96F454c0320/e647914f6b922868.jpg.dpg\",\"picUrl\":\"jfs/t1/138612/15/37286/26336/64c91c96F454c0320/e647914f6b922868.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"1992363262\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"10000条评价, 好评率99%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"10068143320015\",\"name\":\"乐高（LEGO）得宝系列 数字火车10954 大颗粒\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/190222/18/35360/95853/64c91cf2F4b38af6c/d971c0568cd3dc8e.jpg.dpg\",\"picUrl\":\"jfs/t1/190222/18/35360/95853/64c91cf2F4b38af6c/d971c0568cd3dc8e.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"10068143320015\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"200条评价, 好评率100%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100026089901\",\"name\":\"NEW ERA纽亦华 棒球帽鸭舌帽男女款 9FORTY MLB洋基队 10531941黑色NY\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/39307/18/23313/42217/64abc04dF8b943b9f/1e7386a335072992.jpg.dpg\",\"picUrl\":\"jfs/t1/39307/18/23313/42217/64abc04dF8b943b9f/1e7386a335072992.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100026089901\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"2000条评价, 好评率95%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"10051917649227\",\"name\":\"象印（ZO JIRUSHI） 保温杯男女士水杯不锈钢轻巧单手弹盖真空户外男女防漏车载水杯SF系列 SM-SF48-PA粉色480ml\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/114956/18/32813/9111/6371dc29E6193ef6a/59c90e3e82e780b0.jpg.dpg\",\"picUrl\":\"jfs/t1/114956/18/32813/9111/6371dc29E6193ef6a/59c90e3e82e780b0.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"10051917649227\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"1000条评价, 好评率98%\",\"fixTitle\":\"448天最低价\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagName\":\"多买优惠\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"}],\"stageId\":\"73315314\",\"groupId\":\"19251079\",\"tabName\":\"\"}],\"leftJump\":{\"des\":\"m\",\"params\":{\"url\":\"https://gmart.jd.com/?appId=54935148\"}},\"rightJump\":{\"des\":\"m\",\"params\":{\"url\":\"https://gmart.jd.com/?appId=54935144\"}}}},{\"floorId\":\"83595819\",\"floatFloor\":\"\",\"floorType\":\"ICON_FLOAT\",\"floorIndex\":56},{\"floorId\":\"83595820\",\"floatFloor\":\"\",\"floorType\":\"DYNAMIC_FLOAT\",\"floorIndex\":57},{\"floorId\":\"83595812\",\"floorType\":\"FEED_WIDGET\",\"feedFloor\":{\"tabList\":[{\"tabId\":0,\"tabName\":\"精选\",\"order\":0,\"url\":\"\",\"eventParams\":\"floorId_83595812_0\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":1,\"tabName\":\"300减30\",\"order\":1,\"url\":\"\",\"eventParams\":\"floorId_83595812_1\",\"styleId\":3,\"tabDefaultImage\":\"http://img13.360buyimg.com/cms/jfs/t1/188375/40/20026/15931/6125de6fE21a2fee3/da463b5cef2da6a8.png\",\"tabSelectedImage\":\"http://img11.360buyimg.com/cms/jfs/t1/190289/32/19932/15931/6125de72Ee9ccdd89/3e9cb8b31f570d94.png\",\"width\":80,\"height\":34,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":2,\"tabName\":\"新品\",\"order\":2,\"url\":\"\",\"eventParams\":\"floorId_83595812_2\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":3,\"tabName\":\"美妆个护\",\"order\":3,\"url\":\"\",\"eventParams\":\"floorId_83595812_3\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":4,\"tabName\":\"营养保健\",\"order\":4,\"url\":\"\",\"eventParams\":\"floorId_83595812_4\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":5,\"tabName\":\"酷玩科技\",\"order\":5,\"url\":\"\",\"eventParams\":\"floorId_83595812_5\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":6,\"tabName\":\"时尚潮流\",\"order\":6,\"url\":\"\",\"eventParams\":\"floorId_83595812_6\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":7,\"tabName\":\"居家生活\",\"order\":7,\"url\":\"\",\"eventParams\":\"floorId_83595812_7\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":8,\"tabName\":\"汽车用品\",\"order\":8,\"url\":\"\",\"eventParams\":\"floorId_83595812_8\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":9,\"tabName\":\"全球美食\",\"order\":9,\"url\":\"\",\"eventParams\":\"floorId_83595812_9\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"}]},\"floorIndex\":62}],\"pageId\":54927197},\"code\":\"0\",\"success\":true}");
+
 /***/ })
 ]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

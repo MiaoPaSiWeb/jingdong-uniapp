@@ -3,18 +3,26 @@ import App from './App'
 // 引入全局存储
 
 // 引入全局配置
+import $mAssetsPath from '@/config/assets.config.js';
 
-// 引入全局方法]
-
+// 引入全局方法
+import { http } from '@/utils/request';
+import $mHelper from '@/utils/helper';
 // 全局组件
-import jdTabbar from '@/components/jd-tabbar';
-import jdSafearea from '@/components/jd-safearea';
+import jdTabbar from '@/components/jd-tabbar/jd-tabbar';
+import jdSafearea from '@/components/jd-safearea/jd-safearea';
+import jdImage from '@/components/jd-image/jd-image';
 
 // 引入国际化语言包
 
 // 挂载全局自定义方法
+Vue.prototype.$http = http;
+Vue.prototype.$mAssetsPath = $mAssetsPath;
+Vue.prototype.$mHelper = $mHelper;
+
 Vue.component('jd-tabbar', jdTabbar);
 Vue.component('jd-safearea', jdSafearea);
+Vue.component('jd-image', jdImage);
 
 if (process.env.NODE_ENV === 'production') {
 	Vue.config.productionTip = false;

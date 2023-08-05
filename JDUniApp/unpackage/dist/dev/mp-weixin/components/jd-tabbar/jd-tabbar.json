@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "jd-safearea": "/components/jd-safearea/jd-safearea"
+  },
+  "component": true
+}

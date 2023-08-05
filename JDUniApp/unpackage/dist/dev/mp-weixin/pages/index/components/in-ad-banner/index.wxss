@@ -1,0 +1,22 @@
+.scroll-view_H {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  background-color: #7D45F8;
+}
+.scroll-view-item_H {
+  display: inline-block;
+  width: 340rpx;
+  height: 462rpx;
+  margin-left: 20rpx;
+  margin-right: 0rpx;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+.scroll-view-item_H:first-child {
+  margin-left: 24rpx;
+}
+.scroll-view-item_H:last-child {
+  margin-right: 24rpx;
+}
+
