@@ -22,12 +22,12 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 var jdTabbar = function jdTabbar() {
   __webpack_require__.e(/*! require.ensure | components/jd-tabbar/index */ "components/jd-tabbar/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-tabbar */ 63));
+    return resolve(__webpack_require__(/*! @/components/jd-tabbar */ 69));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdSafearea = function jdSafearea() {
   __webpack_require__.e(/*! require.ensure | components/jd-safearea/index */ "components/jd-safearea/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-safearea */ 70));
+    return resolve(__webpack_require__(/*! @/components/jd-safearea */ 76));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 // 引入国际化语言包
