@@ -99,10 +99,10 @@ var components
 try {
   components = {
     jdSafearea: function () {
-      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 84))
+      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 85))
     },
     jdTabbar: function () {
-      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 77))
+      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 78))
     },
   }
 } catch (e) {
@@ -165,8 +165,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _home = __webpack_require__(/*! @/api/home */ 101);
-//
+var _home = __webpack_require__(/*! @/api/home */ 46);
 //
 //
 //
@@ -186,15 +185,15 @@ var _home = __webpack_require__(/*! @/api/home */ 101);
 //
 var inGridFloor = function inGridFloor() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-grid-floor/index */ "pages/index/components/in-grid-floor/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 102));
+    return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 99));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inAdBanner = function inAdBanner() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-ad-banner/index */ "pages/index/components/in-ad-banner/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 110));
+    return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 106));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-var channelData = __webpack_require__(/*! @/static/mock-data/tab/index/queryChannelData.json */ 118);
+var channelData = __webpack_require__(/*! @/static/mock-data/tab/index/queryChannelData.json */ 47);
 var _default = {
   components: {
     inGridFloor: inGridFloor,

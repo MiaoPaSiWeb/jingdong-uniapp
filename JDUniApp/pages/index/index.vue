@@ -3,7 +3,6 @@
 		<view v-if="loading">请求中。。。</view>
 		<view>
 			<view v-for="channel in channelsList" :key="channel.floorId" @click="tapItem()">
-				<view>floorType - {{channel.floorType}}</view>
 				<inGridFloor v-if="channel.floorType === 'GRID_FLOOR'" :fdata='channel' />
 				<inAdBanner v-else-if="channel.floorType === 'AD_BANNER'" :fdata='channel' />
 				<view v-else>{{channel.floorType}}</view>

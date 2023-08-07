@@ -25,17 +25,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 var jdTabbar = function jdTabbar() {
   __webpack_require__.e(/*! require.ensure | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 77));
+    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 78));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdSafearea = function jdSafearea() {
   __webpack_require__.e(/*! require.ensure | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 84));
+    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 85));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdImage = function jdImage() {
   Promise.all(/*! require.ensure | components/jd-image/jd-image */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jd-image/jd-image")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 91));
+    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 92));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 // 引入国际化语言包
