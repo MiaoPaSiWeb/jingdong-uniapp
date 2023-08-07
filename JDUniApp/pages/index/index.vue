@@ -72,6 +72,8 @@
 	}
 </script>
 
-<style>
-
+<style scoped>
+.content {
+	background-color: #eee;
+}
 </style>

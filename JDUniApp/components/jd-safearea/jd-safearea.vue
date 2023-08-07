@@ -8,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 	.safe-padding {
 		padding-bottom: env(safe-area-inset-bottom);
 	}

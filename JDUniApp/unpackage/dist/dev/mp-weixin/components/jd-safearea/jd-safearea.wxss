@@ -1,5 +1,5 @@
 
-.safe-padding {
+.safe-padding.data-v-b8b148c0 {
 	padding-bottom: env(safe-area-inset-bottom);
 }
 

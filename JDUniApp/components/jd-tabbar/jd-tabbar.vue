@@ -1,19 +1,16 @@
 <template>
-	<view>
-		<view class="uni-tabbar">
-			<view class="content">
-				<!-- 遍历tabbar -->
-				<view class="uni-tabbar__item" v-for="(item,index) in tabbarList" :key="index" @tap="switchTab(item)">
-					<view class="uni-tabbar__icon">
-						<!-- 判断tabbar点击过后的图片路径 -->
-						<image v-if="item.pagePath == pagePath" class="icon-img" :src="item.selectedIcon"></image>
-						<image v-else class="icon-img" :src="item.normalIcon"></image>
-					</view>
+	<view class="uni-tabbar">
+		<view class="content">
+			<!-- 遍历tabbar -->
+			<view class="uni-tabbar__item" v-for="(item,index) in tabbarList" :key="index" @tap="switchTab(item)">
+				<view class="uni-tabbar__icon">
+					<!-- 判断tabbar点击过后的图片路径 -->
+					<image v-if="item.pagePath == pagePath" class="icon-img" :src="item.selectedIcon"></image>
+					<image v-else class="icon-img" :src="item.normalIcon"></image>
 				</view>
 			</view>
-			<jd-safearea />
 		</view>
-
+		<jd-safearea />
 	</view>
 </template>
 <script>
@@ -178,7 +175,7 @@
 		},
 	}
 </script>
-<style lang="less">
+<style lang="less" scoped>
 	@tabbar-content-h: 70px; //内容高度（不包含底部安全区域）
 	@tabbar-item-h: 50px; //普通按钮高度
 	@tabbar-mid-item-w: 70px; //中间按钮宽度
