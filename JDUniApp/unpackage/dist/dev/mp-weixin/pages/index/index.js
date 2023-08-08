@@ -214,6 +214,7 @@ var _home = __webpack_require__(/*! @/api/home */ 46);
 //
 //
 //
+//
 var inGridFloor = function inGridFloor() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-grid-floor/index */ "pages/index/components/in-grid-floor/index").then((function () {
     return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 99));
@@ -224,11 +225,17 @@ var inAdBanner = function inAdBanner() {
     return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 106));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
+var inChannelWidget = function inChannelWidget() {
+  __webpack_require__.e(/*! require.ensure | pages/index/components/in-channel-widget/index */ "pages/index/components/in-channel-widget/index").then((function () {
+    return resolve(__webpack_require__(/*! ./components/in-channel-widget */ 122));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 var channelData = __webpack_require__(/*! @/static/mock-data/tab/index/queryChannelData.json */ 47);
 var _default = {
   components: {
     inGridFloor: inGridFloor,
-    inAdBanner: inAdBanner
+    inAdBanner: inAdBanner,
+    inChannelWidget: inChannelWidget
   },
   data: function data() {
     return {
