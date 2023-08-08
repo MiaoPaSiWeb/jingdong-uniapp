@@ -6,6 +6,7 @@
 				<inGridFloor v-if="channel.floorType === 'GRID_FLOOR'" :fdata='channel' />
 				<inAdBanner v-else-if="channel.floorType === 'AD_BANNER'" :fdata='channel' />
 				<inChannelWidget v-else-if="channel.floorType === 'CHANNEL_WIDGET'" :fdata='channel' />
+				<inFeedWidget v-else-if="channel.floorType === 'FEED_WIDGET'" :fdata='channel' />
 				<view v-else>{{channel.floorType}}</view>
 
 			</view>
@@ -26,13 +27,15 @@
 	import inGridFloor from './components/in-grid-floor';
 	import inAdBanner from './components/in-ad-banner';
 	import inChannelWidget from './components/in-channel-widget';
+	import inFeedWidget from './components/in-feed-widget';
   	const channelData = require('@/static/mock-data/tab/index/queryChannelData.json')
 
 	export default {
 		components: {
 			inGridFloor,
 			inAdBanner,
-			inChannelWidget
+			inChannelWidget,
+			inFeedWidget
 		},
 		data() {
 			return {

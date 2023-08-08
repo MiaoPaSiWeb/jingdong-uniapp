@@ -5,7 +5,6 @@
 				<jd-image :src='item.imageUrl'></jd-image>
 			</view>
 		</view>
-		
 	</view>
 </template>
 
@@ -25,8 +24,8 @@ export default {
 </script>
 
 <style scoped>
-	.image-content {
-		width: 100%;
-		height: 80rpx;
-	}
+.image-content {
+	width: 100%;
+	height: 80rpx;
+}
 </style>
