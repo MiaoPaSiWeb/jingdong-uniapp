@@ -23,7 +23,7 @@ export default {
 		}
 	},
 	mounted() {
-		console.log("AD_BANNER-onLoad", this.fdata);
+		console.log("AD_BANNER onLoad", this.fdata);
 	},
 	computed: {
 		bgcolor() {

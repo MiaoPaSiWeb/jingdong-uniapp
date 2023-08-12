@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import App from './App'
+
+// 引入全局uView
+import uView from '@/uni_modules/uview-ui'
+Vue.use(uView)
 // 引入全局存储
 
 // 引入全局配置

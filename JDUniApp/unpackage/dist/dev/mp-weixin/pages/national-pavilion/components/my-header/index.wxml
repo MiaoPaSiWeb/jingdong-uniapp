@@ -1,0 +1,1 @@
+<view class="content data-v-4f706da5"><view class="avatar_wrap data-v-4f706da5"><view class="avatar data-v-4f706da5"><jd-image vue-id="c2c46ffe-1" src="{{$root.m0}}" class="data-v-4f706da5" bind:__l="__l"></jd-image></view><view class="real_name data-v-4f706da5">待实名认证</view></view><view class="personal_wrap data-v-4f706da5">???</view></view>

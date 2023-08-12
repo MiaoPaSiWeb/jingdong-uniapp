@@ -1,4 +1,8 @@
 {
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -49,7 +53,7 @@
 	"uniIdRouter": {},
 	/* 增加原生tabbar 配合自定义tabbar使用 解决自定义tabbar闪烁问题 */
 	"tabBar": {
-		"custom": true,//隐藏官方选项卡
+		"custom": true, //隐藏官方选项卡
 		"list": [{
 			"pagePath": "pages/index/index"
 		}, {

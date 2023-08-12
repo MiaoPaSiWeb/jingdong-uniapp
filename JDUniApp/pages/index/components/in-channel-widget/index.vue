@@ -1,6 +1,6 @@
 <template>
 	<view class="scroll-view_H">
-		<view class="group" v-for="group in groups" :key="index">
+		<view class="group" v-for="(group,index) in groups" :key="index">
 			<view class="item" v-for="item in group" :key='item.advertId'>
 				<view class="image-wrap">
 					<jd-image :src='item.imageUrl'></jd-image>
@@ -26,7 +26,7 @@ export default {
 		}
 	},
 	mounted() {
-		console.log("AD_BANNER-onLoad", this.fdata);
+		console.log("AD_BANNER onLoad", this.fdata);
 	},
 	methods: {
 		// size每组数组多少个，如：10

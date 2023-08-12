@@ -1,8 +1,11 @@
 {
   "navigationBarTitleText": "首页",
   "usingComponents": {
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
     "jd-safearea": "/components/jd-safearea/jd-safearea",
     "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
+    "u-picker": "/uni_modules/uview-ui/components/u-picker/u-picker",
+    "u-calendar": "/uni_modules/uview-ui/components/u-calendar/u-calendar",
     "in-grid-floor": "/pages/index/components/in-grid-floor/index",
     "in-ad-banner": "/pages/index/components/in-ad-banner/index",
     "in-channel-widget": "/pages/index/components/in-channel-widget/index",

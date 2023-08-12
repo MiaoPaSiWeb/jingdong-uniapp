@@ -15,13 +15,8 @@
 			</view>
 		</view>
 	</view>
-	<waterfall column-count="2" column-width="auto">
-	    <cell v-for="num in lists" >
-	      <text>{{num}}</text>
-	    </cell>
-	  </waterfall>
 </template>
-
+  
 <script>
 export default {
 	name: 'FEED_WIDGET',
@@ -38,7 +33,7 @@ export default {
 		}
 	},
 	mounted() {
-		console.log("AD_BANNER-onLoad", this.fdata);
+		console.log("FEED_WIDGET onLoad", this.fdata);
 	},
 	methods: {
 		// size每组数组多少个，如：10

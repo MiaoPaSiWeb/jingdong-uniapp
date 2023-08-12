@@ -18,8 +18,8 @@ export default {
 	noNetWorkImg: PATH + '/noNetWork.png',
 	// 404
 	notFoundImg: PATH + '/notFound.png',
-	// // 默认头像
-	// headImg: PATH + '/missing-face.png',
+	// 默认头像
+	headImg: PATH + '/mine/avatar.png',
 
 
 

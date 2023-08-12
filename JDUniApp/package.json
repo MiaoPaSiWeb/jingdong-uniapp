@@ -13,7 +13,7 @@
 				"title": "测试版",
 				"env": {
 					"UNI_PLATFORM": "mp-weixin",
-					"ASSETS_PATH": "/static", 
+					"ASSETS_PATH": "/static",
 					"VUE_APP_BASE_URL": "http://test.domain/"
 				}
 			},
@@ -26,5 +26,4 @@
 			}
 		}
 	}
-
 }
