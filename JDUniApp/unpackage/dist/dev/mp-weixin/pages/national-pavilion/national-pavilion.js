@@ -177,10 +177,40 @@ var plusBlack = function plusBlack() {
     return resolve(__webpack_require__(/*! ./components/plus_black */ 402));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
+var favInfo = function favInfo() {
+  __webpack_require__.e(/*! require.ensure | pages/national-pavilion/components/favInfo/index */ "pages/national-pavilion/components/favInfo/index").then((function () {
+    return resolve(__webpack_require__(/*! ./components/favInfo/ */ 410));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var assetInfo = function assetInfo() {
+  __webpack_require__.e(/*! require.ensure | pages/national-pavilion/components/assetInfo/index */ "pages/national-pavilion/components/assetInfo/index").then((function () {
+    return resolve(__webpack_require__(/*! ./components/assetInfo */ 417));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var orderInfo = function orderInfo() {
+  __webpack_require__.e(/*! require.ensure | pages/national-pavilion/components/orderInfo/index */ "pages/national-pavilion/components/orderInfo/index").then((function () {
+    return resolve(__webpack_require__(/*! ./components/orderInfo */ 424));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var moneyCard = function moneyCard() {
+  __webpack_require__.e(/*! require.ensure | pages/national-pavilion/components/moneyCard/index */ "pages/national-pavilion/components/moneyCard/index").then((function () {
+    return resolve(__webpack_require__(/*! ./components/moneyCard */ 452));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var activity = function activity() {
+  __webpack_require__.e(/*! require.ensure | pages/national-pavilion/components/activity/index */ "pages/national-pavilion/components/activity/index").then((function () {
+    return resolve(__webpack_require__(/*! ./components/activity */ 460));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 var _default = {
   components: {
     myHeader: myHeader,
-    plusBlack: plusBlack
+    plusBlack: plusBlack,
+    favInfo: favInfo,
+    assetInfo: assetInfo,
+    orderInfo: orderInfo,
+    moneyCard: moneyCard,
+    activity: activity
   },
   data: function data() {
     return {

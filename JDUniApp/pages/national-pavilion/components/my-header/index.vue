@@ -55,7 +55,7 @@
 		display: flex;
 		align-items: center;
 		box-sizing: border-box;
-		border: 1px solid blue;
+		border: 1px solid transparent;
 		padding: 10rpx;
 		width: 100%;
 

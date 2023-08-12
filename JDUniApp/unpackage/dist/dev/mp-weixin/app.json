@@ -6,7 +6,10 @@
     "pages/self-support/self-support",
     "pages/national-pavilion/national-pavilion",
     "pages/detail/detail",
-    "pages/account-set/account-set"
+    "pages/account-set/account-set",
+    "pages/goods_fav/goods_fav",
+    "pages/shop_fav/shop_fav",
+    "pages/footprint/footprint"
   ],
   "subPackages": [],
   "window": {
