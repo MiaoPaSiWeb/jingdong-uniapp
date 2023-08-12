@@ -45,7 +45,7 @@ export default {
 		// 是否预览
 		preview: {
 			type: Boolean,
-			default: true
+			default: false
 		}
 	},
 	methods: {

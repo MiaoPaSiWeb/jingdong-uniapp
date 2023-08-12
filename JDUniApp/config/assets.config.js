@@ -12,6 +12,7 @@ console.log("ASSETS_PATHPATH",PATH);
  */
 
 export default {
+	path:PATH,
 	// 出错填充图片
 	errorImage: PATH + '/errorImage.jpg',
 	// 500

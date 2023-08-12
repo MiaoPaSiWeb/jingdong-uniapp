@@ -99,10 +99,10 @@ var components
 try {
   components = {
     jdSafearea: function () {
-      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 209))
+      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 211))
     },
     jdTabbar: function () {
-      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 202))
+      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 204))
     },
   }
 } catch (e) {

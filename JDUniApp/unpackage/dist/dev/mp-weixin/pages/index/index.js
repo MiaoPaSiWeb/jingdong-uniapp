@@ -101,19 +101,19 @@ var components
 try {
   components = {
     uButton: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 231))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 225))
     },
     jdSafearea: function () {
-      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 209))
+      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 211))
     },
     jdTabbar: function () {
-      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 202))
+      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 204))
     },
     uPicker: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-picker/u-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-picker/u-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-picker/u-picker.vue */ 223))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-picker/u-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-picker/u-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-picker/u-picker.vue */ 235))
     },
     uCalendar: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-calendar/u-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-calendar/u-calendar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-calendar/u-calendar.vue */ 241))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-calendar/u-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-calendar/u-calendar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-calendar/u-calendar.vue */ 243))
     },
   }
 } catch (e) {
@@ -227,22 +227,22 @@ var _home = __webpack_require__(/*! @/api/home */ 168);
 //
 var inGridFloor = function inGridFloor() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-grid-floor/index */ "pages/index/components/in-grid-floor/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 252));
+    return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 254));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inAdBanner = function inAdBanner() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-ad-banner/index */ "pages/index/components/in-ad-banner/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 259));
+    return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 261));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inChannelWidget = function inChannelWidget() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-channel-widget/index */ "pages/index/components/in-channel-widget/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-channel-widget */ 266));
+    return resolve(__webpack_require__(/*! ./components/in-channel-widget */ 268));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inFeedWidget = function inFeedWidget() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-feed-widget/index */ "pages/index/components/in-feed-widget/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-feed-widget */ 273));
+    return resolve(__webpack_require__(/*! ./components/in-feed-widget */ 275));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var channelData = __webpack_require__(/*! @/static/mock-data/tab/index/queryChannelData.json */ 169);

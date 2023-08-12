@@ -5,7 +5,8 @@
     "pages/trend/trend",
     "pages/self-support/self-support",
     "pages/national-pavilion/national-pavilion",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/account-set/account-set"
   ],
   "subPackages": [],
   "window": {

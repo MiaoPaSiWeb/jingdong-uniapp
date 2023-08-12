@@ -1,27 +1,36 @@
 {
 	"uni-app": {
 		"scripts": {
-			"dev": {
-				"title": "开发版",
+			"h5-dev": {
+				"title": "h5-开发版",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"ASSETS_PATH": "/static",
+					"VUE_APP_BASE_URL": "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
+				}
+			},
+			"h5-prod": {
+				"title": "h5-正式版",
+				"env": {
+					"UNI_PLATFORM": "h5",
+					"ASSETS_PATH": "/static",
+					"VUE_APP_BASE_URL": "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
+				}
+			},
+			"wx-dev": {
+				"title": "微信-开发版",
 				"env": {
 					"UNI_PLATFORM": "mp-weixin",
 					"ASSETS_PATH": "/static",
 					"VUE_APP_BASE_URL": "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
 				}
 			},
-			"pre": {
-				"title": "测试版",
+			"wx-prod": {
+				"title": "微信-正式版",
 				"env": {
 					"UNI_PLATFORM": "mp-weixin",
 					"ASSETS_PATH": "/static",
-					"VUE_APP_BASE_URL": "http://test.domain/"
-				}
-			},
-			"prod": {
-				"title": "正式版",
-				"env": {
-					"UNI_PLATFORM": "mp-weixin",
-					"VUE_APP_BASE_URL": "http://prod.domain"
+					"VUE_APP_BASE_URL": "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
 				}
 			}
 		}

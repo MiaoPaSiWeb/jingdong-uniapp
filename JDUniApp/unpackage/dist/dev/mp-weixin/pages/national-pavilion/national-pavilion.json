@@ -4,6 +4,7 @@
   "usingComponents": {
     "jd-safearea": "/components/jd-safearea/jd-safearea",
     "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
-    "my-header": "/pages/national-pavilion/components/my-header/index"
+    "my-header": "/pages/national-pavilion/components/my-header/index",
+    "plus-black": "/pages/national-pavilion/components/plus_black/index"
   }
 }
