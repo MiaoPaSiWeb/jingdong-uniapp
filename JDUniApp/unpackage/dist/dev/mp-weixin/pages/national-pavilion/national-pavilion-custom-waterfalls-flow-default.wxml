@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['reset']]]]}}" class="item data-v-62b702fe" bindtap="__e"><view class="title data-v-62b702fe">{{item.itemData.name}}</view><view class="desc data-v-62b702fe">{{item.itemData.desc}}</view></view>

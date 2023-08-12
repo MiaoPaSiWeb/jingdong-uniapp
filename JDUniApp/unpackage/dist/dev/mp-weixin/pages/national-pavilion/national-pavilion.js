@@ -97,41 +97,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components
-try {
-  components = {
-    jdSafearea: function () {
-      return __webpack_require__.e(/*! import() | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then(__webpack_require__.bind(null, /*! @/components/jd-safearea/jd-safearea.vue */ 211))
-    },
-    jdTabbar: function () {
-      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 204))
-    },
-  }
-} catch (e) {
-  if (
-    e.message.indexOf("Cannot find module") !== -1 &&
-    e.message.indexOf(".vue") !== -1
-  ) {
-    console.error(e.message)
-    console.error("1. 排查组件名称拼写是否正确")
-    console.error(
-      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
-    )
-    console.error(
-      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
-    )
-  } else {
-    throw e
-  }
-}
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-}
-var recyclableRender = false
+var render = function () {}
 var staticRenderFns = []
-render._withStripped = true
+var recyclableRender
+var components
 
 
 
@@ -167,6 +136,42 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _mine = __webpack_require__(/*! @/api/mine.js */ 469);
+var _mixin = __webpack_require__(/*! ../../uni_modules/uview-ui/libs/mixin/mixin */ 34);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var myHeader = function myHeader() {
   Promise.all(/*! require.ensure | pages/national-pavilion/components/my-header/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/national-pavilion/components/my-header/index")]).then((function () {
     return resolve(__webpack_require__(/*! ./components/my-header */ 282));
@@ -202,6 +207,7 @@ var activity = function activity() {
     return resolve(__webpack_require__(/*! ./components/activity */ 460));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
+var channelData = __webpack_require__(/*! @/static/mock-data/tab/index/feedtab/floorId_83595812_0/result_1.json */ 468);
 var _default = {
   components: {
     myHeader: myHeader,
@@ -214,11 +220,63 @@ var _default = {
   },
   data: function data() {
     return {
+      loading: false,
       bgUrl: 'https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/mine/bg.png',
-      bgUrl2: this.$mAssetsPath.path + '/mine/bg.png'
+      bgUrl2: this.$mAssetsPath.path + '/mine/bg.png',
+      data: {
+        page: 1,
+        // list: channelData.result.list,
+        list: []
+      }
     };
   },
-  methods: {},
+  mounted: function mounted() {
+    this.queryChannelData();
+  },
+  methods: {
+    reset: function reset() {
+      console.log("轻轻。。。。。");
+      this.$http.get("".concat(_mine.recommend_like_m, "/result_").concat(this.data.page, ".json"), {}).then(function (r) {
+        console.log(r.data);
+      }).catch(function (e) {
+        console.log("error" + e.message);
+      });
+    },
+    // 添加商品至购物车
+    queryChannelData: function queryChannelData() {
+      var list = [];
+      var recommondList = channelData.result.list;
+      for (var i = 0; i < recommondList.length; i++) {
+        var pictureUrl = recommondList[i]['pictureUrl'];
+        if (pictureUrl != undefined) {
+          list.push({
+            image: pictureUrl,
+            itemData: recommondList[i]
+          });
+        } else {
+          list.push({
+            image: "https://m.360buyimg.com/babel/jfs/t1/93753/31/42210/96716/64a8b199F1f54cfac/22716e28934afc24.png",
+            itemData: recommondList[i]
+          });
+        }
+      }
+      this.data.list = [].concat(list);
+
+      // this.data.list =[{
+      // 		image: 'https://m.360buyimg.com/babel/jfs/t1/93753/31/42210/96716/64a8b199F1f54cfac/22716e28934afc24.png',
+      // 		title: '我是标题1',
+      // 		desc: '描述描述描述描述描述描述描述描述1'
+      // 	},
+      // 	{
+      // 		image: 'https://via.placeholder.com/200x200.png/2878ff',
+      // 		title: '我是标题2',
+      // 		desc: '描述描述描述描述描述描述描述描述2'
+      // 	}
+
+      // ]
+      this.$refs.waterfallsFlowRef.refresh();
+    }
+  },
   computed: {
     // bgUrl2() {
     // 	return this.$mAssetsPath.path + '/mine/bg.png'

@@ -29,7 +29,6 @@
   height: 112rpx;
   margin: 12rpx 20rpx 0;
   box-sizing: border-box;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: 710rpx 112rpx;
   position: relative;
