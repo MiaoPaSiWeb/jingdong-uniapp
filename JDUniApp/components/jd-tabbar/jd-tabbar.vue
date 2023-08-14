@@ -189,7 +189,8 @@
 		width: 100%;
 		background-color: #fff;
 		box-shadow: 0px 0px 17rpx 1rpx rgba(206, 206, 206, 0.32);
-
+box-sizing: border-box;
+border: 1px solid darkred;
 		.content {
 			display: flex;
 			align-items: flex-end;

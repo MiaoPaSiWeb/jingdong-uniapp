@@ -38,6 +38,7 @@ export default class Request {
 			const paramsH = Request.addQueryString(params);
 			mergeUrl += mergeUrl.includes('?') ? `&${paramsH}` : `?${paramsH}`;
 		}
+		console.log("mergeUrl:" + mergeUrl)
 		return mergeUrl;
 	}
 
@@ -82,10 +83,12 @@ export default class Request {
 	}
 
 	requestComFun(response) {
+		console.log("requestComFun:"+response);
 		return response;
 	}
 
 	requestComFail(response) {
+		console.log("requestComFail:"+response);
 		return response;
 	}
 
@@ -131,12 +134,15 @@ export default class Request {
 		options.params = options.params || {};
 		options.header = options.header || this.config.header;
 		options.method = options.method || this.config.method;
-		options.custom = { ...this.config.custom, ...(options.custom || {}) };
+		options.custom = {
+			...this.config.custom,
+			...(options.custom || {})
+		};
 		// #ifdef APP-PLUS
 		options.sslVerify =
-			options.sslVerify === undefined
-				? this.config.sslVerify
-				: options.sslVerify;
+			options.sslVerify === undefined ?
+			this.config.sslVerify :
+			options.sslVerify;
 		// #endif
 		options.getTask = options.getTask || this.config.getTask;
 		return new Promise((resolve, reject) => {
@@ -150,8 +156,12 @@ export default class Request {
 				next = false;
 			};
 
-			const handleRe = { ...this.requestBeforeFun(options, cancel) };
-			const _config = { ...handleRe };
+			const handleRe = {
+				...this.requestBeforeFun(options, cancel)
+			};
+			const _config = {
+				...handleRe
+			};
 			if (!next) return;
 			const requestTask = uni.request({
 				url: Request.mergeUrl(_config.url, _config.baseUrl, _config.params),
@@ -278,8 +288,7 @@ export default class Request {
 	// #endif
 
 	upload(
-		url,
-		{
+		url, {
 			// #ifdef APP-PLUS
 			files,
 			// #endif
@@ -297,7 +306,9 @@ export default class Request {
 	) {
 		return new Promise((resolve, reject) => {
 			let next = true;
-			const globalHeader = { ...this.config.header };
+			const globalHeader = {
+				...this.config.header
+			};
 			delete globalHeader['content-type'];
 			delete globalHeader['Content-Type'];
 			const pubConfig = {
@@ -312,7 +323,10 @@ export default class Request {
 				header: header || globalHeader,
 				formData,
 				params,
-				custom: { ...this.config.custom, ...custom },
+				custom: {
+					...this.config.custom,
+					...custom
+				},
 				getTask: getTask || this.config.getTask
 			};
 			// #ifdef APP-PLUS
@@ -329,7 +343,9 @@ export default class Request {
 				next = false;
 			};
 
-			const handleRe = { ...this.requestBeforeFun(pubConfig, cancel) };
+			const handleRe = {
+				...this.requestBeforeFun(pubConfig, cancel)
+			};
 			const _config = {
 				url: Request.mergeUrl(handleRe.url, handleRe.baseUrl, handleRe.params),
 				// #ifdef MP-ALIPAY
@@ -376,7 +392,10 @@ export default class Request {
 				method: 'DOWNLOAD',
 				header: options.header || this.config.header,
 				params: options.params || {},
-				custom: { ...this.config.custom, ...(options.custom || {}) },
+				custom: {
+					...this.config.custom,
+					...(options.custom || {})
+				},
 				getTask: options.getTask || this.config.getTask
 			};
 			const cancel = (t = 'handle cancel', config = pubConfig) => {
@@ -388,7 +407,9 @@ export default class Request {
 				next = false;
 			};
 
-			const handleRe = { ...this.requestBeforeFun(pubConfig, cancel) };
+			const handleRe = {
+				...this.requestBeforeFun(pubConfig, cancel)
+			};
 			if (!next) return;
 			const requestTask = uni.downloadFile({
 				url: Request.mergeUrl(handleRe.url, handleRe.baseUrl, handleRe.params),

@@ -6,6 +6,8 @@
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 0px 17rpx 1rpx rgba(206, 206, 206, 0.32);
+  box-sizing: border-box;
+  border: 1px solid darkred;
 }
 .uni-tabbar .content.data-v-4a1e2fa8 {
   display: flex;

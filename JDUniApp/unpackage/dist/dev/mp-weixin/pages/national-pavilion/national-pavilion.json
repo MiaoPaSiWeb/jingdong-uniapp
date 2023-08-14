@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "国家馆",
   "enablePullDownRefresh": false,
+  "onReachBottomDistance": 100,
   "usingComponents": {
     "national-pavilion-custom-waterfalls-flow-default": "/pages/national-pavilion/national-pavilion-custom-waterfalls-flow-default",
     "custom-waterfalls-flow": "/uni_modules/custom-waterfalls-flow/components/custom-waterfalls-flow/custom-waterfalls-flow",

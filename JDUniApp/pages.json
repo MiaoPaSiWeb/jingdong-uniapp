@@ -33,7 +33,8 @@
 			"path": "pages/national-pavilion/national-pavilion",
 			"style": {
 				"navigationBarTitleText": "国家馆",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"onReachBottomDistance": 100
 			}
 		}, {
 			"path": "pages/detail/detail",
