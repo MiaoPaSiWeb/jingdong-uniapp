@@ -5,13 +5,17 @@
     "pages/trend/trend",
     "pages/self-support/self-support",
     "pages/national-pavilion/national-pavilion",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/account-set/account-set",
+    "pages/goods_fav/goods_fav",
+    "pages/shop_fav/shop_fav",
+    "pages/footprint/footprint"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#FFF",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
@@ -35,7 +39,8 @@
     ]
   },
   "usingComponents": {
-    "jd-tabbar": "/components/jd-tabbar/index",
-    "jd-safearea": "/components/jd-safearea/index"
+    "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
+    "jd-safearea": "/components/jd-safearea/jd-safearea",
+    "jd-image": "/components/jd-image/jd-image"
   }
 }

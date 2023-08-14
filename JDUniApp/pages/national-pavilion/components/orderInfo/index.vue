@@ -20,19 +20,19 @@
 			return {
 				horTips: [{
 					title: "待付款",
-					icon: this.$mAssetsPath.path + '/mine/waitPay.png',
+					icon: this.$mConfig.assetsPath + '/mine/waitPay.png',
 					value: 0
 				}, {
 					title: "待收货",
-					icon: this.$mAssetsPath.path + '/mine/waitReceipt.png',
+					icon: this.$mConfig.assetsPath + '/mine/waitReceipt.png',
 					value: 0
 				}, {
 					title: "退换/售后",
-					icon: this.$mAssetsPath.path + '/mine/my_order_entrance_type_consult.png',
+					icon: this.$mConfig.assetsPath + '/mine/my_order_entrance_type_consult.png',
 					value: 0
 				}, {
 					title: "全部订单",
-					icon: this.$mAssetsPath.path + '/mine/totalOder.png',
+					icon: this.$mConfig.assetsPath + '/mine/totalOder.png',
 					value: 0
 				}]
 			}

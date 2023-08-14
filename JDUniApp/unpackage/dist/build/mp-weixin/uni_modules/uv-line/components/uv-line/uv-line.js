@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uv-line/components/uv-line/uv-line"],{"1fa2":function(t,e,i){"use strict";i.r(e);var n=i("fedb"),r=i.n(n);for(var a in n)["default"].indexOf(a)<0&&function(t){i.d(e,t,(function(){return n[t]}))}(a);e["default"]=r.a},4393:function(t,e,i){"use strict";i.r(e);var n=i("470b"),r=i("1fa2");for(var a in r)["default"].indexOf(a)<0&&function(t){i.d(e,t,(function(){return r[t]}))}(a);i("eee0");var d=i("f0c5"),s=Object(d["a"])(r["default"],n["b"],n["c"],!1,null,"af66543a",null,!1,n["a"],void 0);e["default"]=s.exports},"470b":function(t,e,i){"use strict";i.d(e,"b",(function(){return n})),i.d(e,"c",(function(){return r})),i.d(e,"a",(function(){}));var n=function(){var t=this.$createElement,e=(this._self._c,this.__get_style([this.lineStyle]));this.$mp.data=Object.assign({},{$root:{s0:e}})},r=[]},"4c1c":function(t,e,i){},eee0:function(t,e,i){"use strict";var n=i("4c1c"),r=i.n(n);r.a},fedb:function(t,e,i){"use strict";var n=i("4ea4");Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r=n(i("5074")),a=n(i("096f")),d=n(i("87ed")),s={name:"uv-line",mixins:[r.default,a.default,d.default],computed:{lineStyle:function(){var t={};return t.margin=this.margin,"row"===this.direction?(t.borderBottomWidth="1px",t.borderBottomStyle=this.dashed?"dashed":"solid",t.width=this.$uv.addUnit(this.length),this.hairline&&(t.transform="scaleY(0.5)")):(t.borderLeftWidth="1px",t.borderLeftStyle=this.dashed?"dashed":"solid",t.height=this.$uv.addUnit(this.length),this.hairline&&(t.transform="scaleX(0.5)")),t.borderColor=this.color,this.$uv.deepMerge(t,this.$uv.addStyle(this.customStyle))}}};e.default=s}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uv-line/components/uv-line/uv-line-create-component',
+    {
+        'uni_modules/uv-line/components/uv-line/uv-line-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("4393"))
+        })
+    },
+    [['uni_modules/uv-line/components/uv-line/uv-line-create-component']]
+]);

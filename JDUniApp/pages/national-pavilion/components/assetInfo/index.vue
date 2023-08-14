@@ -29,26 +29,26 @@
 				horTips: [{
 					title: "优惠券",
 					val: 0,
-					icon: this.$mAssetsPath.path + '/mine/waitPay.png',
+					icon: this.$mConfig.assetsPath + '/mine/waitPay.png',
 					value: 0
 				}, {
 					title: "白条",
 					val: "开通有礼",
-					icon: this.$mAssetsPath.path + '/mine/waitReceipt.png',
+					icon: this.$mConfig.assetsPath + '/mine/waitReceipt.png',
 					value: 0
 				}, {
 					title: "京豆",
 					val: 99,
-					icon: this.$mAssetsPath.path + '/mine/my_order_entrance_type_consult.png',
+					icon: this.$mConfig.assetsPath + '/mine/my_order_entrance_type_consult.png',
 					value: 0
 				}, {
 					title: "红包",
 					val: 89,
-					icon: this.$mAssetsPath.path + '/mine/totalOder.png',
+					icon: this.$mConfig.assetsPath + '/mine/totalOder.png',
 					value: 0
 				}, {
 					title: "全部资产",
-					icon: this.$mAssetsPath.path + '/mine/totalOder.png',
+					icon: this.$mConfig.assetsPath + '/mine/totalOder.png',
 					value: 0
 				}]
 			}

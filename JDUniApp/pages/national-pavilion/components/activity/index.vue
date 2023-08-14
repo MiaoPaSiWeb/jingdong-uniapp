@@ -20,19 +20,19 @@
 			return {
 				horTips: [{
 					title: "客户服务",
-					icon: this.$mAssetsPath.path + '/mine/tool_item_khfw.webp',
+					icon: this.$mConfig.assetsPath + '/mine/tool_item_khfw.webp',
 					value: 0
 				}, {
 					title: "我的预约",
-					icon: this.$mAssetsPath.path + '/mine/tool_item_wdyy.webp',
+					icon: this.$mConfig.assetsPath + '/mine/tool_item_wdyy.webp',
 					value: 0
 				}, {
 					title: "我的问答",
-					icon: this.$mAssetsPath.path + '/mine/tool_item_wdwd.webp',
+					icon: this.$mConfig.assetsPath + '/mine/tool_item_wdwd.webp',
 					value: 0
 				}, {
 					title: "闲置还钱",
-					icon: this.$mAssetsPath.path + '/mine/tool_item_xzhq.webp',
+					icon: this.$mConfig.assetsPath + '/mine/tool_item_xzhq.webp',
 					value: 0
 				}]
 			}

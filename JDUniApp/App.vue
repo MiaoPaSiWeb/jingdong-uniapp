@@ -1,9 +1,12 @@
-
 <script>
+	// import Vconsole from 'vconsole';
 	export default {
-		data(){
+		created() {
+			// let vConsole = new Vconsole();
+		},
+		data() {
 			return {
-				
+
 			}
 		},
 		onLaunch: function() {
@@ -11,8 +14,6 @@
 		},
 		onShow: function() {
 			console.log('App Show')
-			
-			// uni.hideTabBar();
 		},
 		onHide: function() {
 			console.log('App Hide')

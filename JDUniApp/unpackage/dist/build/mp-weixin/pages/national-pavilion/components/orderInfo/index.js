@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/national-pavilion/components/orderInfo/index"],{"1a29":function(t,n,e){},"2b22":function(t,n,e){"use strict";var i=e("1a29"),a=e.n(i);a.a},"93fb":function(t,n,e){"use strict";e.d(n,"b",(function(){return a})),e.d(n,"c",(function(){return o})),e.d(n,"a",(function(){return i}));var i={jdImage:function(){return Promise.all([e.e("common/vendor"),e.e("components/jd-image/jd-image")]).then(e.bind(null,"78b9"))}},a=function(){var t=this.$createElement;this._self._c},o=[]},adb4:function(t,n,e){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e={name:"orderInfo",data:function(){return{horTips:[{title:"待付款",icon:this.$mAssetsPath.path+"/mine/waitPay.png",value:0},{title:"待收货",icon:this.$mAssetsPath.path+"/mine/waitReceipt.png",value:0},{title:"退换/售后",icon:this.$mAssetsPath.path+"/mine/my_order_entrance_type_consult.png",value:0},{title:"全部订单",icon:this.$mAssetsPath.path+"/mine/totalOder.png",value:0}]}},methods:{clickSettingBtn:function(){t.navigateTo({url:"/pages/account-set/account-set"})},clickHorTipItem:function(n){t.showToast({title:n.title})}}};n.default=e}).call(this,e("543d")["default"])},b2bb:function(t,n,e){"use strict";e.r(n);var i=e("93fb"),a=e("e358");for(var o in a)["default"].indexOf(o)<0&&function(t){e.d(n,t,(function(){return a[t]}))}(o);e("2b22");var c=e("f0c5"),u=Object(c["a"])(a["default"],i["b"],i["c"],!1,null,"22b4d8bc",null,!1,i["a"],void 0);n["default"]=u.exports},e358:function(t,n,e){"use strict";e.r(n);var i=e("adb4"),a=e.n(i);for(var o in i)["default"].indexOf(o)<0&&function(t){e.d(n,t,(function(){return i[t]}))}(o);n["default"]=a.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pages/national-pavilion/components/orderInfo/index-create-component',
+    {
+        'pages/national-pavilion/components/orderInfo/index-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("b2bb"))
+        })
+    },
+    [['pages/national-pavilion/components/orderInfo/index-create-component']]
+]);

@@ -19,7 +19,7 @@
     "condition": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.33.0",
+  "libVersion": "3.0.0",
   "appid": "wxe8f37799d72569f3",
   "projectname": "JDUniApp",
   "condition": {},

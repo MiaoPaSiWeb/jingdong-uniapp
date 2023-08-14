@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "趋势",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "jd-safearea": "/components/jd-safearea/jd-safearea",
+    "jd-tabbar": "/components/jd-tabbar/jd-tabbar"
+  }
 }

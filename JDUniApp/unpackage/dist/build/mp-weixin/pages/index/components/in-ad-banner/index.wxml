@@ -1,0 +1,1 @@
+<view class="data-v-87c2cac0"><view class="scroll-view_H data-v-87c2cac0"><block wx:for="{{fdata.adBannerFloor.banners}}" wx:for-item="item" wx:for-index="__i0__" wx:key="advertId"><view class="scroll-view-item_H data-v-87c2cac0"><jd-image vue-id="{{'22d09ce2-1-'+__i0__}}" src="{{item.imageUrl}}" class="data-v-87c2cac0" bind:__l="__l"></jd-image></view></block></view></view>

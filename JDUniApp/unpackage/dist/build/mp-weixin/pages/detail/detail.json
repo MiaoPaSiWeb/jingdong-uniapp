@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "详情",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "jd-safearea": "/components/jd-safearea/jd-safearea"
+  }
 }

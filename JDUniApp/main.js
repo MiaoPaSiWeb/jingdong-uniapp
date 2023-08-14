@@ -7,6 +7,7 @@ Vue.use(uView)
 // 引入全局存储
 
 // 引入全局配置
+import $mConfig from '@/config/index.config.js';
 import $mAssetsPath from '@/config/assets.config.js';
 
 // 引入全局方法
@@ -21,6 +22,7 @@ import jdImage from '@/components/jd-image/jd-image';
 
 // 挂载全局自定义方法
 Vue.prototype.$http = http;
+Vue.prototype.$mConfig = $mConfig;
 Vue.prototype.$mAssetsPath = $mAssetsPath;
 Vue.prototype.$mHelper = $mHelper;
 

@@ -51,7 +51,8 @@ export default {
 	methods: {
 		// 图片异常处理
 		onImageError() {
-			this.src = $mAssetsPath.errorImage;
+			console.log("onImageError",this.src);
+			// this.src = $mAssetsPath.errorImage;
 		},
 		// 图片预览
 		previewImage(urls) {

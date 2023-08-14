@@ -1,5 +1,6 @@
 
 import Request from './request';
+import indexConfig from '@/config/index.config';
 import mHelper from '@/utils/helper';
 
 
@@ -7,12 +8,8 @@ const http = new Request();
 
 // request全局参数设置
 http.setConfig(config => {
-	let baseURL = process.env.VUE_APP_BASE_URL;
-	console.log("baseURL:"+ baseURL);
-	
-	
 	/* 设置全局配置 */
-	config.baseUrl = baseURL; /* 根域名不同 */
+	config.baseUrl = indexConfig.assetsRemotePath; /* 根域名不同 */
 	const systemInfo = uni.getSystemInfoSync();
 	const systemInfoHeaders = {
 		'device-name': systemInfo.brand, // 设备名称

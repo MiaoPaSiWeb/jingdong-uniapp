@@ -1,5 +1,19 @@
 {
   "navigationBarTitleText": "国家馆",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "onReachBottomDistance": 100,
+  "usingComponents": {
+    "uv-waterfall": "/uni_modules/uv-waterfall/components/uv-waterfall/uv-waterfall",
+    "uv-image": "/uni_modules/uv-image/components/uv-image/uv-image",
+    "uv-loading-icon": "/uni_modules/uv-loading-icon/components/uv-loading-icon/uv-loading-icon",
+    "uv-load-more": "/uni_modules/uv-load-more/components/uv-load-more/uv-load-more",
+    "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
+    "my-header": "/pages/national-pavilion/components/my-header/index",
+    "plus-black": "/pages/national-pavilion/components/plus_black/index",
+    "fav-info": "/pages/national-pavilion/components/favInfo/index",
+    "asset-info": "/pages/national-pavilion/components/assetInfo/index",
+    "order-info": "/pages/national-pavilion/components/orderInfo/index",
+    "money-card": "/pages/national-pavilion/components/moneyCard/index",
+    "activity": "/pages/national-pavilion/components/activity/index"
+  }
 }

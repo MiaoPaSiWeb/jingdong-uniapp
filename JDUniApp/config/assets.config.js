@@ -1,5 +1,5 @@
-let PATH = process.env.ASSETS_PATH;
-console.log("ASSETS_PATHPATH",PATH);
+import indexConfig from './index.config.js';
+const PATH = indexConfig.assetsPath;
 /*
  * 图片静态资源表，所有图片资源路径在这统一管理，不应该写死在页面中，该数据挂载到Vue原型中。
  * 页面使用：this.$mAssetsPath.grid_1
@@ -12,7 +12,6 @@ console.log("ASSETS_PATHPATH",PATH);
  */
 
 export default {
-	path:PATH,
 	// 出错填充图片
 	errorImage: PATH + '/errorImage.jpg',
 	// 500
