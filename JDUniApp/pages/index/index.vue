@@ -67,7 +67,14 @@
 		onLoad() {
 			// this.queryChannelData();
 			this.channelsList = channelData.result.data || [];
-
+		},
+		onShow() {
+			// #ifndef MP-WEIXIN
+			uni.hideTabBar()
+			// #endif
+		},
+		onHide() {
+			
 		},
 		methods: {
 			tapItem() {
@@ -89,9 +96,11 @@
 					.then(r => {
 						this.channelsList = r.data.result.data || [];
 						this.loading = false;
+						console.log("？？"+JSON.stringify(r))
 					})
-					.catch(() => {
+					.catch((e) => {
 						this.loading = false;
+						console.log("error："+JSON.stringify(e))
 					});
 			},
 			close() {

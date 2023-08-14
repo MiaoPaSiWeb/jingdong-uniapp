@@ -44,7 +44,7 @@
 		name: 'plus_black_wrap',
 		data() {
 			return {
-				bgUrl: this.$mAssetsPath.path + '/mine/plus_back_bg.png',
+				bgUrl: this.$mConfig.assetsRemotePath + '/mine/plus_back_bg.png',
 				horTips: ["京享值", "开启小白守约特权", "京享值", "开启小白守约特权"]
 			}
 		},

@@ -45,6 +45,12 @@
   margin-top: 10px;
   border-radius: 6px;
 }
+.recommond_wrap .waterfall-item__image.data-v-62b702fe {
+  box-sizing: border-box;
+  border: 1px solid red;
+  min-width: 100%;
+  min-height: 150px;
+}
 .recommond_wrap .waterfall-item__ft.data-v-62b702fe {
   padding: 20rpx;
   background: #fff;

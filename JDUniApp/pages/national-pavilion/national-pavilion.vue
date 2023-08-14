@@ -20,12 +20,8 @@
 						<view>
 							<view v-for="(item, index) in data.list1" :key="item.id" class="waterfall-item">
 								<view class="waterfall-item__image">
-									<uv-image :src="item.pictureUrl" mode="widthFix"
-										width="{item.width+'px'}">
-										<template v-slot:loading>
-										    <uv-loading-icon color="red"></uv-loading-icon>
-										  </template>
-										</uv-image>
+									<uv-image :src="item.pictureUrl" mode="widthFix" width="{item.width+'px'}">
+									</uv-image>
 								</view>
 								<view class="waterfall-item__ft">
 									<view class="waterfall-item__ft__title">
@@ -44,12 +40,9 @@
 						<view>
 							<view v-for="(item, index) in data.list2" :key="item.id" class="waterfall-item">
 								<view class="waterfall-item__image">
-									<uv-image :src="item.pictureUrl" mode="widthFix"
-										width="{item.width+'px'}">
-										<template v-slot:loading>
-										    <uv-loading-icon color="red"></uv-loading-icon>
-										  </template>
-										</uv-image>
+									<uv-image :src="item.pictureUrl" mode="widthFix" width="{item.width+'px'}">
+
+									</uv-image>
 								</view>
 								<view class="waterfall-item__ft">
 									<view class="waterfall-item__ft__title">
@@ -115,9 +108,7 @@
 			// #endif
 		},
 		onHide() {
-			// #ifndef MP-WEIXIN
-			uni.showTabBar()
-			// #endif/*  */
+			
 		},
 		mounted() {
 			this.queryRecommondData();
@@ -210,7 +201,12 @@
 			margin-top: 10px;
 			border-radius: 6px;
 		}
-
+		.waterfall-item__image {
+			box-sizing: border-box;
+			border: 1px solid red;
+			min-width: 100%;
+			min-height: 150px;
+		}
 		.waterfall-item__ft {
 			padding: 20rpx;
 			background: #fff;

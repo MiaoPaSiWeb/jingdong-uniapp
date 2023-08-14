@@ -18,6 +18,14 @@
 				
 			}
 		},
+		onShow() {
+			// #ifndef MP-WEIXIN
+			uni.hideTabBar()
+			// #endif
+		},
+		onHide() {
+			
+		},
 		methods: {
 			
 		}

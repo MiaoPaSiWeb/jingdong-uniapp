@@ -9469,9 +9469,7 @@ internalMixin(Vue);
 /* 29 */,
 /* 30 */,
 /* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */
+/* 32 */
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -9602,7 +9600,7 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 35 */
+/* 33 */
 /*!***********************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/index.js ***!
   \***********************************************************************************************/
@@ -9618,20 +9616,20 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 36));
-var _mpMixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mpMixin.js */ 37));
-var _luchRequest = _interopRequireDefault(__webpack_require__(/*! ./libs/luch-request */ 38));
-var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/util/route.js */ 56));
-var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 60));
-var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 61));
-var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 62));
-var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 63));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./libs/function/index.js */ 64));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 67));
-var _props = _interopRequireDefault(__webpack_require__(/*! ./libs/config/props.js */ 68));
-var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 158));
-var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/config/color.js */ 116));
-var _platform = _interopRequireDefault(__webpack_require__(/*! ./libs/function/platform */ 159));
+var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 34));
+var _mpMixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mpMixin.js */ 35));
+var _luchRequest = _interopRequireDefault(__webpack_require__(/*! ./libs/luch-request */ 36));
+var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/util/route.js */ 54));
+var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 58));
+var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 59));
+var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 60));
+var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 61));
+var _index = _interopRequireDefault(__webpack_require__(/*! ./libs/function/index.js */ 62));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 65));
+var _props = _interopRequireDefault(__webpack_require__(/*! ./libs/config/props.js */ 66));
+var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 156));
+var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/config/color.js */ 114));
+var _platform = _interopRequireDefault(__webpack_require__(/*! ./libs/function/platform */ 157));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // 看到此报错，是因为没有配置vue.config.js的【transpileDependencies】，详见：https://www.uviewui.com/components/npmSetting.html#_5-cli模式额外配置
@@ -9691,7 +9689,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 36 */
+/* 34 */
 /*!**********************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/mixin/mixin.js ***!
   \**********************************************************************************************************/
@@ -9859,7 +9857,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 37 */
+/* 35 */
 /*!************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/mixin/mpMixin.js ***!
   \************************************************************************************************************/
@@ -9882,7 +9880,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 38 */
+/* 36 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/index.js ***!
   \*****************************************************************************************************************/
@@ -9897,12 +9895,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _Request = _interopRequireDefault(__webpack_require__(/*! ./core/Request */ 39));
+var _Request = _interopRequireDefault(__webpack_require__(/*! ./core/Request */ 37));
 var _default = _Request.default;
 exports.default = _default;
 
 /***/ }),
-/* 39 */
+/* 37 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/Request.js ***!
   \************************************************************************************************************************/
@@ -9920,12 +9918,12 @@ exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
-var _dispatchRequest = _interopRequireDefault(__webpack_require__(/*! ./dispatchRequest */ 40));
-var _InterceptorManager = _interopRequireDefault(__webpack_require__(/*! ./InterceptorManager */ 48));
-var _mergeConfig = _interopRequireDefault(__webpack_require__(/*! ./mergeConfig */ 49));
-var _defaults = _interopRequireDefault(__webpack_require__(/*! ./defaults */ 50));
-var _utils = __webpack_require__(/*! ../utils */ 43);
-var _clone = _interopRequireDefault(__webpack_require__(/*! ../utils/clone */ 51));
+var _dispatchRequest = _interopRequireDefault(__webpack_require__(/*! ./dispatchRequest */ 38));
+var _InterceptorManager = _interopRequireDefault(__webpack_require__(/*! ./InterceptorManager */ 46));
+var _mergeConfig = _interopRequireDefault(__webpack_require__(/*! ./mergeConfig */ 47));
+var _defaults = _interopRequireDefault(__webpack_require__(/*! ./defaults */ 48));
+var _utils = __webpack_require__(/*! ../utils */ 41);
+var _clone = _interopRequireDefault(__webpack_require__(/*! ../utils/clone */ 49));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var Request = /*#__PURE__*/function () {
@@ -10108,7 +10106,7 @@ var Request = /*#__PURE__*/function () {
 exports.default = Request;
 
 /***/ }),
-/* 40 */
+/* 38 */
 /*!********************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
   \********************************************************************************************************************************/
@@ -10123,14 +10121,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _index = _interopRequireDefault(__webpack_require__(/*! ../adapters/index */ 41));
+var _index = _interopRequireDefault(__webpack_require__(/*! ../adapters/index */ 39));
 var _default = function _default(config) {
   return (0, _index.default)(config);
 };
 exports.default = _default;
 
 /***/ }),
-/* 41 */
+/* 39 */
 /*!**************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/adapters/index.js ***!
   \**************************************************************************************************************************/
@@ -10146,10 +10144,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _buildURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/buildURL */ 42));
-var _buildFullPath = _interopRequireDefault(__webpack_require__(/*! ../core/buildFullPath */ 44));
-var _settle = _interopRequireDefault(__webpack_require__(/*! ../core/settle */ 47));
-var _utils = __webpack_require__(/*! ../utils */ 43);
+var _buildURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/buildURL */ 40));
+var _buildFullPath = _interopRequireDefault(__webpack_require__(/*! ../core/buildFullPath */ 42));
+var _settle = _interopRequireDefault(__webpack_require__(/*! ../core/settle */ 45));
+var _utils = __webpack_require__(/*! ../utils */ 41);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 /**
@@ -10211,7 +10209,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 42 */
+/* 40 */
 /*!****************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
   \****************************************************************************************************************************/
@@ -10226,7 +10224,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = buildURL;
-var utils = _interopRequireWildcard(__webpack_require__(/*! ../utils */ 43));
+var utils = _interopRequireWildcard(__webpack_require__(/*! ../utils */ 41));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function encode(val) {
@@ -10281,7 +10279,7 @@ function buildURL(url, params) {
 }
 
 /***/ }),
-/* 43 */
+/* 41 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/utils.js ***!
   \*****************************************************************************************************************/
@@ -10434,7 +10432,7 @@ function isUndefined(val) {
 }
 
 /***/ }),
-/* 44 */
+/* 42 */
 /*!******************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
   \******************************************************************************************************************************/
@@ -10449,8 +10447,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = buildFullPath;
-var _isAbsoluteURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/isAbsoluteURL */ 45));
-var _combineURLs = _interopRequireDefault(__webpack_require__(/*! ../helpers/combineURLs */ 46));
+var _isAbsoluteURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/isAbsoluteURL */ 43));
+var _combineURLs = _interopRequireDefault(__webpack_require__(/*! ../helpers/combineURLs */ 44));
 /**
  * Creates a new URL by combining the baseURL with the requestedURL,
  * only when the requestedURL is not already an absolute URL.
@@ -10468,7 +10466,7 @@ function buildFullPath(baseURL, requestedURL) {
 }
 
 /***/ }),
-/* 45 */
+/* 43 */
 /*!*********************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
   \*********************************************************************************************************************************/
@@ -10496,7 +10494,7 @@ function isAbsoluteURL(url) {
 }
 
 /***/ }),
-/* 46 */
+/* 44 */
 /*!*******************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
   \*******************************************************************************************************************************/
@@ -10522,7 +10520,7 @@ function combineURLs(baseURL, relativeURL) {
 }
 
 /***/ }),
-/* 47 */
+/* 45 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/settle.js ***!
   \***********************************************************************************************************************/
@@ -10554,7 +10552,7 @@ function settle(resolve, reject, response) {
 }
 
 /***/ }),
-/* 48 */
+/* 46 */
 /*!***********************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
   \***********************************************************************************************************************************/
@@ -10618,7 +10616,7 @@ var _default = InterceptorManager;
 exports.default = _default;
 
 /***/ }),
-/* 49 */
+/* 47 */
 /*!****************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
   \****************************************************************************************************************************/
@@ -10634,7 +10632,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _utils = __webpack_require__(/*! ../utils */ 43);
+var _utils = __webpack_require__(/*! ../utils */ 41);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 /**
@@ -10694,7 +10692,7 @@ var _default = function _default(globalsConfig) {
 exports.default = _default;
 
 /***/ }),
-/* 50 */
+/* 48 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/core/defaults.js ***!
   \*************************************************************************************************************************/
@@ -10726,7 +10724,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 51 */
+/* 49 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/luch-request/utils/clone.js ***!
   \***********************************************************************************************************************/
@@ -10975,10 +10973,10 @@ var clone = function () {
 }();
 var _default = clone;
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 52).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 50).Buffer))
 
 /***/ }),
-/* 52 */
+/* 50 */
 /*!**************************************!*\
   !*** ./node_modules/buffer/index.js ***!
   \**************************************/
@@ -10996,9 +10994,9 @@ exports.default = _default;
 
 
 
-var base64 = __webpack_require__(/*! base64-js */ 53)
-var ieee754 = __webpack_require__(/*! ieee754 */ 54)
-var isArray = __webpack_require__(/*! isarray */ 55)
+var base64 = __webpack_require__(/*! base64-js */ 51)
+var ieee754 = __webpack_require__(/*! ieee754 */ 52)
+var isArray = __webpack_require__(/*! isarray */ 53)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -12779,7 +12777,7 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 53 */
+/* 51 */
 /*!*****************************************!*\
   !*** ./node_modules/base64-js/index.js ***!
   \*****************************************/
@@ -12940,7 +12938,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 54 */
+/* 52 */
 /*!***************************************!*\
   !*** ./node_modules/ieee754/index.js ***!
   \***************************************/
@@ -13035,7 +13033,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 55 */
+/* 53 */
 /*!***************************************!*\
   !*** ./node_modules/isarray/index.js ***!
   \***************************************/
@@ -13050,7 +13048,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 56 */
+/* 54 */
 /*!*********************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/util/route.js ***!
   \*********************************************************************************************************/
@@ -13065,8 +13063,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
 /**
@@ -13238,7 +13236,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 57 */
+/* 55 */
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -13247,11 +13245,11 @@ exports.default = _default;
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 58)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 56)();
 module.exports = runtime;
 
 /***/ }),
-/* 58 */
+/* 56 */
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -13572,7 +13570,7 @@ function _regeneratorRuntime() {
 module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 59 */
+/* 57 */
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/
@@ -13612,7 +13610,7 @@ function _asyncToGenerator(fn) {
 module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 60 */
+/* 58 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/colorGradient.js ***!
   \*********************************************************************************************************************/
@@ -13767,7 +13765,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 61 */
+/* 59 */
 /*!************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/test.js ***!
   \************************************************************************************************************/
@@ -14072,7 +14070,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 62 */
+/* 60 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/debounce.js ***!
   \****************************************************************************************************************/
@@ -14119,7 +14117,7 @@ var _default = debounce;
 exports.default = _default;
 
 /***/ }),
-/* 63 */
+/* 61 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/throttle.js ***!
   \****************************************************************************************************************/
@@ -14168,7 +14166,7 @@ var _default = throttle;
 exports.default = _default;
 
 /***/ }),
-/* 64 */
+/* 62 */
 /*!*************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/index.js ***!
   \*************************************************************************************************************/
@@ -14185,8 +14183,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 5));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 61));
-var _digit = __webpack_require__(/*! ./digit.js */ 65);
+var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 59));
+var _digit = __webpack_require__(/*! ./digit.js */ 63);
 /**
  * @description 如果value小于min，取min；如果value大于max，取max
  * @param {number} min
@@ -14969,7 +14967,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 65 */
+/* 63 */
 /*!*************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/digit.js ***!
   \*************************************************************************************************************/
@@ -14990,7 +14988,7 @@ exports.minus = minus;
 exports.plus = plus;
 exports.round = round;
 exports.times = times;
-var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 66));
+var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 64));
 var _boundaryCheckingState = true; // 是否进行越界检查的全局开关
 
 /**
@@ -15171,7 +15169,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 66 */
+/* 64 */
 /*!********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/toArray.js ***!
   \********************************************************/
@@ -15188,7 +15186,7 @@ function _toArray(arr) {
 module.exports = _toArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 67 */
+/* 65 */
 /*!************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/config.js ***!
   \************************************************************************************************************/
@@ -15232,7 +15230,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 68 */
+/* 66 */
 /*!***********************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props.js ***!
   \***********************************************************************************************************/
@@ -15248,95 +15246,95 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 67));
-var _actionSheet = _interopRequireDefault(__webpack_require__(/*! ./props/actionSheet.js */ 69));
-var _album = _interopRequireDefault(__webpack_require__(/*! ./props/album.js */ 70));
-var _alert = _interopRequireDefault(__webpack_require__(/*! ./props/alert.js */ 71));
-var _avatar = _interopRequireDefault(__webpack_require__(/*! ./props/avatar */ 72));
-var _avatarGroup = _interopRequireDefault(__webpack_require__(/*! ./props/avatarGroup */ 73));
-var _backtop = _interopRequireDefault(__webpack_require__(/*! ./props/backtop */ 74));
-var _badge = _interopRequireDefault(__webpack_require__(/*! ./props/badge */ 75));
-var _button = _interopRequireDefault(__webpack_require__(/*! ./props/button */ 76));
-var _calendar = _interopRequireDefault(__webpack_require__(/*! ./props/calendar */ 77));
-var _carKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/carKeyboard */ 78));
-var _cell = _interopRequireDefault(__webpack_require__(/*! ./props/cell */ 79));
-var _cellGroup = _interopRequireDefault(__webpack_require__(/*! ./props/cellGroup */ 80));
-var _checkbox = _interopRequireDefault(__webpack_require__(/*! ./props/checkbox */ 81));
-var _checkboxGroup = _interopRequireDefault(__webpack_require__(/*! ./props/checkboxGroup */ 82));
-var _circleProgress = _interopRequireDefault(__webpack_require__(/*! ./props/circleProgress */ 83));
-var _code = _interopRequireDefault(__webpack_require__(/*! ./props/code */ 84));
-var _codeInput = _interopRequireDefault(__webpack_require__(/*! ./props/codeInput */ 85));
-var _col = _interopRequireDefault(__webpack_require__(/*! ./props/col */ 86));
-var _collapse = _interopRequireDefault(__webpack_require__(/*! ./props/collapse */ 87));
-var _collapseItem = _interopRequireDefault(__webpack_require__(/*! ./props/collapseItem */ 88));
-var _columnNotice = _interopRequireDefault(__webpack_require__(/*! ./props/columnNotice */ 89));
-var _countDown = _interopRequireDefault(__webpack_require__(/*! ./props/countDown */ 90));
-var _countTo = _interopRequireDefault(__webpack_require__(/*! ./props/countTo */ 91));
-var _datetimePicker = _interopRequireDefault(__webpack_require__(/*! ./props/datetimePicker */ 92));
-var _divider = _interopRequireDefault(__webpack_require__(/*! ./props/divider */ 93));
-var _empty = _interopRequireDefault(__webpack_require__(/*! ./props/empty */ 94));
-var _form = _interopRequireDefault(__webpack_require__(/*! ./props/form */ 95));
-var _formItem = _interopRequireDefault(__webpack_require__(/*! ./props/formItem */ 96));
-var _gap = _interopRequireDefault(__webpack_require__(/*! ./props/gap */ 97));
-var _grid = _interopRequireDefault(__webpack_require__(/*! ./props/grid */ 98));
-var _gridItem = _interopRequireDefault(__webpack_require__(/*! ./props/gridItem */ 99));
-var _icon = _interopRequireDefault(__webpack_require__(/*! ./props/icon */ 100));
-var _image = _interopRequireDefault(__webpack_require__(/*! ./props/image */ 101));
-var _indexAnchor = _interopRequireDefault(__webpack_require__(/*! ./props/indexAnchor */ 102));
-var _indexList = _interopRequireDefault(__webpack_require__(/*! ./props/indexList */ 103));
-var _input = _interopRequireDefault(__webpack_require__(/*! ./props/input */ 104));
-var _keyboard = _interopRequireDefault(__webpack_require__(/*! ./props/keyboard */ 105));
-var _line = _interopRequireDefault(__webpack_require__(/*! ./props/line */ 106));
-var _lineProgress = _interopRequireDefault(__webpack_require__(/*! ./props/lineProgress */ 107));
-var _link = _interopRequireDefault(__webpack_require__(/*! ./props/link */ 108));
-var _list = _interopRequireDefault(__webpack_require__(/*! ./props/list */ 109));
-var _listItem = _interopRequireDefault(__webpack_require__(/*! ./props/listItem */ 110));
-var _loadingIcon = _interopRequireDefault(__webpack_require__(/*! ./props/loadingIcon */ 111));
-var _loadingPage = _interopRequireDefault(__webpack_require__(/*! ./props/loadingPage */ 112));
-var _loadmore = _interopRequireDefault(__webpack_require__(/*! ./props/loadmore */ 113));
-var _modal = _interopRequireDefault(__webpack_require__(/*! ./props/modal */ 114));
-var _navbar = _interopRequireDefault(__webpack_require__(/*! ./props/navbar */ 115));
-var _noNetwork = _interopRequireDefault(__webpack_require__(/*! ./props/noNetwork */ 117));
-var _noticeBar = _interopRequireDefault(__webpack_require__(/*! ./props/noticeBar */ 118));
-var _notify = _interopRequireDefault(__webpack_require__(/*! ./props/notify */ 119));
-var _numberBox = _interopRequireDefault(__webpack_require__(/*! ./props/numberBox */ 120));
-var _numberKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/numberKeyboard */ 121));
-var _overlay = _interopRequireDefault(__webpack_require__(/*! ./props/overlay */ 122));
-var _parse = _interopRequireDefault(__webpack_require__(/*! ./props/parse */ 123));
-var _picker = _interopRequireDefault(__webpack_require__(/*! ./props/picker */ 124));
-var _popup = _interopRequireDefault(__webpack_require__(/*! ./props/popup */ 125));
-var _radio = _interopRequireDefault(__webpack_require__(/*! ./props/radio */ 126));
-var _radioGroup = _interopRequireDefault(__webpack_require__(/*! ./props/radioGroup */ 127));
-var _rate = _interopRequireDefault(__webpack_require__(/*! ./props/rate */ 128));
-var _readMore = _interopRequireDefault(__webpack_require__(/*! ./props/readMore */ 129));
-var _row = _interopRequireDefault(__webpack_require__(/*! ./props/row */ 130));
-var _rowNotice = _interopRequireDefault(__webpack_require__(/*! ./props/rowNotice */ 131));
-var _scrollList = _interopRequireDefault(__webpack_require__(/*! ./props/scrollList */ 132));
-var _search = _interopRequireDefault(__webpack_require__(/*! ./props/search */ 133));
-var _section = _interopRequireDefault(__webpack_require__(/*! ./props/section */ 134));
-var _skeleton = _interopRequireDefault(__webpack_require__(/*! ./props/skeleton */ 135));
-var _slider = _interopRequireDefault(__webpack_require__(/*! ./props/slider */ 136));
-var _statusBar = _interopRequireDefault(__webpack_require__(/*! ./props/statusBar */ 137));
-var _steps = _interopRequireDefault(__webpack_require__(/*! ./props/steps */ 138));
-var _stepsItem = _interopRequireDefault(__webpack_require__(/*! ./props/stepsItem */ 139));
-var _sticky = _interopRequireDefault(__webpack_require__(/*! ./props/sticky */ 140));
-var _subsection = _interopRequireDefault(__webpack_require__(/*! ./props/subsection */ 141));
-var _swipeAction = _interopRequireDefault(__webpack_require__(/*! ./props/swipeAction */ 142));
-var _swipeActionItem = _interopRequireDefault(__webpack_require__(/*! ./props/swipeActionItem */ 143));
-var _swiper = _interopRequireDefault(__webpack_require__(/*! ./props/swiper */ 144));
-var _swipterIndicator = _interopRequireDefault(__webpack_require__(/*! ./props/swipterIndicator */ 145));
-var _switch2 = _interopRequireDefault(__webpack_require__(/*! ./props/switch */ 146));
-var _tabbar = _interopRequireDefault(__webpack_require__(/*! ./props/tabbar */ 147));
-var _tabbarItem = _interopRequireDefault(__webpack_require__(/*! ./props/tabbarItem */ 148));
-var _tabs = _interopRequireDefault(__webpack_require__(/*! ./props/tabs */ 149));
-var _tag = _interopRequireDefault(__webpack_require__(/*! ./props/tag */ 150));
-var _text = _interopRequireDefault(__webpack_require__(/*! ./props/text */ 151));
-var _textarea = _interopRequireDefault(__webpack_require__(/*! ./props/textarea */ 152));
-var _toast = _interopRequireDefault(__webpack_require__(/*! ./props/toast */ 153));
-var _toolbar = _interopRequireDefault(__webpack_require__(/*! ./props/toolbar */ 154));
-var _tooltip = _interopRequireDefault(__webpack_require__(/*! ./props/tooltip */ 155));
-var _transition = _interopRequireDefault(__webpack_require__(/*! ./props/transition */ 156));
-var _upload = _interopRequireDefault(__webpack_require__(/*! ./props/upload */ 157));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 65));
+var _actionSheet = _interopRequireDefault(__webpack_require__(/*! ./props/actionSheet.js */ 67));
+var _album = _interopRequireDefault(__webpack_require__(/*! ./props/album.js */ 68));
+var _alert = _interopRequireDefault(__webpack_require__(/*! ./props/alert.js */ 69));
+var _avatar = _interopRequireDefault(__webpack_require__(/*! ./props/avatar */ 70));
+var _avatarGroup = _interopRequireDefault(__webpack_require__(/*! ./props/avatarGroup */ 71));
+var _backtop = _interopRequireDefault(__webpack_require__(/*! ./props/backtop */ 72));
+var _badge = _interopRequireDefault(__webpack_require__(/*! ./props/badge */ 73));
+var _button = _interopRequireDefault(__webpack_require__(/*! ./props/button */ 74));
+var _calendar = _interopRequireDefault(__webpack_require__(/*! ./props/calendar */ 75));
+var _carKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/carKeyboard */ 76));
+var _cell = _interopRequireDefault(__webpack_require__(/*! ./props/cell */ 77));
+var _cellGroup = _interopRequireDefault(__webpack_require__(/*! ./props/cellGroup */ 78));
+var _checkbox = _interopRequireDefault(__webpack_require__(/*! ./props/checkbox */ 79));
+var _checkboxGroup = _interopRequireDefault(__webpack_require__(/*! ./props/checkboxGroup */ 80));
+var _circleProgress = _interopRequireDefault(__webpack_require__(/*! ./props/circleProgress */ 81));
+var _code = _interopRequireDefault(__webpack_require__(/*! ./props/code */ 82));
+var _codeInput = _interopRequireDefault(__webpack_require__(/*! ./props/codeInput */ 83));
+var _col = _interopRequireDefault(__webpack_require__(/*! ./props/col */ 84));
+var _collapse = _interopRequireDefault(__webpack_require__(/*! ./props/collapse */ 85));
+var _collapseItem = _interopRequireDefault(__webpack_require__(/*! ./props/collapseItem */ 86));
+var _columnNotice = _interopRequireDefault(__webpack_require__(/*! ./props/columnNotice */ 87));
+var _countDown = _interopRequireDefault(__webpack_require__(/*! ./props/countDown */ 88));
+var _countTo = _interopRequireDefault(__webpack_require__(/*! ./props/countTo */ 89));
+var _datetimePicker = _interopRequireDefault(__webpack_require__(/*! ./props/datetimePicker */ 90));
+var _divider = _interopRequireDefault(__webpack_require__(/*! ./props/divider */ 91));
+var _empty = _interopRequireDefault(__webpack_require__(/*! ./props/empty */ 92));
+var _form = _interopRequireDefault(__webpack_require__(/*! ./props/form */ 93));
+var _formItem = _interopRequireDefault(__webpack_require__(/*! ./props/formItem */ 94));
+var _gap = _interopRequireDefault(__webpack_require__(/*! ./props/gap */ 95));
+var _grid = _interopRequireDefault(__webpack_require__(/*! ./props/grid */ 96));
+var _gridItem = _interopRequireDefault(__webpack_require__(/*! ./props/gridItem */ 97));
+var _icon = _interopRequireDefault(__webpack_require__(/*! ./props/icon */ 98));
+var _image = _interopRequireDefault(__webpack_require__(/*! ./props/image */ 99));
+var _indexAnchor = _interopRequireDefault(__webpack_require__(/*! ./props/indexAnchor */ 100));
+var _indexList = _interopRequireDefault(__webpack_require__(/*! ./props/indexList */ 101));
+var _input = _interopRequireDefault(__webpack_require__(/*! ./props/input */ 102));
+var _keyboard = _interopRequireDefault(__webpack_require__(/*! ./props/keyboard */ 103));
+var _line = _interopRequireDefault(__webpack_require__(/*! ./props/line */ 104));
+var _lineProgress = _interopRequireDefault(__webpack_require__(/*! ./props/lineProgress */ 105));
+var _link = _interopRequireDefault(__webpack_require__(/*! ./props/link */ 106));
+var _list = _interopRequireDefault(__webpack_require__(/*! ./props/list */ 107));
+var _listItem = _interopRequireDefault(__webpack_require__(/*! ./props/listItem */ 108));
+var _loadingIcon = _interopRequireDefault(__webpack_require__(/*! ./props/loadingIcon */ 109));
+var _loadingPage = _interopRequireDefault(__webpack_require__(/*! ./props/loadingPage */ 110));
+var _loadmore = _interopRequireDefault(__webpack_require__(/*! ./props/loadmore */ 111));
+var _modal = _interopRequireDefault(__webpack_require__(/*! ./props/modal */ 112));
+var _navbar = _interopRequireDefault(__webpack_require__(/*! ./props/navbar */ 113));
+var _noNetwork = _interopRequireDefault(__webpack_require__(/*! ./props/noNetwork */ 115));
+var _noticeBar = _interopRequireDefault(__webpack_require__(/*! ./props/noticeBar */ 116));
+var _notify = _interopRequireDefault(__webpack_require__(/*! ./props/notify */ 117));
+var _numberBox = _interopRequireDefault(__webpack_require__(/*! ./props/numberBox */ 118));
+var _numberKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/numberKeyboard */ 119));
+var _overlay = _interopRequireDefault(__webpack_require__(/*! ./props/overlay */ 120));
+var _parse = _interopRequireDefault(__webpack_require__(/*! ./props/parse */ 121));
+var _picker = _interopRequireDefault(__webpack_require__(/*! ./props/picker */ 122));
+var _popup = _interopRequireDefault(__webpack_require__(/*! ./props/popup */ 123));
+var _radio = _interopRequireDefault(__webpack_require__(/*! ./props/radio */ 124));
+var _radioGroup = _interopRequireDefault(__webpack_require__(/*! ./props/radioGroup */ 125));
+var _rate = _interopRequireDefault(__webpack_require__(/*! ./props/rate */ 126));
+var _readMore = _interopRequireDefault(__webpack_require__(/*! ./props/readMore */ 127));
+var _row = _interopRequireDefault(__webpack_require__(/*! ./props/row */ 128));
+var _rowNotice = _interopRequireDefault(__webpack_require__(/*! ./props/rowNotice */ 129));
+var _scrollList = _interopRequireDefault(__webpack_require__(/*! ./props/scrollList */ 130));
+var _search = _interopRequireDefault(__webpack_require__(/*! ./props/search */ 131));
+var _section = _interopRequireDefault(__webpack_require__(/*! ./props/section */ 132));
+var _skeleton = _interopRequireDefault(__webpack_require__(/*! ./props/skeleton */ 133));
+var _slider = _interopRequireDefault(__webpack_require__(/*! ./props/slider */ 134));
+var _statusBar = _interopRequireDefault(__webpack_require__(/*! ./props/statusBar */ 135));
+var _steps = _interopRequireDefault(__webpack_require__(/*! ./props/steps */ 136));
+var _stepsItem = _interopRequireDefault(__webpack_require__(/*! ./props/stepsItem */ 137));
+var _sticky = _interopRequireDefault(__webpack_require__(/*! ./props/sticky */ 138));
+var _subsection = _interopRequireDefault(__webpack_require__(/*! ./props/subsection */ 139));
+var _swipeAction = _interopRequireDefault(__webpack_require__(/*! ./props/swipeAction */ 140));
+var _swipeActionItem = _interopRequireDefault(__webpack_require__(/*! ./props/swipeActionItem */ 141));
+var _swiper = _interopRequireDefault(__webpack_require__(/*! ./props/swiper */ 142));
+var _swipterIndicator = _interopRequireDefault(__webpack_require__(/*! ./props/swipterIndicator */ 143));
+var _switch2 = _interopRequireDefault(__webpack_require__(/*! ./props/switch */ 144));
+var _tabbar = _interopRequireDefault(__webpack_require__(/*! ./props/tabbar */ 145));
+var _tabbarItem = _interopRequireDefault(__webpack_require__(/*! ./props/tabbarItem */ 146));
+var _tabs = _interopRequireDefault(__webpack_require__(/*! ./props/tabs */ 147));
+var _tag = _interopRequireDefault(__webpack_require__(/*! ./props/tag */ 148));
+var _text = _interopRequireDefault(__webpack_require__(/*! ./props/text */ 149));
+var _textarea = _interopRequireDefault(__webpack_require__(/*! ./props/textarea */ 150));
+var _toast = _interopRequireDefault(__webpack_require__(/*! ./props/toast */ 151));
+var _toolbar = _interopRequireDefault(__webpack_require__(/*! ./props/toolbar */ 152));
+var _tooltip = _interopRequireDefault(__webpack_require__(/*! ./props/tooltip */ 153));
+var _transition = _interopRequireDefault(__webpack_require__(/*! ./props/transition */ 154));
+var _upload = _interopRequireDefault(__webpack_require__(/*! ./props/upload */ 155));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var color = _config.default.color;
@@ -15344,7 +15342,7 @@ var _default = _objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSp
 exports.default = _default;
 
 /***/ }),
-/* 69 */
+/* 67 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
   \***********************************************************************************************************************/
@@ -15388,7 +15386,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 70 */
+/* 68 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/album.js ***!
   \*****************************************************************************************************************/
@@ -15432,7 +15430,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 71 */
+/* 69 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/alert.js ***!
   \*****************************************************************************************************************/
@@ -15471,7 +15469,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 72 */
+/* 70 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/avatar.js ***!
   \******************************************************************************************************************/
@@ -15516,7 +15514,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 73 */
+/* 71 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
   \***********************************************************************************************************************/
@@ -15558,7 +15556,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 74 */
+/* 72 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/backtop.js ***!
   \*******************************************************************************************************************/
@@ -15604,7 +15602,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 75 */
+/* 73 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/badge.js ***!
   \*****************************************************************************************************************/
@@ -15650,7 +15648,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 76 */
+/* 74 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/button.js ***!
   \******************************************************************************************************************/
@@ -15709,7 +15707,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 77 */
+/* 75 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/calendar.js ***!
   \********************************************************************************************************************/
@@ -15772,7 +15770,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 78 */
+/* 76 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
   \***********************************************************************************************************************/
@@ -15804,7 +15802,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 79 */
+/* 77 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/cell.js ***!
   \****************************************************************************************************************/
@@ -15856,7 +15854,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 80 */
+/* 78 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
   \*********************************************************************************************************************/
@@ -15890,7 +15888,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 81 */
+/* 79 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
   \********************************************************************************************************************/
@@ -15934,7 +15932,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 82 */
+/* 80 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
   \*************************************************************************************************************************/
@@ -15982,7 +15980,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 83 */
+/* 81 */
 /*!**************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
   \**************************************************************************************************************************/
@@ -16014,7 +16012,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 84 */
+/* 82 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/code.js ***!
   \****************************************************************************************************************/
@@ -16051,7 +16049,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 85 */
+/* 83 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/codeInput.js ***!
   \*********************************************************************************************************************/
@@ -16097,7 +16095,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 86 */
+/* 84 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/col.js ***!
   \***************************************************************************************************************/
@@ -16133,7 +16131,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 87 */
+/* 85 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/collapse.js ***!
   \********************************************************************************************************************/
@@ -16167,7 +16165,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 88 */
+/* 86 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/collapseItem.js ***!
   \************************************************************************************************************************/
@@ -16209,7 +16207,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 89 */
+/* 87 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/columnNotice.js ***!
   \************************************************************************************************************************/
@@ -16250,7 +16248,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 90 */
+/* 88 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/countDown.js ***!
   \*********************************************************************************************************************/
@@ -16285,7 +16283,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 91 */
+/* 89 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/countTo.js ***!
   \*******************************************************************************************************************/
@@ -16327,7 +16325,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 92 */
+/* 90 */
 /*!**************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
   \**************************************************************************************************************************/
@@ -16382,7 +16380,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 93 */
+/* 91 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/divider.js ***!
   \*******************************************************************************************************************/
@@ -16421,7 +16419,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 94 */
+/* 92 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/empty.js ***!
   \*****************************************************************************************************************/
@@ -16463,7 +16461,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 95 */
+/* 93 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/form.js ***!
   \****************************************************************************************************************/
@@ -16508,7 +16506,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 96 */
+/* 94 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/formItem.js ***!
   \********************************************************************************************************************/
@@ -16548,7 +16546,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 97 */
+/* 95 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/gap.js ***!
   \***************************************************************************************************************/
@@ -16584,7 +16582,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 98 */
+/* 96 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/grid.js ***!
   \****************************************************************************************************************/
@@ -16618,7 +16616,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 99 */
+/* 97 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
   \********************************************************************************************************************/
@@ -16651,7 +16649,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 100 */
+/* 98 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/icon.js ***!
   \****************************************************************************************************************/
@@ -16666,7 +16664,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 67));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
 /*
  * @Author       : LQ
  * @Description  :
@@ -16703,7 +16701,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 101 */
+/* 99 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/image.js ***!
   \*****************************************************************************************************************/
@@ -16750,7 +16748,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 102 */
+/* 100 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/indexAnchor.js ***!
   \***********************************************************************************************************************/
@@ -16786,7 +16784,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 103 */
+/* 101 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/indexList.js ***!
   \*********************************************************************************************************************/
@@ -16824,7 +16822,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 104 */
+/* 102 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/input.js ***!
   \*****************************************************************************************************************/
@@ -16889,7 +16887,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 105 */
+/* 103 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/keyboard.js ***!
   \********************************************************************************************************************/
@@ -16936,7 +16934,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 106 */
+/* 104 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/line.js ***!
   \****************************************************************************************************************/
@@ -16973,7 +16971,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 107 */
+/* 105 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
   \************************************************************************************************************************/
@@ -17009,7 +17007,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 108 */
+/* 106 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/link.js ***!
   \****************************************************************************************************************/
@@ -17024,7 +17022,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 67));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
 /*
  * @Author       : LQ
  * @Description  :
@@ -17051,7 +17049,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 109 */
+/* 107 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/list.js ***!
   \****************************************************************************************************************/
@@ -17096,7 +17094,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 110 */
+/* 108 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/listItem.js ***!
   \********************************************************************************************************************/
@@ -17128,7 +17126,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 111 */
+/* 109 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/loadingIcon.js ***!
   \***********************************************************************************************************************/
@@ -17143,7 +17141,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 67));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
 /*
  * @Author       : LQ
  * @Description  :
@@ -17174,7 +17172,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 112 */
+/* 110 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/loadingPage.js ***!
   \***********************************************************************************************************************/
@@ -17214,7 +17212,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 113 */
+/* 111 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/loadmore.js ***!
   \********************************************************************************************************************/
@@ -17263,7 +17261,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 114 */
+/* 112 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/modal.js ***!
   \*****************************************************************************************************************/
@@ -17310,7 +17308,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 115 */
+/* 113 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/navbar.js ***!
   \******************************************************************************************************************/
@@ -17325,7 +17323,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 116));
+var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 114));
 /*
  * @Author       : LQ
  * @Description  :
@@ -17359,7 +17357,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 116 */
+/* 114 */
 /*!***********************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/color.js ***!
   \***********************************************************************************************************/
@@ -17392,7 +17390,7 @@ var _default = color;
 exports.default = _default;
 
 /***/ }),
-/* 117 */
+/* 115 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/noNetwork.js ***!
   \*********************************************************************************************************************/
@@ -17426,7 +17424,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 118 */
+/* 116 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/noticeBar.js ***!
   \*********************************************************************************************************************/
@@ -17472,7 +17470,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 119 */
+/* 117 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/notify.js ***!
   \******************************************************************************************************************/
@@ -17511,7 +17509,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 120 */
+/* 118 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/numberBox.js ***!
   \*********************************************************************************************************************/
@@ -17563,7 +17561,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 121 */
+/* 119 */
 /*!**************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
   \**************************************************************************************************************************/
@@ -17597,7 +17595,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 122 */
+/* 120 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/overlay.js ***!
   \*******************************************************************************************************************/
@@ -17632,7 +17630,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 123 */
+/* 121 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/parse.js ***!
   \*****************************************************************************************************************/
@@ -17671,7 +17669,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 124 */
+/* 122 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/picker.js ***!
   \******************************************************************************************************************/
@@ -17721,7 +17719,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 125 */
+/* 123 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/popup.js ***!
   \*****************************************************************************************************************/
@@ -17767,7 +17765,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 126 */
+/* 124 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/radio.js ***!
   \*****************************************************************************************************************/
@@ -17811,7 +17809,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 127 */
+/* 125 */
 /*!**********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/radioGroup.js ***!
   \**********************************************************************************************************************/
@@ -17858,7 +17856,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 128 */
+/* 126 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/rate.js ***!
   \****************************************************************************************************************/
@@ -17901,7 +17899,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 129 */
+/* 127 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/readMore.js ***!
   \********************************************************************************************************************/
@@ -17940,7 +17938,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 130 */
+/* 128 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/row.js ***!
   \***************************************************************************************************************/
@@ -17974,7 +17972,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 131 */
+/* 129 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/rowNotice.js ***!
   \*********************************************************************************************************************/
@@ -18012,7 +18010,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 132 */
+/* 130 */
 /*!**********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/scrollList.js ***!
   \**********************************************************************************************************************/
@@ -18049,7 +18047,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 133 */
+/* 131 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/search.js ***!
   \******************************************************************************************************************/
@@ -18107,7 +18105,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 134 */
+/* 132 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/section.js ***!
   \*******************************************************************************************************************/
@@ -18148,7 +18146,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 135 */
+/* 133 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/skeleton.js ***!
   \********************************************************************************************************************/
@@ -18190,7 +18188,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 136 */
+/* 134 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/slider.js ***!
   \******************************************************************************************************************/
@@ -18232,7 +18230,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 137 */
+/* 135 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/statusBar.js ***!
   \*********************************************************************************************************************/
@@ -18264,7 +18262,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 138 */
+/* 136 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/steps.js ***!
   \*****************************************************************************************************************/
@@ -18302,7 +18300,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 139 */
+/* 137 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/stepsItem.js ***!
   \*********************************************************************************************************************/
@@ -18337,7 +18335,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 140 */
+/* 138 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/sticky.js ***!
   \******************************************************************************************************************/
@@ -18374,7 +18372,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 141 */
+/* 139 */
 /*!**********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/subsection.js ***!
   \**********************************************************************************************************************/
@@ -18414,7 +18412,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 142 */
+/* 140 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/swipeAction.js ***!
   \***********************************************************************************************************************/
@@ -18446,7 +18444,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 143 */
+/* 141 */
 /*!***************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
   \***************************************************************************************************************************/
@@ -18484,7 +18482,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 144 */
+/* 142 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/swiper.js ***!
   \******************************************************************************************************************/
@@ -18541,7 +18539,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 145 */
+/* 143 */
 /*!****************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
   \****************************************************************************************************************************/
@@ -18577,7 +18575,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 146 */
+/* 144 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/switch.js ***!
   \******************************************************************************************************************/
@@ -18618,7 +18616,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 147 */
+/* 145 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/tabbar.js ***!
   \******************************************************************************************************************/
@@ -18657,7 +18655,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 148 */
+/* 146 */
 /*!**********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/tabbarItem.js ***!
   \**********************************************************************************************************************/
@@ -18694,7 +18692,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 149 */
+/* 147 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/tabs.js ***!
   \****************************************************************************************************************/
@@ -18751,7 +18749,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 150 */
+/* 148 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/tag.js ***!
   \***************************************************************************************************************/
@@ -18797,7 +18795,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 151 */
+/* 149 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/text.js ***!
   \****************************************************************************************************************/
@@ -18853,7 +18851,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 152 */
+/* 150 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/textarea.js ***!
   \********************************************************************************************************************/
@@ -18906,7 +18904,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 153 */
+/* 151 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/toast.js ***!
   \*****************************************************************************************************************/
@@ -18952,7 +18950,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 154 */
+/* 152 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/toolbar.js ***!
   \*******************************************************************************************************************/
@@ -18989,7 +18987,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 155 */
+/* 153 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/tooltip.js ***!
   \*******************************************************************************************************************/
@@ -19033,7 +19031,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 156 */
+/* 154 */
 /*!**********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/transition.js ***!
   \**********************************************************************************************************************/
@@ -19068,7 +19066,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 157 */
+/* 155 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/props/upload.js ***!
   \******************************************************************************************************************/
@@ -19127,7 +19125,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 158 */
+/* 156 */
 /*!************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/config/zIndex.js ***!
   \************************************************************************************************************/
@@ -19163,7 +19161,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 159 */
+/* 157 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/function/platform.js ***!
   \****************************************************************************************************************/
@@ -19193,7 +19191,55 @@ var _default = platform;
 exports.default = _default;
 
 /***/ }),
-/* 160 */
+/* 158 */
+/*!****************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/config/index.config.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var CONFIG = {
+  // 开发环境配置
+  development: {
+    assetsPath: '/static',
+    // 静态资源路径
+    baseUrl: 'http://demo.rageframe.com/api',
+    // 后台接口请求地址
+    hostUrl: 'http://h5.tinyshop.rageframe.com',
+    // H5地址(前端运行地址)
+    websocketUrl: '',
+    // websocket服务端地址
+    weixinAppId: '',
+    // 微信公众号appid
+    assetsRemotePath: "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
+  },
+  // 生产环境配置
+  production: {
+    assetsPath: '/static',
+    // 静态资源路径
+    baseUrl: 'http://demo.rageframe.com/api',
+    // 后台接口请求地址
+    hostUrl: 'http://h5.tinyshop.rageframe.com',
+    // H5地址(前端运行地址)
+    websocketUrl: '',
+    // websocket服务端地址
+    weixinAppId: '',
+    // 微信公众号appid
+    assetsRemotePath: "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
+  }
+};
+var _default = CONFIG["development"];
+exports.default = _default;
+
+/***/ }),
+/* 159 */
 /*!*****************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/config/assets.config.js ***!
   \*****************************************************************************************/
@@ -19208,7 +19254,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _indexConfig = _interopRequireDefault(__webpack_require__(/*! ./index.config.js */ 536));
+var _indexConfig = _interopRequireDefault(__webpack_require__(/*! ./index.config.js */ 158));
 var PATH = _indexConfig.default.assetsPath;
 /*
  * 图片静态资源表，所有图片资源路径在这统一管理，不应该写死在页面中，该数据挂载到Vue原型中。
@@ -19305,7 +19351,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 161 */
+/* 160 */
 /*!****************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/utils/request/index.js ***!
   \****************************************************************************************/
@@ -19321,8 +19367,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.http = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _request = _interopRequireDefault(__webpack_require__(/*! ./request */ 162));
-var _helper = _interopRequireDefault(__webpack_require__(/*! @/utils/helper */ 163));
+var _request = _interopRequireDefault(__webpack_require__(/*! ./request */ 161));
+var _index = _interopRequireDefault(__webpack_require__(/*! @/config/index.config */ 158));
+var _helper = _interopRequireDefault(__webpack_require__(/*! @/utils/helper */ 162));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var http = new _request.default();
@@ -19330,11 +19377,8 @@ var http = new _request.default();
 // request全局参数设置
 exports.http = http;
 http.setConfig(function (config) {
-  var baseURL = "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/";
-  console.log("baseURL:" + baseURL);
-
   /* 设置全局配置 */
-  config.baseUrl = baseURL; /* 根域名不同 */
+  config.baseUrl = _index.default.assetsRemotePath; /* 根域名不同 */
   var systemInfo = uni.getSystemInfoSync();
   var systemInfoHeaders = {
     'device-name': systemInfo.brand,
@@ -19462,7 +19506,7 @@ http.interceptor.request(function (config) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 162 */
+/* 161 */
 /*!******************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/utils/request/request.js ***!
   \******************************************************************************************/
@@ -19477,8 +19521,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
@@ -19915,7 +19959,7 @@ exports.default = Request;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 163 */
+/* 162 */
 /*!*********************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/utils/helper.js ***!
   \*********************************************************************************/
@@ -19930,9 +19974,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
 //常用方法集合
 var _default = {
   /**
@@ -20280,13 +20324,13 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 163 */,
 /* 164 */,
 /* 165 */,
 /* 166 */,
 /* 167 */,
 /* 168 */,
-/* 169 */,
-/* 170 */
+/* 169 */
 /*!*****************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/api/home.js ***!
   \*****************************************************************************/
@@ -20316,7 +20360,7 @@ var feedtab = 'mock-data/tab/index/feedtab';
 exports.feedtab = feedtab;
 
 /***/ }),
-/* 171 */
+/* 170 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mock-data/tab/index/queryChannelData.json ***!
   \******************************************************************************************************************/
@@ -20326,6 +20370,7 @@ exports.feedtab = feedtab;
 module.exports = JSON.parse("{\"result\":{\"styleVersion\":\"1119876\",\"data\":[{\"floorId\":\"888\",\"gridFloor\":{\"groupId\":\"06608216\",\"items\":[{\"advertId\":\"0901745674\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/222536/2/23981/7360/63f432fdF90317c2e/ea0216e3e2f92ea5.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":0,\"picHeight\":0,\"name\":\"2\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4B4rLJxmKs3aY3ayBiPACW8T2qPz\",\"id\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"\",\"groupId\":\"\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]},\"floorType\":\"GRID_FLOOR\",\"floorIndex\":0},{\"floorId\":\"83595811\",\"floorType\":\"AD_BANNER\",\"adBannerFloor\":{\"banners\":[{\"advertId\":\"9301804457\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/211275/10/38876/96331/64c9eec4Fad3eebb7/6d7ca8879ec1b56d.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"下雨专题\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4Q38ZNQk4enXEXKFo8ahjcjTt3wS\",\"id\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301799848\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/219836/21/32831/36477/64bf41ccF3bc30f43/80b0899b1db3652e.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\",\"toPageId\":\"\",\"themeColor\":\"#aura4\",\"picWidth\":498,\"picHeight\":693,\"name\":\"aura4\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4RW5MxgJWbS1iMkCq4Uemkn7FPyn\",\"id\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"JBL PULSE4 音乐脉动四代便携式蓝牙音箱全面屏炫彩小音箱+低音炮超长续航防水设计 黑色\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/207789/34/4194/36181/61601344E20c6e18e/44b8281cb88b2000.jpg.dpg\",\"skuId\":\"100010838370\",\"jump\":{\"params\":{\"skuId\":\"100010838370\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"哈曼卡顿（Harman/Kardon）Aura Studio4 音乐琉璃四代4代  360°环绕立体声 菱形氛围灯效  桌面蓝牙音箱 \",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/138807/32/38311/65175/64c77201Fb75b7ac8/01b4a945184b4868.jpg.dpg\",\"skuId\":\"100057072838\",\"jump\":{\"params\":{\"skuId\":\"100057072838\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301799849\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/123060/24/35434/43944/64bf44b9F81a179e3/ad79fb8c0006bb87.jpg.dpg\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\",\"toPageId\":\"\",\"themeColor\":\"#123\",\"picWidth\":498,\"picHeight\":693,\"name\":\"123\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4TFvyrd4fqQdCKu2kSefnV6T5pMq\",\"id\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301793132\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/179799/1/35279/71974/64b1105dF66c89d0f/62db75752ee2d1b3.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"新品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"Fojkg1ML7NffG6Mvt5b3GcFTcDK\",\"id\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"铁三角（Audio-technica）【日本直邮】铁三角运动耳机无线耳机防水/运动蓝牙遥控/带麦克风可插内存卡颈挂式蓝牙耳机 颈挂式蓝牙耳机60BT 黑色\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/97634/28/40751/16651/64aa911bF27f6ee55/ab10c61f07d3751e.jpg.dpg\",\"skuId\":\"10077407157272\",\"jump\":{\"params\":{\"skuId\":\"10077407157272\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"拉夫劳伦（Ralph Lauren）男士Polo衫短袖 商务休闲 送男友礼物 710548797 005红色 L \",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/97839/13/32575/11939/64c33705F16432341/cd7c7249d6a74d35.jpg.dpg\",\"skuId\":\"100045354180\",\"jump\":{\"params\":{\"skuId\":\"100045354180\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301796334\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/145478/30/33793/66221/64bf9dabF1547228a/dd5af8efd79d4743.jpg.dpg\",\"toUrl\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\",\"toPageId\":\"\",\"themeColor\":\"#11\",\"picWidth\":498,\"picHeight\":693,\"name\":\"11\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"455ipHDNRBzvnCG8e9YvD8wGDAdJ\",\"id\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301676394\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/63387/22/22477/72886/63463837Ed268024d/1da5f454bf7f7ddf.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物3C\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4VYzCcUvzsyjbMQqtmY3U6Mqzaoe\",\"id\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"谷心(GX.Diffuser) 注氧仪 家用美容仪 纳米喷雾器 保湿补水仪 情人节 61节送女朋友生日礼物\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/220298/18/36101/101047/64c85751F04a762cc/e1541a394b258635.jpg.dpg\",\"skuId\":\"100025427750\",\"jump\":{\"params\":{\"skuId\":\"100025427750\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301676395\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/145294/39/30411/34835/6346385dE9c63db3b/8aa72b922c9f8f77.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物彩妆\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"VNcaArZTsYo1c859NxrfwC4zWvM\",\"id\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"NYX闪亮液体眼影新碎钻细闪珠光卧蚕高光提亮液牛郎眼妆 #03银河碎钻\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/196363/16/35121/97456/64c75818F88ea8c80/7146da50df4033d8.jpg.dpg\",\"skuId\":\"100028638943\",\"jump\":{\"params\":{\"skuId\":\"100028638943\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"ZELENSYouth青春焕彩水润通透粉底液30ml Cloud云朵色 粉一白友好彩妆\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/140657/39/38509/71482/64c85dbbF56cb7d7c/159b4b1388bc9da9.jpg.dpg\",\"skuId\":\"100035004962\",\"jump\":{\"params\":{\"skuId\":\"100035004962\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301676392\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/151356/40/30581/230742/63f5e5d3Fe5ae3d6f/4005d11a89b19c48.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物洗发水\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3ymudAKQi4hj3CQvA8o4YUtG2D45\",\"id\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301749287\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/214137/16/29399/49432/64472b39Fb55f2b8f/b4a68a01c7767770.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"宠物\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2gYadarGrQGK5ucUkbXHuP6a6QT6\",\"id\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"美士（Nutro）猫粮进口成猫粮干粮高蛋白宠物猫粮三文鱼鲜猫粮5磅2.27kg\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/199860/21/13662/88431/616e8a2aEfefe498b/86b8be54cbe9e57a.jpg.dpg\",\"skuId\":\"100012157084\",\"jump\":{\"params\":{\"skuId\":\"100012157084\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"美士进口猫罐头一分为二餐盒湿粮三文鱼鸡肉无谷猫主食罐75g*12\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/224044/24/9301/219509/626b53b0Eb0263e9e/d46a7af6ed61eded.jpg.dpg\",\"skuId\":\"100016818589\",\"jump\":{\"params\":{\"skuId\":\"100016818589\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301735202\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/156541/13/36039/33421/6414410cF96bd09e1/5a032a01b4fb9261.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"美妆药妆\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"xBcHMzhVAaRB7SSZLm5wWZdCn26\",\"id\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]},\"floorIndex\":1},{\"floorId\":\"83595815\",\"flexFloor\":{\"viewGroups\":[{\"id\":\"1607515022454\",\"imageViews\":[{\"picUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/216971/3/5617/35136/619f4469E2a328821/17b060dee0370fa3.jpg\",\"id\":\"1607515379482\",\"jump\":{\"des\":\"m\",\"srv\":\"\",\"params\":{\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html\"}}}]}]},\"floorType\":\"FLEX_WIDGET\",\"floorIndex\":7},{\"floorId\":\"83595814\",\"floorType\":\"CHANNEL_WIDGET\",\"floorIndex\":8,\"channelFloor\":{\"channels\":[{\"advertId\":\"7301795171\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/146830/32/34493/8800/6419585fF0357671a/f650fe654a4fe7cf.png\",\"toUrl\":\"https://shop.m.jd.com/?shopId=1000348121\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"国际会员店\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"shop.m.jd.com\",\"id\":\"https://shop.m.jd.com/?shopId=1000348121\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://shop.m.jd.com/?shopId=1000348121\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795172\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/206810/35/7299/27836/617ac034E667d1db3/3eee669b28fe906c.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"母婴玩具\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2WgiuefFEuSGcCwtk8vnUvrTPFf\",\"id\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795173\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/201366/25/236/12528/610bb021Eb63dbe9c/ea7093be7685ea91.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"美妆护肤\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4DtiBMHCHioVpP4yNGB9g2fGVvPv\",\"id\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795174\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/182830/4/11669/25146/60df0375E90132fee/26a9d26d9f7ecb34.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"居家生活\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2a6tjtybuyn9JDRZ21EJCrMUb1Wf\",\"id\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795175\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/206046/12/12838/11720/61795544E1ebada7b/d18005bbb4d1c517.png\",\"toUrl\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"海南免税\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"43jbUjooWAFMtH7UP7SqYhJ2WQfx\",\"id\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795176\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/186772/11/3974/26709/60a39687E10c8443d/f4c6bc884f66ae16.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"营养保健\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"hGrMs6gRF8otvwtyx7dda9eXzRa\",\"id\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795177\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/194827/25/3735/16373/60a3961dE37358b09/9124bcb07ed2d276.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"数码家电\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3A6TPyJ8bgDqJnvXLgT1StV9n4iS\",\"id\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795178\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/182064/19/5654/35130/60ab601fE7328eff8/bd552a411d82aa77.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"时尚轻奢\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2nB9QKEB6g3Z6RBYB69mQh25v3x3\",\"id\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795179\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/187469/7/3815/27366/60a3966cEaf536199/0dc7c172c00d851f.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"食品酒水\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"tAZGEw7vEx36voyWL63VPVUwFPz\",\"id\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795180\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/157049/5/34948/15520/640068deF71389601/50e651751633a8a2.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":120,\"picHeight\":120,\"name\":\"进口个护\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2zZDbqRmVNgQK1gnzyasb6Xn29pg\",\"id\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795182\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/180905/30/5651/52821/60ab619aE9b6aabe8/74ba4c8dfa9a2f6a.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"官方直营\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"33BBufvejVoBM7FQeSD2ZmGW69jk\",\"id\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795183\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/132700/27/18212/90823/60ab630eEc776c6fe/16c0ced4bba6da6c.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"家有萌宠\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2Mxgei9N257HqGYZePVCuNZVhYYH\",\"id\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795184\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/193083/36/4727/105063/60ab634aE17ddda07/3dfd5536f9bef1ad.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"进口汽品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"VB8TW8eWnrNovEqj9RLfnVmQHNj\",\"id\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795185\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/173487/18/11121/65440/60ab65c6E617248a3/f4e92c0bf3b9cfff.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"全球直购\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3pNpoWbnFmViXhUcRrQDvsvookUA\",\"id\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795186\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/152377/35/26392/18570/6342886aE9a18cda6/01b7aa2e7cdc2573.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":120,\"picHeight\":120,\"name\":\"清洁纸品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"23Xrp3p7PeU2JBPqBn772ywA6TT5\",\"id\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795187\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/95468/9/29180/17271/63044ce1E1999d81c/05601b78cde94a5f.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"买手代购\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"bwGJPfaUGvRkRb6eYdETzcum1HD\",\"id\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]}},{\"floorId\":\"5651049\",\"floorType\":\"FLASH_SALE_COUPON_WIDGET\",\"floorIndex\":13,\"flashSaleCouponFloor\":{\"couponList\":[{\"money\":\"100\",\"useDiscount\":\"满3888可用\",\"useDescription\":\"限购 [有明保健品海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943829946\",\"roleId\":\"117335130\",\"key\":\"B//lDbexJzWha/fdizW8ri7NWBiK6C6Dxec6RHw6bBha1VELwMttgpzZMVqupeYc\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满3888可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943829946\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-08-31使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/142950/35/37519/61384/64c21f7eF30dac4d8/c778fa6ce2cf6f1f.jpg\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-08-31\",\"wareInfoList\":[{\"skuId\":\"10081662209743\",\"jump\":{\"params\":{\"skuId\":\"10081662209743\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117335130\",\"tabName\":\"\"},{\"money\":\"220\",\"useDiscount\":\"满12500可用\",\"useDescription\":\"限购 [右丞象海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943350734\",\"roleId\":\"117197017\",\"key\":\"EbQor6uyn5tWwjY5fuCbVejRMJAu5ry1LXThL6Vyv35e0lsEKfAtH2YoAW8INQy7\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满12500可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943350734\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-10-01使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/113626/28/35259/27493/6424115dFeb4f95da/7fd5831cbc020694.png\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-10-01\",\"wareInfoList\":[{\"skuId\":\"10071948312069\",\"jump\":{\"params\":{\"skuId\":\"10071948312069\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117197017\",\"tabName\":\"\"},{\"money\":\"280\",\"useDiscount\":\"满1599可用\",\"useDescription\":\"限购 [潮领礼品箱包海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943326930\",\"roleId\":\"117166792\",\"key\":\"qEWlXv5CzFkjKIWefcQEISm2095Hl1TiflEfMGAJ0P1TfFC1rhP0cZkoL1Xh/HfI\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满1599可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943326930\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-08-14使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/130943/28/40180/99696/64cb3f5eFb6ef51bd/4cf336edad9628c8.jpg\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-08-14\",\"wareInfoList\":[{\"skuId\":\"10038491691818\",\"jump\":{\"params\":{\"skuId\":\"10038491691818\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117166792\",\"tabName\":\"\"},{\"money\":\"50\",\"useDiscount\":\"满1199可用\",\"useDescription\":\"限购 [KENSLY医药海外官方旗舰店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"1032545633\",\"roleId\":\"115392033\",\"key\":\"t54t7LEdsPMJ5cnJl+mb5zYahJEqEslMbY9El6LwwugiHqmg5eYsPr8nnCA7TQgN\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满1199可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"1032545633\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-07-11~2023-09-01使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/87496/24/40507/68895/6482ee36Fa9b225f3/8c280c214b04c379.jpg\",\"typeName\":\"东券\",\"time\":\"2023-07-11~2023-09-01\",\"wareInfoList\":[{\"skuId\":\"10075975276834\",\"jump\":{\"params\":{\"skuId\":\"10075975276834\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"115392033\",\"tabName\":\"\"}],\"stageInfoList\":[{\"stageTime\":\"2023-05-22 04:00:00\",\"beginTime\":\"04:00\",\"stageStatus\":\"0\",\"remainBeginTime\":\"0\",\"remainEndTime\":\"6339584982\",\"timeEnd\":\"1684727999000\",\"productInfoList\":[{\"skuId\":\"100017243042\",\"name\":\"虎牌日本进口虎牌(Tiger)儿童保温保冷杯MBR-C08G-KL 800ml 黑色狮子\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/140238/19/36434/74852/64a22abaFece3c7f5/d41de6d763e95c6d.jpg.dpg\",\"picUrl\":\"jfs/t1/140238/19/36434/74852/64a22abaFece3c7f5/d41de6d763e95c6d.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100017243042\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"100000条评价, 好评率97%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100035021629\",\"name\":\"荷高（Globemilk）荷兰原装进口全脂纯牛奶1L*6盒 整箱装 高钙3.7优质乳蛋白 \",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/155989/26/33152/88572/63b679b1F854d80dc/c503724d3550149e.jpg.dpg\",\"picUrl\":\"jfs/t1/155989/26/33152/88572/63b679b1F854d80dc/c503724d3550149e.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100035021629\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"20000条评价, 好评率99%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100003298876\",\"name\":\"Calvin Klein CK 男士平角内裤套装 3条装 送男友礼物 U2664G 001黑色 L \",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/191359/12/28457/55680/63200001Eadf838e3/769c4483cd23b726.jpg.dpg\",\"picUrl\":\"jfs/t1/191359/12/28457/55680/63200001Eadf838e3/769c4483cd23b726.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100003298876\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"50000条评价, 好评率92%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"1995375219\",\"name\":\"雅漾（Avene） 舒护活泉喷雾 300ml 定妆化妆水\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/131758/35/39722/34387/64c91c98Ff9764745/3cfcc23c8c82192a.jpg.dpg\",\"picUrl\":\"jfs/t1/131758/35/39722/34387/64c91c98Ff9764745/3cfcc23c8c82192a.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"1995375219\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"20000条评价, 好评率99%\",\"fixTitle\":\"10天最低价\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagName\":\"多买优惠\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"1992363262\",\"name\":\"芳珂 FANCL防晒霜60ml 保湿防护乳霜  防水隔离清爽不油腻  透亮倍护 SPF50+\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/138612/15/37286/26336/64c91c96F454c0320/e647914f6b922868.jpg.dpg\",\"picUrl\":\"jfs/t1/138612/15/37286/26336/64c91c96F454c0320/e647914f6b922868.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"1992363262\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"10000条评价, 好评率99%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"10068143320015\",\"name\":\"乐高（LEGO）得宝系列 数字火车10954 大颗粒\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/190222/18/35360/95853/64c91cf2F4b38af6c/d971c0568cd3dc8e.jpg.dpg\",\"picUrl\":\"jfs/t1/190222/18/35360/95853/64c91cf2F4b38af6c/d971c0568cd3dc8e.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"10068143320015\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"200条评价, 好评率100%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100026089901\",\"name\":\"NEW ERA纽亦华 棒球帽鸭舌帽男女款 9FORTY MLB洋基队 10531941黑色NY\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/39307/18/23313/42217/64abc04dF8b943b9f/1e7386a335072992.jpg.dpg\",\"picUrl\":\"jfs/t1/39307/18/23313/42217/64abc04dF8b943b9f/1e7386a335072992.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100026089901\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"2000条评价, 好评率95%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"10051917649227\",\"name\":\"象印（ZO JIRUSHI） 保温杯男女士水杯不锈钢轻巧单手弹盖真空户外男女防漏车载水杯SF系列 SM-SF48-PA粉色480ml\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/114956/18/32813/9111/6371dc29E6193ef6a/59c90e3e82e780b0.jpg.dpg\",\"picUrl\":\"jfs/t1/114956/18/32813/9111/6371dc29E6193ef6a/59c90e3e82e780b0.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"10051917649227\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"1000条评价, 好评率98%\",\"fixTitle\":\"448天最低价\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagName\":\"多买优惠\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"}],\"stageId\":\"73315314\",\"groupId\":\"19251079\",\"tabName\":\"\"}],\"leftJump\":{\"des\":\"m\",\"params\":{\"url\":\"https://gmart.jd.com/?appId=54935148\"}},\"rightJump\":{\"des\":\"m\",\"params\":{\"url\":\"https://gmart.jd.com/?appId=54935144\"}}}},{\"floorId\":\"83595819\",\"floatFloor\":\"\",\"floorType\":\"ICON_FLOAT\",\"floorIndex\":56},{\"floorId\":\"83595820\",\"floatFloor\":\"\",\"floorType\":\"DYNAMIC_FLOAT\",\"floorIndex\":57},{\"floorId\":\"83595812\",\"floorType\":\"FEED_WIDGET\",\"feedFloor\":{\"tabList\":[{\"tabId\":0,\"tabName\":\"精选\",\"order\":0,\"url\":\"\",\"eventParams\":\"floorId_83595812_0\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":1,\"tabName\":\"300减30\",\"order\":1,\"url\":\"\",\"eventParams\":\"floorId_83595812_1\",\"styleId\":3,\"tabDefaultImage\":\"http://img13.360buyimg.com/cms/jfs/t1/188375/40/20026/15931/6125de6fE21a2fee3/da463b5cef2da6a8.png\",\"tabSelectedImage\":\"http://img11.360buyimg.com/cms/jfs/t1/190289/32/19932/15931/6125de72Ee9ccdd89/3e9cb8b31f570d94.png\",\"width\":80,\"height\":34,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":2,\"tabName\":\"新品\",\"order\":2,\"url\":\"\",\"eventParams\":\"floorId_83595812_2\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":3,\"tabName\":\"美妆个护\",\"order\":3,\"url\":\"\",\"eventParams\":\"floorId_83595812_3\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":4,\"tabName\":\"营养保健\",\"order\":4,\"url\":\"\",\"eventParams\":\"floorId_83595812_4\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":5,\"tabName\":\"酷玩科技\",\"order\":5,\"url\":\"\",\"eventParams\":\"floorId_83595812_5\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":6,\"tabName\":\"时尚潮流\",\"order\":6,\"url\":\"\",\"eventParams\":\"floorId_83595812_6\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":7,\"tabName\":\"居家生活\",\"order\":7,\"url\":\"\",\"eventParams\":\"floorId_83595812_7\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":8,\"tabName\":\"汽车用品\",\"order\":8,\"url\":\"\",\"eventParams\":\"floorId_83595812_8\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":9,\"tabName\":\"全球美食\",\"order\":9,\"url\":\"\",\"eventParams\":\"floorId_83595812_9\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"}]},\"floorIndex\":62}],\"pageId\":54927197},\"code\":\"0\",\"success\":true}");
 
 /***/ }),
+/* 171 */,
 /* 172 */,
 /* 173 */,
 /* 174 */,
@@ -20351,8 +20396,7 @@ module.exports = JSON.parse("{\"result\":{\"styleVersion\":\"1119876\",\"data\":
 /* 194 */,
 /* 195 */,
 /* 196 */,
-/* 197 */,
-/* 198 */
+/* 197 */
 /*!*****************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/api/mine.js ***!
   \*****************************************************************************/
@@ -20372,6 +20416,7 @@ var recommend_like_m = 'mock-data/tab/mine/recommend_like_m';
 exports.recommend_like_m = recommend_like_m;
 
 /***/ }),
+/* 198 */,
 /* 199 */,
 /* 200 */,
 /* 201 */,
@@ -20429,8 +20474,7 @@ exports.recommend_like_m = recommend_like_m;
 /* 253 */,
 /* 254 */,
 /* 255 */,
-/* 256 */,
-/* 257 */
+/* 256 */
 /*!***********************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/mixin/button.js ***!
   \***********************************************************************************************************/
@@ -20460,7 +20504,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 258 */
+/* 257 */
 /*!*************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/mixin/openType.js ***!
   \*************************************************************************************************************/
@@ -20502,7 +20546,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 259 */
+/* 258 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-button/props.js ***!
   \*******************************************************************************************************************/
@@ -20681,14 +20725,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 259 */,
 /* 260 */,
 /* 261 */,
 /* 262 */,
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */,
-/* 267 */
+/* 266 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-picker/props.js ***!
   \*******************************************************************************************************************/
@@ -20785,14 +20829,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 267 */,
 /* 268 */,
 /* 269 */,
 /* 270 */,
 /* 271 */,
 /* 272 */,
 /* 273 */,
-/* 274 */,
-/* 275 */
+/* 274 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-calendar/props.js ***!
   \*********************************************************************************************************************/
@@ -20954,7 +20998,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 276 */
+/* 275 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-calendar/util.js ***!
   \********************************************************************************************************************/
@@ -21051,7 +21095,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 277 */
+/* 276 */
 /*!*********************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/util/dayjs.js ***!
   \*********************************************************************************************************/
@@ -21363,7 +21407,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = 
 });
 
 /***/ }),
-/* 278 */
+/* 277 */
 /*!************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/util/calendar.js ***!
   \************************************************************************************************************/
@@ -21880,6 +21924,7 @@ var _default = calendar;
 exports.default = _default;
 
 /***/ }),
+/* 278 */,
 /* 279 */,
 /* 280 */,
 /* 281 */,
@@ -21914,8 +21959,7 @@ exports.default = _default;
 /* 310 */,
 /* 311 */,
 /* 312 */,
-/* 313 */,
-/* 314 */
+/* 313 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/mixin/mpMixin.js ***!
   \***************************************************************************************************************/
@@ -21938,7 +21982,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 315 */
+/* 314 */
 /*!*************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/mixin/mixin.js ***!
   \*************************************************************************************************************/
@@ -21955,8 +21999,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var index = _interopRequireWildcard(__webpack_require__(/*! ../function/index.js */ 316));
-var test = _interopRequireWildcard(__webpack_require__(/*! ../function/test.js */ 317));
+var index = _interopRequireWildcard(__webpack_require__(/*! ../function/index.js */ 315));
+var test = _interopRequireWildcard(__webpack_require__(/*! ../function/test.js */ 316));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -22117,7 +22161,7 @@ exports.default = _default2;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 316 */
+/* 315 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/index.js ***!
   \****************************************************************************************************************/
@@ -22163,8 +22207,8 @@ exports.trim = trim;
 exports.type2icon = type2icon;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 5));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _test = __webpack_require__(/*! ./test.js */ 317);
-var _digit = __webpack_require__(/*! ./digit.js */ 318);
+var _test = __webpack_require__(/*! ./test.js */ 316);
+var _digit = __webpack_require__(/*! ./digit.js */ 317);
 /**
  * @description 如果value小于min，取min；如果value大于max，取max
  * @param {number} min
@@ -22915,7 +22959,7 @@ function setConfig(_ref5) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 317 */
+/* 316 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/test.js ***!
   \***************************************************************************************************************/
@@ -23215,7 +23259,7 @@ function regExp(o) {
 }
 
 /***/ }),
-/* 318 */
+/* 317 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/digit.js ***!
   \****************************************************************************************************************/
@@ -23236,7 +23280,7 @@ exports.minus = minus;
 exports.plus = plus;
 exports.round = round;
 exports.times = times;
-var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 66));
+var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 64));
 var _boundaryCheckingState = true; // 是否进行越界检查的全局开关
 
 /**
@@ -23417,7 +23461,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 319 */
+/* 318 */
 /*!***************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-waterfall/components/uv-waterfall/props.js ***!
   \***************************************************************************************************************************/
@@ -23503,14 +23547,14 @@ exports.default = _default2;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 319 */,
 /* 320 */,
 /* 321 */,
 /* 322 */,
 /* 323 */,
 /* 324 */,
 /* 325 */,
-/* 326 */,
-/* 327 */
+/* 326 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-image/components/uv-image/props.js ***!
   \*******************************************************************************************************************/
@@ -23627,14 +23671,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 327 */,
 /* 328 */,
 /* 329 */,
 /* 330 */,
 /* 331 */,
 /* 332 */,
 /* 333 */,
-/* 334 */,
-/* 335 */
+/* 334 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/colorGradient.js ***!
   \************************************************************************************************************************/
@@ -23785,7 +23829,7 @@ function colorToRgba(color, alpha) {
 }
 
 /***/ }),
-/* 336 */
+/* 335 */
 /*!*********************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-loading-icon/components/uv-loading-icon/props.js ***!
   \*********************************************************************************************************************************/
@@ -23867,14 +23911,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 336 */,
 /* 337 */,
 /* 338 */,
 /* 339 */,
 /* 340 */,
 /* 341 */,
 /* 342 */,
-/* 343 */,
-/* 344 */
+/* 343 */
 /*!***************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-load-more/components/uv-load-more/props.js ***!
   \***************************************************************************************************************************/
@@ -23991,12 +24035,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 344 */,
 /* 345 */,
 /* 346 */,
 /* 347 */,
 /* 348 */,
-/* 349 */,
-/* 350 */
+/* 349 */
 /*!****************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mine/avatar.png ***!
   \****************************************************************************************/
@@ -24006,7 +24050,7 @@ exports.default = _default;
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
-/* 351 */
+/* 350 */
 /*!*****************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mine/setting.png ***!
   \*****************************************************************************************/
@@ -24016,6 +24060,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
+/* 351 */,
 /* 352 */,
 /* 353 */,
 /* 354 */,
@@ -24066,8 +24111,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM
 /* 399 */,
 /* 400 */,
 /* 401 */,
-/* 402 */,
-/* 403 */
+/* 402 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \*************************************************************************************************************************/
@@ -24144,14 +24188,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 403 */,
 /* 404 */,
 /* 405 */,
 /* 406 */,
 /* 407 */,
 /* 408 */,
 /* 409 */,
-/* 410 */,
-/* 411 */
+/* 410 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \*****************************************************************************************************************/
@@ -24382,7 +24426,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 412 */
+/* 411 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-icon/props.js ***!
   \*****************************************************************************************************************/
@@ -24489,14 +24533,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 412 */,
 /* 413 */,
 /* 414 */,
 /* 415 */,
 /* 416 */,
 /* 417 */,
 /* 418 */,
-/* 419 */,
-/* 420 */
+/* 419 */
 /*!******************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-popup/props.js ***!
   \******************************************************************************************************************/
@@ -24593,14 +24637,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 420 */,
 /* 421 */,
 /* 422 */,
 /* 423 */,
 /* 424 */,
 /* 425 */,
 /* 426 */,
-/* 427 */,
-/* 428 */
+/* 427 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-toolbar/props.js ***!
   \********************************************************************************************************************/
@@ -24652,6 +24696,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 428 */,
 /* 429 */,
 /* 430 */,
 /* 431 */,
@@ -24672,8 +24717,7 @@ exports.default = _default;
 /* 446 */,
 /* 447 */,
 /* 448 */,
-/* 449 */,
-/* 450 */
+/* 449 */
 /*!***************************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-transition/components/uv-transition/createAnimation.js ***!
   \***************************************************************************************************************************************/
@@ -24807,12 +24851,12 @@ function createAnimation(option, _this) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 450 */,
 /* 451 */,
 /* 452 */,
 /* 453 */,
 /* 454 */,
-/* 455 */,
-/* 456 */
+/* 455 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-icon/components/uv-icon/icons.js ***!
   \*****************************************************************************************************************/
@@ -24989,7 +25033,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 457 */
+/* 456 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-icon/components/uv-icon/props.js ***!
   \*****************************************************************************************************************/
@@ -25101,14 +25145,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 457 */,
 /* 458 */,
 /* 459 */,
 /* 460 */,
 /* 461 */,
 /* 462 */,
 /* 463 */,
-/* 464 */,
-/* 465 */
+/* 464 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-line/components/uv-line/props.js ***!
   \*****************************************************************************************************************/
@@ -25164,14 +25208,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 465 */,
 /* 466 */,
 /* 467 */,
 /* 468 */,
 /* 469 */,
 /* 470 */,
 /* 471 */,
-/* 472 */,
-/* 473 */
+/* 472 */
 /*!********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-overlay/props.js ***!
   \********************************************************************************************************************/
@@ -25213,14 +25257,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 473 */,
 /* 474 */,
 /* 475 */,
 /* 476 */,
 /* 477 */,
 /* 478 */,
 /* 479 */,
-/* 480 */,
-/* 481 */
+/* 480 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-transition/props.js ***!
   \***********************************************************************************************************************/
@@ -25262,7 +25306,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 482 */
+/* 481 */
 /*!****************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-transition/transition.js ***!
   \****************************************************************************************************************************/
@@ -25277,9 +25321,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 483));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 482));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -25371,7 +25415,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 483 */
+/* 482 */
 /*!******************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \******************************************************************************************************************************/
@@ -25564,14 +25608,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
+/* 483 */,
 /* 484 */,
 /* 485 */,
 /* 486 */,
 /* 487 */,
 /* 488 */,
 /* 489 */,
-/* 490 */,
-/* 491 */
+/* 490 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-status-bar/props.js ***!
   \***********************************************************************************************************************/
@@ -25597,14 +25641,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 491 */,
 /* 492 */,
 /* 493 */,
 /* 494 */,
 /* 495 */,
 /* 496 */,
 /* 497 */,
-/* 498 */,
-/* 499 */
+/* 498 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \************************************************************************************************************************/
@@ -25621,90 +25665,6 @@ exports.default = void 0;
 var _default = {
   props: {}
 };
-exports.default = _default;
-
-/***/ }),
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */,
-/* 511 */,
-/* 512 */,
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */,
-/* 518 */,
-/* 519 */,
-/* 520 */,
-/* 521 */,
-/* 522 */,
-/* 523 */,
-/* 524 */,
-/* 525 */,
-/* 526 */,
-/* 527 */,
-/* 528 */,
-/* 529 */,
-/* 530 */,
-/* 531 */,
-/* 532 */,
-/* 533 */,
-/* 534 */,
-/* 535 */,
-/* 536 */
-/*!****************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/config/index.config.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var CONFIG = {
-  // 开发环境配置
-  development: {
-    assetsPath: '/static',
-    // 静态资源路径
-    baseUrl: 'http://demo.rageframe.com/api',
-    // 后台接口请求地址
-    hostUrl: 'http://h5.tinyshop.rageframe.com',
-    // H5地址(前端运行地址)
-    websocketUrl: '',
-    // websocket服务端地址
-    weixinAppId: '',
-    // 微信公众号appid
-    assetsRemotePath: "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
-  },
-  // 生产环境配置
-  production: {
-    assetsPath: '/static',
-    // 静态资源路径
-    baseUrl: 'http://demo.rageframe.com/api',
-    // 后台接口请求地址
-    hostUrl: 'http://h5.tinyshop.rageframe.com',
-    // H5地址(前端运行地址)
-    websocketUrl: '',
-    // websocket服务端地址
-    weixinAppId: '',
-    // 微信公众号appid
-    assetsRemotePath: "https://raw.githubusercontent.com/MiaoPaSiWeb/jingdong-uniapp/main/JDUniApp/static/"
-  }
-};
-var _default = CONFIG["development"];
 exports.default = _default;
 
 /***/ })
