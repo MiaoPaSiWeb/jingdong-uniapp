@@ -26,7 +26,7 @@ export default {
 		}
 	},
 	mounted() {
-		console.log("AD_BANNER onLoad", this.fdata);
+		console.log("AD_BANNER mounted", this.fdata);
 	},
 	methods: {
 		// size每组数组多少个，如：10

@@ -9461,7 +9461,7 @@ internalMixin(Vue);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-pages-loader/lib/index.js):\nSyntaxError: Unexpected token , in JSON at position 2488\n    at JSON.parse (<anonymous>)\n    at parseJson (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/uni-cli-shared/lib/json.js:17:20)\n    at parseManifestJson (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/uni-cli-shared/lib/manifest.js:35:10)\n    at Object.<anonymous> (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-pages-loader/lib/index-new.js:66:24)\n    at Object.<anonymous> (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-pages-loader/lib/index.js:58:35)");
 
 /***/ }),
 /* 27 */,
@@ -19378,7 +19378,8 @@ var http = new _request.default();
 exports.http = http;
 http.setConfig(function (config) {
   /* 设置全局配置 */
-  config.baseUrl = _index.default.assetsRemotePath; /* 根域名不同 */
+  // config.baseUrl = indexConfig.assetsRemotePath; /* 根域名不同 */
+  config.baseUrl = '';
   var systemInfo = uni.getSystemInfoSync();
   var systemInfoHeaders = {
     'device-name': systemInfo.brand,
@@ -20354,9 +20355,9 @@ var pbReferer = 'mock-data/tab/index/pbReferer.json';
 exports.pbReferer = pbReferer;
 var searchpromptwords = 'mock-data/tab/index/searchpromptwords.json';
 exports.searchpromptwords = searchpromptwords;
-var queryChannelData = 'mock-data/tab/index/queryChannelData.json';
+var queryChannelData = '/api/mock-data/tab/index/queryChannelData.json';
 exports.queryChannelData = queryChannelData;
-var feedtab = 'mock-data/tab/index/feedtab';
+var feedtab = '/api/mock-data/tab/index/feedtab';
 exports.feedtab = feedtab;
 
 /***/ }),

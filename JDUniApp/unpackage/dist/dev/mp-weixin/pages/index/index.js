@@ -184,7 +184,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -278,7 +278,19 @@ var _default = {
       // 	url: `/pages/detail/detail??data=${encodeURIComponent(JSON.stringify(list))}`
       // });
 
-      this.queryChannelData();
+      // this.queryChannelData();
+      uni.request({
+        url: '/api/search/searchNum.json',
+        data: {
+          text: '8888888888'
+        },
+        success: function success(res) {
+          console.log(res);
+        },
+        fail: function fail(err) {
+          console.log(err);
+        }
+      });
     },
     // 添加商品至购物车
     queryChannelData: function queryChannelData() {
@@ -308,6 +320,7 @@ var _default = {
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

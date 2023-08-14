@@ -8,57 +8,7 @@
 			<assetInfo></assetInfo>
 			<moneyCard></moneyCard>
 			<activity></activity>
-			<view class="recommond_wrap">
-				<view class="title">
-					<text>为你推荐</text>
-				</view>
-				<uv-waterfall ref="waterfall" v-model="data.list" left-gap="10" right-gap="10" column-gap="8"
-					@changeList="changeList">
-					<!-- 第一列数据 -->
-					<template v-slot:list1>
-						<!-- 为了磨平部分平台的BUG，必须套一层view -->
-						<view>
-							<view v-for="(item, index) in data.list1" :key="item.id" class="waterfall-item">
-								<view class="waterfall-item__image">
-									<uv-image :src="item.pictureUrl" mode="widthFix" width="{item.width+'px'}">
-									</uv-image>
-								</view>
-								<view class="waterfall-item__ft">
-									<view class="waterfall-item__ft__title">
-										<text class="value">{{item.itemData.name}}</text>
-									</view>
-									<view class="waterfall-item__ft__desc uv-line-2">
-										<text class="value">{{item.itemData.desc}}</text>
-									</view>
-								</view>
-							</view>
-						</view>
-					</template>
-					<!-- 第二列数据 -->
-					<template v-slot:list2>
-						<!-- 为了磨平部分平台的BUG，必须套一层view -->
-						<view>
-							<view v-for="(item, index) in data.list2" :key="item.id" class="waterfall-item">
-								<view class="waterfall-item__image">
-									<uv-image :src="item.pictureUrl" mode="widthFix" width="{item.width+'px'}">
-
-									</uv-image>
-								</view>
-								<view class="waterfall-item__ft">
-									<view class="waterfall-item__ft__title">
-										<text class="value">{{item.itemData.name}}</text>
-									</view>
-									<view class="waterfall-item__ft__desc uv-line-2">
-										<text class="value">{{item.itemData.desc}}</text>
-									</view>
-								</view>
-							</view>
-						</view>
-					</template>
-				</uv-waterfall>
-				<!-- 加载更多组件 -->
-				<uv-load-more :status="data.loadStatus"></uv-load-more>
-			</view>
+			<waterfall></waterfall>
 
 		</view>
 		<jd-tabbar pagePath="pages/national-pavilion/national-pavilion" />
@@ -77,7 +27,7 @@
 	import orderInfo from './components/orderInfo'
 	import moneyCard from './components/moneyCard'
 	import activity from './components/activity'
-
+	import waterfall from './components/waterfall'
 	export default {
 		components: {
 			myHeader,
@@ -87,6 +37,7 @@
 			orderInfo,
 			moneyCard,
 			activity,
+			waterfall
 		},
 		data() {
 			return {
@@ -108,19 +59,20 @@
 			// #endif
 		},
 		onHide() {
-			
+
 		},
 		mounted() {
-			this.queryRecommondData();
+			// this.queryRecommondData();
 		},
 		// 滑动到距离底部100px的时候触发（上拉加载）
 		onReachBottom() {
-			if (this.data.loadStatus == 'loading') {
-				return;
-			}
-			console.log('滑动到距离底部100px的时候触发,可以放 。。业务逻辑');
-			this.data.page++;
-			this.queryRecommondData();
+			// if (this.data.loadStatus == 'loading') {
+			// 	return;
+			// }
+			// console.log('滑动到距离底部100px的时候触发,可以放 。。业务逻辑');
+			// this.data.page++;
+			// this.queryRecommondData();
+						uni.$emit('onReachBottom');
 		},
 		methods: {
 			// 这点非常重要：e.name在这里返回是list1或list2，要手动将数据追加到相应列
@@ -131,7 +83,7 @@
 			queryRecommondData() {
 				this.data.loadStatus = 'loading';
 				this.$http
-					.get(`${recommend_like_m}/result_${this.data.page}.json`, {})
+					.get(`${recommend_like_m}/result_${this.data.page}`, {})
 					.then(r => {
 						const recommondList = r.data.data.feeds.content;
 						let list = [];
@@ -188,47 +140,51 @@
 	}
 
 	.recommond_wrap {
-		box-sizing: border-box;
-		border: 2px solid red;
+		width: 750rpx;
 
 		.title {
 			box-sizing: border-box;
 			border: 2px solid red;
 		}
 
-		.waterfall-item {
-			overflow: hidden;
-			margin-top: 10px;
-			border-radius: 6px;
-		}
-		.waterfall-item__image {
-			box-sizing: border-box;
-			border: 1px solid red;
-			min-width: 100%;
-			min-height: 150px;
-		}
-		.waterfall-item__ft {
-			padding: 20rpx;
-			background: #fff;
+		.waterfall {
+			width: 750rpx;
+			.waterfall-item {
+				overflow: hidden;
+				margin-top: 10px;
+				border-radius: 6px;
 
-			&__title {
-				margin-bottom: 10rpx;
-				line-height: 48rpx;
-				font-weight: 700;
-
-				.value {
-					font-size: 32rpx;
-					color: #303133;
+				&_image {
+					box-sizing: border-box;
+					border: 1px solid red;
+					max-width: 100%;
+					min-height: 150px;
 				}
-			}
 
-			&__desc .value {
-				font-size: 28rpx;
-				color: #606266;
-			}
+				&__ft {
+					padding: 20rpx;
+					background: #fff;
 
-			&__btn {
-				padding: 10px 0;
+					&__title {
+						margin-bottom: 10rpx;
+						line-height: 48rpx;
+						font-weight: 700;
+
+						.value {
+							font-size: 32rpx;
+							color: #303133;
+						}
+					}
+
+					&__desc .value {
+						font-size: 28rpx;
+						color: #606266;
+					}
+
+					&__btn {
+						padding: 10px 0;
+					}
+				}
 			}
 		}
 	}

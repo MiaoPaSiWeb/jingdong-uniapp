@@ -18,7 +18,7 @@ export default {
 		}
 	},
 	mounted() {
-		console.log("GRID_FLOOR onLoad",this.fdata);
+		console.log("GRID_FLOOR mounted",this.fdata);
 	}
 }
 </script>

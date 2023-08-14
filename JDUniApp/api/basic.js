@@ -12,7 +12,7 @@ tab
 
 */
 // 底部四个tab数据
-const queryLayout = 'mock-data/tab/queryLayout.json';
+const queryLayout = '/tab/queryLayout.json';
 
 export {
 	queryLayout

@@ -9,7 +9,16 @@ const http = new Request();
 // request全局参数设置
 http.setConfig(config => {
 	/* 设置全局配置 */
-	config.baseUrl = indexConfig.assetsRemotePath; /* 根域名不同 */
+	// #ifndef H5
+	// #endif
+	// 因为H5存在跨域问题，所以需要代理转发，代理转发在 manifest.json中配置
+	// #ifdef H5
+	// #endif
+	
+	config.baseUrl = indexConfig.baseUrl; /* 根域名不同 */
+	
+	
+	
 	const systemInfo = uni.getSystemInfoSync();
 	const systemInfoHeaders = {
 		'device-name': systemInfo.brand, // 设备名称

@@ -20,24 +20,19 @@
 		<jd-tabbar pagePath='pages/index/index' />
 
 		<u-picker :show="showPicker" :columns="columns4" closeOnClickOverlay @cancel="cancel" @confirm="confirm"
-			@close="close" ></u-picker>
+			@close="close"></u-picker>
 
 		<!-- <u-calendar :show="showCalendar"></u-calendar> -->
-		<u-calendar
-			:show="showCalendar"
-			defaultDate="2022-02-15"
-			@confirm="showCalendar = false"
-			@close="showCalendar = false"
-		></u-calendar>
+		<u-calendar :show="showCalendar" defaultDate="2022-02-15" @confirm="showCalendar = false"
+			@close="showCalendar = false"></u-calendar>
 	</view>
 </template>
 
 <script>
 	import {
-		pbReferer,
+		// pbReferer,
 		searchpromptwords,
 		queryChannelData,
-		feedtab
 	} from '@/api/home';
 	import inGridFloor from './components/in-grid-floor';
 	import inAdBanner from './components/in-ad-banner';
@@ -65,8 +60,7 @@
 			}
 		},
 		onLoad() {
-			// this.queryChannelData();
-			this.channelsList = channelData.result.data || [];
+			this.queryChannelData();
 		},
 		onShow() {
 			// #ifndef MP-WEIXIN
@@ -74,19 +68,20 @@
 			// #endif
 		},
 		onHide() {
-			
+
 		},
 		methods: {
 			tapItem() {
-				// var list = {
-				// 	name: "我的饭康师傅",
-				// 	id: 737823
-				// }
-				// uni.navigateTo({
-				// 	url: `/pages/detail/detail??data=${encodeURIComponent(JSON.stringify(list))}`
-				// });
+				this.$http
+					.get('/tab/index/queryChannelData', {})
+					.then(r => {
+						console.log("？？" + JSON.stringify(r))
+					})
+					.catch((e) => {
+						console.log("error：" + JSON.stringify(e))
+					});
 
-				this.queryChannelData();
+
 			},
 			// 添加商品至购物车
 			queryChannelData() {
@@ -96,13 +91,14 @@
 					.then(r => {
 						this.channelsList = r.data.result.data || [];
 						this.loading = false;
-						console.log("？？"+JSON.stringify(r))
+						console.log("？？" + JSON.stringify(r))
 					})
 					.catch((e) => {
 						this.loading = false;
-						console.log("error："+JSON.stringify(e))
+						console.log("error：" + JSON.stringify(e))
 					});
 			},
+
 			close() {
 				// console.log('close');
 				this.showPicker = false
