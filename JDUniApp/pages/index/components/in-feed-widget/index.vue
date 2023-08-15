@@ -17,25 +17,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="content">
-			<view v-for="(item,index) in feedList" :key="item.template == 1 ? item.groupId+item.skuId:index+item.template">
-				<view class="template1" v-if="item.template == 1">
-					占满 半 个屏宽
-				</view>
-				<view class="template14" v-else-if="item.template == 14">
-					占满 整 个屏宽
-				</view>
-				<view class="template8" v-else-if="item.template == 8">
-					占满 半 个屏宽（轮播图效果）
-				</view>
-				<view class="template9" v-else-if="item.template == 9">
-					？？？ 效果
-				</view>
-				<view v-else>
-					??? - {{item.template}}
-				</view>
-			</view>
-		</view>
+		<waterfall></waterfall>
 	</view>
 </template>
 
@@ -43,6 +25,7 @@
 	import {
 		feedtab
 	} from '@/api/home';
+	import waterfall from '../waterfall'
 	export default {
 		name: 'FEED_WIDGET',
 		props: {
@@ -51,10 +34,12 @@
 				default: {}
 			}
 		},
+		components: {
+			waterfall
+		},
 		data() {
 			return {
 				selectTabId: -1,
-				lists: ['A', 'B', 'C', 'D', 'E'],
 				feedList:[]
 			}
 		},
@@ -63,15 +48,6 @@
 			this.queryFeedData();
 		},
 		methods: {
-			// size每组数组多少个，如：10
-			// array需要拆分的数组
-			splitArray(array, size) {
-				let data = [];
-				for (let i = 0; i < array.length; i += size) {
-					data.push(array.slice(i, i + size))
-				}
-				return data
-			},
 			handleClickTabItem(tab) {
 				this.selectTabId = tab.tabId;
 				console.log("handleClickTabItem", this.selectTabId);
@@ -143,32 +119,6 @@
 			color: red;
 			font-size: 14px;
 			font-weight: bold;
-		}
-	}
-	
-	.content {
-		box-sizing: border-box;
-		border: 1px solid red;
-		padding: 24rpx;
-		.template1{
-			box-sizing: border-box;
-			border: 1px solid green;
-			width: 50%;
-			height: 160rpx;
-		}
-		.template8{
-			box-sizing: border-box;
-			border: 1px solid yellow;
-		}
-		.template9{
-			box-sizing: border-box;
-			border: 1px solid palegreen;
-		}
-		.template14{
-			box-sizing: border-box;
-			border: 1px solid cyan;
-			width: 100%;
-			height: 160rpx;
 		}
 	}
 </style>

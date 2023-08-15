@@ -69,13 +69,13 @@
 		mounted() {
 			console.log("我的-猜你喜欢-mounted")
 			//监听下拉加载更多
-			uni.$on('national-pavilion:onReachBottom', () => {
+			uni.$on('index:onReachBottom', () => {
 				this.loadData();
 			})
 			this.loadData(true)
 		},
 		beforeDestroy() {
-			uni.$off('national-pavilion:onReachBottom');
+			uni.$off('index:onReachBottom');
 		},
 		methods: {
 			// 这点非常重要：e.name在这里返回是list1或list2，要手动将数据追加到相应列
