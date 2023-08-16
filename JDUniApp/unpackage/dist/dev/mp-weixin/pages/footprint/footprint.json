@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "浏览足迹",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "jd-image": "/components/jd-image/jd-image"
+  }
 }

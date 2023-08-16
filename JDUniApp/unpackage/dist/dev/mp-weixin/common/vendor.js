@@ -20427,7 +20427,7 @@ exports.queryCategoryData = queryCategoryData;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.recommend_like_m = exports.GetJDUserInfoUnionForJD = void 0;
+exports.recommend_like_m = exports.footprint_records = exports.GetJDUserInfoUnionForJD = void 0;
 /*
 数据参照来源：https://home.m.jd.com/myJd/newhome.action
 
@@ -20438,6 +20438,8 @@ var GetJDUserInfoUnionForJD = '/tab/mine/GetJDUserInfoUnionForJD.json';
 exports.GetJDUserInfoUnionForJD = GetJDUserInfoUnionForJD;
 var recommend_like_m = '/tab/mine/recommend_like_m';
 exports.recommend_like_m = recommend_like_m;
+var footprint_records = '/footprint_records';
+exports.footprint_records = footprint_records;
 
 /***/ }),
 /* 200 */,
