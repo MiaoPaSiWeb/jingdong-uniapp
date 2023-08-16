@@ -62,19 +62,20 @@ _vue.default.prototype.$mConfig = _indexConfig.default;
 _vue.default.prototype.$mAssetsPath = _assetsConfig.default;
 _vue.default.prototype.$mHelper = _helper.default;
 
-// 记录页面滚动位置
+// vue2实现遮罩层外部禁止页面滚动,内部可滚动
+//1、记录页面滚动位置
 var pageLocation = '';
-//弹出框禁止滑动
+//2、弹出框禁止滑动
 _vue.default.prototype.stopScroll = function () {
-  document.body.style.top = '0';
+  var scrollTop = window.scrollY; //滚动的高度；
+  pageLocation = scrollTop;
   document.body.style.position = 'fixed';
-  // document.body.style.height = '100%'
-  // document.body.style.overflow = 'hidden'
+  document.body.style.top = '-' + scrollTop + 'px';
 };
-//弹出框可以滑动
+///3、弹出框可以滑动
 _vue.default.prototype.canScroll = function () {
   document.body.style.position = 'static';
-  // document.body.style.overflowY = 'auto'
+  window.scrollTo(0, pageLocation);
 };
 
 //🔥 注册全局组件

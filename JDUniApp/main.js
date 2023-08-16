@@ -30,20 +30,20 @@ Vue.prototype.$mConfig = $mConfig;
 Vue.prototype.$mAssetsPath = $mAssetsPath;
 Vue.prototype.$mHelper = $mHelper;
 
-
-// 记录页面滚动位置
-const pageLocation = '';
-//弹出框禁止滑动
+// vue2实现遮罩层外部禁止页面滚动,内部可滚动
+//1、记录页面滚动位置
+let pageLocation = '';
+//2、弹出框禁止滑动
 Vue.prototype.stopScroll = function() {
-	  document.body.style.top = '0'
-	  document.body.style.position = 'fixed'
-	  // document.body.style.height = '100%'
-	  // document.body.style.overflow = 'hidden'
+	let scrollTop = window.scrollY; //滚动的高度；
+	pageLocation = scrollTop;
+	document.body.style.position = 'fixed';
+	document.body.style.top = '-' + scrollTop + 'px';
 }
-//弹出框可以滑动
+///3、弹出框可以滑动
 Vue.prototype.canScroll = function() {
-  document.body.style.position = 'static'
-  // document.body.style.overflowY = 'auto'
+	document.body.style.position = 'static';
+	window.scrollTo(0, pageLocation);
 }
 
 

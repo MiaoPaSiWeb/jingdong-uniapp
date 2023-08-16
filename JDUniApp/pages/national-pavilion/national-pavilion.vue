@@ -1,7 +1,5 @@
 <template>
 	<view>
-		<button @click="showModalView">显示弹出层</button>
-		<button @click="showModalView">显示模态框</button>
 		<view class="content">
 			<view class="content-bg" :style="{ backgroundImage: 'url(' + bgUrl + ')' }">
 				<myHeader></myHeader>
@@ -15,19 +13,6 @@
 			</view>
 			<jd-tabbar pagePath="pages/national-pavilion/national-pavilion" />
 		</view>
-		<jd-modal v-if="showModal" @close="closeModal">
-			<view>
-				<p @click="closeModal">这是弹出层中的内容</p>
-				<view v-for="index in 200" :key="index">
-					{{index}}
-				</view>
-			</view>
-		</jd-modal>
-		<!-- <jd-confirmation v-bind:show="showModal" v-bind:onCancel="cancel" v-bind:onConfirm="confirm">
-			<template v-slot:body>
-				<p>确定要删除吗？</p>
-			</template>
-		</jd-confirmation> -->
 	</view>
 </template>
 
@@ -58,7 +43,6 @@
 		data() {
 			return {
 				bgUrl: this.$mConfig.assetsRemotePath + '/mine/bg.png',
-				showModal: false,
 			}
 		},
 		onShow() {
@@ -77,25 +61,7 @@
 			uni.$emit('national-pavilion:onReachBottom');
 		},
 		methods: {
-			showModalView() {
-				this.showModal = !this.showModal;
-				if (this.showModal) {
-					this.stopScroll()
-				} else {
-					this.canScroll()
-				}
-			},
-			closeModal() {
-				this.showModal = false; // 关闭弹窗
-				this.canScroll()
-			},
-			cancel() {
-				this.showModal = false
-			},
-			confirm() {
-				alert('删除成功！')
-				this.showModal = false
-			}
+			
 		},
 		computed: {
 

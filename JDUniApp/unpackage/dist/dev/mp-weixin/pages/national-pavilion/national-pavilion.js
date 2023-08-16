@@ -103,9 +103,6 @@ try {
     jdTabbar: function () {
       return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 238))
     },
-    jdModal: function () {
-      return __webpack_require__.e(/*! import() | components/jd-modal/jd-modal */ "components/jd-modal/jd-modal").then(__webpack_require__.bind(null, /*! @/components/jd-modal/jd-modal.vue */ 431))
-    },
   }
 } catch (e) {
   if (
@@ -186,21 +183,6 @@ var _mine = __webpack_require__(/*! @/api/mine.js */ 199);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var myHeader = function myHeader() {
   Promise.all(/*! require.ensure | pages/national-pavilion/components/my-header/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/national-pavilion/components/my-header/index")]).then((function () {
     return resolve(__webpack_require__(/*! ./components/my-header */ 287));
@@ -254,8 +236,7 @@ var _default = {
   },
   data: function data() {
     return {
-      bgUrl: this.$mConfig.assetsRemotePath + '/mine/bg.png',
-      showModal: false
+      bgUrl: this.$mConfig.assetsRemotePath + '/mine/bg.png'
     };
   },
   onShow: function onShow() {},
@@ -264,27 +245,7 @@ var _default = {
   onReachBottom: function onReachBottom() {
     uni.$emit('national-pavilion:onReachBottom');
   },
-  methods: {
-    showModalView: function showModalView() {
-      this.showModal = !this.showModal;
-      if (this.showModal) {
-        this.stopScroll();
-      } else {
-        this.canScroll();
-      }
-    },
-    closeModal: function closeModal() {
-      this.showModal = false; // 关闭弹窗
-      this.canScroll();
-    },
-    cancel: function cancel() {
-      this.showModal = false;
-    },
-    confirm: function confirm() {
-      alert('删除成功！');
-      this.showModal = false;
-    }
-  },
+  methods: {},
   computed: {}
 };
 exports.default = _default;
