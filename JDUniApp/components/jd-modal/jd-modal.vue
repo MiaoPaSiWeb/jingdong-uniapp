@@ -1,40 +1,48 @@
 <template>
-	<view class="modal-container" v-show="show">
-		<view class="modal-content">
+	<div class="modal-container" @click="closeModal">
+		<div class="modal-content" @click.stop>
 			<slot></slot>
-		</view>
-	</view>
+		</div>
+	</div>
 </template>
 
 <script>
 	export default {
-		name: 'jdModal',
-		props: {
-			show: {
-				type: Boolean,
-				default: false
+		methods: {
+			closeModal() {
+				this.$emit('close');
 			}
 		}
-	}
+	};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.modal-container {
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		z-index: 9999;
 		background-color: rgba(0, 0, 0, 0.5);
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
+		z-index: 9999;
+		/* 阻止蒙层滑动 */
+		overflow-y: hidden;
+
 	}
 
 	.modal-content {
-		background-color: #fff;
+		box-sizing: border-box;
+		border: 1px solid red;
+		background-color: white;
+		border-radius: 10px;
 		padding: 20px;
+		max-width: 80%;
 		max-height: 80%;
+		/* 内容正常滑动 */
+		overflow-y: auto;
+
 	}
 </style>

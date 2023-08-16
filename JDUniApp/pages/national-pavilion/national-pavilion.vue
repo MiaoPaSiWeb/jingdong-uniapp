@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<button @click="showModalView">显示弹出层</button>
-		<button @click="showModal = !showModal">显示模态框</button>
+		<button @click="showModalView">显示模态框</button>
 		<view class="content">
 			<view class="content-bg" :style="{ backgroundImage: 'url(' + bgUrl + ')' }">
 				<myHeader></myHeader>
@@ -15,9 +15,9 @@
 			</view>
 			<jd-tabbar pagePath="pages/national-pavilion/national-pavilion" />
 		</view>
-		<jd-modal :show="showModal">
+		<jd-modal v-if="showModal" @close="closeModal">
 			<view>
-				<p @click="showModalView">这是弹出层中的内容</p>
+				<p @click="closeModal">这是弹出层中的内容</p>
 				<view v-for="index in 200" :key="index">
 					{{index}}
 				</view>
@@ -77,13 +77,17 @@
 			uni.$emit('national-pavilion:onReachBottom');
 		},
 		methods: {
-			showModalView(){
+			showModalView() {
 				this.showModal = !this.showModal;
 				if (this.showModal) {
 					this.stopScroll()
-				} else{
-					 this.canScroll()
+				} else {
+					this.canScroll()
 				}
+			},
+			closeModal() {
+				this.showModal = false; // 关闭弹窗
+				this.canScroll()
 			},
 			cancel() {
 				this.showModal = false

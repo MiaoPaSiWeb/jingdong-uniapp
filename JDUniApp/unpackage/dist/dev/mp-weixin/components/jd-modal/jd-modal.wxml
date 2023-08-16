@@ -1,1 +1,1 @@
-<view hidden="{{!(show)}}" class="modal-container data-v-23acef44"><view class="modal-content data-v-23acef44"><slot></slot></view></view>
+<view data-event-opts="{{[['tap',[['closeModal',['$event']]]]]}}" class="modal-container _div data-v-23acef44" bindtap="__e"><view data-event-opts="{{[['tap',[['',['$event']]]]]}}" class="modal-content _div data-v-23acef44" catchtap="__e"><slot></slot></view></view>

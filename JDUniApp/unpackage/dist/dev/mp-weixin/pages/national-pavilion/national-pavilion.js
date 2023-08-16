@@ -128,11 +128,6 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  if (!_vm._isMounted) {
-    _vm.e0 = function ($event) {
-      _vm.showModal = !_vm.showModal
-    }
-  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -277,6 +272,10 @@ var _default = {
       } else {
         this.canScroll();
       }
+    },
+    closeModal: function closeModal() {
+      this.showModal = false; // 关闭弹窗
+      this.canScroll();
     },
     cancel: function cancel() {
       this.showModal = false;
