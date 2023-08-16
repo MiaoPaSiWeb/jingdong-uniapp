@@ -9,7 +9,8 @@
     "pages/account-set/account-set",
     "pages/goods_fav/goods_fav",
     "pages/shop_fav/shop_fav",
-    "pages/footprint/footprint"
+    "pages/footprint/footprint",
+    "pages/product/product"
   ],
   "subPackages": [],
   "window": {

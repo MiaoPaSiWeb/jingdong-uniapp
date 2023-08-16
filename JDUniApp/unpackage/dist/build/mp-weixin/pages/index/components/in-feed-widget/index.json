@@ -1,6 +1,7 @@
 {
+  "component": true,
   "usingComponents": {
-    "jd-image": "/components/jd-image/jd-image"
-  },
-  "component": true
+    "jd-image": "/components/jd-image/jd-image",
+    "waterfall": "/pages/index/components/waterfall/index"
+  }
 }

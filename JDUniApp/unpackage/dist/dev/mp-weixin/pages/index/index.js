@@ -178,6 +178,7 @@ var _home = __webpack_require__(/*! @/api/home */ 169);
 //
 //
 //
+//
 var inGridFloor = function inGridFloor() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-grid-floor/index */ "pages/index/components/in-grid-floor/index").then((function () {
     return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 259));

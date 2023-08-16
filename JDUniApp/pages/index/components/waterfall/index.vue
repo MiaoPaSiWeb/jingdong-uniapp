@@ -1,52 +1,54 @@
 <template>
-	<view class="waterfall">
-		<uv-waterfall ref="waterfall" v-model="list" left-gap="10" right-gap="10" column-gap="8"
-			@changeList="changeList">
-			<!-- 第一列数据 -->
-			<template v-slot:list1>
-				<!-- 为了磨平部分平台的BUG，必须套一层view -->
-				<view>
-					<view v-for="(item, index) in list1" :key="item.id + index" class="waterfall-item"
-						:style="{width:item.width+'px'}" @click="clickProductItem(item)">
-						<view class="waterfall-item__image">
-							<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
-								:style="{width:item.width+'px'}"></image>
-						</view>
-						<view class="waterfall-item__ft">
-							<view class="waterfall-item__ft__title">
-								<text class="value">{{item.name}}</text>
+	<view>
+		<view class="waterfall">
+			<uv-waterfall ref="waterfall" v-model="list" left-gap="10" right-gap="10" column-gap="8"
+				@changeList="changeList">
+				<!-- 第一列数据 -->
+				<template v-slot:list1>
+					<!-- 为了磨平部分平台的BUG，必须套一层view -->
+					<view>
+						<view v-for="(item, index) in list1" :key="item.id + index" class="waterfall-item"
+							:style="{width:item.width+'px'}" @click="clickProductItem(item)">
+							<view class="waterfall-item__image">
+								<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
+									:style="{width:item.width+'px'}"></image>
 							</view>
-							<view class="waterfall-item__ft__desc">
-								<text class="value">{{item.oriprice}}</text>
-							</view>
-						</view>
-					</view>
-				</view>
-			</template>
-			<!-- 第二列数据 -->
-			<template v-slot:list2>
-				<!-- 为了磨平部分平台的BUG，必须套一层view -->
-				<view>
-					<view v-for="(item, index) in list2" :key="item.id + index" class="waterfall-item"
-						:style="{width:item.width+'px'}" @click="clickProductItem(item)">
-						<view class="waterfall-item__image">
-							<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
-								:style="{width:item.width+'px'}"></image>
-						</view>
-						<view class="waterfall-item__ft">
-							<view class="waterfall-item__ft__title">
-								<text class="value">{{item.name}}</text>
-							</view>
-							<view class="waterfall-item__ft__desc uv-line-2">
-								<text class="value">{{item.oriprice}}</text>
+							<view class="waterfall-item__ft">
+								<view class="waterfall-item__ft__title">
+									<text class="value">{{item.name}}</text>
+								</view>
+								<view class="waterfall-item__ft__desc">
+									<text class="value">{{item.oriprice}}</text>
+								</view>
 							</view>
 						</view>
 					</view>
-				</view>
-			</template>
-		</uv-waterfall>
-		<!-- 加载更多组件 -->
-		<uv-load-more :status="loadStatus"></uv-load-more>
+				</template>
+				<!-- 第二列数据 -->
+				<template v-slot:list2>
+					<!-- 为了磨平部分平台的BUG，必须套一层view -->
+					<view>
+						<view v-for="(item, index) in list2" :key="item.id + index" class="waterfall-item"
+							:style="{width:item.width+'px'}" @click="clickProductItem(item)">
+							<view class="waterfall-item__image">
+								<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
+									:style="{width:item.width+'px'}"></image>
+							</view>
+							<view class="waterfall-item__ft">
+								<view class="waterfall-item__ft__title">
+									<text class="value">{{item.name}}</text>
+								</view>
+								<view class="waterfall-item__ft__desc uv-line-2">
+									<text class="value">{{item.oriprice}}</text>
+								</view>
+							</view>
+						</view>
+					</view>
+				</template>
+			</uv-waterfall>
+			<!-- 加载更多组件 -->
+			<uv-load-more :status="loadStatus"></uv-load-more>
+		</view>
 	</view>
 </template>
 <script>

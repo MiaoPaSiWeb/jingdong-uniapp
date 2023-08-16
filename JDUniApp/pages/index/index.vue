@@ -7,6 +7,7 @@
 			<inFeedWidget v-else-if="channel.floorType === 'FEED_WIDGET'" :fdata='channel' />
 			<view v-else></view>
 		</view>
+		<waterfall></waterfall>
 		<jd-tabbar pagePath='pages/index/index' />
 	</view>
 </template>

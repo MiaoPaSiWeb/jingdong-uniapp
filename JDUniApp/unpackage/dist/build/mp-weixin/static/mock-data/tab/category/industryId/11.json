@@ -1,0 +1,321 @@
+{
+	"api": "mtop.relationrecommend.wirelessrecommend.recommend",
+	"data": {
+		"result": [
+			{
+				"result": [
+					"1"
+				],
+				"industryId": "11",
+				"industryList": [
+					{
+						"industryName": "手机",
+						"industryId": "4"
+					},
+					{
+						"industryName": "女装",
+						"industryId": "1"
+					},
+					{
+						"industryName": "母婴",
+						"industryId": "3"
+					},
+					{
+						"industryName": "鞋靴",
+						"industryId": "5"
+					},
+					{
+						"industryName": "箱包",
+						"industryId": "11"
+					},
+					{
+						"industryName": "食品",
+						"industryId": "6"
+					},
+					{
+						"industryName": "饰品",
+						"industryId": "13"
+					},
+					{
+						"industryName": "进口",
+						"industryId": "21"
+					},
+					{
+						"industryName": "百货",
+						"industryId": "2"
+					},
+					{
+						"industryName": "美妆",
+						"industryId": "9"
+					},
+					{
+						"industryName": "图书",
+						"industryId": "24"
+					},
+					{
+						"industryName": "男装",
+						"industryId": "10"
+					},
+					{
+						"industryName": "洗护",
+						"industryId": "14"
+					},
+					{
+						"industryName": "家装",
+						"industryId": "8"
+					},
+					{
+						"industryName": "电器",
+						"industryId": "15"
+					},
+					{
+						"industryName": "数码",
+						"industryId": "19"
+					},
+					{
+						"industryName": "企业",
+						"industryId": "20"
+					},
+					{
+						"industryName": "内衣",
+						"industryId": "12"
+					},
+					{
+						"industryName": "运动",
+						"industryId": "7"
+					},
+					{
+						"industryName": "保健",
+						"industryId": "17"
+					},
+					{
+						"industryName": "车品",
+						"industryId": "16"
+					},
+					{
+						"industryName": "生鲜",
+						"industryId": "18"
+					},
+					{
+						"industryName": "医药",
+						"industryId": "22"
+					},
+					{
+						"industryName": "奢品",
+						"industryId": "23"
+					}
+				],
+				"moduleList": [
+					{
+						"title": "猜你喜欢",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士斜挎包",
+								"search_name": "斜挎包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1_3V7doGF3KVjSZFvXXb_nXXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "双肩背包",
+								"search_name": "双肩包",
+								"pic": "https://img.alicdn.com/tfs/TB1vNsGbBSD3KVjSZFqXXc4bpXa-400-400.jpg",
+								"catmap": "122690003"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "旅行箱",
+								"search_name": "行李箱",
+								"pic": "https://img.alicdn.com/tfs/TB1SZsEbBiE3KVjSZFMXXbQhVXa-400-400.jpg",
+								"catmap": "50012019"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士单肩包",
+								"search_name": "单肩包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1h_KIdl1D3KVjSZFyXXbuFpXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士胸包",
+								"search_name": "胸包男",
+								"pic": "https://gw.alicdn.com/tfs/TB14D1Xdf1G3KVjSZFkXXaK4XXa-400-400.jpg",
+								"catmap": "122654005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "钱包",
+								"search_name": "钱包",
+								"pic": "https://gw.alicdn.com/tfs/TB1vEmGdf1H3KVjSZFBXXbSMXXa-400-400.jpg",
+								"catmap": "121434005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士帆布包",
+								"search_name": "帆布包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1CQabdlCw3KVjSZFuXXcAOpXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士手提包",
+								"search_name": "手提包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1AOR5doGF3KVjSZFoXXbmpFXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士真皮包",
+								"search_name": "真皮男包",
+								"pic": "https://gw.alicdn.com/tfs/TB139eadouF3KVjSZK9XXbVtXXa-400-400.jpg",
+								"catmap": "122654005"
+							}
+						]
+					},
+					{
+						"title": "女士包袋",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士单肩包",
+								"search_name": "单肩包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1h_KIdl1D3KVjSZFyXXbuFpXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士帆布包",
+								"search_name": "帆布包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1CQabdlCw3KVjSZFuXXcAOpXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士手拿包",
+								"search_name": "手拿包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1DR09dmWD3KVjSZSgXXcCxVXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士手提包",
+								"search_name": "手提包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1AOR5doGF3KVjSZFoXXbmpFXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士斜挎包",
+								"search_name": "斜挎包女",
+								"pic": "https://gw.alicdn.com/tfs/TB1_3V7doGF3KVjSZFvXXb_nXXa-400-400.jpg",
+								"catmap": "50012010"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女士真皮包",
+								"search_name": "真皮女包",
+								"pic": "https://gw.alicdn.com/tfs/TB102Ccdbus3KVjSZKbXXXqkFXa-400-400.jpg",
+								"catmap": "50012010"
+							}
+						]
+					},
+					{
+						"title": "功能类箱包",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "双肩背包",
+								"search_name": "双肩包",
+								"pic": "https://img.alicdn.com/tfs/TB1vNsGbBSD3KVjSZFqXXc4bpXa-400-400.jpg",
+								"catmap": "122690003"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "旅行箱",
+								"search_name": "行李箱",
+								"pic": "https://img.alicdn.com/tfs/TB1SZsEbBiE3KVjSZFMXXbQhVXa-400-400.jpg",
+								"catmap": "50012019"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "钱包",
+								"search_name": "钱包",
+								"pic": "https://gw.alicdn.com/tfs/TB1vEmGdf1H3KVjSZFBXXbSMXXa-400-400.jpg",
+								"catmap": "121434005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "旅行袋",
+								"search_name": "旅行包",
+								"pic": "https://img.alicdn.com/tfs/TB1oPEFbBWD3KVjSZKPXXap7FXa-400-400.jpg",
+								"catmap": "50050199"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "卡包",
+								"search_name": "卡包",
+								"pic": "https://img.alicdn.com/tfs/TB1Se7Mbrus3KVjSZKbXXXqkFXa-400-400.jpg",
+								"catmap": "121400005"
+							}
+						]
+					},
+					{
+						"title": "男士包袋",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士单肩包",
+								"search_name": "单肩包男",
+								"pic": "https://gw.alicdn.com/tfs/TB1W6uIdk5E3KVjSZFCXXbuzXXa-400-400.jpg",
+								"catmap": "122654005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士斜挎包",
+								"search_name": "斜挎包男",
+								"pic": "https://gw.alicdn.com/tfs/TB1O7WbdlWD3KVjSZKPXXap7FXa-400-400.jpg",
+								"catmap": "122654005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士真皮包",
+								"search_name": "真皮男包",
+								"pic": "https://gw.alicdn.com/tfs/TB139eadouF3KVjSZK9XXbVtXXa-400-400.jpg",
+								"catmap": "122654005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士胸包",
+								"search_name": "胸包男",
+								"pic": "https://gw.alicdn.com/tfs/TB14D1Xdf1G3KVjSZFkXXaK4XXa-400-400.jpg",
+								"catmap": "122654005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "男士腰包",
+								"search_name": "腰包男",
+								"pic": "https://gw.alicdn.com/tfs/TB1bu0.dfWG3KVjSZPcXXbkbXXa-400-400.jpg",
+								"catmap": "122654005"
+							}
+						]
+					}
+				],
+				"suggest_rn": "bucketid_8-rn_0",
+				"pvid": "fae25194-322f-4ccd-8ada-582e070b6186",
+				"scm": "1007.44880.325003.0",
+				"version": "1",
+				"tpp_trace": "0b1e3a9b16920767478175093d0ca6"
+			}
+		],
+		"pvid": "bc7666ca-2a97-44df-a180-427cddcf8f9e",
+		"scm": "1007.24658.129317.0",
+		"version": 1,
+		"tpp_trace": "2147b66616920767477986228e90bb"
+	},
+	"ret": [
+		"SUCCESS::调用成功"
+	],
+	"v": "2.0"
+}
