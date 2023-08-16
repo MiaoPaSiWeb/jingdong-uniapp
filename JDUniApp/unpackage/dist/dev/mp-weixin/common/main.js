@@ -44,19 +44,48 @@ var jdImage = function jdImage() {
     return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 252));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-// 引入国际化语言包
+var jdModal = function jdModal() {
+  __webpack_require__.e(/*! require.ensure | components/jd-modal/jd-modal */ "components/jd-modal/jd-modal").then((function () {
+    return resolve(__webpack_require__(/*! @/components/jd-modal/jd-modal */ 431));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var jdConfirmation = function jdConfirmation() {
+  __webpack_require__.e(/*! require.ensure | components/jd-confirmation/jd-confirmation */ "components/jd-confirmation/jd-confirmation").then((function () {
+    return resolve(__webpack_require__(/*! @/components/jd-confirmation/jd-confirmation */ 438));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+//🔥 引入国际化语言包
 
-// 挂载全局自定义方法
+//🔥 挂载全局自定义方法
 _vue.default.prototype.$http = _request.http;
 _vue.default.prototype.$mConfig = _indexConfig.default;
 _vue.default.prototype.$mAssetsPath = _assetsConfig.default;
 _vue.default.prototype.$mHelper = _helper.default;
+
+// 记录页面滚动位置
+var pageLocation = '';
+//弹出框禁止滑动
+_vue.default.prototype.stopScroll = function () {
+  document.body.style.top = '0';
+  document.body.style.position = 'fixed';
+  // document.body.style.height = '100%'
+  // document.body.style.overflow = 'hidden'
+};
+//弹出框可以滑动
+_vue.default.prototype.canScroll = function () {
+  document.body.style.position = 'static';
+  // document.body.style.overflowY = 'auto'
+};
+
+//🔥 注册全局组件
 _vue.default.component('jd-tabbar', jdTabbar);
 _vue.default.component('jd-safearea', jdSafearea);
 _vue.default.component('jd-image', jdImage);
+_vue.default.component('jd-modal', jdModal);
+_vue.default.component('jd-confirmation', jdConfirmation);
 if (false) {}
 
-// 路由导航
+//🔥 路由导航
 _App.default.mpType = 'app';
 try {
   var isPromise = function isPromise(obj) {

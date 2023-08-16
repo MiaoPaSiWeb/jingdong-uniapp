@@ -1,0 +1,1 @@
+<view hidden="{{!(show)}}" class="modal-container data-v-23acef44"><view class="modal-content data-v-23acef44"><slot></slot></view></view>

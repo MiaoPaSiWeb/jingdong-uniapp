@@ -103,6 +103,9 @@ try {
     jdTabbar: function () {
       return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 238))
     },
+    jdModal: function () {
+      return __webpack_require__.e(/*! import() | components/jd-modal/jd-modal */ "components/jd-modal/jd-modal").then(__webpack_require__.bind(null, /*! @/components/jd-modal/jd-modal.vue */ 431))
+    },
   }
 } catch (e) {
   if (
@@ -125,6 +128,11 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function ($event) {
+      _vm.showModal = !_vm.showModal
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -165,6 +173,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _mine = __webpack_require__(/*! @/api/mine.js */ 199);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -234,7 +259,8 @@ var _default = {
   },
   data: function data() {
     return {
-      bgUrl: this.$mConfig.assetsRemotePath + '/mine/bg.png'
+      bgUrl: this.$mConfig.assetsRemotePath + '/mine/bg.png',
+      showModal: false
     };
   },
   onShow: function onShow() {},
@@ -243,7 +269,23 @@ var _default = {
   onReachBottom: function onReachBottom() {
     uni.$emit('national-pavilion:onReachBottom');
   },
-  methods: {},
+  methods: {
+    showModalView: function showModalView() {
+      this.showModal = !this.showModal;
+      if (this.showModal) {
+        this.stopScroll();
+      } else {
+        this.canScroll();
+      }
+    },
+    cancel: function cancel() {
+      this.showModal = false;
+    },
+    confirm: function confirm() {
+      alert('删除成功！');
+      this.showModal = false;
+    }
+  },
   computed: {}
 };
 exports.default = _default;

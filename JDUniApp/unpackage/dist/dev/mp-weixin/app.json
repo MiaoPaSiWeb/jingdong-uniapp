@@ -42,6 +42,8 @@
   "usingComponents": {
     "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
     "jd-safearea": "/components/jd-safearea/jd-safearea",
-    "jd-image": "/components/jd-image/jd-image"
+    "jd-image": "/components/jd-image/jd-image",
+    "jd-modal": "/components/jd-modal/jd-modal",
+    "jd-confirmation": "/components/jd-confirmation/jd-confirmation"
   }
 }
