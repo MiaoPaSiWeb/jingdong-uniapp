@@ -24,5 +24,12 @@
 <style lang="scss">
 	/* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
 	@import "@/uni_modules/uview-ui/index.scss";
+
 	/*每个页面公共css */
+	page {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background-color: #EEE
+	}
 </style>

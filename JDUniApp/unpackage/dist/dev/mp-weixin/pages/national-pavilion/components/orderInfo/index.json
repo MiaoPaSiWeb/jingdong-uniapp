@@ -1,6 +1,6 @@
 {
-  "component": true,
   "usingComponents": {
     "jd-image": "/components/jd-image/jd-image"
-  }
+  },
+  "component": true
 }

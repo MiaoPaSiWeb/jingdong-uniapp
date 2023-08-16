@@ -31,17 +31,17 @@ _vue.default.use(_uviewUi.default);
 // 引入全局配置
 var jdTabbar = function jdTabbar() {
   __webpack_require__.e(/*! require.ensure | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 230));
+    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 238));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdSafearea = function jdSafearea() {
   __webpack_require__.e(/*! require.ensure | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 237));
+    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 245));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdImage = function jdImage() {
   Promise.all(/*! require.ensure | components/jd-image/jd-image */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jd-image/jd-image")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 244));
+    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 252));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 // 引入国际化语言包

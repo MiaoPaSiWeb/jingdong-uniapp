@@ -9461,7 +9461,7 @@ internalMixin(Vue);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-pages-loader/lib/index.js):\nSyntaxError: Unexpected token , in JSON at position 2488\n    at JSON.parse (<anonymous>)\n    at parseJson (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/uni-cli-shared/lib/json.js:17:20)\n    at parseManifestJson (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/uni-cli-shared/lib/manifest.js:35:10)\n    at Object.<anonymous> (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-pages-loader/lib/index-new.js:66:24)\n    at Object.<anonymous> (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-pages-loader/lib/index.js:58:35)");
+
 
 /***/ }),
 /* 27 */,
@@ -19210,7 +19210,7 @@ var CONFIG = {
   development: {
     assetsPath: '/static',
     // 静态资源路径
-    baseUrl: 'http://demo.rageframe.com/api',
+    baseUrl: 'https://mock.mengxuegu.com/mock/64d9fe54f3137672a699eb48/jd-uni-app',
     // 后台接口请求地址
     hostUrl: 'http://h5.tinyshop.rageframe.com',
     // H5地址(前端运行地址)
@@ -19224,7 +19224,7 @@ var CONFIG = {
   production: {
     assetsPath: '/static',
     // 静态资源路径
-    baseUrl: 'http://demo.rageframe.com/api',
+    baseUrl: 'https://mock.mengxuegu.com/mock/64d9fe54f3137672a699eb48/jd-uni-app',
     // 后台接口请求地址
     hostUrl: 'http://h5.tinyshop.rageframe.com',
     // H5地址(前端运行地址)
@@ -19378,8 +19378,11 @@ var http = new _request.default();
 exports.http = http;
 http.setConfig(function (config) {
   /* 设置全局配置 */
-  // config.baseUrl = indexConfig.assetsRemotePath; /* 根域名不同 */
-  config.baseUrl = '';
+
+  // 因为H5存在跨域问题，所以需要代理转发，代理转发在 manifest.json中配置
+
+  config.baseUrl = _index.default.baseUrl; /* 根域名不同 */
+
   var systemInfo = uni.getSystemInfoSync();
   var systemInfoHeaders = {
     'device-name': systemInfo.brand,
@@ -20344,33 +20347,23 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.searchpromptwords = exports.queryChannelData = exports.pbReferer = exports.feedtab = void 0;
+exports.searchpromptwords = exports.queryChannelData = exports.feedtab = void 0;
 /*
 顶部  tab/index/pbReferer.json
 楼层信息 tab/index/queryChannelData.json
 推荐模块儿   tab/index/recommend_like_m.json
 */
 // 底部四个tab数据
-var pbReferer = 'mock-data/tab/index/pbReferer.json';
-exports.pbReferer = pbReferer;
-var searchpromptwords = 'mock-data/tab/index/searchpromptwords.json';
+// const pbReferer = 'mock-data/tab/index/pbReferer.json';
+var searchpromptwords = '/tab/index/searchpromptwords';
 exports.searchpromptwords = searchpromptwords;
-var queryChannelData = '/api/mock-data/tab/index/queryChannelData.json';
+var queryChannelData = '/tab/index/queryChannelData';
 exports.queryChannelData = queryChannelData;
-var feedtab = '/api/mock-data/tab/index/feedtab';
+var feedtab = '/tab/index/feedtab';
 exports.feedtab = feedtab;
 
 /***/ }),
-/* 170 */
-/*!******************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mock-data/tab/index/queryChannelData.json ***!
-  \******************************************************************************************************************/
-/*! exports provided: result, code, success, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"result\":{\"styleVersion\":\"1119876\",\"data\":[{\"floorId\":\"888\",\"gridFloor\":{\"groupId\":\"06608216\",\"items\":[{\"advertId\":\"0901745674\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/222536/2/23981/7360/63f432fdF90317c2e/ea0216e3e2f92ea5.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":0,\"picHeight\":0,\"name\":\"2\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4B4rLJxmKs3aY3ayBiPACW8T2qPz\",\"id\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html?&utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=CopyURL&ad_od=share\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"\",\"groupId\":\"\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]},\"floorType\":\"GRID_FLOOR\",\"floorIndex\":0},{\"floorId\":\"83595811\",\"floorType\":\"AD_BANNER\",\"adBannerFloor\":{\"banners\":[{\"advertId\":\"9301804457\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/211275/10/38876/96331/64c9eec4Fad3eebb7/6d7ca8879ec1b56d.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"下雨专题\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4Q38ZNQk4enXEXKFo8ahjcjTt3wS\",\"id\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4Q38ZNQk4enXEXKFo8ahjcjTt3wS/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301799848\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/219836/21/32831/36477/64bf41ccF3bc30f43/80b0899b1db3652e.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\",\"toPageId\":\"\",\"themeColor\":\"#aura4\",\"picWidth\":498,\"picHeight\":693,\"name\":\"aura4\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4RW5MxgJWbS1iMkCq4Uemkn7FPyn\",\"id\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4RW5MxgJWbS1iMkCq4Uemkn7FPyn/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"JBL PULSE4 音乐脉动四代便携式蓝牙音箱全面屏炫彩小音箱+低音炮超长续航防水设计 黑色\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/207789/34/4194/36181/61601344E20c6e18e/44b8281cb88b2000.jpg.dpg\",\"skuId\":\"100010838370\",\"jump\":{\"params\":{\"skuId\":\"100010838370\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"哈曼卡顿（Harman/Kardon）Aura Studio4 音乐琉璃四代4代  360°环绕立体声 菱形氛围灯效  桌面蓝牙音箱 \",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/138807/32/38311/65175/64c77201Fb75b7ac8/01b4a945184b4868.jpg.dpg\",\"skuId\":\"100057072838\",\"jump\":{\"params\":{\"skuId\":\"100057072838\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301799849\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/123060/24/35434/43944/64bf44b9F81a179e3/ad79fb8c0006bb87.jpg.dpg\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\",\"toPageId\":\"\",\"themeColor\":\"#123\",\"picWidth\":498,\"picHeight\":693,\"name\":\"123\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4TFvyrd4fqQdCKu2kSefnV6T5pMq\",\"id\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4TFvyrd4fqQdCKu2kSefnV6T5pMq/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301793132\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/179799/1/35279/71974/64b1105dF66c89d0f/62db75752ee2d1b3.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"新品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"Fojkg1ML7NffG6Mvt5b3GcFTcDK\",\"id\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/Fojkg1ML7NffG6Mvt5b3GcFTcDK/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"铁三角（Audio-technica）【日本直邮】铁三角运动耳机无线耳机防水/运动蓝牙遥控/带麦克风可插内存卡颈挂式蓝牙耳机 颈挂式蓝牙耳机60BT 黑色\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/97634/28/40751/16651/64aa911bF27f6ee55/ab10c61f07d3751e.jpg.dpg\",\"skuId\":\"10077407157272\",\"jump\":{\"params\":{\"skuId\":\"10077407157272\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"拉夫劳伦（Ralph Lauren）男士Polo衫短袖 商务休闲 送男友礼物 710548797 005红色 L \",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/97839/13/32575/11939/64c33705F16432341/cd7c7249d6a74d35.jpg.dpg\",\"skuId\":\"100045354180\",\"jump\":{\"params\":{\"skuId\":\"100045354180\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301796334\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/145478/30/33793/66221/64bf9dabF1547228a/dd5af8efd79d4743.jpg.dpg\",\"toUrl\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\",\"toPageId\":\"\",\"themeColor\":\"#11\",\"picWidth\":498,\"picHeight\":693,\"name\":\"11\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"455ipHDNRBzvnCG8e9YvD8wGDAdJ\",\"id\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/455ipHDNRBzvnCG8e9YvD8wGDAdJ/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301676394\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/63387/22/22477/72886/63463837Ed268024d/1da5f454bf7f7ddf.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物3C\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4VYzCcUvzsyjbMQqtmY3U6Mqzaoe\",\"id\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4VYzCcUvzsyjbMQqtmY3U6Mqzaoe/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"谷心(GX.Diffuser) 注氧仪 家用美容仪 纳米喷雾器 保湿补水仪 情人节 61节送女朋友生日礼物\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/220298/18/36101/101047/64c85751F04a762cc/e1541a394b258635.jpg.dpg\",\"skuId\":\"100025427750\",\"jump\":{\"params\":{\"skuId\":\"100025427750\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301676395\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/145294/39/30411/34835/6346385dE9c63db3b/8aa72b922c9f8f77.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物彩妆\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"VNcaArZTsYo1c859NxrfwC4zWvM\",\"id\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/VNcaArZTsYo1c859NxrfwC4zWvM/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"NYX闪亮液体眼影新碎钻细闪珠光卧蚕高光提亮液牛郎眼妆 #03银河碎钻\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/196363/16/35121/97456/64c75818F88ea8c80/7146da50df4033d8.jpg.dpg\",\"skuId\":\"100028638943\",\"jump\":{\"params\":{\"skuId\":\"100028638943\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"ZELENSYouth青春焕彩水润通透粉底液30ml Cloud云朵色 粉一白友好彩妆\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/140657/39/38509/71482/64c85dbbF56cb7d7c/159b4b1388bc9da9.jpg.dpg\",\"skuId\":\"100035004962\",\"jump\":{\"params\":{\"skuId\":\"100035004962\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301676392\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/151356/40/30581/230742/63f5e5d3Fe5ae3d6f/4005d11a89b19c48.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"10月探物洗发水\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3ymudAKQi4hj3CQvA8o4YUtG2D45\",\"id\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3ymudAKQi4hj3CQvA8o4YUtG2D45/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"9301749287\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/214137/16/29399/49432/64472b39Fb55f2b8f/b4a68a01c7767770.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"宠物\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2gYadarGrQGK5ucUkbXHuP6a6QT6\",\"id\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2gYadarGrQGK5ucUkbXHuP6a6QT6/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":[{\"name\":\"美士（Nutro）猫粮进口成猫粮干粮高蛋白宠物猫粮三文鱼鲜猫粮5磅2.27kg\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/199860/21/13662/88431/616e8a2aEfefe498b/86b8be54cbe9e57a.jpg.dpg\",\"skuId\":\"100012157084\",\"jump\":{\"params\":{\"skuId\":\"100012157084\"},\"srv\":\"\",\"des\":\"productDetail\"}},{\"name\":\"美士进口猫罐头一分为二餐盒湿粮三文鱼鸡肉无谷猫主食罐75g*12\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/224044/24/9301/219509/626b53b0Eb0263e9e/d46a7af6ed61eded.jpg.dpg\",\"skuId\":\"100016818589\",\"jump\":{\"params\":{\"skuId\":\"100016818589\"},\"srv\":\"\",\"des\":\"productDetail\"}}],\"desc\":\"\"},{\"advertId\":\"9301735202\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/156541/13/36039/33421/6414410cF96bd09e1/5a032a01b4fb9261.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\",\"toPageId\":\"\",\"themeColor\":\"#7D45F8\",\"picWidth\":498,\"picHeight\":693,\"name\":\"美妆药妆\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"xBcHMzhVAaRB7SSZLm5wWZdCn26\",\"id\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/xBcHMzhVAaRB7SSZLm5wWZdCn26/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"18345693\",\"groupId\":\"06652959\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]},\"floorIndex\":1},{\"floorId\":\"83595815\",\"flexFloor\":{\"viewGroups\":[{\"id\":\"1607515022454\",\"imageViews\":[{\"picUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/216971/3/5617/35136/619f4469E2a328821/17b060dee0370fa3.jpg\",\"id\":\"1607515379482\",\"jump\":{\"des\":\"m\",\"srv\":\"\",\"params\":{\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4B4rLJxmKs3aY3ayBiPACW8T2qPz/index.html\"}}}]}]},\"floorType\":\"FLEX_WIDGET\",\"floorIndex\":7},{\"floorId\":\"83595814\",\"floorType\":\"CHANNEL_WIDGET\",\"floorIndex\":8,\"channelFloor\":{\"channels\":[{\"advertId\":\"7301795171\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/146830/32/34493/8800/6419585fF0357671a/f650fe654a4fe7cf.png\",\"toUrl\":\"https://shop.m.jd.com/?shopId=1000348121\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"国际会员店\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"shop.m.jd.com\",\"id\":\"https://shop.m.jd.com/?shopId=1000348121\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://shop.m.jd.com/?shopId=1000348121\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795172\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/206810/35/7299/27836/617ac034E667d1db3/3eee669b28fe906c.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"母婴玩具\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2WgiuefFEuSGcCwtk8vnUvrTPFf\",\"id\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2WgiuefFEuSGcCwtk8vnUvrTPFf/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795173\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/201366/25/236/12528/610bb021Eb63dbe9c/ea7093be7685ea91.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"美妆护肤\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"4DtiBMHCHioVpP4yNGB9g2fGVvPv\",\"id\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/4DtiBMHCHioVpP4yNGB9g2fGVvPv/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795174\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/182830/4/11669/25146/60df0375E90132fee/26a9d26d9f7ecb34.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"居家生活\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2a6tjtybuyn9JDRZ21EJCrMUb1Wf\",\"id\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2a6tjtybuyn9JDRZ21EJCrMUb1Wf/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795175\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/206046/12/12838/11720/61795544E1ebada7b/d18005bbb4d1c517.png\",\"toUrl\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"海南免税\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"43jbUjooWAFMtH7UP7SqYhJ2WQfx\",\"id\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://prodev.m.jd.com/mall/active/43jbUjooWAFMtH7UP7SqYhJ2WQfx/index.html?babelChannel=ttt19\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795176\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/186772/11/3974/26709/60a39687E10c8443d/f4c6bc884f66ae16.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"营养保健\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"hGrMs6gRF8otvwtyx7dda9eXzRa\",\"id\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/hGrMs6gRF8otvwtyx7dda9eXzRa/index.html?babelChannel=ttt20\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795177\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/194827/25/3735/16373/60a3961dE37358b09/9124bcb07ed2d276.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"数码家电\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3A6TPyJ8bgDqJnvXLgT1StV9n4iS\",\"id\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3A6TPyJ8bgDqJnvXLgT1StV9n4iS/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795178\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/182064/19/5654/35130/60ab601fE7328eff8/bd552a411d82aa77.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"时尚轻奢\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2nB9QKEB6g3Z6RBYB69mQh25v3x3\",\"id\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2nB9QKEB6g3Z6RBYB69mQh25v3x3/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795179\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/187469/7/3815/27366/60a3966cEaf536199/0dc7c172c00d851f.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":150,\"picHeight\":150,\"name\":\"食品酒水\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"tAZGEw7vEx36voyWL63VPVUwFPz\",\"id\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/tAZGEw7vEx36voyWL63VPVUwFPz/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795180\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/157049/5/34948/15520/640068deF71389601/50e651751633a8a2.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":120,\"picHeight\":120,\"name\":\"进口个护\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2zZDbqRmVNgQK1gnzyasb6Xn29pg\",\"id\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2zZDbqRmVNgQK1gnzyasb6Xn29pg/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795182\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/180905/30/5651/52821/60ab619aE9b6aabe8/74ba4c8dfa9a2f6a.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"官方直营\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"33BBufvejVoBM7FQeSD2ZmGW69jk\",\"id\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/33BBufvejVoBM7FQeSD2ZmGW69jk/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795183\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/132700/27/18212/90823/60ab630eEc776c6fe/16c0ced4bba6da6c.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"家有萌宠\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"2Mxgei9N257HqGYZePVCuNZVhYYH\",\"id\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/2Mxgei9N257HqGYZePVCuNZVhYYH/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795184\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/193083/36/4727/105063/60ab634aE17ddda07/3dfd5536f9bef1ad.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"进口汽品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"VB8TW8eWnrNovEqj9RLfnVmQHNj\",\"id\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/VB8TW8eWnrNovEqj9RLfnVmQHNj/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795185\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/173487/18/11121/65440/60ab65c6E617248a3/f4e92c0bf3b9cfff.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"全球直购\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"3pNpoWbnFmViXhUcRrQDvsvookUA\",\"id\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795186\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/152377/35/26392/18570/6342886aE9a18cda6/01b7aa2e7cdc2573.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":120,\"picHeight\":120,\"name\":\"清洁纸品\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"23Xrp3p7PeU2JBPqBn772ywA6TT5\",\"id\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/23Xrp3p7PeU2JBPqBn772ywA6TT5/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"},{\"advertId\":\"7301795187\",\"imageUrl\":\"https://m.360buyimg.com/babel/jfs/t1/95468/9/29180/17271/63044ce1E1999d81c/05601b78cde94a5f.png\",\"toUrl\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\",\"toPageId\":\"\",\"themeColor\":\"\",\"picWidth\":300,\"picHeight\":300,\"name\":\"买手代购\",\"jump\":{\"params\":{\"channel\":\"babel@3YvKJrc4e4WK7aZ46j3h5UMCvEn4@03706824-09744961-S-158098921#0-7-5--42-57-0#2-did-15287736#232-15287736#bingoVis\",\"activityId\":\"bwGJPfaUGvRkRb6eYdETzcum1HD\",\"id\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\",\"contentStyle\":\"\",\"innerLink\":\"\",\"url\":\"https://pro.m.jd.com/mall/active/bwGJPfaUGvRkRb6eYdETzcum1HD/index.html\"},\"srv\":\"\",\"des\":\"m\"},\"stageId\":\"20350928\",\"groupId\":\"05440451\",\"totalBuyedStr\":\"\",\"titleOne\":\"\",\"titleTwo\":\"\",\"iconUrl\":\"\",\"live\":\"\",\"sku\":\"\",\"skuList\":\"\",\"desc\":\"\"}]}},{\"floorId\":\"5651049\",\"floorType\":\"FLASH_SALE_COUPON_WIDGET\",\"floorIndex\":13,\"flashSaleCouponFloor\":{\"couponList\":[{\"money\":\"100\",\"useDiscount\":\"满3888可用\",\"useDescription\":\"限购 [有明保健品海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943829946\",\"roleId\":\"117335130\",\"key\":\"B//lDbexJzWha/fdizW8ri7NWBiK6C6Dxec6RHw6bBha1VELwMttgpzZMVqupeYc\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满3888可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943829946\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-08-31使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/142950/35/37519/61384/64c21f7eF30dac4d8/c778fa6ce2cf6f1f.jpg\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-08-31\",\"wareInfoList\":[{\"skuId\":\"10081662209743\",\"jump\":{\"params\":{\"skuId\":\"10081662209743\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117335130\",\"tabName\":\"\"},{\"money\":\"220\",\"useDiscount\":\"满12500可用\",\"useDescription\":\"限购 [右丞象海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943350734\",\"roleId\":\"117197017\",\"key\":\"EbQor6uyn5tWwjY5fuCbVejRMJAu5ry1LXThL6Vyv35e0lsEKfAtH2YoAW8INQy7\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满12500可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943350734\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-10-01使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/113626/28/35259/27493/6424115dFeb4f95da/7fd5831cbc020694.png\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-10-01\",\"wareInfoList\":[{\"skuId\":\"10071948312069\",\"jump\":{\"params\":{\"skuId\":\"10071948312069\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117197017\",\"tabName\":\"\"},{\"money\":\"280\",\"useDiscount\":\"满1599可用\",\"useDescription\":\"限购 [潮领礼品箱包海外专营店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"943326930\",\"roleId\":\"117166792\",\"key\":\"qEWlXv5CzFkjKIWefcQEISm2095Hl1TiflEfMGAJ0P1TfFC1rhP0cZkoL1Xh/HfI\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满1599可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"943326930\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-08-01~2023-08-14使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/130943/28/40180/99696/64cb3f5eFb6ef51bd/4cf336edad9628c8.jpg\",\"typeName\":\"东券\",\"time\":\"2023-08-01~2023-08-14\",\"wareInfoList\":[{\"skuId\":\"10038491691818\",\"jump\":{\"params\":{\"skuId\":\"10038491691818\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"117166792\",\"tabName\":\"\"},{\"money\":\"50\",\"useDiscount\":\"满1199可用\",\"useDescription\":\"限购 [KENSLY医药海外官方旗舰店] 店铺商品\",\"couponState\":1,\"imageUrl\":\"\",\"batchId\":\"1032545633\",\"roleId\":\"115392033\",\"key\":\"t54t7LEdsPMJ5cnJl+mb5zYahJEqEslMbY9El6LwwugiHqmg5eYsPr8nnCA7TQgN\",\"couponKind\":\"2\",\"couponType\":\"1\",\"jump\":{\"params\":{\"innerLink\":\"\",\"sourceType\":\"PCUBE_CHANNEL\",\"from\":\"couponBatch\",\"tip\":\"满1199可用\",\"id\":\"\",\"sourceValue\":\"\",\"couponId\":\"1032545633\",\"category\":\"jump\",\"intel\":\"47\",\"url\":\"\"},\"srv\":\"category\",\"des\":\"productList\"},\"illus\":\"仅2023-07-11~2023-09-01使用\",\"goodsImage\":\"https://m.360buyimg.com/rank/jfs/t1/87496/24/40507/68895/6482ee36Fa9b225f3/8c280c214b04c379.jpg\",\"typeName\":\"东券\",\"time\":\"2023-07-11~2023-09-01\",\"wareInfoList\":[{\"skuId\":\"10075975276834\",\"jump\":{\"params\":{\"skuId\":\"10075975276834\"},\"srv\":\"\",\"des\":\"productDetail\"},\"saledPercent\":0,\"allCount\":0,\"isBuy\":0,\"beginTime\":0}],\"template\":\"11\",\"couponId\":\"115392033\",\"tabName\":\"\"}],\"stageInfoList\":[{\"stageTime\":\"2023-05-22 04:00:00\",\"beginTime\":\"04:00\",\"stageStatus\":\"0\",\"remainBeginTime\":\"0\",\"remainEndTime\":\"6339584982\",\"timeEnd\":\"1684727999000\",\"productInfoList\":[{\"skuId\":\"100017243042\",\"name\":\"虎牌日本进口虎牌(Tiger)儿童保温保冷杯MBR-C08G-KL 800ml 黑色狮子\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/140238/19/36434/74852/64a22abaFece3c7f5/d41de6d763e95c6d.jpg.dpg\",\"picUrl\":\"jfs/t1/140238/19/36434/74852/64a22abaFece3c7f5/d41de6d763e95c6d.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100017243042\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"100000条评价, 好评率97%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100035021629\",\"name\":\"荷高（Globemilk）荷兰原装进口全脂纯牛奶1L*6盒 整箱装 高钙3.7优质乳蛋白 \",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/155989/26/33152/88572/63b679b1F854d80dc/c503724d3550149e.jpg.dpg\",\"picUrl\":\"jfs/t1/155989/26/33152/88572/63b679b1F854d80dc/c503724d3550149e.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100035021629\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"20000条评价, 好评率99%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100003298876\",\"name\":\"Calvin Klein CK 男士平角内裤套装 3条装 送男友礼物 U2664G 001黑色 L \",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/191359/12/28457/55680/63200001Eadf838e3/769c4483cd23b726.jpg.dpg\",\"picUrl\":\"jfs/t1/191359/12/28457/55680/63200001Eadf838e3/769c4483cd23b726.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100003298876\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"50000条评价, 好评率92%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"1995375219\",\"name\":\"雅漾（Avene） 舒护活泉喷雾 300ml 定妆化妆水\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/131758/35/39722/34387/64c91c98Ff9764745/3cfcc23c8c82192a.jpg.dpg\",\"picUrl\":\"jfs/t1/131758/35/39722/34387/64c91c98Ff9764745/3cfcc23c8c82192a.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"1995375219\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"20000条评价, 好评率99%\",\"fixTitle\":\"10天最低价\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagName\":\"多买优惠\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"1992363262\",\"name\":\"芳珂 FANCL防晒霜60ml 保湿防护乳霜  防水隔离清爽不油腻  透亮倍护 SPF50+\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/138612/15/37286/26336/64c91c96F454c0320/e647914f6b922868.jpg.dpg\",\"picUrl\":\"jfs/t1/138612/15/37286/26336/64c91c96F454c0320/e647914f6b922868.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"1992363262\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"10000条评价, 好评率99%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"10068143320015\",\"name\":\"乐高（LEGO）得宝系列 数字火车10954 大颗粒\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/190222/18/35360/95853/64c91cf2F4b38af6c/d971c0568cd3dc8e.jpg.dpg\",\"picUrl\":\"jfs/t1/190222/18/35360/95853/64c91cf2F4b38af6c/d971c0568cd3dc8e.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"10068143320015\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"200条评价, 好评率100%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"100026089901\",\"name\":\"NEW ERA纽亦华 棒球帽鸭舌帽男女款 9FORTY MLB洋基队 10531941黑色NY\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/39307/18/23313/42217/64abc04dF8b943b9f/1e7386a335072992.jpg.dpg\",\"picUrl\":\"jfs/t1/39307/18/23313/42217/64abc04dF8b943b9f/1e7386a335072992.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"100026089901\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"2000条评价, 好评率95%\",\"fixTitle\":\"预估到手\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":[{\"tagTabId\":\"tab_var_071\",\"tagName\":\"自营\",\"tagUrl\":\"https://img11.360buyimg.com/cms/jfs/t1/145000/30/4028/959/5f210c76Ee17bbd8e/7e0f8d4eea6f1d91.png\",\"tagId\":\"tab_054\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\"}],\"afterSkuTagList\":[{\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"},{\"skuId\":\"10051917649227\",\"name\":\"象印（ZO JIRUSHI） 保温杯男女士水杯不锈钢轻巧单手弹盖真空户外男女防漏车载水杯SF系列 SM-SF48-PA粉色480ml\",\"opPrice\":\"\",\"linePrice\":\"\",\"jdPrice\":\"\",\"plusPrice\":\"\",\"image\":\"https://m.360buyimg.com/babel/jfs/t1/114956/18/32813/9111/6371dc29E6193ef6a/59c90e3e82e780b0.jpg.dpg\",\"picUrl\":\"jfs/t1/114956/18/32813/9111/6371dc29E6193ef6a/59c90e3e82e780b0.jpg\",\"skuUrl\":\"\",\"stageId\":\"\",\"jump\":{\"des\":\"productDetail\",\"params\":{\"skuId\":\"10051917649227\"},\"srv\":\"\"},\"groupId\":\"\",\"promoTag\":\"\",\"promoTag2\":\"\",\"promoTag3\":\"\",\"saledNum\":\"\",\"brandLogo\":\"\",\"brandId\":\"\",\"promoPrice\":\"\",\"totalBuyedStr\":\"\",\"tabName\":\"\",\"isComparePriceGoods\":\"\",\"plusIcon\":\"\",\"desc\":\"1000条评价, 好评率98%\",\"fixTitle\":\"448天最低价\",\"fixIcon\":\"https://img12.360buyimg.com/cms/jfs/t1/221756/31/20172/2397/62f6039eE965ce9de/bc7aa464f8ce9281.png\",\"nationality\":\"\",\"nationalityIcon\":\"\",\"plusIconM\":\"\",\"skuTagList\":\"\",\"afterSkuTagList\":[{\"tagName\":\"多买优惠\",\"tagTabUrl\":\"http://img14.360buyimg.com/cms/jfs/t1/144236/24/3957/1424/5f1f8db3Ed1941e2e/0b3e39fa07f2613d.png\",\"tagTabId\":\"tab_var_071\"}],\"imNewPrice\":\"\",\"imNewTitle\":\"\",\"copyWriting\":\"\",\"copyWritingDown\":\"\",\"imageUrl\":\"\",\"promoTitle\":\"\",\"saledPercent\":0,\"priceIcon\":\"\",\"pprice\":\"\"}],\"stageId\":\"73315314\",\"groupId\":\"19251079\",\"tabName\":\"\"}],\"leftJump\":{\"des\":\"m\",\"params\":{\"url\":\"https://gmart.jd.com/?appId=54935148\"}},\"rightJump\":{\"des\":\"m\",\"params\":{\"url\":\"https://gmart.jd.com/?appId=54935144\"}}}},{\"floorId\":\"83595819\",\"floatFloor\":\"\",\"floorType\":\"ICON_FLOAT\",\"floorIndex\":56},{\"floorId\":\"83595820\",\"floatFloor\":\"\",\"floorType\":\"DYNAMIC_FLOAT\",\"floorIndex\":57},{\"floorId\":\"83595812\",\"floorType\":\"FEED_WIDGET\",\"feedFloor\":{\"tabList\":[{\"tabId\":0,\"tabName\":\"精选\",\"order\":0,\"url\":\"\",\"eventParams\":\"floorId_83595812_0\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":1,\"tabName\":\"300减30\",\"order\":1,\"url\":\"\",\"eventParams\":\"floorId_83595812_1\",\"styleId\":3,\"tabDefaultImage\":\"http://img13.360buyimg.com/cms/jfs/t1/188375/40/20026/15931/6125de6fE21a2fee3/da463b5cef2da6a8.png\",\"tabSelectedImage\":\"http://img11.360buyimg.com/cms/jfs/t1/190289/32/19932/15931/6125de72Ee9ccdd89/3e9cb8b31f570d94.png\",\"width\":80,\"height\":34,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":2,\"tabName\":\"新品\",\"order\":2,\"url\":\"\",\"eventParams\":\"floorId_83595812_2\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":3,\"tabName\":\"美妆个护\",\"order\":3,\"url\":\"\",\"eventParams\":\"floorId_83595812_3\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":4,\"tabName\":\"营养保健\",\"order\":4,\"url\":\"\",\"eventParams\":\"floorId_83595812_4\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":5,\"tabName\":\"酷玩科技\",\"order\":5,\"url\":\"\",\"eventParams\":\"floorId_83595812_5\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":6,\"tabName\":\"时尚潮流\",\"order\":6,\"url\":\"\",\"eventParams\":\"floorId_83595812_6\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":7,\"tabName\":\"居家生活\",\"order\":7,\"url\":\"\",\"eventParams\":\"floorId_83595812_7\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":8,\"tabName\":\"汽车用品\",\"order\":8,\"url\":\"\",\"eventParams\":\"floorId_83595812_8\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"},{\"tabId\":9,\"tabName\":\"全球美食\",\"order\":9,\"url\":\"\",\"eventParams\":\"floorId_83595812_9\",\"styleId\":1,\"tabDefaultImage\":\"\",\"tabSelectedImage\":\"\",\"width\":0,\"height\":0,\"tabList\":\"\",\"columnCount\":\"\"}]},\"floorIndex\":62}],\"pageId\":54927197},\"code\":\"0\",\"success\":true}");
-
-/***/ }),
+/* 170 */,
 /* 171 */,
 /* 172 */,
 /* 173 */,
@@ -20378,7 +20371,29 @@ module.exports = JSON.parse("{\"result\":{\"styleVersion\":\"1119876\",\"data\":
 /* 175 */,
 /* 176 */,
 /* 177 */,
-/* 178 */,
+/* 178 */
+/*!*********************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/api/category.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.queryCategoryData = void 0;
+/*
+参考数据来源：https://market.m.taobao.com/app/tbsearchwireless-pages/new-catemap/p/s-nx-categories?spm=a215s.7406091.icons.10&utparam=%7B%22ranger_buckets_native%22%3A%22tsp2584_31920%22%7D&scm=1007.home_icon.fenl.d&wh_weex=true
+*/
+
+//  /tab/category/industryId/1 
+var queryCategoryData = '/tab/category/industryId';
+exports.queryCategoryData = queryCategoryData;
+
+/***/ }),
 /* 179 */,
 /* 180 */,
 /* 181 */,
@@ -20397,7 +20412,9 @@ module.exports = JSON.parse("{\"result\":{\"styleVersion\":\"1119876\",\"data\":
 /* 194 */,
 /* 195 */,
 /* 196 */,
-/* 197 */
+/* 197 */,
+/* 198 */,
+/* 199 */
 /*!*****************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/api/mine.js ***!
   \*****************************************************************************/
@@ -20411,14 +20428,18 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.recommend_like_m = exports.GetJDUserInfoUnionForJD = void 0;
-var GetJDUserInfoUnionForJD = 'mock-data/tab/mine/GetJDUserInfoUnionForJD.json';
+/*
+数据参照来源：https://home.m.jd.com/myJd/newhome.action
+
+*/
+//个人信息
+var GetJDUserInfoUnionForJD = '/tab/mine/GetJDUserInfoUnionForJD.json';
+//猜你喜欢
 exports.GetJDUserInfoUnionForJD = GetJDUserInfoUnionForJD;
-var recommend_like_m = 'mock-data/tab/mine/recommend_like_m';
+var recommend_like_m = '/tab/mine/recommend_like_m';
 exports.recommend_like_m = recommend_like_m;
 
 /***/ }),
-/* 198 */,
-/* 199 */,
 /* 200 */,
 /* 201 */,
 /* 202 */,
@@ -20475,257 +20496,9 @@ exports.recommend_like_m = recommend_like_m;
 /* 253 */,
 /* 254 */,
 /* 255 */,
-/* 256 */
-/*!***********************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/mixin/button.js ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    lang: String,
-    sessionFrom: String,
-    sendMessageTitle: String,
-    sendMessagePath: String,
-    sendMessageImg: String,
-    showMessageCard: Boolean,
-    appParameter: String,
-    formType: String,
-    openType: String
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 257 */
-/*!*************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/mixin/openType.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    openType: String
-  },
-  methods: {
-    onGetUserInfo: function onGetUserInfo(event) {
-      this.$emit('getuserinfo', event.detail);
-    },
-    onContact: function onContact(event) {
-      this.$emit('contact', event.detail);
-    },
-    onGetPhoneNumber: function onGetPhoneNumber(event) {
-      this.$emit('getphonenumber', event.detail);
-    },
-    onError: function onError(event) {
-      this.$emit('error', event.detail);
-    },
-    onLaunchApp: function onLaunchApp(event) {
-      this.$emit('launchapp', event.detail);
-    },
-    onOpenSetting: function onOpenSetting(event) {
-      this.$emit('opensetting', event.detail);
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 258 */
-/*!*******************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-button/props.js ***!
-  \*******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-/*
- * @Author       : LQ
- * @Description  :
- * @version      : 1.0
- * @Date         : 2021-08-16 10:04:04
- * @LastAuthor   : LQ
- * @lastTime     : 2021-08-16 10:04:24
- * @FilePath     : /u-view2.0/uview-ui/components/u-button/props.js
- */
-var _default = {
-  props: {
-    // 是否细边框
-    hairline: {
-      type: Boolean,
-      default: uni.$u.props.button.hairline
-    },
-    // 按钮的预置样式，info，primary，error，warning，success
-    type: {
-      type: String,
-      default: uni.$u.props.button.type
-    },
-    // 按钮尺寸，large，normal，small，mini
-    size: {
-      type: String,
-      default: uni.$u.props.button.size
-    },
-    // 按钮形状，circle（两边为半圆），square（带圆角）
-    shape: {
-      type: String,
-      default: uni.$u.props.button.shape
-    },
-    // 按钮是否镂空
-    plain: {
-      type: Boolean,
-      default: uni.$u.props.button.plain
-    },
-    // 是否禁止状态
-    disabled: {
-      type: Boolean,
-      default: uni.$u.props.button.disabled
-    },
-    // 是否加载中
-    loading: {
-      type: Boolean,
-      default: uni.$u.props.button.loading
-    },
-    // 加载中提示文字
-    loadingText: {
-      type: [String, Number],
-      default: uni.$u.props.button.loadingText
-    },
-    // 加载状态图标类型
-    loadingMode: {
-      type: String,
-      default: uni.$u.props.button.loadingMode
-    },
-    // 加载图标大小
-    loadingSize: {
-      type: [String, Number],
-      default: uni.$u.props.button.loadingSize
-    },
-    // 开放能力，具体请看uniapp稳定关于button组件部分说明
-    // https://uniapp.dcloud.io/component/button
-    openType: {
-      type: String,
-      default: uni.$u.props.button.openType
-    },
-    // 用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件
-    // 取值为submit（提交表单），reset（重置表单）
-    formType: {
-      type: String,
-      default: uni.$u.props.button.formType
-    },
-    // 打开 APP 时，向 APP 传递的参数，open-type=launchApp时有效
-    // 只微信小程序、QQ小程序有效
-    appParameter: {
-      type: String,
-      default: uni.$u.props.button.appParameter
-    },
-    // 指定是否阻止本节点的祖先节点出现点击态，微信小程序有效
-    hoverStopPropagation: {
-      type: Boolean,
-      default: uni.$u.props.button.hoverStopPropagation
-    },
-    // 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。只微信小程序有效
-    lang: {
-      type: String,
-      default: uni.$u.props.button.lang
-    },
-    // 会话来源，open-type="contact"时有效。只微信小程序有效
-    sessionFrom: {
-      type: String,
-      default: uni.$u.props.button.sessionFrom
-    },
-    // 会话内消息卡片标题，open-type="contact"时有效
-    // 默认当前标题，只微信小程序有效
-    sendMessageTitle: {
-      type: String,
-      default: uni.$u.props.button.sendMessageTitle
-    },
-    // 会话内消息卡片点击跳转小程序路径，open-type="contact"时有效
-    // 默认当前分享路径，只微信小程序有效
-    sendMessagePath: {
-      type: String,
-      default: uni.$u.props.button.sendMessagePath
-    },
-    // 会话内消息卡片图片，open-type="contact"时有效
-    // 默认当前页面截图，只微信小程序有效
-    sendMessageImg: {
-      type: String,
-      default: uni.$u.props.button.sendMessageImg
-    },
-    // 是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示"可能要发送的小程序"提示，
-    // 用户点击后可以快速发送小程序消息，open-type="contact"时有效
-    showMessageCard: {
-      type: Boolean,
-      default: uni.$u.props.button.showMessageCard
-    },
-    // 额外传参参数，用于小程序的data-xxx属性，通过target.dataset.name获取
-    dataName: {
-      type: String,
-      default: uni.$u.props.button.dataName
-    },
-    // 节流，一定时间内只能触发一次
-    throttleTime: {
-      type: [String, Number],
-      default: uni.$u.props.button.throttleTime
-    },
-    // 按住后多久出现点击态，单位毫秒
-    hoverStartTime: {
-      type: [String, Number],
-      default: uni.$u.props.button.hoverStartTime
-    },
-    // 手指松开后点击态保留时间，单位毫秒
-    hoverStayTime: {
-      type: [String, Number],
-      default: uni.$u.props.button.hoverStayTime
-    },
-    // 按钮文字，之所以通过props传入，是因为slot传入的话
-    // nvue中无法控制文字的样式
-    text: {
-      type: [String, Number],
-      default: uni.$u.props.button.text
-    },
-    // 按钮图标
-    icon: {
-      type: String,
-      default: uni.$u.props.button.icon
-    },
-    // 按钮图标
-    iconColor: {
-      type: String,
-      default: uni.$u.props.button.icon
-    },
-    // 按钮颜色，支持传入linear-gradient渐变色
-    color: {
-      type: String,
-      default: uni.$u.props.button.color
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
+/* 256 */,
+/* 257 */,
+/* 258 */,
 /* 259 */,
 /* 260 */,
 /* 261 */,
@@ -20733,103 +20506,7 @@ exports.default = _default;
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */
-/*!*******************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-picker/props.js ***!
-  \*******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否展示picker弹窗
-    show: {
-      type: Boolean,
-      default: uni.$u.props.picker.show
-    },
-    // 是否展示顶部的操作栏
-    showToolbar: {
-      type: Boolean,
-      default: uni.$u.props.picker.showToolbar
-    },
-    // 顶部标题
-    title: {
-      type: String,
-      default: uni.$u.props.picker.title
-    },
-    // 对象数组，设置每一列的数据
-    columns: {
-      type: Array,
-      default: uni.$u.props.picker.columns
-    },
-    // 是否显示加载中状态
-    loading: {
-      type: Boolean,
-      default: uni.$u.props.picker.loading
-    },
-    // 各列中，单个选项的高度
-    itemHeight: {
-      type: [String, Number],
-      default: uni.$u.props.picker.itemHeight
-    },
-    // 取消按钮的文字
-    cancelText: {
-      type: String,
-      default: uni.$u.props.picker.cancelText
-    },
-    // 确认按钮的文字
-    confirmText: {
-      type: String,
-      default: uni.$u.props.picker.confirmText
-    },
-    // 取消按钮的颜色
-    cancelColor: {
-      type: String,
-      default: uni.$u.props.picker.cancelColor
-    },
-    // 确认按钮的颜色
-    confirmColor: {
-      type: String,
-      default: uni.$u.props.picker.confirmColor
-    },
-    // 每列中可见选项的数量
-    visibleItemCount: {
-      type: [String, Number],
-      default: uni.$u.props.picker.visibleItemCount
-    },
-    // 选项对象中，需要展示的属性键名
-    keyName: {
-      type: String,
-      default: uni.$u.props.picker.keyName
-    },
-    // 是否允许点击遮罩关闭选择器
-    closeOnClickOverlay: {
-      type: Boolean,
-      default: uni.$u.props.picker.closeOnClickOverlay
-    },
-    // 各列的默认索引
-    defaultIndex: {
-      type: Array,
-      default: uni.$u.props.picker.defaultIndex
-    },
-    // 是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件，只在微信2.21.1及以上有效
-    immediateChange: {
-      type: Boolean,
-      default: uni.$u.props.picker.immediateChange
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
+/* 266 */,
 /* 267 */,
 /* 268 */,
 /* 269 */,
@@ -20837,1094 +20514,10 @@ exports.default = _default;
 /* 271 */,
 /* 272 */,
 /* 273 */,
-/* 274 */
-/*!*********************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-calendar/props.js ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 日历顶部标题
-    title: {
-      type: String,
-      default: uni.$u.props.calendar.title
-    },
-    // 是否显示标题
-    showTitle: {
-      type: Boolean,
-      default: uni.$u.props.calendar.showTitle
-    },
-    // 是否显示副标题
-    showSubtitle: {
-      type: Boolean,
-      default: uni.$u.props.calendar.showSubtitle
-    },
-    // 日期类型选择，single-选择单个日期，multiple-可以选择多个日期，range-选择日期范围
-    mode: {
-      type: String,
-      default: uni.$u.props.calendar.mode
-    },
-    // mode=range时，第一个日期底部的提示文字
-    startText: {
-      type: String,
-      default: uni.$u.props.calendar.startText
-    },
-    // mode=range时，最后一个日期底部的提示文字
-    endText: {
-      type: String,
-      default: uni.$u.props.calendar.endText
-    },
-    // 自定义列表
-    customList: {
-      type: Array,
-      default: uni.$u.props.calendar.customList
-    },
-    // 主题色，对底部按钮和选中日期有效
-    color: {
-      type: String,
-      default: uni.$u.props.calendar.color
-    },
-    // 最小的可选日期
-    minDate: {
-      type: [String, Number],
-      default: uni.$u.props.calendar.minDate
-    },
-    // 最大可选日期
-    maxDate: {
-      type: [String, Number],
-      default: uni.$u.props.calendar.maxDate
-    },
-    // 默认选中的日期，mode为multiple或range是必须为数组格式
-    defaultDate: {
-      type: [Array, String, Date, null],
-      default: uni.$u.props.calendar.defaultDate
-    },
-    // mode=multiple时，最多可选多少个日期
-    maxCount: {
-      type: [String, Number],
-      default: uni.$u.props.calendar.maxCount
-    },
-    // 日期行高
-    rowHeight: {
-      type: [String, Number],
-      default: uni.$u.props.calendar.rowHeight
-    },
-    // 日期格式化函数
-    formatter: {
-      type: [Function, null],
-      default: uni.$u.props.calendar.formatter
-    },
-    // 是否显示农历
-    showLunar: {
-      type: Boolean,
-      default: uni.$u.props.calendar.showLunar
-    },
-    // 是否显示月份背景色
-    showMark: {
-      type: Boolean,
-      default: uni.$u.props.calendar.showMark
-    },
-    // 确定按钮的文字
-    confirmText: {
-      type: String,
-      default: uni.$u.props.calendar.confirmText
-    },
-    // 确认按钮处于禁用状态时的文字
-    confirmDisabledText: {
-      type: String,
-      default: uni.$u.props.calendar.confirmDisabledText
-    },
-    // 是否显示日历弹窗
-    show: {
-      type: Boolean,
-      default: uni.$u.props.calendar.show
-    },
-    // 是否允许点击遮罩关闭日历
-    closeOnClickOverlay: {
-      type: Boolean,
-      default: uni.$u.props.calendar.closeOnClickOverlay
-    },
-    // 是否为只读状态，只读状态下禁止选择日期
-    readonly: {
-      type: Boolean,
-      default: uni.$u.props.calendar.readonly
-    },
-    // 	是否展示确认按钮
-    showConfirm: {
-      type: Boolean,
-      default: uni.$u.props.calendar.showConfirm
-    },
-    // 日期区间最多可选天数，默认无限制，mode = range时有效
-    maxRange: {
-      type: [Number, String],
-      default: uni.$u.props.calendar.maxRange
-    },
-    // 范围选择超过最多可选天数时的提示文案，mode = range时有效
-    rangePrompt: {
-      type: String,
-      default: uni.$u.props.calendar.rangePrompt
-    },
-    // 范围选择超过最多可选天数时，是否展示提示文案，mode = range时有效
-    showRangePrompt: {
-      type: Boolean,
-      default: uni.$u.props.calendar.showRangePrompt
-    },
-    // 是否允许日期范围的起止时间为同一天，mode = range时有效
-    allowSameDay: {
-      type: Boolean,
-      default: uni.$u.props.calendar.allowSameDay
-    },
-    // 圆角值
-    round: {
-      type: [Boolean, String, Number],
-      default: uni.$u.props.calendar.round
-    },
-    // 最多展示月份数量
-    monthNum: {
-      type: [Number, String],
-      default: 3
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 275 */
-/*!********************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-calendar/util.js ***!
-  \********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-var _default = {
-  methods: {
-    // 设置月份数据
-    setMonth: function setMonth() {
-      var _this = this;
-      // 月初是周几
-      var day = dayjs(this.date).date(1).day();
-      var start = day == 0 ? 6 : day - 1;
-
-      // 本月天数
-      var days = dayjs(this.date).endOf('month').format('D');
-
-      // 上个月天数
-      var prevDays = dayjs(this.date).endOf('month').subtract(1, 'month').format('D');
-
-      // 日期数据
-      var arr = [];
-      // 清空表格
-      this.month = [];
-
-      // 添加上月数据
-      arr.push.apply(arr, (0, _toConsumableArray2.default)(new Array(start).fill(1).map(function (e, i) {
-        var day = prevDays - start + i + 1;
-        return {
-          value: day,
-          disabled: true,
-          date: dayjs(_this.date).subtract(1, 'month').date(day).format('YYYY-MM-DD')
-        };
-      })));
-
-      // 添加本月数据
-      arr.push.apply(arr, (0, _toConsumableArray2.default)(new Array(days - 0).fill(1).map(function (e, i) {
-        var day = i + 1;
-        return {
-          value: day,
-          date: dayjs(_this.date).date(day).format('YYYY-MM-DD')
-        };
-      })));
-
-      // 添加下个月
-      arr.push.apply(arr, (0, _toConsumableArray2.default)(new Array(42 - days - start).fill(1).map(function (e, i) {
-        var day = i + 1;
-        return {
-          value: day,
-          disabled: true,
-          date: dayjs(_this.date).add(1, 'month').date(day).format('YYYY-MM-DD')
-        };
-      })));
-
-      // 分割数组
-      var _loop = function _loop(n) {
-        _this.month.push(arr.slice(n, n + 7).map(function (e, i) {
-          e.index = i + n;
-
-          // 自定义信息
-          var custom = _this.customList.find(function (c) {
-            return c.date == e.date;
-          });
-
-          // 农历
-          if (_this.lunar) {
-            var _this$getLunar = _this.getLunar(e.date),
-              IDayCn = _this$getLunar.IDayCn,
-              IMonthCn = _this$getLunar.IMonthCn;
-            e.lunar = IDayCn == '初一' ? IMonthCn : IDayCn;
-          }
-          return _objectSpread(_objectSpread({}, e), custom);
-        }));
-      };
-      for (var n = 0; n < arr.length; n += 7) {
-        _loop(n);
-      }
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 276 */
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/util/dayjs.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
-!function (t, e) {
-  ( false ? undefined : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = e() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (e),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
-				__WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : undefined;
-}(this, function () {
-  'use strict';
-
-  var t = 'millisecond';
-  var e = 'second';
-  var n = 'minute';
-  var r = 'hour';
-  var i = 'day';
-  var s = 'week';
-  var u = 'month';
-  var a = 'quarter';
-  var o = 'year';
-  var f = 'date';
-  var h = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d+)?$/;
-  var c = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g;
-  var d = {
-    name: 'en',
-    weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
-    months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_')
-  };
-  var $ = function $(t, e, n) {
-    var r = String(t);
-    return !r || r.length >= e ? t : "".concat(Array(e + 1 - r.length).join(n)).concat(t);
-  };
-  var l = {
-    s: $,
-    z: function z(t) {
-      var e = -t.utcOffset();
-      var n = Math.abs(e);
-      var r = Math.floor(n / 60);
-      var i = n % 60;
-      return "".concat((e <= 0 ? '+' : '-') + $(r, 2, '0'), ":").concat($(i, 2, '0'));
-    },
-    m: function t(e, n) {
-      if (e.date() < n.date()) return -t(n, e);
-      var r = 12 * (n.year() - e.year()) + (n.month() - e.month());
-      var i = e.clone().add(r, u);
-      var s = n - i < 0;
-      var a = e.clone().add(r + (s ? -1 : 1), u);
-      return +(-(r + (n - i) / (s ? i - a : a - i)) || 0);
-    },
-    a: function a(t) {
-      return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);
-    },
-    p: function p(h) {
-      return {
-        M: u,
-        y: o,
-        w: s,
-        d: i,
-        D: f,
-        h: r,
-        m: n,
-        s: e,
-        ms: t,
-        Q: a
-      }[h] || String(h || '').toLowerCase().replace(/s$/, '');
-    },
-    u: function u(t) {
-      return void 0 === t;
-    }
-  };
-  var y = 'en';
-  var M = {};
-  M[y] = d;
-  var m = function m(t) {
-    return t instanceof S;
-  };
-  var D = function D(t, e, n) {
-    var r;
-    if (!t) return y;
-    if (typeof t === 'string') M[t] && (r = t), e && (M[t] = e, r = t);else {
-      var _i = t.name;
-      M[_i] = t, r = _i;
-    }
-    return !n && r && (y = r), r || !n && y;
-  };
-  var v = function v(t, e) {
-    if (m(t)) return t.clone();
-    var n = _typeof(e) === 'object' ? e : {};
-    return n.date = t, n.args = arguments, new S(n);
-  };
-  var g = l;
-  g.l = D, g.i = m, g.w = function (t, e) {
-    return v(t, {
-      locale: e.$L,
-      utc: e.$u,
-      x: e.$x,
-      $offset: e.$offset
-    });
-  };
-  var S = function () {
-    function d(t) {
-      this.$L = D(t.locale, null, !0), this.parse(t);
-    }
-    var $ = d.prototype;
-    return $.parse = function (t) {
-      this.$d = function (t) {
-        var e = t.date;
-        var n = t.utc;
-        if (e === null) return new Date(NaN);
-        if (g.u(e)) return new Date();
-        if (e instanceof Date) return new Date(e);
-        if (typeof e === 'string' && !/Z$/i.test(e)) {
-          var _r = e.match(h);
-          if (_r) {
-            var _i2 = _r[2] - 1 || 0;
-            var _s = (_r[7] || '0').substring(0, 3);
-            return n ? new Date(Date.UTC(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s)) : new Date(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s);
-          }
-        }
-        return new Date(e);
-      }(t), this.$x = t.x || {}, this.init();
-    }, $.init = function () {
-      var t = this.$d;
-      this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();
-    }, $.$utils = function () {
-      return g;
-    }, $.isValid = function () {
-      return !(this.$d.toString() === 'Invalid Date');
-    }, $.isSame = function (t, e) {
-      var n = v(t);
-      return this.startOf(e) <= n && n <= this.endOf(e);
-    }, $.isAfter = function (t, e) {
-      return v(t) < this.startOf(e);
-    }, $.isBefore = function (t, e) {
-      return this.endOf(e) < v(t);
-    }, $.$g = function (t, e, n) {
-      return g.u(t) ? this[e] : this.set(n, t);
-    }, $.unix = function () {
-      return Math.floor(this.valueOf() / 1e3);
-    }, $.valueOf = function () {
-      return this.$d.getTime();
-    }, $.startOf = function (t, a) {
-      var h = this;
-      var c = !!g.u(a) || a;
-      var d = g.p(t);
-      var $ = function $(t, e) {
-        var n = g.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);
-        return c ? n : n.endOf(i);
-      };
-      var l = function l(t, e) {
-        return g.w(h.toDate()[t].apply(h.toDate('s'), (c ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);
-      };
-      var y = this.$W;
-      var M = this.$M;
-      var m = this.$D;
-      var D = "set".concat(this.$u ? 'UTC' : '');
-      switch (d) {
-        case o:
-          return c ? $(1, 0) : $(31, 11);
-        case u:
-          return c ? $(1, M) : $(0, M + 1);
-        case s:
-          var v = this.$locale().weekStart || 0;
-          var S = (y < v ? y + 7 : y) - v;
-          return $(c ? m - S : m + (6 - S), M);
-        case i:
-        case f:
-          return l("".concat(D, "Hours"), 0);
-        case r:
-          return l("".concat(D, "Minutes"), 1);
-        case n:
-          return l("".concat(D, "Seconds"), 2);
-        case e:
-          return l("".concat(D, "Milliseconds"), 3);
-        default:
-          return this.clone();
-      }
-    }, $.endOf = function (t) {
-      return this.startOf(t, !1);
-    }, $.$set = function (s, a) {
-      var h;
-      var c = g.p(s);
-      var d = "set".concat(this.$u ? 'UTC' : '');
-      var $ = (h = {}, h[i] = "".concat(d, "Date"), h[f] = "".concat(d, "Date"), h[u] = "".concat(d, "Month"), h[o] = "".concat(d, "FullYear"), h[r] = "".concat(d, "Hours"), h[n] = "".concat(d, "Minutes"), h[e] = "".concat(d, "Seconds"), h[t] = "".concat(d, "Milliseconds"), h)[c];
-      var l = c === i ? this.$D + (a - this.$W) : a;
-      if (c === u || c === o) {
-        var _y = this.clone().set(f, 1);
-        _y.$d[$](l), _y.init(), this.$d = _y.set(f, Math.min(this.$D, _y.daysInMonth())).$d;
-      } else $ && this.$d[$](l);
-      return this.init(), this;
-    }, $.set = function (t, e) {
-      return this.clone().$set(t, e);
-    }, $.get = function (t) {
-      return this[g.p(t)]();
-    }, $.add = function (t, a) {
-      var f;
-      var h = this;
-      t = Number(t);
-      var c = g.p(a);
-      var d = function d(e) {
-        var n = v(h);
-        return g.w(n.date(n.date() + Math.round(e * t)), h);
-      };
-      if (c === u) return this.set(u, this.$M + t);
-      if (c === o) return this.set(o, this.$y + t);
-      if (c === i) return d(1);
-      if (c === s) return d(7);
-      var $ = (f = {}, f[n] = 6e4, f[r] = 36e5, f[e] = 1e3, f)[c] || 1;
-      var l = this.$d.getTime() + t * $;
-      return g.w(l, this);
-    }, $.subtract = function (t, e) {
-      return this.add(-1 * t, e);
-    }, $.format = function (t) {
-      var e = this;
-      if (!this.isValid()) return 'Invalid Date';
-      var n = t || 'YYYY-MM-DDTHH:mm:ssZ';
-      var r = g.z(this);
-      var i = this.$locale();
-      var s = this.$H;
-      var u = this.$m;
-      var a = this.$M;
-      var o = i.weekdays;
-      var f = i.months;
-      var h = function h(t, r, i, s) {
-        return t && (t[r] || t(e, n)) || i[r].substr(0, s);
-      };
-      var d = function d(t) {
-        return g.s(s % 12 || 12, t, '0');
-      };
-      var $ = i.meridiem || function (t, e, n) {
-        var r = t < 12 ? 'AM' : 'PM';
-        return n ? r.toLowerCase() : r;
-      };
-      var l = {
-        YY: String(this.$y).slice(-2),
-        YYYY: this.$y,
-        M: a + 1,
-        MM: g.s(a + 1, 2, '0'),
-        MMM: h(i.monthsShort, a, f, 3),
-        MMMM: h(f, a),
-        D: this.$D,
-        DD: g.s(this.$D, 2, '0'),
-        d: String(this.$W),
-        dd: h(i.weekdaysMin, this.$W, o, 2),
-        ddd: h(i.weekdaysShort, this.$W, o, 3),
-        dddd: o[this.$W],
-        H: String(s),
-        HH: g.s(s, 2, '0'),
-        h: d(1),
-        hh: d(2),
-        a: $(s, u, !0),
-        A: $(s, u, !1),
-        m: String(u),
-        mm: g.s(u, 2, '0'),
-        s: String(this.$s),
-        ss: g.s(this.$s, 2, '0'),
-        SSS: g.s(this.$ms, 3, '0'),
-        Z: r
-      };
-      return n.replace(c, function (t, e) {
-        return e || l[t] || r.replace(':', '');
-      });
-    }, $.utcOffset = function () {
-      return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
-    }, $.diff = function (t, f, h) {
-      var c;
-      var d = g.p(f);
-      var $ = v(t);
-      var l = 6e4 * ($.utcOffset() - this.utcOffset());
-      var y = this - $;
-      var M = g.m(this, $);
-      return M = (c = {}, c[o] = M / 12, c[u] = M, c[a] = M / 3, c[s] = (y - l) / 6048e5, c[i] = (y - l) / 864e5, c[r] = y / 36e5, c[n] = y / 6e4, c[e] = y / 1e3, c)[d] || y, h ? M : g.a(M);
-    }, $.daysInMonth = function () {
-      return this.endOf(u).$D;
-    }, $.$locale = function () {
-      return M[this.$L];
-    }, $.locale = function (t, e) {
-      if (!t) return this.$L;
-      var n = this.clone();
-      var r = D(t, e, !0);
-      return r && (n.$L = r), n;
-    }, $.clone = function () {
-      return g.w(this.$d, this);
-    }, $.toDate = function () {
-      return new Date(this.valueOf());
-    }, $.toJSON = function () {
-      return this.isValid() ? this.toISOString() : null;
-    }, $.toISOString = function () {
-      return this.$d.toISOString();
-    }, $.toString = function () {
-      return this.$d.toUTCString();
-    }, d;
-  }();
-  var p = S.prototype;
-  return v.prototype = p, [['$ms', t], ['$s', e], ['$m', n], ['$H', r], ['$W', i], ['$M', u], ['$y', o], ['$D', f]].forEach(function (t) {
-    p[t[1]] = function (e) {
-      return this.$g(e, t[0], t[1]);
-    };
-  }), v.extend = function (t, e) {
-    return t.$i || (t(e, S, v), t.$i = !0), v;
-  }, v.locale = D, v.isDayjs = m, v.unix = function (t) {
-    return v(1e3 * t);
-  }, v.en = M[y], v.Ls = M, v.p = {}, v;
-});
-
-/***/ }),
-/* 277 */
-/*!************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/libs/util/calendar.js ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-/**
-* @1900-2100区间内的公历、农历互转
-* @charset UTF-8
-* @github  https://github.com/jjonline/calendar.js
-* @Author  Jea杨(JJonline@JJonline.Cn)
-* @Time    2014-7-21
-* @Time    2016-8-13 Fixed 2033hex、Attribution Annals
-* @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
-* @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
-* @Version 1.0.3
-* @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
-* @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
-*/
-/* eslint-disable */
-var calendar = {
-  /**
-      * 农历1900-2100的润大小信息表
-      * @Array Of Property
-      * @return Hex
-      */
-  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,
-  // 1900-1909
-  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977,
-  // 1910-1919
-  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970,
-  // 1920-1929
-  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950,
-  // 1930-1939
-  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557,
-  // 1940-1949
-  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0,
-  // 1950-1959
-  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0,
-  // 1960-1969
-  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6,
-  // 1970-1979
-  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570,
-  // 1980-1989
-  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0,
-  // 1990-1999
-  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5,
-  // 2000-2009
-  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930,
-  // 2010-2019
-  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530,
-  // 2020-2029
-  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45,
-  // 2030-2039
-  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0,
-  // 2040-2049
-  /** Add By JJonline@JJonline.Cn**/
-  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0,
-  // 2050-2059
-  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4,
-  // 2060-2069
-  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0,
-  // 2070-2079
-  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160,
-  // 2080-2089
-  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252,
-  // 2090-2099
-  0x0d520],
-  // 2100
-
-  /**
-      * 公历每个月份的天数普通表
-      * @Array Of Property
-      * @return Number
-      */
-  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-  /**
-      * 天干地支之天干速查表
-      * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
-      * @return Cn string
-      */
-  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
-  /**
-      * 天干地支之地支速查表
-      * @Array Of Property
-      * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
-      * @return Cn string
-      */
-  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
-  /**
-      * 天干地支之地支速查表<=>生肖
-      * @Array Of Property
-      * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
-      * @return Cn string
-      */
-  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
-  /**
-      * 24节气速查表
-      * @Array Of Property
-      * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
-      * @return Cn string
-      */
-  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
-  /**
-      * 1900-2100各年的24节气日期速查表
-      * @Array Of Property
-      * @return 0x string For splice
-      */
-  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
-  /**
-      * 数字转中文速查表
-      * @Array Of Property
-      * @trans ['日','一','二','三','四','五','六','七','八','九','十']
-      * @return Cn string
-      */
-  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
-  /**
-      * 日期转农历称呼速查表
-      * @Array Of Property
-      * @trans ['初','十','廿','卅']
-      * @return Cn string
-      */
-  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
-  /**
-      * 月份转农历称呼速查表
-      * @Array Of Property
-      * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
-      * @return Cn string
-      */
-  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
-  /**
-      * 返回农历y年一整年的总天数
-      * @param lunar Year
-      * @return Number
-      * @eg:var count = calendar.lYearDays(1987) ;//count=387
-      */
-  lYearDays: function lYearDays(y) {
-    var i;
-    var sum = 348;
-    for (i = 0x8000; i > 0x8; i >>= 1) {
-      sum += this.lunarInfo[y - 1900] & i ? 1 : 0;
-    }
-    return sum + this.leapDays(y);
-  },
-  /**
-      * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
-      * @param lunar Year
-      * @return Number (0-12)
-      * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
-      */
-  leapMonth: function leapMonth(y) {
-    // 闰字编码 \u95f0
-    return this.lunarInfo[y - 1900] & 0xf;
-  },
-  /**
-      * 返回农历y年闰月的天数 若该年没有闰月则返回0
-      * @param lunar Year
-      * @return Number (0、29、30)
-      * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
-      */
-  leapDays: function leapDays(y) {
-    if (this.leapMonth(y)) {
-      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
-    }
-    return 0;
-  },
-  /**
-      * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
-      * @param lunar Year
-      * @return Number (-1、29、30)
-      * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
-      */
-  monthDays: function monthDays(y, m) {
-    if (m > 12 || m < 1) {
-      return -1;
-    } // 月份参数从1至12，参数错误返回-1
-    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
-  },
-  /**
-      * 返回公历(!)y年m月的天数
-      * @param solar Year
-      * @return Number (-1、28、29、30、31)
-      * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
-      */
-  solarDays: function solarDays(y, m) {
-    if (m > 12 || m < 1) {
-      return -1;
-    } // 若参数错误 返回-1
-    var ms = m - 1;
-    if (ms == 1) {
-      // 2月份的闰平规律测算后确认返回28或29
-      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
-    } else {
-      return this.solarMonth[ms];
-    }
-  },
-  /**
-     * 农历年份转换为干支纪年
-     * @param  lYear 农历年的年份数
-     * @return Cn string
-     */
-  toGanZhiYear: function toGanZhiYear(lYear) {
-    var ganKey = (lYear - 3) % 10;
-    var zhiKey = (lYear - 3) % 12;
-    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
-    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
-    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
-  },
-  /**
-     * 公历月、日判断所属星座
-     * @param  cMonth [description]
-     * @param  cDay [description]
-     * @return Cn string
-     */
-  toAstro: function toAstro(cMonth, cDay) {
-    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
-    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
-    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
-  },
-
-  /**
-      * 传入offset偏移量返回干支
-      * @param offset 相对甲子的偏移量
-      * @return Cn string
-      */
-  toGanZhi: function toGanZhi(offset) {
-    return this.Gan[offset % 10] + this.Zhi[offset % 12];
-  },
-  /**
-      * 传入公历(!)y年获得该年第n个节气的公历日期
-      * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
-      * @return day Number
-      * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
-      */
-  getTerm: function getTerm(y, n) {
-    if (y < 1900 || y > 2100) {
-      return -1;
-    }
-    if (n < 1 || n > 24) {
-      return -1;
-    }
-    var _table = this.sTermInfo[y - 1900];
-    var _info = [parseInt('0x' + _table.substr(0, 5)).toString(), parseInt('0x' + _table.substr(5, 5)).toString(), parseInt('0x' + _table.substr(10, 5)).toString(), parseInt('0x' + _table.substr(15, 5)).toString(), parseInt('0x' + _table.substr(20, 5)).toString(), parseInt('0x' + _table.substr(25, 5)).toString()];
-    var _calday = [_info[0].substr(0, 1), _info[0].substr(1, 2), _info[0].substr(3, 1), _info[0].substr(4, 2), _info[1].substr(0, 1), _info[1].substr(1, 2), _info[1].substr(3, 1), _info[1].substr(4, 2), _info[2].substr(0, 1), _info[2].substr(1, 2), _info[2].substr(3, 1), _info[2].substr(4, 2), _info[3].substr(0, 1), _info[3].substr(1, 2), _info[3].substr(3, 1), _info[3].substr(4, 2), _info[4].substr(0, 1), _info[4].substr(1, 2), _info[4].substr(3, 1), _info[4].substr(4, 2), _info[5].substr(0, 1), _info[5].substr(1, 2), _info[5].substr(3, 1), _info[5].substr(4, 2)];
-    return parseInt(_calday[n - 1]);
-  },
-  /**
-      * 传入农历数字月份返回汉语通俗表示法
-      * @param lunar month
-      * @return Cn string
-      * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
-      */
-  toChinaMonth: function toChinaMonth(m) {
-    // 月 => \u6708
-    if (m > 12 || m < 1) {
-      return -1;
-    } // 若参数错误 返回-1
-    var s = this.nStr3[m - 1];
-    s += "\u6708"; // 加上月字
-    return s;
-  },
-  /**
-      * 传入农历日期数字返回汉字表示法
-      * @param lunar day
-      * @return Cn string
-      * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
-      */
-  toChinaDay: function toChinaDay(d) {
-    // 日 => \u65e5
-    var s;
-    switch (d) {
-      case 10:
-        s = "\u521D\u5341";
-        break;
-      case 20:
-        s = "\u4E8C\u5341";
-        break;
-        break;
-      case 30:
-        s = "\u4E09\u5341";
-        break;
-        break;
-      default:
-        s = this.nStr2[Math.floor(d / 10)];
-        s += this.nStr1[d % 10];
-    }
-    return s;
-  },
-  /**
-      * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
-      * @param y year
-      * @return Cn string
-      * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
-      */
-  getAnimal: function getAnimal(y) {
-    return this.Animals[(y - 4) % 12];
-  },
-  /**
-      * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
-      * @param y  solar year
-      * @param m  solar month
-      * @param d  solar day
-      * @return JSON object
-      * @eg:console.log(calendar.solar2lunar(1987,11,01));
-      */
-  solar2lunar: function solar2lunar(y, m, d) {
-    // 参数区间1900.1.31~2100.12.31
-    // 年份限定、上限
-    if (y < 1900 || y > 2100) {
-      return -1; // undefined转换为数字变为NaN
-    }
-    // 公历传参最下限
-    if (y == 1900 && m == 1 && d < 31) {
-      return -1;
-    }
-    // 未传参  获得当天
-    if (!y) {
-      var objDate = new Date();
-    } else {
-      var objDate = new Date(y, parseInt(m) - 1, d);
-    }
-    var i;
-    var leap = 0;
-    var temp = 0;
-    // 修正ymd参数
-    var y = objDate.getFullYear();
-    var m = objDate.getMonth() + 1;
-    var d = objDate.getDate();
-    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
-    for (i = 1900; i < 2101 && offset > 0; i++) {
-      temp = this.lYearDays(i);
-      offset -= temp;
-    }
-    if (offset < 0) {
-      offset += temp;
-      i--;
-    }
-
-    // 是否今天
-    var isTodayObj = new Date();
-    var isToday = false;
-    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
-      isToday = true;
-    }
-    // 星期几
-    var nWeek = objDate.getDay();
-    var cWeek = this.nStr1[nWeek];
-    // 数字表示周几顺应天朝周一开始的惯例
-    if (nWeek == 0) {
-      nWeek = 7;
-    }
-    // 农历年
-    var year = i;
-    var leap = this.leapMonth(i); // 闰哪个月
-    var isLeap = false;
-
-    // 效验闰月
-    for (i = 1; i < 13 && offset > 0; i++) {
-      // 闰月
-      if (leap > 0 && i == leap + 1 && isLeap == false) {
-        --i;
-        isLeap = true;
-        temp = this.leapDays(year); // 计算农历闰月天数
-      } else {
-        temp = this.monthDays(year, i); // 计算农历普通月天数
-      }
-      // 解除闰月
-      if (isLeap == true && i == leap + 1) {
-        isLeap = false;
-      }
-      offset -= temp;
-    }
-    // 闰月导致数组下标重叠取反
-    if (offset == 0 && leap > 0 && i == leap + 1) {
-      if (isLeap) {
-        isLeap = false;
-      } else {
-        isLeap = true;
-        --i;
-      }
-    }
-    if (offset < 0) {
-      offset += temp;
-      --i;
-    }
-    // 农历月
-    var month = i;
-    // 农历日
-    var day = offset + 1;
-    // 天干地支处理
-    var sm = m - 1;
-    var gzY = this.toGanZhiYear(year);
-
-    // 当月的两个节气
-    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
-    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
-    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
-
-    // 依据12节气修正干支月
-    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
-    if (d >= firstNode) {
-      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
-    }
-
-    // 传入的日期的节气与否
-    var isTerm = false;
-    var Term = null;
-    if (firstNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 2];
-    }
-    if (secondNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 1];
-    }
-    // 日柱 当月一日与 1900/1/1 相差天数
-    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
-    var gzD = this.toGanZhi(dayCyclical + d - 1);
-    // 该日期所属的星座
-    var astro = this.toAstro(m, d);
-    return {
-      'lYear': year,
-      'lMonth': month,
-      'lDay': day,
-      'Animal': this.getAnimal(year),
-      'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month),
-      'IDayCn': this.toChinaDay(day),
-      'cYear': y,
-      'cMonth': m,
-      'cDay': d,
-      'gzYear': gzY,
-      'gzMonth': gzM,
-      'gzDay': gzD,
-      'isToday': isToday,
-      'isLeap': isLeap,
-      'nWeek': nWeek,
-      'ncWeek': "\u661F\u671F" + cWeek,
-      'isTerm': isTerm,
-      'Term': Term,
-      'astro': astro
-    };
-  },
-  /**
-      * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
-      * @param y  lunar year
-      * @param m  lunar month
-      * @param d  lunar day
-      * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
-      * @return JSON object
-      * @eg:console.log(calendar.lunar2solar(1987,9,10));
-      */
-  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {
-    // 参数区间1900.1.31~2100.12.1
-    var isLeapMonth = !!isLeapMonth;
-    var leapOffset = 0;
-    var leapMonth = this.leapMonth(y);
-    var leapDay = this.leapDays(y);
-    if (isLeapMonth && leapMonth != m) {
-      return -1;
-    } // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {
-      return -1;
-    } // 超出了最大极限值
-    var day = this.monthDays(y, m);
-    var _day = day;
-    // bugFix 2016-9-25
-    // if month is leap, _day use leapDays method
-    if (isLeapMonth) {
-      _day = this.leapDays(y, m);
-    }
-    if (y < 1900 || y > 2100 || d > _day) {
-      return -1;
-    } // 参数合法性效验
-
-    // 计算农历的时间差
-    var offset = 0;
-    for (var i = 1900; i < y; i++) {
-      offset += this.lYearDays(i);
-    }
-    var leap = 0;
-    var isAdd = false;
-    for (var i = 1; i < m; i++) {
-      leap = this.leapMonth(y);
-      if (!isAdd) {
-        // 处理闰月
-        if (leap <= i && leap > 0) {
-          offset += this.leapDays(y);
-          isAdd = true;
-        }
-      }
-      offset += this.monthDays(y, i);
-    }
-    // 转换闰月农历 需补充该年闰月的前一个月的时差
-    if (isLeapMonth) {
-      offset += day;
-    }
-    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
-    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
-    var cY = calObj.getUTCFullYear();
-    var cM = calObj.getUTCMonth() + 1;
-    var cD = calObj.getUTCDate();
-    return this.solar2lunar(cY, cM, cD);
-  }
-};
-var _default = calendar;
-exports.default = _default;
-
-/***/ }),
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
 /* 278 */,
 /* 279 */,
 /* 280 */,
@@ -21937,8 +20530,26 @@ exports.default = _default;
 /* 287 */,
 /* 288 */,
 /* 289 */,
-/* 290 */,
-/* 291 */,
+/* 290 */
+/*!****************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mine/avatar.png ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 291 */
+/*!*****************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mine/setting.png ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
 /* 292 */,
 /* 293 */,
 /* 294 */,
@@ -21960,209 +20571,37 @@ exports.default = _default;
 /* 310 */,
 /* 311 */,
 /* 312 */,
-/* 313 */
-/*!***************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/mixin/mpMixin.js ***!
-  \***************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  // 将自定义节点设置成虚拟的（去掉自定义组件包裹层），更加接近Vue组件的表现，能更好的使用flex属性
-  options: {
-    virtualHost: true
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 314 */
-/*!*************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/mixin/mixin.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var index = _interopRequireWildcard(__webpack_require__(/*! ../function/index.js */ 315));
-var test = _interopRequireWildcard(__webpack_require__(/*! ../function/test.js */ 316));
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-var _default2 = {
-  // 定义每个组件都可能需要用到的外部样式以及类名
-  props: {
-    // 每个组件都有的父组件传递的样式，可以为字符串或者对象形式
-    customStyle: {
-      type: [Object, String],
-      default: function _default() {
-        return {};
-      }
-    },
-    customClass: {
-      type: String,
-      default: ''
-    },
-    // 跳转的页面路径
-    url: {
-      type: String,
-      default: ''
-    },
-    // 页面跳转的类型
-    linkType: {
-      type: String,
-      default: 'navigateTo'
-    }
-  },
-  data: function data() {
-    return {};
-  },
-  onLoad: function onLoad() {
-    // getRect挂载到$uv上，因为这方法需要使用in(this)，所以无法把它独立成一个单独的文件导出
-    this.$uv.getRect = this.$uvGetRect;
-  },
-  created: function created() {
-    // 组件当中，只有created声明周期，为了能在组件使用，故也在created中将方法挂载到$uv
-    this.$uv.getRect = this.$uvGetRect;
-  },
-  computed: {
-    $uv: function $uv() {
-      return _objectSpread(_objectSpread({}, index), {}, {
-        test: test
-      });
-    },
-    /**
-     * 生成bem规则类名
-     * 由于微信小程序，H5，nvue之间绑定class的差异，无法通过:class="[bem()]"的形式进行同用
-     * 故采用如下折中做法，最后返回的是数组（一般平台）或字符串（支付宝和字节跳动平台），类似['a', 'b', 'c']或'a b c'的形式
-     * @param {String} name 组件名称
-     * @param {Array} fixed 一直会存在的类名
-     * @param {Array} change 会根据变量值为true或者false而出现或者隐藏的类名
-     * @returns {Array|string}
-     */
-    bem: function bem() {
-      return function (name, fixed, change) {
-        var _this = this;
-        // 类名前缀
-        var prefix = "uv-".concat(name, "--");
-        var classes = {};
-        if (fixed) {
-          fixed.map(function (item) {
-            // 这里的类名，会一直存在
-            classes[prefix + _this[item]] = true;
-          });
-        }
-        if (change) {
-          change.map(function (item) {
-            // 这里的类名，会根据this[item]的值为true或者false，而进行添加或者移除某一个类
-            _this[item] ? classes[prefix + item] = _this[item] : delete classes[prefix + item];
-          });
-        }
-        return Object.keys(classes);
-        // 支付宝，头条小程序无法动态绑定一个数组类名，否则解析出来的结果会带有","，而导致失效
-      };
-    }
-  },
-
-  methods: {
-    // 跳转某一个页面
-    openPage: function openPage() {
-      var urlKey = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'url';
-      var url = this[urlKey];
-      if (url) {
-        // 执行类似uni.navigateTo的方法
-        uni[this.linkType]({
-          url: url
-        });
-      }
-    },
-    // 查询节点信息
-    // 目前此方法在支付宝小程序中无法获取组件跟接点的尺寸，为支付宝的bug(2020-07-21)
-    // 解决办法为在组件根部再套一个没有任何作用的view元素
-    $uvGetRect: function $uvGetRect(selector, all) {
-      var _this2 = this;
-      return new Promise(function (resolve) {
-        uni.createSelectorQuery().in(_this2)[all ? 'selectAll' : 'select'](selector).boundingClientRect(function (rect) {
-          if (all && Array.isArray(rect) && rect.length) {
-            resolve(rect);
-          }
-          if (!all && rect) {
-            resolve(rect);
-          }
-        }).exec();
-      });
-    },
-    getParentData: function getParentData() {
-      var _this3 = this;
-      var parentName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-      // 避免在created中去定义parent变量
-      if (!this.parent) this.parent = {};
-      // 这里的本质原理是，通过获取父组件实例(也即类似uv-radio的父组件uv-radio-group的this)
-      // 将父组件this中对应的参数，赋值给本组件(uv-radio的this)的parentData对象中对应的属性
-      // 之所以需要这么做，是因为所有端中，头条小程序不支持通过this.parent.xxx去监听父组件参数的变化
-      // 此处并不会自动更新子组件的数据，而是依赖父组件uv-radio-group去监听data的变化，手动调用更新子组件的方法去重新获取
-      this.parent = this.$uv.$parent.call(this, parentName);
-      if (this.parent.children) {
-        // 如果父组件的children不存在本组件的实例，才将本实例添加到父组件的children中
-        this.parent.children.indexOf(this) === -1 && this.parent.children.push(this);
-      }
-      if (this.parent && this.parentData) {
-        // 历遍parentData中的属性，将parent中的同名属性赋值给parentData
-        Object.keys(this.parentData).map(function (key) {
-          _this3.parentData[key] = _this3.parent[key];
-        });
-      }
-    },
-    // 阻止事件冒泡
-    preventEvent: function preventEvent(e) {
-      e && typeof e.stopPropagation === 'function' && e.stopPropagation();
-    },
-    // 空操作
-    noop: function noop(e) {
-      this.preventEvent(e);
-    }
-  },
-  onReachBottom: function onReachBottom() {
-    uni.$emit('uvOnReachBottom');
-  },
-  beforeDestroy: function beforeDestroy() {
-    var _this4 = this;
-    // 判断当前页面是否存在parent和chldren，一般在checkbox和checkbox-group父子联动的场景会有此情况
-    // 组件销毁时，移除子组件在父组件children数组中的实例，释放资源，避免数据混乱
-    if (this.parent && test.array(this.parent.children)) {
-      // 组件销毁时，移除父组件中的children数组中对应的实例
-      var childrenList = this.parent.children;
-      childrenList.map(function (child, index) {
-        // 如果相等，则移除
-        if (child === _this4) {
-          childrenList.splice(index, 1);
-        }
-      });
-    }
-  }
-};
-exports.default = _default2;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 315 */
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/index.js ***!
   \****************************************************************************************************************/
@@ -22208,8 +20647,8 @@ exports.trim = trim;
 exports.type2icon = type2icon;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 5));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _test = __webpack_require__(/*! ./test.js */ 316);
-var _digit = __webpack_require__(/*! ./digit.js */ 317);
+var _test = __webpack_require__(/*! ./test.js */ 344);
+var _digit = __webpack_require__(/*! ./digit.js */ 345);
 /**
  * @description 如果value小于min，取min；如果value大于max，取max
  * @param {number} min
@@ -22960,7 +21399,7 @@ function setConfig(_ref5) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 316 */
+/* 344 */
 /*!***************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/test.js ***!
   \***************************************************************************************************************/
@@ -23260,7 +21699,7 @@ function regExp(o) {
 }
 
 /***/ }),
-/* 317 */
+/* 345 */
 /*!****************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/digit.js ***!
   \****************************************************************************************************************/
@@ -23462,7 +21901,227 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 318 */
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/mixin/mpMixin.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  // 将自定义节点设置成虚拟的（去掉自定义组件包裹层），更加接近Vue组件的表现，能更好的使用flex属性
+  options: {
+    virtualHost: true
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 365 */
+/*!*************************************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/mixin/mixin.js ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+var index = _interopRequireWildcard(__webpack_require__(/*! ../function/index.js */ 343));
+var test = _interopRequireWildcard(__webpack_require__(/*! ../function/test.js */ 344));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+var _default2 = {
+  // 定义每个组件都可能需要用到的外部样式以及类名
+  props: {
+    // 每个组件都有的父组件传递的样式，可以为字符串或者对象形式
+    customStyle: {
+      type: [Object, String],
+      default: function _default() {
+        return {};
+      }
+    },
+    customClass: {
+      type: String,
+      default: ''
+    },
+    // 跳转的页面路径
+    url: {
+      type: String,
+      default: ''
+    },
+    // 页面跳转的类型
+    linkType: {
+      type: String,
+      default: 'navigateTo'
+    }
+  },
+  data: function data() {
+    return {};
+  },
+  onLoad: function onLoad() {
+    // getRect挂载到$uv上，因为这方法需要使用in(this)，所以无法把它独立成一个单独的文件导出
+    this.$uv.getRect = this.$uvGetRect;
+  },
+  created: function created() {
+    // 组件当中，只有created声明周期，为了能在组件使用，故也在created中将方法挂载到$uv
+    this.$uv.getRect = this.$uvGetRect;
+  },
+  computed: {
+    $uv: function $uv() {
+      return _objectSpread(_objectSpread({}, index), {}, {
+        test: test
+      });
+    },
+    /**
+     * 生成bem规则类名
+     * 由于微信小程序，H5，nvue之间绑定class的差异，无法通过:class="[bem()]"的形式进行同用
+     * 故采用如下折中做法，最后返回的是数组（一般平台）或字符串（支付宝和字节跳动平台），类似['a', 'b', 'c']或'a b c'的形式
+     * @param {String} name 组件名称
+     * @param {Array} fixed 一直会存在的类名
+     * @param {Array} change 会根据变量值为true或者false而出现或者隐藏的类名
+     * @returns {Array|string}
+     */
+    bem: function bem() {
+      return function (name, fixed, change) {
+        var _this = this;
+        // 类名前缀
+        var prefix = "uv-".concat(name, "--");
+        var classes = {};
+        if (fixed) {
+          fixed.map(function (item) {
+            // 这里的类名，会一直存在
+            classes[prefix + _this[item]] = true;
+          });
+        }
+        if (change) {
+          change.map(function (item) {
+            // 这里的类名，会根据this[item]的值为true或者false，而进行添加或者移除某一个类
+            _this[item] ? classes[prefix + item] = _this[item] : delete classes[prefix + item];
+          });
+        }
+        return Object.keys(classes);
+        // 支付宝，头条小程序无法动态绑定一个数组类名，否则解析出来的结果会带有","，而导致失效
+      };
+    }
+  },
+
+  methods: {
+    // 跳转某一个页面
+    openPage: function openPage() {
+      var urlKey = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'url';
+      var url = this[urlKey];
+      if (url) {
+        // 执行类似uni.navigateTo的方法
+        uni[this.linkType]({
+          url: url
+        });
+      }
+    },
+    // 查询节点信息
+    // 目前此方法在支付宝小程序中无法获取组件跟接点的尺寸，为支付宝的bug(2020-07-21)
+    // 解决办法为在组件根部再套一个没有任何作用的view元素
+    $uvGetRect: function $uvGetRect(selector, all) {
+      var _this2 = this;
+      return new Promise(function (resolve) {
+        uni.createSelectorQuery().in(_this2)[all ? 'selectAll' : 'select'](selector).boundingClientRect(function (rect) {
+          if (all && Array.isArray(rect) && rect.length) {
+            resolve(rect);
+          }
+          if (!all && rect) {
+            resolve(rect);
+          }
+        }).exec();
+      });
+    },
+    getParentData: function getParentData() {
+      var _this3 = this;
+      var parentName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+      // 避免在created中去定义parent变量
+      if (!this.parent) this.parent = {};
+      // 这里的本质原理是，通过获取父组件实例(也即类似uv-radio的父组件uv-radio-group的this)
+      // 将父组件this中对应的参数，赋值给本组件(uv-radio的this)的parentData对象中对应的属性
+      // 之所以需要这么做，是因为所有端中，头条小程序不支持通过this.parent.xxx去监听父组件参数的变化
+      // 此处并不会自动更新子组件的数据，而是依赖父组件uv-radio-group去监听data的变化，手动调用更新子组件的方法去重新获取
+      this.parent = this.$uv.$parent.call(this, parentName);
+      if (this.parent.children) {
+        // 如果父组件的children不存在本组件的实例，才将本实例添加到父组件的children中
+        this.parent.children.indexOf(this) === -1 && this.parent.children.push(this);
+      }
+      if (this.parent && this.parentData) {
+        // 历遍parentData中的属性，将parent中的同名属性赋值给parentData
+        Object.keys(this.parentData).map(function (key) {
+          _this3.parentData[key] = _this3.parent[key];
+        });
+      }
+    },
+    // 阻止事件冒泡
+    preventEvent: function preventEvent(e) {
+      e && typeof e.stopPropagation === 'function' && e.stopPropagation();
+    },
+    // 空操作
+    noop: function noop(e) {
+      this.preventEvent(e);
+    }
+  },
+  onReachBottom: function onReachBottom() {
+    uni.$emit('uvOnReachBottom');
+  },
+  beforeDestroy: function beforeDestroy() {
+    var _this4 = this;
+    // 判断当前页面是否存在parent和chldren，一般在checkbox和checkbox-group父子联动的场景会有此情况
+    // 组件销毁时，移除子组件在父组件children数组中的实例，释放资源，避免数据混乱
+    if (this.parent && test.array(this.parent.children)) {
+      // 组件销毁时，移除父组件中的children数组中对应的实例
+      var childrenList = this.parent.children;
+      childrenList.map(function (child, index) {
+        // 如果相等，则移除
+        if (child === _this4) {
+          childrenList.splice(index, 1);
+        }
+      });
+    }
+  }
+};
+exports.default = _default2;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 366 */
 /*!***************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-waterfall/components/uv-waterfall/props.js ***!
   \***************************************************************************************************************************/
@@ -23548,17 +22207,17 @@ exports.default = _default2;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */
-/*!*******************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-image/components/uv-image/props.js ***!
-  \*******************************************************************************************************************/
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */
+/*!***************************************************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-load-more/components/uv-load-more/props.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23576,110 +22235,173 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var _default = {
   props: _objectSpread({
-    // 图片地址
-    src: {
+    // 组件状态，loadmore-加载前的状态，loading-加载中的状态，nomore-没有更多的状态
+    status: {
       type: String,
-      default: ''
+      default: 'loadmore'
     },
-    // 裁剪模式
-    mode: {
-      type: String,
-      default: 'aspectFill'
-    },
-    // 宽度，单位任意
-    width: {
-      type: [String, Number],
-      default: '300'
-    },
-    // 高度，单位任意
-    height: {
-      type: [String, Number],
-      default: '225'
-    },
-    // 图片形状，circle-圆形，square-方形
-    shape: {
-      type: String,
-      default: 'square'
-    },
-    // 圆角，单位任意
-    radius: {
-      type: [String, Number],
-      default: 0
-    },
-    // 是否懒加载，微信小程序、App、百度小程序、字节跳动小程序
-    lazyLoad: {
-      type: Boolean,
-      default: true
-    },
-    // 是否开启observer懒加载，nvue不生效
-    observeLazyLoad: {
-      type: Boolean,
-      default: false
-    },
-    // 开启长按图片显示识别微信小程序码菜单
-    showMenuByLongpress: {
-      type: Boolean,
-      default: true
-    },
-    // 加载中的图标，或者小图片
-    loadingIcon: {
-      type: String,
-      default: 'photo'
-    },
-    // 加载失败的图标，或者小图片
-    errorIcon: {
-      type: String,
-      default: 'error-circle'
-    },
-    // 是否显示加载中的图标或者自定义的slot
-    showLoading: {
-      type: Boolean,
-      default: true
-    },
-    // 是否显示加载错误的图标或者自定义的slot
-    showError: {
-      type: Boolean,
-      default: true
-    },
-    // 是否需要淡入效果
-    fade: {
-      type: Boolean,
-      default: true
-    },
-    // 只支持网络资源，只对微信小程序有效
-    webp: {
-      type: Boolean,
-      default: false
-    },
-    // 过渡时间，单位ms
-    duration: {
-      type: [String, Number],
-      default: 500
-    },
-    // 背景颜色，用于深色页面加载图片时，为了和背景色融合
+    // 组件背景色
     bgColor: {
       type: String,
-      default: '#f3f4f6'
+      default: 'transparent'
     },
-    // nvue模式下 是否直接显示，在uv-list等cell下面使用就需要设置
-    cellChild: {
+    // 是否显示加载中的图标
+    icon: {
+      type: Boolean,
+      default: true
+    },
+    // 字体大小
+    fontSize: {
+      type: [String, Number],
+      default: 14
+    },
+    // 图标大小
+    iconSize: {
+      type: [String, Number],
+      default: 16
+    },
+    // 字体颜色
+    color: {
+      type: String,
+      default: '#606266'
+    },
+    // 加载中状态的图标，spinner-花朵状图标，circle-圆圈状，semicircle-半圆
+    loadingIcon: {
+      type: String,
+      default: 'spinner'
+    },
+    // 加载前的提示语
+    loadmoreText: {
+      type: String,
+      default: '加载更多'
+    },
+    // 加载中提示语
+    loadingText: {
+      type: String,
+      default: '正在加载...'
+    },
+    // 没有更多的提示语
+    nomoreText: {
+      type: String,
+      default: '没有更多了'
+    },
+    // 在“没有更多”状态下，是否显示粗点
+    isDot: {
+      type: Boolean,
+      default: false
+    },
+    // 加载中图标的颜色
+    iconColor: {
+      type: String,
+      default: '#b7b7b7'
+    },
+    // 上边距
+    marginTop: {
+      type: [String, Number],
+      default: 10
+    },
+    // 下边距
+    marginBottom: {
+      type: [String, Number],
+      default: 10
+    },
+    // 高度，单位px
+    height: {
+      type: [String, Number],
+      default: 'auto'
+    },
+    // 是否显示左边分割线
+    line: {
+      type: Boolean,
+      default: false
+    },
+    // 线条颜色
+    lineColor: {
+      type: String,
+      default: '#E6E8EB'
+    },
+    // 是否虚线，true-虚线，false-实线
+    dashed: {
       type: Boolean,
       default: false
     }
-  }, (_uni$$uv = uni.$uv) === null || _uni$$uv === void 0 ? void 0 : (_uni$$uv$props = _uni$$uv.props) === null || _uni$$uv$props === void 0 ? void 0 : _uni$$uv$props.image)
+  }, (_uni$$uv = uni.$uv) === null || _uni$$uv === void 0 ? void 0 : (_uni$$uv$props = _uni$$uv.props) === null || _uni$$uv$props === void 0 ? void 0 : _uni$$uv$props.loadmore)
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */
+/*!*****************************************************************************************************************!*\
+  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-line/components/uv-line/props.js ***!
+  \*****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+var _uni$$uv, _uni$$uv$props;
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+var _default = {
+  props: _objectSpread({
+    color: {
+      type: String,
+      default: '#d6d7d9'
+    },
+    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
+    length: {
+      type: [String, Number],
+      default: '100%'
+    },
+    // 线条方向，col-竖向，row-横向
+    direction: {
+      type: String,
+      default: 'row'
+    },
+    // 是否显示细边框
+    hairline: {
+      type: Boolean,
+      default: true
+    },
+    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
+    margin: {
+      type: [String, Number],
+      default: 0
+    },
+    // 是否虚线，true-虚线，false-实线
+    dashed: {
+      type: Boolean,
+      default: false
+    }
+  }, (_uni$$uv = uni.$uv) === null || _uni$$uv === void 0 ? void 0 : (_uni$$uv$props = _uni$$uv.props) === null || _uni$$uv$props === void 0 ? void 0 : _uni$$uv$props.line)
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */
 /*!************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-ui-tools/libs/function/colorGradient.js ***!
   \************************************************************************************************************************/
@@ -23830,7 +22552,7 @@ function colorToRgba(color, alpha) {
 }
 
 /***/ }),
-/* 335 */
+/* 391 */
 /*!*********************************************************************************************************************************!*\
   !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-loading-icon/components/uv-loading-icon/props.js ***!
   \*********************************************************************************************************************************/
@@ -23910,1763 +22632,6 @@ var _default = {
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */
-/*!***************************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-load-more/components/uv-load-more/props.js ***!
-  \***************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _uni$$uv, _uni$$uv$props;
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-var _default = {
-  props: _objectSpread({
-    // 组件状态，loadmore-加载前的状态，loading-加载中的状态，nomore-没有更多的状态
-    status: {
-      type: String,
-      default: 'loadmore'
-    },
-    // 组件背景色
-    bgColor: {
-      type: String,
-      default: 'transparent'
-    },
-    // 是否显示加载中的图标
-    icon: {
-      type: Boolean,
-      default: true
-    },
-    // 字体大小
-    fontSize: {
-      type: [String, Number],
-      default: 14
-    },
-    // 图标大小
-    iconSize: {
-      type: [String, Number],
-      default: 16
-    },
-    // 字体颜色
-    color: {
-      type: String,
-      default: '#606266'
-    },
-    // 加载中状态的图标，spinner-花朵状图标，circle-圆圈状，semicircle-半圆
-    loadingIcon: {
-      type: String,
-      default: 'spinner'
-    },
-    // 加载前的提示语
-    loadmoreText: {
-      type: String,
-      default: '加载更多'
-    },
-    // 加载中提示语
-    loadingText: {
-      type: String,
-      default: '正在加载...'
-    },
-    // 没有更多的提示语
-    nomoreText: {
-      type: String,
-      default: '没有更多了'
-    },
-    // 在“没有更多”状态下，是否显示粗点
-    isDot: {
-      type: Boolean,
-      default: false
-    },
-    // 加载中图标的颜色
-    iconColor: {
-      type: String,
-      default: '#b7b7b7'
-    },
-    // 上边距
-    marginTop: {
-      type: [String, Number],
-      default: 10
-    },
-    // 下边距
-    marginBottom: {
-      type: [String, Number],
-      default: 10
-    },
-    // 高度，单位px
-    height: {
-      type: [String, Number],
-      default: 'auto'
-    },
-    // 是否显示左边分割线
-    line: {
-      type: Boolean,
-      default: false
-    },
-    // 线条颜色
-    lineColor: {
-      type: String,
-      default: '#E6E8EB'
-    },
-    // 是否虚线，true-虚线，false-实线
-    dashed: {
-      type: Boolean,
-      default: false
-    }
-  }, (_uni$$uv = uni.$uv) === null || _uni$$uv === void 0 ? void 0 : (_uni$$uv$props = _uni$$uv.props) === null || _uni$$uv$props === void 0 ? void 0 : _uni$$uv$props.loadmore)
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */
-/*!****************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mine/avatar.png ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
-/* 350 */
-/*!*****************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/static/mine/setting.png ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAABVmlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGBSSSwoyGFhYGDIzSspCnJ3UoiIjFJgf8jADoS8DGIMConJxQWOAQE+QCUMMBoVfLvGwAiiL+uCzDolNbVJtV7A12Km8NWLr0SbMNWjAK6U1OJkIP0HiFOTC4pKGBgYU4Bs5fKSAhC7A8gWKQI6CsieA2KnQ9gbQOwkCPsIWE1IkDOQfQPIVkjOSASawfgDyNZJQhJPR2JD7QUBbpfM4oKcxEqFAGMCriUDlKRWlIBo5/yCyqLM9IwSBUdgKKUqeOYl6+koGBkYmjMwgMIcovpzIDgsGcXOIMSa7zMw2O7/////boSY134Gho1AnVw7EWIaFgwMgtwMDCd2FiQWJYKFmIGYKS2NgeHTcgYG3kgGBuELQD3RxWnGRmB5Rh4nBgbWe///f1ZjYGCfzMDwd8L//78X/f//dzFQ8x0GhgN5ABUhZe5sUv9jAAAAOGVYSWZNTQAqAAAACAABh2kABAAAAAEAAAAaAAAAAAACoAIABAAAAAEAAACgoAMABAAAAAEAAACgAAAAAIQkO7MAAAfXSURBVHic1Zh7jNxVFcc/3/ubnd1pZzelhQQo2ALhUVSIQJEIoaYo9ZEqTShEqSCPoAIFoV1Sut29v1vGyFoKlPoKJDYlGuMuSDComMgjDY2FVDHiVkt4tLyJpUh36OzO43f8Y35b13Vmuq010W8y2czsOfd+7rn3nnvuhf9x6UAdzExxHOcAt23bttLg4GBtkvbEcVySZP8tQHnvj5XUA3wOyAK/d8519/X1DTVyKBQKR1Wr1dXAhYADNjnnVvf19b0ATAp0UoDe+y7gOmC5pBnAqJkhqR14y8w+GUJ4YYLPdElPAKcD1fTTAewBvmtma0MIu/8jwHR6Pg3cC5wkqWJmjwCrU5MBSXPMbHM+n1+wfPnyvQBxHEeS7geuMLNdzrlLkyR5Q1I3cFkKutPMuoGfhxCSgwLs7e29IIqiR4CcmT3nnOueM2fOpksuuaSWRuksSU+YWV7SZjOrSIrSv/PSZpbEcfyz1N61tbWdValU7pT0CaDmnLu6r6/vxwcM6L3PSHoSOA+4q7Ozc9WyZctKE/3jOF4O3EF9jU1cVxtOPfXUa8cGNKZ169a17969e6mkfjN7BTgthLC3EYdrBkh9Gk42s4qZbWgAB2Bmtg64Cvi6mV0kaaGZXWVm1+VyuW9OhAO46aabRoEfAcPA0cDhzSAyLQCrwPuSDpd0IfDnRkYhhDKwsUU7zXQ2kJc0bGYNowctIhhCGDGznwIys+u99/mDgGiodPl0AxHwBNB0N7eaYjKZzP3A34HZZrbwUAEmSXI6cG66me5stYtbAlar1XeBtwHnnDvrUAE6544F2iSNViqVXS1t99PQNcBJ1JPx+kMFCDwGPA7kM5nMnd77pnuhUZrRwMCAGxoamiFpKzDTOXdlX1/fA616TDvpSL+OhBCqrexXr159cpIkzwIdkj6VJMnmEIIxIVXtA1yxYsWM9vb2q9MEe6SZHSHpGGBbZ2fn3CZphv7+/s5SqfRV4HJgVvrzTuABM9sQQig2YVQcx/cCN1BfRi+a2WvAlvb29p+sXLny3X2A6aH+G+Aj46DNzKqSro/j+P5GPXjvZwMPSjojtS8BSMpR3/1bgYtDCK828T9F0jNA5/h+ge1RFH2mt7d3pwNUqVQC8FHgFaBgZl8zsy9EUTTXzDY0i5ykByWdCWx3zi3KZrMnZLPZE8xsEfAXSXMlPdQsRYUQtler1fOon8+3At9PGU6p1Wp3ee9d5uabb+6QdAFQNrPFIYQ/NGpsokql0lXAGcBfM5nM/FWrVr017t+/8N4/K+lx4Ezn3OVp5xNlhULheeD5cVE9SdJzwLyRkZFO19XVFZnZVDOrZLPZNyYD573PmNll1Kf1tglwY9F528x6UpsrWu3UCXoTKALtXV1dHQ5AOuDCukPSrHTNbWlhtwUoAbPz+Xz7ZBs3s31ALfNgM+XzeYPJDcysnjWKxeKkozDWbrlcNvfP32TlcnlSZXixWBwFdgA54JwWpuekO3oHMDJZwPFye/bsqVGf82xbW9vsyTilSfgB6gP7lvf+yIk2hULhKOp1osxs4/4S95iq1eoRZjYFKOdyuVEBCiF8z8y+Abwu6WHgVTN7Q9Kr06ZN25rWb/8i730+vXPMBbaZ2W3lcvmZfD5PtVo9J0mSfkknA1s/+OCD+WvWrBlu0IaLouhEM/tQkiQzJR1rZpdK+jDw6NDQ0EUZwJIkiSV9HPiYmS1N/c3Mkvfee68f6GkQxWJPT8/itra2AWCupIez2WypXC4jKaf6QtoaRdHFjeBSnZ8kyS+BXLruJAkz29ne3r5scHCwtm/heu+nAUsknQscAxwBnAjsamtrO62np+edRj10d3d3Tpky5UpJX2HcUSdpY7FY3NgMLk07j0paALwDvGNmf5P0OzP7QQjhTWhSLHjvBUxJE+3ZaVl/S6u67UCLhRDCZ9MbYsk5d3atVnspjuPaxIt9y63vvZ8v6VfUp3thCOG3rewnK+/90ZI2A7Mk3eG976HJRX5/eXCTmf2RemSWcBBPJY0k6UpgNvB6kiTfaQY3GcDjqVc4NefcYKuGDhBwC1A1s8OjKJrZyrYVoCQtlTTVzLYlSfL4oYAD2LVr19PAnyTlkiS5kRYz0xTQe58zs0VmZpLuDiG0OgmUnp8TPw21fv36UTO72+r6Yn9/f9MbY9MKI5fLtY2MjEwFRqMoeqrFQKYA94YQjovj+G3qUzfDOfdmkiS3tKion5JUAqbu3bs3R/0S/29qGsGXX355L/Ai0F6r1a5du3ZtrgGcA1ZSf1mYD3wZuFzS583sGudcX2oz0S8r6UvUN99r06dPf78ZR1PA++67r2Jmnnq5dOvw8PCmEMK8xYsXR/ucnZsn6ZY0d91jZtcDNyZJcg/11LTUOXfB+AGlD06PAd+m/npxe6OjdEz7fX4rFAoLarXaPdSvnxVJD0m6vVarTZU0ABwH/Pqwww5bNNaR9z5L/a6yENjhnLuoVqsNO+dWJEmyRFKHmb1OvcwfOOjnt3Ej73LO3WBmy4DpZjaanrVZYEcURef39va+Nt6nUCjMrFarm4DjU/uEenm2B/ihma0JIbS8tE8acMzWez/LObfKzC40swzwdCaTua23t/elJgM7XtJaMzsXSCQ9aWYhjuPtk32rPuhH9GKxqHw+X2o1PSmkA6bk83krFov7tf+/0z8Aswuv1+LvZQIAAAAASUVORK5CYII="
-
-/***/ }),
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */,
-/* 401 */,
-/* 402 */
-/*!*************************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
-  \*************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否显示组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.loadingIcon.show
-    },
-    // 颜色
-    color: {
-      type: String,
-      default: uni.$u.props.loadingIcon.color
-    },
-    // 提示文字颜色
-    textColor: {
-      type: String,
-      default: uni.$u.props.loadingIcon.textColor
-    },
-    // 文字和图标是否垂直排列
-    vertical: {
-      type: Boolean,
-      default: uni.$u.props.loadingIcon.vertical
-    },
-    // 模式选择，circle-圆形，spinner-花朵形，semicircle-半圆形
-    mode: {
-      type: String,
-      default: uni.$u.props.loadingIcon.mode
-    },
-    // 图标大小，单位默认px
-    size: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.size
-    },
-    // 文字大小
-    textSize: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.textSize
-    },
-    // 文字内容
-    text: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.text
-    },
-    // 动画模式
-    timingFunction: {
-      type: String,
-      default: uni.$u.props.loadingIcon.timingFunction
-    },
-    // 动画执行周期时间
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.duration
-    },
-    // mode=circle时的暗边颜色
-    inactiveColor: {
-      type: String,
-      default: uni.$u.props.loadingIcon.inactiveColor
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 403 */,
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */,
-/* 408 */,
-/* 409 */,
-/* 410 */
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-icon/icons.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  'uicon-level': "\uE693",
-  'uicon-column-line': "\uE68E",
-  'uicon-checkbox-mark': "\uE807",
-  'uicon-folder': "\uE7F5",
-  'uicon-movie': "\uE7F6",
-  'uicon-star-fill': "\uE669",
-  'uicon-star': "\uE65F",
-  'uicon-phone-fill': "\uE64F",
-  'uicon-phone': "\uE622",
-  'uicon-apple-fill': "\uE881",
-  'uicon-chrome-circle-fill': "\uE885",
-  'uicon-backspace': "\uE67B",
-  'uicon-attach': "\uE632",
-  'uicon-cut': "\uE948",
-  'uicon-empty-car': "\uE602",
-  'uicon-empty-coupon': "\uE682",
-  'uicon-empty-address': "\uE646",
-  'uicon-empty-favor': "\uE67C",
-  'uicon-empty-permission': "\uE686",
-  'uicon-empty-news': "\uE687",
-  'uicon-empty-search': "\uE664",
-  'uicon-github-circle-fill': "\uE887",
-  'uicon-rmb': "\uE608",
-  'uicon-person-delete-fill': "\uE66A",
-  'uicon-reload': "\uE788",
-  'uicon-order': "\uE68F",
-  'uicon-server-man': "\uE6BC",
-  'uicon-search': "\uE62A",
-  'uicon-fingerprint': "\uE955",
-  'uicon-more-dot-fill': "\uE630",
-  'uicon-scan': "\uE662",
-  'uicon-share-square': "\uE60B",
-  'uicon-map': "\uE61D",
-  'uicon-map-fill': "\uE64E",
-  'uicon-tags': "\uE629",
-  'uicon-tags-fill': "\uE651",
-  'uicon-bookmark-fill': "\uE63B",
-  'uicon-bookmark': "\uE60A",
-  'uicon-eye': "\uE613",
-  'uicon-eye-fill': "\uE641",
-  'uicon-mic': "\uE64A",
-  'uicon-mic-off': "\uE649",
-  'uicon-calendar': "\uE66E",
-  'uicon-calendar-fill': "\uE634",
-  'uicon-trash': "\uE623",
-  'uicon-trash-fill': "\uE658",
-  'uicon-play-left': "\uE66D",
-  'uicon-play-right': "\uE610",
-  'uicon-minus': "\uE618",
-  'uicon-plus': "\uE62D",
-  'uicon-info': "\uE653",
-  'uicon-info-circle': "\uE7D2",
-  'uicon-info-circle-fill': "\uE64B",
-  'uicon-question': "\uE715",
-  'uicon-error': "\uE6D3",
-  'uicon-close': "\uE685",
-  'uicon-checkmark': "\uE6A8",
-  'uicon-android-circle-fill': "\uE67E",
-  'uicon-android-fill': "\uE67D",
-  'uicon-ie': "\uE87B",
-  'uicon-IE-circle-fill': "\uE889",
-  'uicon-google': "\uE87A",
-  'uicon-google-circle-fill': "\uE88A",
-  'uicon-setting-fill': "\uE872",
-  'uicon-setting': "\uE61F",
-  'uicon-minus-square-fill': "\uE855",
-  'uicon-plus-square-fill': "\uE856",
-  'uicon-heart': "\uE7DF",
-  'uicon-heart-fill': "\uE851",
-  'uicon-camera': "\uE7D7",
-  'uicon-camera-fill': "\uE870",
-  'uicon-more-circle': "\uE63E",
-  'uicon-more-circle-fill': "\uE645",
-  'uicon-chat': "\uE620",
-  'uicon-chat-fill': "\uE61E",
-  'uicon-bag-fill': "\uE617",
-  'uicon-bag': "\uE619",
-  'uicon-error-circle-fill': "\uE62C",
-  'uicon-error-circle': "\uE624",
-  'uicon-close-circle': "\uE63F",
-  'uicon-close-circle-fill': "\uE637",
-  'uicon-checkmark-circle': "\uE63D",
-  'uicon-checkmark-circle-fill': "\uE635",
-  'uicon-question-circle-fill': "\uE666",
-  'uicon-question-circle': "\uE625",
-  'uicon-share': "\uE631",
-  'uicon-share-fill': "\uE65E",
-  'uicon-shopping-cart': "\uE621",
-  'uicon-shopping-cart-fill': "\uE65D",
-  'uicon-bell': "\uE609",
-  'uicon-bell-fill': "\uE640",
-  'uicon-list': "\uE650",
-  'uicon-list-dot': "\uE616",
-  'uicon-zhihu': "\uE6BA",
-  'uicon-zhihu-circle-fill': "\uE709",
-  'uicon-zhifubao': "\uE6B9",
-  'uicon-zhifubao-circle-fill': "\uE6B8",
-  'uicon-weixin-circle-fill': "\uE6B1",
-  'uicon-weixin-fill': "\uE6B2",
-  'uicon-twitter-circle-fill': "\uE6AB",
-  'uicon-twitter': "\uE6AA",
-  'uicon-taobao-circle-fill': "\uE6A7",
-  'uicon-taobao': "\uE6A6",
-  'uicon-weibo-circle-fill': "\uE6A5",
-  'uicon-weibo': "\uE6A4",
-  'uicon-qq-fill': "\uE6A1",
-  'uicon-qq-circle-fill': "\uE6A0",
-  'uicon-moments-circel-fill': "\uE69A",
-  'uicon-moments': "\uE69B",
-  'uicon-qzone': "\uE695",
-  'uicon-qzone-circle-fill': "\uE696",
-  'uicon-baidu-circle-fill': "\uE680",
-  'uicon-baidu': "\uE681",
-  'uicon-facebook-circle-fill': "\uE68A",
-  'uicon-facebook': "\uE689",
-  'uicon-car': "\uE60C",
-  'uicon-car-fill': "\uE636",
-  'uicon-warning-fill': "\uE64D",
-  'uicon-warning': "\uE694",
-  'uicon-clock-fill': "\uE638",
-  'uicon-clock': "\uE60F",
-  'uicon-edit-pen': "\uE612",
-  'uicon-edit-pen-fill': "\uE66B",
-  'uicon-email': "\uE611",
-  'uicon-email-fill': "\uE642",
-  'uicon-minus-circle': "\uE61B",
-  'uicon-minus-circle-fill': "\uE652",
-  'uicon-plus-circle': "\uE62E",
-  'uicon-plus-circle-fill': "\uE661",
-  'uicon-file-text': "\uE663",
-  'uicon-file-text-fill': "\uE665",
-  'uicon-pushpin': "\uE7E3",
-  'uicon-pushpin-fill': "\uE86E",
-  'uicon-grid': "\uE673",
-  'uicon-grid-fill': "\uE678",
-  'uicon-play-circle': "\uE647",
-  'uicon-play-circle-fill': "\uE655",
-  'uicon-pause-circle-fill': "\uE654",
-  'uicon-pause': "\uE8FA",
-  'uicon-pause-circle': "\uE643",
-  'uicon-eye-off': "\uE648",
-  'uicon-eye-off-outline': "\uE62B",
-  'uicon-gift-fill': "\uE65C",
-  'uicon-gift': "\uE65B",
-  'uicon-rmb-circle-fill': "\uE657",
-  'uicon-rmb-circle': "\uE677",
-  'uicon-kefu-ermai': "\uE656",
-  'uicon-server-fill': "\uE751",
-  'uicon-coupon-fill': "\uE8C4",
-  'uicon-coupon': "\uE8AE",
-  'uicon-integral': "\uE704",
-  'uicon-integral-fill': "\uE703",
-  'uicon-home-fill': "\uE964",
-  'uicon-home': "\uE965",
-  'uicon-hourglass-half-fill': "\uE966",
-  'uicon-hourglass': "\uE967",
-  'uicon-account': "\uE628",
-  'uicon-plus-people-fill': "\uE626",
-  'uicon-minus-people-fill': "\uE615",
-  'uicon-account-fill': "\uE614",
-  'uicon-thumb-down-fill': "\uE726",
-  'uicon-thumb-down': "\uE727",
-  'uicon-thumb-up': "\uE733",
-  'uicon-thumb-up-fill': "\uE72F",
-  'uicon-lock-fill': "\uE979",
-  'uicon-lock-open': "\uE973",
-  'uicon-lock-opened-fill': "\uE974",
-  'uicon-lock': "\uE97A",
-  'uicon-red-packet-fill': "\uE690",
-  'uicon-photo-fill': "\uE98B",
-  'uicon-photo': "\uE98D",
-  'uicon-volume-off-fill': "\uE659",
-  'uicon-volume-off': "\uE644",
-  'uicon-volume-fill': "\uE670",
-  'uicon-volume': "\uE633",
-  'uicon-red-packet': "\uE691",
-  'uicon-download': "\uE63C",
-  'uicon-arrow-up-fill': "\uE6B0",
-  'uicon-arrow-down-fill': "\uE600",
-  'uicon-play-left-fill': "\uE675",
-  'uicon-play-right-fill': "\uE676",
-  'uicon-rewind-left-fill': "\uE679",
-  'uicon-rewind-right-fill': "\uE67A",
-  'uicon-arrow-downward': "\uE604",
-  'uicon-arrow-leftward': "\uE601",
-  'uicon-arrow-rightward': "\uE603",
-  'uicon-arrow-upward': "\uE607",
-  'uicon-arrow-down': "\uE60D",
-  'uicon-arrow-right': "\uE605",
-  'uicon-arrow-left': "\uE60E",
-  'uicon-arrow-up': "\uE606",
-  'uicon-skip-back-left': "\uE674",
-  'uicon-skip-forward-right': "\uE672",
-  'uicon-rewind-right': "\uE66F",
-  'uicon-rewind-left': "\uE671",
-  'uicon-arrow-right-double': "\uE68D",
-  'uicon-arrow-left-double': "\uE68C",
-  'uicon-wifi-off': "\uE668",
-  'uicon-wifi': "\uE667",
-  'uicon-empty-data': "\uE62F",
-  'uicon-empty-history': "\uE684",
-  'uicon-empty-list': "\uE68B",
-  'uicon-empty-page': "\uE627",
-  'uicon-empty-order': "\uE639",
-  'uicon-man': "\uE697",
-  'uicon-woman': "\uE69C",
-  'uicon-man-add': "\uE61C",
-  'uicon-man-add-fill': "\uE64C",
-  'uicon-man-delete': "\uE61A",
-  'uicon-man-delete-fill': "\uE66A",
-  'uicon-zh': "\uE70A",
-  'uicon-en': "\uE692"
-};
-exports.default = _default;
-
-/***/ }),
-/* 411 */
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-icon/props.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 图标类名
-    name: {
-      type: String,
-      default: uni.$u.props.icon.name
-    },
-    // 图标颜色，可接受主题色
-    color: {
-      type: String,
-      default: uni.$u.props.icon.color
-    },
-    // 字体大小，单位px
-    size: {
-      type: [String, Number],
-      default: uni.$u.props.icon.size
-    },
-    // 是否显示粗体
-    bold: {
-      type: Boolean,
-      default: uni.$u.props.icon.bold
-    },
-    // 点击图标的时候传递事件出去的index（用于区分点击了哪一个）
-    index: {
-      type: [String, Number],
-      default: uni.$u.props.icon.index
-    },
-    // 触摸图标时的类名
-    hoverClass: {
-      type: String,
-      default: uni.$u.props.icon.hoverClass
-    },
-    // 自定义扩展前缀，方便用户扩展自己的图标库
-    customPrefix: {
-      type: String,
-      default: uni.$u.props.icon.customPrefix
-    },
-    // 图标右边或者下面的文字
-    label: {
-      type: [String, Number],
-      default: uni.$u.props.icon.label
-    },
-    // label的位置，只能右边或者下边
-    labelPos: {
-      type: String,
-      default: uni.$u.props.icon.labelPos
-    },
-    // label的大小
-    labelSize: {
-      type: [String, Number],
-      default: uni.$u.props.icon.labelSize
-    },
-    // label的颜色
-    labelColor: {
-      type: String,
-      default: uni.$u.props.icon.labelColor
-    },
-    // label与图标的距离
-    space: {
-      type: [String, Number],
-      default: uni.$u.props.icon.space
-    },
-    // 图片的mode
-    imgMode: {
-      type: String,
-      default: uni.$u.props.icon.imgMode
-    },
-    // 用于显示图片小图标时，图片的宽度
-    width: {
-      type: [String, Number],
-      default: uni.$u.props.icon.width
-    },
-    // 用于显示图片小图标时，图片的高度
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.icon.height
-    },
-    // 用于解决某些情况下，让图标垂直居中的用途
-    top: {
-      type: [String, Number],
-      default: uni.$u.props.icon.top
-    },
-    // 是否阻止事件传播
-    stop: {
-      type: Boolean,
-      default: uni.$u.props.icon.stop
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 412 */,
-/* 413 */,
-/* 414 */,
-/* 415 */,
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */
-/*!******************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-popup/props.js ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否展示弹窗
-    show: {
-      type: Boolean,
-      default: uni.$u.props.popup.show
-    },
-    // 是否显示遮罩
-    overlay: {
-      type: Boolean,
-      default: uni.$u.props.popup.overlay
-    },
-    // 弹出的方向，可选值为 top bottom right left center
-    mode: {
-      type: String,
-      default: uni.$u.props.popup.mode
-    },
-    // 动画时长，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.popup.duration
-    },
-    // 是否显示关闭图标
-    closeable: {
-      type: Boolean,
-      default: uni.$u.props.popup.closeable
-    },
-    // 自定义遮罩的样式
-    overlayStyle: {
-      type: [Object, String],
-      default: uni.$u.props.popup.overlayStyle
-    },
-    // 点击遮罩是否关闭弹窗
-    closeOnClickOverlay: {
-      type: Boolean,
-      default: uni.$u.props.popup.closeOnClickOverlay
-    },
-    // 层级
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.popup.zIndex
-    },
-    // 是否为iPhoneX留出底部安全距离
-    safeAreaInsetBottom: {
-      type: Boolean,
-      default: uni.$u.props.popup.safeAreaInsetBottom
-    },
-    // 是否留出顶部安全距离（状态栏高度）
-    safeAreaInsetTop: {
-      type: Boolean,
-      default: uni.$u.props.popup.safeAreaInsetTop
-    },
-    // 自定义关闭图标位置，top-left为左上角，top-right为右上角，bottom-left为左下角，bottom-right为右下角
-    closeIconPos: {
-      type: String,
-      default: uni.$u.props.popup.closeIconPos
-    },
-    // 是否显示圆角
-    round: {
-      type: [Boolean, String, Number],
-      default: uni.$u.props.popup.round
-    },
-    // mode=center，也即中部弹出时，是否使用缩放模式
-    zoom: {
-      type: Boolean,
-      default: uni.$u.props.popup.zoom
-    },
-    // 弹窗背景色，设置为transparent可去除白色背景
-    bgColor: {
-      type: String,
-      default: uni.$u.props.popup.bgColor
-    },
-    // 遮罩的透明度，0-1之间
-    overlayOpacity: {
-      type: [Number, String],
-      default: uni.$u.props.popup.overlayOpacity
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */,
-/* 424 */,
-/* 425 */,
-/* 426 */,
-/* 427 */
-/*!********************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-toolbar/props.js ***!
-  \********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否展示工具条
-    show: {
-      type: Boolean,
-      default: uni.$u.props.toolbar.show
-    },
-    // 取消按钮的文字
-    cancelText: {
-      type: String,
-      default: uni.$u.props.toolbar.cancelText
-    },
-    // 确认按钮的文字
-    confirmText: {
-      type: String,
-      default: uni.$u.props.toolbar.confirmText
-    },
-    // 取消按钮的颜色
-    cancelColor: {
-      type: String,
-      default: uni.$u.props.toolbar.cancelColor
-    },
-    // 确认按钮的颜色
-    confirmColor: {
-      type: String,
-      default: uni.$u.props.toolbar.confirmColor
-    },
-    // 标题文字
-    title: {
-      type: String,
-      default: uni.$u.props.toolbar.title
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */,
-/* 438 */,
-/* 439 */,
-/* 440 */,
-/* 441 */,
-/* 442 */,
-/* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */
-/*!***************************************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-transition/components/uv-transition/createAnimation.js ***!
-  \***************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.createAnimation = createAnimation;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-// const defaultOption = {
-// 	duration: 300,
-// 	timingFunction: 'linear',
-// 	delay: 0,
-// 	transformOrigin: '50% 50% 0'
-// }
-var MPAnimation = /*#__PURE__*/function () {
-  function MPAnimation(options, _this) {
-    (0, _classCallCheck2.default)(this, MPAnimation);
-    this.options = options;
-    // 在iOS10+QQ小程序平台下，传给原生的对象一定是个普通对象而不是Proxy对象，否则会报parameter should be Object instead of ProxyObject的错误
-    this.animation = uni.createAnimation(_objectSpread({}, options));
-    this.currentStepAnimates = {};
-    this.next = 0;
-    this.$ = _this;
-  }
-  (0, _createClass2.default)(MPAnimation, [{
-    key: "_nvuePushAnimates",
-    value: function _nvuePushAnimates(type, args) {
-      var aniObj = this.currentStepAnimates[this.next];
-      var styles = {};
-      if (!aniObj) {
-        styles = {
-          styles: {},
-          config: {}
-        };
-      } else {
-        styles = aniObj;
-      }
-      if (animateTypes1.includes(type)) {
-        if (!styles.styles.transform) {
-          styles.styles.transform = '';
-        }
-        var unit = '';
-        if (type === 'rotate') {
-          unit = 'deg';
-        }
-        styles.styles.transform += "".concat(type, "(").concat(args + unit, ") ");
-      } else {
-        styles.styles[type] = "".concat(args);
-      }
-      this.currentStepAnimates[this.next] = styles;
-    }
-  }, {
-    key: "_animateRun",
-    value: function _animateRun() {
-      var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var ref = this.$.$refs['ani'].ref;
-      if (!ref) return;
-      return new Promise(function (resolve, reject) {
-        nvueAnimation.transition(ref, _objectSpread({
-          styles: styles
-        }, config), function (res) {
-          resolve();
-        });
-      });
-    }
-  }, {
-    key: "_nvueNextAnimate",
-    value: function _nvueNextAnimate(animates) {
-      var _this2 = this;
-      var step = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-      var fn = arguments.length > 2 ? arguments[2] : undefined;
-      var obj = animates[step];
-      if (obj) {
-        var styles = obj.styles,
-          config = obj.config;
-        this._animateRun(styles, config).then(function () {
-          step += 1;
-          _this2._nvueNextAnimate(animates, step, fn);
-        });
-      } else {
-        this.currentStepAnimates = {};
-        typeof fn === 'function' && fn();
-        this.isEnd = true;
-      }
-    }
-  }, {
-    key: "step",
-    value: function step() {
-      var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      this.animation.step(config);
-      return this;
-    }
-  }, {
-    key: "run",
-    value: function run(fn) {
-      this.$.animationData = this.animation.export();
-      this.$.timer = setTimeout(function () {
-        typeof fn === 'function' && fn();
-      }, this.$.durationTime);
-    }
-  }]);
-  return MPAnimation;
-}();
-var animateTypes1 = ['matrix', 'matrix3d', 'rotate', 'rotate3d', 'rotateX', 'rotateY', 'rotateZ', 'scale', 'scale3d', 'scaleX', 'scaleY', 'scaleZ', 'skew', 'skewX', 'skewY', 'translate', 'translate3d', 'translateX', 'translateY', 'translateZ'];
-var animateTypes2 = ['opacity', 'backgroundColor'];
-var animateTypes3 = ['width', 'height', 'left', 'right', 'top', 'bottom'];
-animateTypes1.concat(animateTypes2, animateTypes3).forEach(function (type) {
-  MPAnimation.prototype[type] = function () {
-    var _this$animation;
-    (_this$animation = this.animation)[type].apply(_this$animation, arguments);
-    return this;
-  };
-});
-function createAnimation(option, _this) {
-  if (!_this) return;
-  clearTimeout(_this.timer);
-  return new MPAnimation(option, _this);
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-icon/components/uv-icon/icons.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  'uvicon-level': 'e68f',
-  'uvicon-checkbox-mark': 'e659',
-  'uvicon-folder': 'e694',
-  'uvicon-movie': 'e67c',
-  'uvicon-star-fill': 'e61e',
-  'uvicon-star': 'e618',
-  'uvicon-phone-fill': 'e6ac',
-  'uvicon-phone': 'e6ba',
-  'uvicon-apple-fill': 'e635',
-  'uvicon-backspace': 'e64d',
-  'uvicon-attach': 'e640',
-  'uvicon-empty-data': 'e671',
-  'uvicon-empty-address': 'e68a',
-  'uvicon-empty-favor': 'e662',
-  'uvicon-empty-car': 'e657',
-  'uvicon-empty-order': 'e66b',
-  'uvicon-empty-list': 'e672',
-  'uvicon-empty-search': 'e677',
-  'uvicon-empty-permission': 'e67d',
-  'uvicon-empty-news': 'e67e',
-  'uvicon-empty-history': 'e685',
-  'uvicon-empty-coupon': 'e69b',
-  'uvicon-empty-page': 'e60e',
-  'uvicon-empty-wifi-off': 'e6cc',
-  'uvicon-reload': 'e627',
-  'uvicon-order': 'e695',
-  'uvicon-server-man': 'e601',
-  'uvicon-search': 'e632',
-  'uvicon-more-dot-fill': 'e66f',
-  'uvicon-scan': 'e631',
-  'uvicon-map': 'e665',
-  'uvicon-map-fill': 'e6a8',
-  'uvicon-tags': 'e621',
-  'uvicon-tags-fill': 'e613',
-  'uvicon-eye': 'e664',
-  'uvicon-eye-fill': 'e697',
-  'uvicon-eye-off': 'e69c',
-  'uvicon-eye-off-outline': 'e688',
-  'uvicon-mic': 'e66d',
-  'uvicon-mic-off': 'e691',
-  'uvicon-calendar': 'e65c',
-  'uvicon-trash': 'e623',
-  'uvicon-trash-fill': 'e6ce',
-  'uvicon-play-left': 'e6bf',
-  'uvicon-play-right': 'e6b3',
-  'uvicon-minus': 'e614',
-  'uvicon-plus': 'e625',
-  'uvicon-info-circle': 'e69f',
-  'uvicon-info-circle-fill': 'e6a7',
-  'uvicon-question-circle': 'e622',
-  'uvicon-question-circle-fill': 'e6bc',
-  'uvicon-close': 'e65a',
-  'uvicon-checkmark': 'e64a',
-  'uvicon-checkmark-circle': 'e643',
-  'uvicon-checkmark-circle-fill': 'e668',
-  'uvicon-setting': 'e602',
-  'uvicon-setting-fill': 'e6d0',
-  'uvicon-heart': 'e6a2',
-  'uvicon-heart-fill': 'e68b',
-  'uvicon-camera': 'e642',
-  'uvicon-camera-fill': 'e650',
-  'uvicon-more-circle': 'e69e',
-  'uvicon-more-circle-fill': 'e684',
-  'uvicon-chat': 'e656',
-  'uvicon-chat-fill': 'e63f',
-  'uvicon-bag': 'e647',
-  'uvicon-error-circle': 'e66e',
-  'uvicon-error-circle-fill': 'e655',
-  'uvicon-close-circle': 'e64e',
-  'uvicon-close-circle-fill': 'e666',
-  'uvicon-share': 'e629',
-  'uvicon-share-fill': 'e6bb',
-  'uvicon-share-square': 'e6c4',
-  'uvicon-shopping-cart': 'e6cb',
-  'uvicon-shopping-cart-fill': 'e630',
-  'uvicon-bell': 'e651',
-  'uvicon-bell-fill': 'e604',
-  'uvicon-list': 'e690',
-  'uvicon-list-dot': 'e6a9',
-  'uvicon-zhifubao-circle-fill': 'e617',
-  'uvicon-weixin-circle-fill': 'e6cd',
-  'uvicon-weixin-fill': 'e620',
-  'uvicon-qq-fill': 'e608',
-  'uvicon-qq-circle-fill': 'e6b9',
-  'uvicon-moments-circel-fill': 'e6c2',
-  'uvicon-moments': 'e6a0',
-  'uvicon-car': 'e64f',
-  'uvicon-car-fill': 'e648',
-  'uvicon-warning-fill': 'e6c7',
-  'uvicon-warning': 'e6c1',
-  'uvicon-clock-fill': 'e64b',
-  'uvicon-clock': 'e66c',
-  'uvicon-edit-pen': 'e65d',
-  'uvicon-edit-pen-fill': 'e679',
-  'uvicon-email': 'e673',
-  'uvicon-email-fill': 'e683',
-  'uvicon-minus-circle': 'e6a5',
-  'uvicon-plus-circle': 'e603',
-  'uvicon-plus-circle-fill': 'e611',
-  'uvicon-file-text': 'e687',
-  'uvicon-file-text-fill': 'e67f',
-  'uvicon-pushpin': 'e6d1',
-  'uvicon-pushpin-fill': 'e6b6',
-  'uvicon-grid': 'e68c',
-  'uvicon-grid-fill': 'e698',
-  'uvicon-play-circle': 'e6af',
-  'uvicon-play-circle-fill': 'e62a',
-  'uvicon-pause-circle-fill': 'e60c',
-  'uvicon-pause': 'e61c',
-  'uvicon-pause-circle': 'e696',
-  'uvicon-gift-fill': 'e6b0',
-  'uvicon-gift': 'e680',
-  'uvicon-kefu-ermai': 'e660',
-  'uvicon-server-fill': 'e610',
-  'uvicon-coupon-fill': 'e64c',
-  'uvicon-coupon': 'e65f',
-  'uvicon-integral': 'e693',
-  'uvicon-integral-fill': 'e6b1',
-  'uvicon-home-fill': 'e68e',
-  'uvicon-home': 'e67b',
-  'uvicon-account': 'e63a',
-  'uvicon-account-fill': 'e653',
-  'uvicon-thumb-down-fill': 'e628',
-  'uvicon-thumb-down': 'e60a',
-  'uvicon-thumb-up': 'e612',
-  'uvicon-thumb-up-fill': 'e62c',
-  'uvicon-lock-fill': 'e6a6',
-  'uvicon-lock-open': 'e68d',
-  'uvicon-lock-opened-fill': 'e6a1',
-  'uvicon-lock': 'e69d',
-  'uvicon-red-packet': 'e6c3',
-  'uvicon-photo-fill': 'e6b4',
-  'uvicon-photo': 'e60d',
-  'uvicon-volume-off-fill': 'e6c8',
-  'uvicon-volume-off': 'e6bd',
-  'uvicon-volume-fill': 'e624',
-  'uvicon-volume': 'e605',
-  'uvicon-download': 'e670',
-  'uvicon-arrow-up-fill': 'e636',
-  'uvicon-arrow-down-fill': 'e638',
-  'uvicon-play-left-fill': 'e6ae',
-  'uvicon-play-right-fill': 'e6ad',
-  'uvicon-arrow-downward': 'e634',
-  'uvicon-arrow-leftward': 'e63b',
-  'uvicon-arrow-rightward': 'e644',
-  'uvicon-arrow-upward': 'e641',
-  'uvicon-arrow-down': 'e63e',
-  'uvicon-arrow-right': 'e63c',
-  'uvicon-arrow-left': 'e646',
-  'uvicon-arrow-up': 'e633',
-  'uvicon-skip-back-left': 'e6c5',
-  'uvicon-skip-forward-right': 'e61f',
-  'uvicon-arrow-left-double': 'e637',
-  'uvicon-man': 'e675',
-  'uvicon-woman': 'e626',
-  'uvicon-en': 'e6b8',
-  'uvicon-twitte': 'e607',
-  'uvicon-twitter-circle-fill': 'e6cf'
-};
-exports.default = _default;
-
-/***/ }),
-/* 456 */
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-icon/components/uv-icon/props.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _uni$$uv, _uni$$uv$props;
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-var _default = {
-  props: _objectSpread({
-    // 图标类名
-    name: {
-      type: String,
-      default: ''
-    },
-    // 图标颜色，可接受主题色
-    color: {
-      type: String,
-      default: '#606266'
-    },
-    // 字体大小，单位px
-    size: {
-      type: [String, Number],
-      default: '16px'
-    },
-    // 是否显示粗体
-    bold: {
-      type: Boolean,
-      default: false
-    },
-    // 点击图标的时候传递事件出去的index（用于区分点击了哪一个）
-    index: {
-      type: [String, Number],
-      default: null
-    },
-    // 触摸图标时的类名
-    hoverClass: {
-      type: String,
-      default: ''
-    },
-    // 自定义扩展前缀，方便用户扩展自己的图标库
-    customPrefix: {
-      type: String,
-      default: 'uvicon'
-    },
-    // 图标右边或者下面的文字
-    label: {
-      type: [String, Number],
-      default: ''
-    },
-    // label的位置，只能右边或者下边
-    labelPos: {
-      type: String,
-      default: 'right'
-    },
-    // label的大小
-    labelSize: {
-      type: [String, Number],
-      default: '15px'
-    },
-    // label的颜色
-    labelColor: {
-      type: String,
-      default: '#606266'
-    },
-    // label与图标的距离
-    space: {
-      type: [String, Number],
-      default: '3px'
-    },
-    // 图片的mode
-    imgMode: {
-      type: String,
-      default: ''
-    },
-    // 用于显示图片小图标时，图片的宽度
-    width: {
-      type: [String, Number],
-      default: ''
-    },
-    // 用于显示图片小图标时，图片的高度
-    height: {
-      type: [String, Number],
-      default: ''
-    },
-    // 用于解决某些情况下，让图标垂直居中的用途
-    top: {
-      type: [String, Number],
-      default: 0
-    },
-    // 是否阻止事件传播
-    stop: {
-      type: Boolean,
-      default: false
-    }
-  }, (_uni$$uv = uni.$uv) === null || _uni$$uv === void 0 ? void 0 : (_uni$$uv$props = _uni$$uv.props) === null || _uni$$uv$props === void 0 ? void 0 : _uni$$uv$props.icon)
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 457 */,
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uv-line/components/uv-line/props.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _uni$$uv, _uni$$uv$props;
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-var _default = {
-  props: _objectSpread({
-    color: {
-      type: String,
-      default: '#d6d7d9'
-    },
-    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
-    length: {
-      type: [String, Number],
-      default: '100%'
-    },
-    // 线条方向，col-竖向，row-横向
-    direction: {
-      type: String,
-      default: 'row'
-    },
-    // 是否显示细边框
-    hairline: {
-      type: Boolean,
-      default: true
-    },
-    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
-    margin: {
-      type: [String, Number],
-      default: 0
-    },
-    // 是否虚线，true-虚线，false-实线
-    dashed: {
-      type: Boolean,
-      default: false
-    }
-  }, (_uni$$uv = uni.$uv) === null || _uni$$uv === void 0 ? void 0 : (_uni$$uv$props = _uni$$uv.props) === null || _uni$$uv$props === void 0 ? void 0 : _uni$$uv$props.line)
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 465 */,
-/* 466 */,
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */,
-/* 471 */,
-/* 472 */
-/*!********************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-overlay/props.js ***!
-  \********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否显示遮罩
-    show: {
-      type: Boolean,
-      default: uni.$u.props.overlay.show
-    },
-    // 层级z-index
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.zIndex
-    },
-    // 遮罩的过渡时间，单位为ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.duration
-    },
-    // 不透明度值，当做rgba的第四个参数
-    opacity: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.opacity
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 473 */,
-/* 474 */,
-/* 475 */,
-/* 476 */,
-/* 477 */,
-/* 478 */,
-/* 479 */,
-/* 480 */
-/*!***********************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-transition/props.js ***!
-  \***********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否展示组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.transition.show
-    },
-    // 使用的动画模式
-    mode: {
-      type: String,
-      default: uni.$u.props.transition.mode
-    },
-    // 动画的执行时间，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.transition.duration
-    },
-    // 使用的动画过渡函数
-    timingFunction: {
-      type: String,
-      default: uni.$u.props.transition.timingFunction
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 481 */
-/*!****************************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-transition/transition.js ***!
-  \****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 482));
-// 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
-var nextTick = function nextTick() {
-  return new Promise(function (resolve) {
-    return setTimeout(resolve, 1000 / 50);
-  });
-};
-// nvue动画模块实现细节抽离在外部文件
-
-// 定义类名，通过给元素动态切换类名，赋予元素一定的css动画样式
-var getClassNames = function getClassNames(name) {
-  return {
-    enter: "u-".concat(name, "-enter u-").concat(name, "-enter-active"),
-    'enter-to': "u-".concat(name, "-enter-to u-").concat(name, "-enter-active"),
-    leave: "u-".concat(name, "-leave u-").concat(name, "-leave-active"),
-    'leave-to': "u-".concat(name, "-leave-to u-").concat(name, "-leave-active")
-  };
-};
-var _default = {
-  methods: {
-    // 组件被点击发出事件
-    clickHandler: function clickHandler() {
-      this.$emit('click');
-    },
-    // vue版本的组件进场处理
-    vueEnter: function vueEnter() {
-      var _this = this;
-      // 动画进入时的类名
-      var classNames = getClassNames(this.mode);
-      // 定义状态和发出动画进入前事件
-      this.status = 'enter';
-      this.$emit('beforeEnter');
-      this.inited = true;
-      this.display = true;
-      this.classes = classNames.enter;
-      this.$nextTick( /*#__PURE__*/(0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
-        return _regenerator.default.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                // 标识动画尚未结束
-                _this.$emit('enter');
-                _this.transitionEnded = false;
-                // 组件动画进入后触发的事件
-                _this.$emit('afterEnter');
-                // 赋予组件enter-to类名
-                _this.classes = classNames['enter-to'];
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      })));
-    },
-    // 动画离场处理
-    vueLeave: function vueLeave() {
-      var _this2 = this;
-      // 如果不是展示状态，无需执行逻辑
-      if (!this.display) return;
-      var classNames = getClassNames(this.mode);
-      // 标记离开状态和发出事件
-      this.status = 'leave';
-      this.$emit('beforeLeave');
-      // 获得类名
-      this.classes = classNames.leave;
-      this.$nextTick(function () {
-        // 动画正在离场的状态
-        _this2.transitionEnded = false;
-        _this2.$emit('leave');
-        // 组件执行动画，到了执行的执行时间后，执行一些额外处理
-        setTimeout(_this2.onTransitionEnd, _this2.duration);
-        _this2.classes = classNames['leave-to'];
-      });
-    },
-    // 完成过渡后触发
-    onTransitionEnd: function onTransitionEnd() {
-      // 如果已经是结束的状态，无需再处理
-      if (this.transitionEnded) return;
-      this.transitionEnded = true;
-      // 发出组件动画执行后的事件
-      this.$emit(this.status === 'leave' ? 'afterLeave' : 'afterEnter');
-      if (!this.show && this.display) {
-        this.display = false;
-        this.inited = false;
-      }
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 482 */
-/*!******************************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
-  \******************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  fade: {
-    enter: {
-      opacity: 0
-    },
-    'enter-to': {
-      opacity: 1
-    },
-    leave: {
-      opacity: 1
-    },
-    'leave-to': {
-      opacity: 0
-    }
-  },
-  'fade-up': {
-    enter: {
-      opacity: 0,
-      transform: 'translateY(100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateY(100%)'
-    }
-  },
-  'fade-down': {
-    enter: {
-      opacity: 0,
-      transform: 'translateY(-100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateY(-100%)'
-    }
-  },
-  'fade-left': {
-    enter: {
-      opacity: 0,
-      transform: 'translateX(-100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateX(-100%)'
-    }
-  },
-  'fade-right': {
-    enter: {
-      opacity: 0,
-      transform: 'translateX(100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateX(100%)'
-    }
-  },
-  'slide-up': {
-    enter: {
-      transform: 'translateY(100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateY(100%)'
-    }
-  },
-  'slide-down': {
-    enter: {
-      transform: 'translateY(-100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateY(-100%)'
-    }
-  },
-  'slide-left': {
-    enter: {
-      transform: 'translateX(-100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateX(-100%)'
-    }
-  },
-  'slide-right': {
-    enter: {
-      transform: 'translateX(100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateX(100%)'
-    }
-  },
-  zoom: {
-    enter: {
-      transform: 'scale(0.95)'
-    },
-    'enter-to': {
-      transform: 'scale(1)'
-    },
-    leave: {
-      transform: 'scale(1)'
-    },
-    'leave-to': {
-      transform: 'scale(0.95)'
-    }
-  },
-  'fade-zoom': {
-    enter: {
-      opacity: 0,
-      transform: 'scale(0.95)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'scale(1)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'scale(1)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'scale(0.95)'
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 483 */,
-/* 484 */,
-/* 485 */,
-/* 486 */,
-/* 487 */,
-/* 488 */,
-/* 489 */,
-/* 490 */
-/*!***********************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-status-bar/props.js ***!
-  \***********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    bgColor: {
-      type: String,
-      default: uni.$u.props.statusBar.bgColor
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */
-/*!************************************************************************************************************************!*\
-  !*** /Users/zhuyuhui/Documents/Github/jingdong-uniapp/JDUniApp/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
-  \************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {}
-};
-exports.default = _default;
 
 /***/ })
 ]]);

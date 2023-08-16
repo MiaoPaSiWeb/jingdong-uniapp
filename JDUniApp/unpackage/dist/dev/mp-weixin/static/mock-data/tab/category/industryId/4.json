@@ -1,0 +1,377 @@
+{
+	"api": "mtop.relationrecommend.wirelessrecommend.recommend",
+	"data": {
+		"result": [
+			{
+				"result": [
+					"1"
+				],
+				"industryId": "4",
+				"industryList": [
+					{
+						"industryName": "手机",
+						"industryId": "4"
+					},
+					{
+						"industryName": "女装",
+						"industryId": "1"
+					},
+					{
+						"industryName": "母婴",
+						"industryId": "3"
+					},
+					{
+						"industryName": "鞋靴",
+						"industryId": "5"
+					},
+					{
+						"industryName": "箱包",
+						"industryId": "11"
+					},
+					{
+						"industryName": "食品",
+						"industryId": "6"
+					},
+					{
+						"industryName": "饰品",
+						"industryId": "13"
+					},
+					{
+						"industryName": "进口",
+						"industryId": "21"
+					},
+					{
+						"industryName": "百货",
+						"industryId": "2"
+					},
+					{
+						"industryName": "美妆",
+						"industryId": "9"
+					},
+					{
+						"industryName": "图书",
+						"industryId": "24"
+					},
+					{
+						"industryName": "男装",
+						"industryId": "10"
+					},
+					{
+						"industryName": "洗护",
+						"industryId": "14"
+					},
+					{
+						"industryName": "家装",
+						"industryId": "8"
+					},
+					{
+						"industryName": "电器",
+						"industryId": "15"
+					},
+					{
+						"industryName": "数码",
+						"industryId": "19"
+					},
+					{
+						"industryName": "企业",
+						"industryId": "20"
+					},
+					{
+						"industryName": "内衣",
+						"industryId": "12"
+					},
+					{
+						"industryName": "运动",
+						"industryId": "7"
+					},
+					{
+						"industryName": "保健",
+						"industryId": "17"
+					},
+					{
+						"industryName": "车品",
+						"industryId": "16"
+					},
+					{
+						"industryName": "生鲜",
+						"industryId": "18"
+					},
+					{
+						"industryName": "医药",
+						"industryId": "22"
+					},
+					{
+						"industryName": "奢品",
+						"industryId": "23"
+					}
+				],
+				"moduleList": [
+					{
+						"title": "手机",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "魅族",
+								"search_name": "魅族",
+								"pic": "https://img.alicdn.com/imgextra/i2/1695308781/O1CN01XU0SCn2EjkgtANoyP_!!1695308781.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "OPPO",
+								"search_name": "oppo手机",
+								"pic": "https://gw.alicdn.com/imgextra/i3/O1CN01GhoClZ2ACXPAYhuQz_!!6000000008167-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "iQOO",
+								"search_name": "iQOO手机",
+								"pic": "https://gw.alicdn.com/imgextra/i2/O1CN01syjCUT26Uca1BMQzB_!!6000000007665-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "realme",
+								"search_name": "realme手机",
+								"pic": "https://gw.alicdn.com/imgextra/i4/O1CN01FC3mwi1PAu3FL80Ry_!!6000000001801-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "vivo",
+								"search_name": "vivo手机",
+								"pic": "https://gw.alicdn.com/imgextra/i1/O1CN01OyiXYC1gd9xN6DkJs_!!6000000004164-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "一加",
+								"search_name": "一加手机",
+								"pic": "https://gw.alicdn.com/imgextra/i1/O1CN011O8YSs1yzIB7scgOF_!!6000000006649-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "三星",
+								"search_name": "三星手机",
+								"pic": "https://gw.alicdn.com/imgextra/i4/O1CN01N6hdJq1o6em1U1Cxa_!!6000000005176-2-tps-400-400.png",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "中兴",
+								"search_name": "中兴",
+								"pic": "https://gw.alicdn.com/imgextra/i1/O1CN01wEQJUv1wwQVd7KLrC_!!6000000006372-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "努比亚",
+								"search_name": "努比亚",
+								"pic": "https://gw.alicdn.com/imgextra/i1/O1CN01RuqPko1WVhNyxKxUf_!!6000000002794-2-tps-400-400.png",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "华为",
+								"search_name": "华为手机",
+								"pic": "https://gw.alicdn.com/imgextra/i3/O1CN01E5figp1c9bwPEgDSL_!!6000000003558-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "小米",
+								"search_name": "小米手机",
+								"pic": "https://gw.alicdn.com/imgextra/i1/O1CN01aizLVj1vnR51xNJyX_!!6000000006217-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "摩托罗拉",
+								"search_name": "摩托罗拉",
+								"pic": "https://gw.alicdn.com/imgextra/i2/O1CN01jICYCu1ljdg9zSdxn_!!6000000004855-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "红魔",
+								"search_name": "红魔",
+								"pic": "https://gw.alicdn.com/imgextra/i4/O1CN01jBwiRH26fc83vnUle_!!6000000007689-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "苹果",
+								"search_name": "苹果手机",
+								"pic": "https://gw.alicdn.com/imgextra/i2/O1CN01xSJ7T91WFfU8PyS91_!!6000000002759-0-tps-400-400.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "荣耀",
+								"search_name": "荣耀手机",
+								"pic": "https://gw.alicdn.com/imgextra/i3/O1CN01nY4VFZ1a1hsCtaiBH_!!6000000003270-0-tps-720-720.jpg",
+								"catmap": "1512"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "黑鲨",
+								"search_name": "黑鲨",
+								"pic": "https://gw.alicdn.com/imgextra/i1/O1CN019CEULs1vfeOAe11ia_!!6000000006200-2-tps-400-400.png",
+								"catmap": "1512"
+							}
+						]
+					},
+					{
+						"title": "手机配件",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机壳",
+								"search_name": "手机壳",
+								"pic": "https://img.alicdn.com/imgextra/i4/2024058652/O1CN01jQccQd2DmfLiPYQdx_!!2024058652.jpg",
+								"catmap": "150704,50025033"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机贴膜",
+								"search_name": "手机膜",
+								"pic": "https://img.alicdn.com/imgextra/i1/2024058652/O1CN01g1A4472DmfLjdvJMW_!!2024058652.jpg",
+								"catmap": "50012587"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机耳机",
+								"search_name": "耳机",
+								"pic": "https://gw.alicdn.com/tfs/TB1bDKoaG1s3KVjSZFAXXX_ZXXa-450-450.jpg",
+								"catmap": "50005266,50005050"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "数据线",
+								"search_name": "数据线",
+								"pic": "https://img.alicdn.com/imgextra/i4/2024058652/O1CN01qE5dEk2DmfLoq0FUk_!!2024058652.jpg",
+								"catmap": "50050366,50003327"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "充电宝",
+								"search_name": "充电宝",
+								"pic": "https://img.alicdn.com/imgextra/i3/2024058652/O1CN01YOHEjj2DmfLopzugl_!!2024058652.jpg",
+								"catmap": "50009211"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机支架",
+								"search_name": "手机支架",
+								"pic": "https://img.alicdn.com/imgextra/i3/2024058652/O1CN01RJ2HJb2DmfLkFsHtu_!!2024058652.jpg",
+								"catmap": "150708"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机挂件",
+								"search_name": "手机挂件",
+								"pic": "https://img.alicdn.com/imgextra/i3/2024058652/O1CN01XXYXTv2DmfLoAisvZ_!!2024058652.jpg",
+								"catmap": "150701"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "自拍杆",
+								"search_name": "自拍杆",
+								"pic": "https://img.alicdn.com/imgextra/i4/2024058652/O1CN01XOloZ32DmfLpDMTXe_!!2024058652.jpg",
+								"catmap": "123534001"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机电池",
+								"search_name": "手机电池",
+								"pic": "https://img.alicdn.com/imgextra/i3/2024058652/O1CN01ahVYfk2DmfLjdtIcf_!!2024058652.jpg",
+								"catmap": "50012579"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机镜头",
+								"search_name": "手机镜头",
+								"pic": "https://img.alicdn.com/imgextra/i2/2024058652/O1CN01eKQPHf2DmfLaTCHww_!!2024058652.jpg",
+								"catmap": "123532001"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机贴纸",
+								"search_name": "手机贴纸",
+								"pic": "https://img.alicdn.com/imgextra/i1/2024058652/O1CN01iaeYHw2DmfLg6QPPy_!!2024058652.jpg",
+								"catmap": "150706"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "防尘塞",
+								"search_name": "防尘塞",
+								"pic": "https://img.alicdn.com/imgextra/i3/2024058652/O1CN011KsOmB2DmfLimqRoy_!!2024058652.jpg",
+								"catmap": "50018621"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "车载支架",
+								"search_name": "车载支架",
+								"pic": "https://gw.alicdn.com/tfs/TB1AJ9faL1H3KVjSZFBXXbSMXXa-400-400.jpg",
+								"catmap": "123528002"
+							}
+						]
+					},
+					{
+						"title": "通信服务",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "流量充值",
+								"search_name": "流量充值",
+								"pic": "https://gw.alicdn.com/tfs/TB1i7AcxUz1gK0jSZLeXXb9kVXa-400-400.jpg",
+								"catmap": "50256001"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机流量卡",
+								"search_name": "流量卡",
+								"pic": "https://gw.alicdn.com/tfs/TB1hBoexSf2gK0jSZFPXXXsopXa-400-400.jpg",
+								"catmap": "50025115,50025117,50025116"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "话费充值",
+								"search_name": "话费充值",
+								"pic": "https://gw.alicdn.com/tfs/TB149olxRr0gK0jSZFnXXbRRXXa-400-400.jpg",
+								"catmap": "50011814,150402,150401"
+							}
+						]
+					},
+					{
+						"title": "手机服务",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "手机维修",
+								"search_name": "手机维修",
+								"pic": "https://img.alicdn.com/tfs/TB1OtcIyO_1gK0jSZFqXXcpaXXa-400-400.jpg",
+								"catmap": "127292018"
+							}
+						]
+					}
+				],
+				"suggest_rn": "bucketid_8-rn_0",
+				"pvid": "85e6682a-51ad-426b-80ec-cce9b5bc7919",
+				"scm": "1007.44880.325003.0",
+				"version": "1",
+				"tpp_trace": "211fbdcb16920761911364539d0925"
+			}
+		],
+		"pvid": "b01b2e95-ad85-4516-99b3-ea7b352e20d6",
+		"scm": "1007.24658.129317.0",
+		"version": 1,
+		"tpp_trace": "2147b44e16920761911036236e024d"
+	},
+	"ret": [
+		"SUCCESS::调用成功"
+	],
+	"v": "2.0"
+}
