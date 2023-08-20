@@ -1,0 +1,724 @@
+{
+	"api": "mtop.relationrecommend.wirelessrecommend.recommend",
+	"data": {
+		"result": [
+			{
+				"result": [
+					"1"
+				],
+				"industryId": "6",
+				"industryList": [
+					{
+						"industryName": "手机",
+						"industryId": "4"
+					},
+					{
+						"industryName": "女装",
+						"industryId": "1"
+					},
+					{
+						"industryName": "母婴",
+						"industryId": "3"
+					},
+					{
+						"industryName": "鞋靴",
+						"industryId": "5"
+					},
+					{
+						"industryName": "箱包",
+						"industryId": "11"
+					},
+					{
+						"industryName": "食品",
+						"industryId": "6"
+					},
+					{
+						"industryName": "饰品",
+						"industryId": "13"
+					},
+					{
+						"industryName": "进口",
+						"industryId": "21"
+					},
+					{
+						"industryName": "百货",
+						"industryId": "2"
+					},
+					{
+						"industryName": "美妆",
+						"industryId": "9"
+					},
+					{
+						"industryName": "图书",
+						"industryId": "24"
+					},
+					{
+						"industryName": "男装",
+						"industryId": "10"
+					},
+					{
+						"industryName": "洗护",
+						"industryId": "14"
+					},
+					{
+						"industryName": "家装",
+						"industryId": "8"
+					},
+					{
+						"industryName": "电器",
+						"industryId": "15"
+					},
+					{
+						"industryName": "数码",
+						"industryId": "19"
+					},
+					{
+						"industryName": "企业",
+						"industryId": "20"
+					},
+					{
+						"industryName": "内衣",
+						"industryId": "12"
+					},
+					{
+						"industryName": "运动",
+						"industryId": "7"
+					},
+					{
+						"industryName": "保健",
+						"industryId": "17"
+					},
+					{
+						"industryName": "车品",
+						"industryId": "16"
+					},
+					{
+						"industryName": "生鲜",
+						"industryId": "18"
+					},
+					{
+						"industryName": "医药",
+						"industryId": "22"
+					},
+					{
+						"industryName": "奢品",
+						"industryId": "23"
+					}
+				],
+				"moduleList": [
+					{
+						"title": "猜你喜欢",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "零食大礼包",
+								"search_name": "零食大礼包",
+								"pic": "https://img.alicdn.com/bao/uploaded/i3/6000000003296/O1CN01NVcsD81aDc8YCPqD9_!!6000000003296-0-yinhe.jpg",
+								"catmap": "124304001,126472004,50008616,50008618,50009562,50010513,50010535,50012598,50012995"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "方便面",
+								"search_name": "方便面",
+								"pic": "https://img.alicdn.com/tfs/TB1ngHyOHY1gK0jSZTEXXXDQVXa-600-600.jpg",
+								"catmap": "50016845"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "饼干",
+								"search_name": "饼干",
+								"pic": "https://img.alicdn.com/bao/uploaded/i4/3979693780/O1CN01MFLojV1dnHftUbVIl_!!3979693780.jpg",
+								"catmap": "124298001,124302001,124304001,124306001,124308001,124310001,124604001"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "熟食",
+								"search_name": "熟食",
+								"pic": "https://img.alicdn.com/imgextra/i4/3693245722/O1CN01PIQ5Gb1s8ipF42HOk_!!3693245722.jpg",
+								"catmap": "50008063,50025699,50025700,50050733,50050734"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "健康轻零食",
+								"search_name": "健康零食",
+								"pic": "https://img.alicdn.com/imgextra/i1/2207588079974/O1CN01jtwMgE2NY8xt125Db_!!2207588079974.jpg",
+								"catmap": "123250002,50008055,50008056,50008059,50008617,50012598"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "粉丝米线",
+								"search_name": "粉丝米线",
+								"pic": "https://img.alicdn.com/imgextra/i4/3693245722/O1CN01hG71Gy1s8ipD9MrFU_!!3693245722.jpg",
+								"catmap": "50016845"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "网红ip",
+								"search_name": "联名款零食",
+								"pic": "https://img.alicdn.com/i3/TB1fr1srubviK0jSZFNXXaApXXa.jpg",
+								"catmap": "124302001,124304001,126472004,50008616,50008618,50009562,50010513,50010535,50012598"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "酸奶",
+								"search_name": "酸奶",
+								"pic": "https://img.alicdn.com/tfs/TB1YcOEmdTfau8jSZFwXXX1mVXa-760-760.jpg",
+								"catmap": "200670003,50016427"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "蛋黄酥",
+								"search_name": "蛋黄酥",
+								"pic": "https://img.alicdn.com/imgextra/i4/3282604381/O1CN01dliASB1iEXkc9f8c9_!!3282604381.jpg",
+								"catmap": "50008059,50010513,50012598"
+							}
+						]
+					},
+					{
+						"title": "零食",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "网红ip",
+								"search_name": "联名款零食",
+								"pic": "https://img.alicdn.com/i3/TB1fr1srubviK0jSZFNXXaApXXa.jpg",
+								"catmap": "124304001,50008616,124302001,50010535,50012598,126472004,50010513,50009562,50008618"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "趣味食玩",
+								"search_name": "食玩",
+								"pic": "https://img.alicdn.com/i3/TB1Yc5BoYH1gK0jSZFwXXc7aXXa.jpg",
+								"catmap": "50010535,124302001,126472004,124302002,50008056,124304001,124312003,50016092,50012598,50010513"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "蛋黄酥",
+								"search_name": "蛋黄酥",
+								"pic": "https://img.alicdn.com/imgextra/i4/3282604381/O1CN01dliASB1iEXkc9f8c9_!!3282604381.jpg",
+								"catmap": "50012598,50008059,50010513"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "健康轻零食",
+								"search_name": "健康零食",
+								"pic": "https://img.alicdn.com/imgextra/i1/2207588079974/O1CN01jtwMgE2NY8xt125Db_!!2207588079974.jpg",
+								"catmap": "50008059,123250002,50008056,50008617,50012598"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "糖果",
+								"search_name": "糖果",
+								"pic": "https://img.alicdn.com/bao/uploaded/i1/2143027527/TB18A63aBsmBKNjSZFsXXaXSVXa_!!0-item_pic.jpg",
+								"catmap": "127676023,50008056,50016092,201158302"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "薯片",
+								"search_name": "薯片",
+								"pic": "https://img.alicdn.com/imgextra/i3/1893751150/O1CN01ajLQhg1KMk50zqxpI_!!1893751150.jpg",
+								"catmap": "50010535"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "零食大礼包",
+								"search_name": "零食大礼包",
+								"pic": "https://img.alicdn.com/bao/uploaded/i3/6000000003296/O1CN01NVcsD81aDc8YCPqD9_!!6000000003296-0-yinhe.jpg",
+								"catmap": "50010535"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "饼干",
+								"search_name": "饼干",
+								"pic": "https://img.alicdn.com/bao/uploaded/i4/3979693780/O1CN01MFLojV1dnHftUbVIl_!!3979693780.jpg",
+								"catmap": "124308001,124604001,124310001,124298001,124304001,124302001,124306001"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "儿童零食",
+								"search_name": "儿童零食",
+								"pic": "https://img.alicdn.com/bao/uploaded/i3/1777552687/TB2nrlCXBfxLuJjy0FnXXcZbXXa_!!1777552687.jpg",
+								"catmap": "50013090,50013096,126472004,50013063,50009558,50009557,50009559,50009562"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "冻干",
+								"search_name": "冻干",
+								"pic": "https://img.alicdn.com/bao/uploaded/i3/3869626661/O1CN01m09shp1z4mnCGybBG_!!2-item_pic.png",
+								"catmap": "50013076,50013082,50013078,123250002,50013099,50013089,50013090,50013066,50013080,50013096"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "月饼",
+								"search_name": "月饼",
+								"pic": "https://img.alicdn.com/imgextra/i3/473782328/O1CN01pAzUeF1T4GfMKKvHY_!!473782328.jpg",
+								"catmap": "50008062"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "海味",
+								"search_name": "海味零食",
+								"pic": "https://img.alicdn.com/imgextra/i3/2200593621504/O1CN010UQW4n1MysHz52OQ1_!!2200593621504.jpg",
+								"catmap": "50009557,50009562,50009561,50009558,50009560,50009559"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "巧克力",
+								"search_name": "巧克力",
+								"pic": "https://img.alicdn.com/bao/uploaded/i4/1708386627/TB2i2JXXhhmpuFjSZFyXXcLdFXa_!!1708386627.jpg",
+								"catmap": "124302002,124492008,124312003,124466010,126474004,124468007,124512008,124478011,124320001,124456021"
+							}
+						]
+					},
+					{
+						"title": "方便速食",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "粉丝米线",
+								"search_name": "粉丝米线",
+								"pic": "https://img.alicdn.com/imgextra/i4/3693245722/O1CN01hG71Gy1s8ipD9MrFU_!!3693245722.jpg",
+								"catmap": "50016845"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "方便面",
+								"search_name": "方便面",
+								"pic": "https://img.alicdn.com/tfs/TB1ngHyOHY1gK0jSZTEXXXDQVXa-600-600.jpg",
+								"catmap": "50016845"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "开味下饭菜",
+								"search_name": "开味下饭菜",
+								"pic": "https://img.alicdn.com/imgextra/i3/3693245722/O1CN01jSGn3K1s8ipD9OKi5_!!3693245722.jpg",
+								"catmap": "50016817,50016818,50013193"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "挂面",
+								"search_name": "挂面",
+								"pic": "https://img.alicdn.com/imgextra/i1/3693245722/O1CN01S8DyXG1s8ipBD30kI_!!3693245722.jpg",
+								"catmap": "50016850,50016851"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "速冻面点",
+								"search_name": "速冻面点",
+								"pic": "https://img.alicdn.com/imgextra/i4/3693245722/O1CN01Hr6URd1s8ipFkgIsf_!!3693245722.jpg",
+								"catmap": "50016853,50025684,50025683"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "方便粥饭",
+								"search_name": "方便粥饭",
+								"pic": "https://img.alicdn.com/tfs/TB1lnscJ.Y1gK0jSZFCXXcwqXXa-800-800.png",
+								"catmap": "50016848,50016847,50016846"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "煎饼冷面",
+								"search_name": "冷面",
+								"pic": "https://gd4.alicdn.com/imgextra/i4/2200811206088/O1CN01L0TYnd1uqLljfaHHI_!!2200811206088.jpg_400x400.jpg",
+								"catmap": "50017231,50016854,50016852"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "火腿肠",
+								"search_name": "火腿肠",
+								"pic": "https://img.alicdn.com/imgextra/i1/3693245722/O1CN01yNrUIC1s8ipEOfbfR_!!3693245722.jpg",
+								"catmap": "50025696"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "甜品罐头",
+								"search_name": "水果罐头",
+								"pic": "https://img.alicdn.com/imgextra/i4/2758433361/O1CN01HK7kXV1ahNmdyGr5p_!!2758433361.jpg",
+								"catmap": "50009898"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "快手菜",
+								"search_name": "快手菜",
+								"pic": "https://img.alicdn.com/imgextra/i4/4004612101/O1CN01X6cRIk1ROIjs9ij9s_!!4004612101.jpg",
+								"catmap": "127220001,127220009,127216001,127216002,127216001,127218001,50025687,201155002"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "熟食",
+								"search_name": "熟食",
+								"pic": "https://img.alicdn.com/imgextra/i4/3693245722/O1CN01PIQ5Gb1s8ipF42HOk_!!3693245722.jpg",
+								"catmap": "50025699,50008063,50050733,50025700,50050734"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "午餐肉",
+								"search_name": "午餐肉",
+								"pic": "https://img.alicdn.com/i3/TB1YcJdXP39YK4jSZPcXXXrUFXa.jpg",
+								"catmap": "50016849"
+							}
+						]
+					},
+					{
+						"title": "乳饮冰",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "碳酸饮料",
+								"search_name": "碳酸饮料",
+								"pic": "https://img.alicdn.com/imgextra/i3/2662673928/O1CN017m4AbU1et4HbH2pux_!!2662673928.jpg",
+								"catmap": "50008911,50009864,127830005,50008914,50013192,50008633,50008917,50009863"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "儿童奶",
+								"search_name": "儿童牛奶",
+								"pic": "https://img.alicdn.com/imgextra/i3/725677994/O1CN01nK8lck28vIf30cQa9_!!725677994.jpg",
+								"catmap": "200670003,50012392,50012391"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "纯牛奶",
+								"search_name": "牛奶",
+								"pic": "https://img.alicdn.com/tfs/TB1221LX2Bj_uVjSZFpXXc0SXXa-800-800.jpg",
+								"catmap": "50012392"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "酸奶",
+								"search_name": "酸奶",
+								"pic": "https://img.alicdn.com/tfs/TB1YcOEmdTfau8jSZFwXXX1mVXa-760-760.jpg",
+								"catmap": "200670003,50016427"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "饮用水",
+								"search_name": "饮用水",
+								"pic": "https://img.alicdn.com/tfs/TB1hvdxcL1G3KVjSZFkXXaK4XXa-800-800.jpg",
+								"catmap": "50008916"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "奶粉",
+								"search_name": "奶粉",
+								"pic": "https://img.alicdn.com/imgextra/i3/2206460780316/O1CN01Kel8t61ECllMYBEC1_!!2206460780316.jpg",
+								"catmap": "201294501,50010422"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "冰淇淋",
+								"search_name": "冰淇淋",
+								"pic": "https://gw.alicdn.com/tfs/TB1aB9JJHY1gK0jSZTEXXXDQVXa-1080-1080.jpg",
+								"catmap": "123222007"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "鲜奶",
+								"search_name": "鲜奶",
+								"pic": "https://img.alicdn.com/imgextra/i2/3372451029/O1CN01l5KatG1JTKA5cgNsW_!!3372451029.jpg",
+								"catmap": "200670003"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "乳酸饮料",
+								"search_name": "乳酸饮料",
+								"pic": "https://img.alicdn.com/tfs/TB10RrYb5DsXe8jSZR0XXXK6FXa-500-497.jpg",
+								"catmap": "50012391"
+							}
+						]
+					},
+					{
+						"title": "名酒",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "名酒礼盒",
+								"search_name": "酒礼盒",
+								"pic": "https://img.alicdn.com/tfs/TB19Kj0aipE_u4jSZKbXXbCUVXa-515-398.jpg",
+								"catmap": "50008146,50008144,123502002,50516005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "名优白酒",
+								"search_name": "白酒",
+								"pic": "https://img.alicdn.com/tfs/TB13ZSSakcx_u4jSZFlXXXnUFXa-3000-3000.jpg",
+								"catmap": "50008144"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "新锐网红酒",
+								"search_name": "网红酒",
+								"pic": "https://img.alicdn.com/tfs/TB1AEHHKUY1gK0jSZFCXXcwqXXa-197-294.jpg",
+								"catmap": "201220319,50632001,50522002,50506002,50008146"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "清爽啤酒",
+								"search_name": "啤酒",
+								"pic": "https://img.alicdn.com/imgextra/i1/2508879272/O1CN01cUQuFn2IMcvnJJD6p_!!2508879272.jpg",
+								"catmap": "50008146"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "果酒",
+								"search_name": "果酒",
+								"pic": "https://img.alicdn.com/imgextra/i2/2206917979440/O1CN01kzWrob2JbZTFssSBg_!!2206917979440.jpg",
+								"catmap": "50008145"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "养生黄酒",
+								"search_name": "黄酒",
+								"pic": "https://img.alicdn.com/tfs/TB1HiOZNkL0gK0jSZFtXXXQCXXa-401-480.jpg",
+								"catmap": "50008147"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "格调洋酒",
+								"search_name": "洋酒",
+								"pic": "https://img.alicdn.com/tfs/TB1gBPqdRBh1e4jSZFhXXcC9VXa-500-500.jpg",
+								"catmap": "50516005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "保健食品酒",
+								"search_name": "保健酒",
+								"pic": "https://img.alicdn.com/tfs/TB1cw5.NkL0gK0jSZFAXXcA9pXa-514-635.jpg",
+								"catmap": "123502002"
+							}
+						]
+					},
+					{
+						"title": "茶",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "花草茶",
+								"search_name": "花草茶",
+								"pic": "https://img.alicdn.com/imgextra/i1/2033033217/O1CN01kGbN9v1ZdQgVePmHL_!!2033033217.jpg",
+								"catmap": "50010421,50008612,124390001,50016236"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "茶叶礼盒",
+								"search_name": "茶叶礼盒",
+								"pic": "https://img.alicdn.com/imgextra/i4/1687972134/O1CN01zE1WnN1RdPirhU0EA_!!1687972134.jpg",
+								"catmap": "124636002,124644001,124350003,124648001,124630003,124638001,124642002,124372005,124646001,124356006"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "绿茶",
+								"search_name": "绿茶",
+								"pic": "https://img.alicdn.com/imgextra/i3/118266366/O1CN013H2hMW1wtftDux57e_!!118266366.jpg",
+								"catmap": "124638001,124630003,124644001,124646001,124642001,201306906,124636002,124648001,124640001,124642002"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "乌龙茶",
+								"search_name": "乌龙茶",
+								"pic": "https://img.alicdn.com/imgextra/i4/688187172/O1CN01nPUzKj22qpABmn62l_!!688187172.jpg",
+								"catmap": "124350003,124334003,124356006,124374002,124358002,124332006"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "红茶",
+								"search_name": "红茶",
+								"pic": "https://img.alicdn.com/tfs/TB11H0PimslXu8jSZFuXXXg7FXa-800-800.jpg",
+								"catmap": "124372005,124392004,124348004,124392005,124360005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "普洱",
+								"search_name": "普洱",
+								"pic": "https://img.alicdn.com/imgextra/i1/737934527/O1CN011jJPSNig75ZwNuL_!!737934527.jpg",
+								"catmap": "50598001"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "白茶",
+								"search_name": "白茶",
+								"pic": "https://img.alicdn.com/imgextra/i4/827730196/O1CN01hYzLuX1DJoEcSCEU3_!!827730196.jpg",
+								"catmap": "124510010,124462015,124466012,124488014,124486012"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "黑茶",
+								"search_name": "黑茶",
+								"pic": "https://img.alicdn.com/imgextra/i4/4086086826/O1CN014pbvQb20IM9QNxkir_!!4086086826.jpg",
+								"catmap": "124484016,124456024,124484015"
+							}
+						]
+					},
+					{
+						"title": "下午茶",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "冷泡茶",
+								"search_name": "冷泡",
+								"pic": "https://img.alicdn.com/imgextra/i1/2207459016846/O1CN01R2aH8520RW4c9L2XG_!!2207459016846.jpg",
+								"catmap": "124644001,50016236,124332006,124648001,124638001,124390001,124356006,124358002,50008612,50010421"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "每日坚果",
+								"search_name": "每日坚果",
+								"pic": "https://img.alicdn.com/i3/TB1enChkKbviK0jSZFNXXaApXXa.jpg",
+								"catmap": "50012994,50012995,50012998,126472004,50012987,50012986,50012982,50012983"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "明前茶",
+								"search_name": "明前",
+								"pic": "https://img.alicdn.com/imgextra/i2/1699762279/O1CN01glKVfo1ShpEzemHmJ_!!1699762279.jpg",
+								"catmap": "124646001,124640001,124630003,124642001,124638001,124644001,124636002,124642002,124648001,201306906"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "蛋白饮料",
+								"search_name": "蛋白饮料",
+								"pic": "https://img.alicdn.com/tfs/TB1fZLGOFT7gK0jSZFpXXaTkpXa-500-500.jpg",
+								"catmap": "127830005"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "新潮奶茶",
+								"search_name": "奶茶",
+								"pic": "https://img.alicdn.com/imgextra/i4/3316245250/O1CN01Rki41v1oeXwuflcZi_!!3316245250.jpg",
+								"catmap": "50008436,50016424,50011945"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "新鲜蛋糕",
+								"search_name": "蛋糕",
+								"pic": "https://img.alicdn.com/imgextra/i4/2058864678/O1CN01y9eNB01kQZOqECACP_!!2058864678.jpg",
+								"catmap": "50024607"
+							}
+						]
+					},
+					{
+						"title": "咖啡冲饮",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "速溶咖啡",
+								"search_name": "速溶咖啡",
+								"pic": "https://img.alicdn.com/imgextra/i4/3978789820/O1CN01IGF1G62MPbxwbzNDz_!!3978789820.jpg",
+								"catmap": "50002256"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "食补粉粉",
+								"search_name": "代餐粉",
+								"pic": "https://img.alicdn.com/imgextra/i2/202224264/O1CN01T8laCO1hMxQkY5Y0Y_!!202224264.jpg",
+								"catmap": ""
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "咖啡豆粉",
+								"search_name": "咖啡豆粉",
+								"pic": "https://img.alicdn.com/imgextra/i1/1752533979/O1CN01lIJ27Q1fGQYLaD001_!!1752533979.jpg",
+								"catmap": "50015966,50015963,50015964,50015958,50012396,50015965,50002255,50002257,50015967"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "谷物麦片",
+								"search_name": "冲饮麦片",
+								"pic": "https://img.alicdn.com/imgextra/i4/4070359042/O1CN01YGtr1Y2GfHpevA0L1_!!4070359042.jpg",
+								"catmap": "50009859"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "豆浆",
+								"search_name": "豆浆豆奶",
+								"pic": "https://img.alicdn.com/imgextra/i2/1962422422/O1CN01sJHAHG1TlJsRjsONV_!!1962422422.jpg",
+								"catmap": "50011943,50011942"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "果汁冲饮",
+								"search_name": "冲饮果汁",
+								"pic": "https://img.alicdn.com/imgextra/i1/787936378/O1CN01wRaViA1wzAiNEUbPy_!!787936378.jpg",
+								"catmap": "50011947,50009861,50016428"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "藕粉",
+								"search_name": "藕粉",
+								"pic": "https://img.alicdn.com/imgextra/i3/3965833216/O1CN016BFS8b1ZcyLykTSqN_!!3965833216.jpg",
+								"catmap": "50009858"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "女性滋补饮",
+								"search_name": "女性冲饮",
+								"pic": "https://img.alicdn.com/imgextra/i3/2200724311655/O1CN01QYtmtp1O623KYr9KF_!!2200724311655.jpg",
+								"catmap": "201157807,50011946,201159006"
+							}
+						]
+					},
+					{
+						"title": "南北干货",
+						"items": [
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "特色腊味",
+								"search_name": "特色腊味",
+								"pic": "https://img.alicdn.com/tfs/TB1L_EIJRr0gK0jSZFnXXbRRXXa-400-400.jpg",
+								"catmap": "50016816,50050574,50025695,50012384"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "营养菌菇",
+								"search_name": "营养菌菇",
+								"pic": "https://img.alicdn.com/tfs/TB1Mci8aA9l0K4jSZFKXXXFjpXa-400-400.jpg",
+								"catmap": "50009778"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "银耳",
+								"search_name": "银耳",
+								"pic": "https://img.alicdn.com/tfs/TB1X4IzJQL0gK0jSZFAXXcA9pXa-400-400.jpg",
+								"catmap": "50012193"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "桂圆干",
+								"search_name": "桂圆干",
+								"pic": "https://img.alicdn.com/tfs/TB1k5ZCJHH1gK0jSZFwXXc7aXXa-400-400.jpg",
+								"catmap": "50012188"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "莲子",
+								"search_name": "莲子",
+								"pic": "https://img.alicdn.com/tfs/TB1yb7DJKL2gK0jSZFmXXc7iXXa-400-400.jpg",
+								"catmap": "50009899"
+							},
+							{
+								"prefix_url": "//s.m.taobao.com/h5",
+								"show_name": "黑木耳",
+								"search_name": "黑木耳",
+								"pic": "https://img.alicdn.com/tfs/TB10QczJKH2gK0jSZFEXXcqMpXa-400-400.jpg",
+								"catmap": "50012548"
+							}
+						]
+					}
+				],
+				"suggest_rn": "bucketid_8-rn_0",
+				"pvid": "7e568114-d900-43f2-bd7e-d2f672e9e760",
+				"scm": "1007.44880.325003.0",
+				"version": "1",
+				"tpp_trace": "0b5d4c9116920767560356245d06e2"
+			}
+		],
+		"pvid": "3ac7df06-7a00-4af9-886f-fbd3c21fa546",
+		"scm": "1007.24658.129317.0",
+		"version": 1,
+		"tpp_trace": "2147b66616920767560216696e90bb"
+	},
+	"ret": [
+		"SUCCESS::调用成功"
+	],
+	"v": "2.0"
+}

@@ -1,0 +1,4629 @@
+{
+	"isTabPVNewLogic": false,
+	"msg": "success",
+	"floatLayerList": [],
+	"paginationFlrs": "[[85170751,85170752,92525475,92525476,86359441,85170754,85246053],[92525477,92525484,92525482,92525483,92525487,92525485,92525486,92525489,92525490,92525488,92525478,92525479,93886216,92525480,92525481,93831271,85170756]]",
+	"paginationParamEnd": "2",
+	"utmChannel": "",
+	"code": "0",
+	"pagination": true,
+	"customcodeMatQryType": null,
+	"multiTopTabNewStyle": false,
+	"head": {},
+	"isLogin": true,
+	"activityId": "01243409",
+	"pageConfig": {
+		"showPlusTips": "1"
+	},
+	"subCode": "0",
+	"hasImmersiveIhubFlr": "0",
+	"transParam": "{\"bsessionId\":\"a35a6ad0-e757-4cd2-8b9e-0c71c41e7146\",\"babelChannel\":\"\",\"actId\":\"01243409\",\"enActId\":\"2wWznPwPCABJp5iHvQdJCiL4S749\",\"pageId\":\"3943203\",\"encryptCouponFlag\":\"1\",\"requestChannel\":\"h5\",\"jdAtHomePage\":\"0\",\"utmFlag\":\"0\",\"locType\":\"1\"}",
+	"jdAtHomePageLackAddress": "0",
+	"channelPoint": {
+		"babelChannel": "",
+		"greytp": "1",
+		"rec_broker": "",
+		"loginCellularNetwork": 0,
+		"pageId": "3943203"
+	},
+	"h5IsSupportPullDown": 0,
+	"biimpr": "01243409_3943203_1#2-13f4f6aab4e47cde905d63643c61c692e1834449-101-710007-3__1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1-1__",
+	"channelId": "CA061511460024861255",
+	"timestamp": "",
+	"floorList": [
+		{
+			"template": "multiModuleTab",
+			"backgroundColor": "#c3f3ff",
+			"bgStyle": "0",
+			"tabViewAlign": "2",
+			"sameColor": "1",
+			"tabConfig": {
+				"tabBgColor": "#c3f3ff",
+				"color": "#f02b2b",
+				"unSelectColor": "#000000",
+				"styleId": "2",
+				"subTabCfg": {
+					"tabBgColor": "#FFFFFF",
+					"color": "#000000",
+					"unSelectColor": "#666666"
+				},
+				"showActiveIcon": 1
+			},
+			"floorNum": "1",
+			"multiModuleList": [
+				{
+					"groupId": 1,
+					"multiModuleFloorList": [
+						{
+							"template": "hotzone",
+							"externalBorder": "0",
+							"lrMargin": "0",
+							"backgroundColor": "#DEBDEF",
+							"hotZone": {
+								"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/176036/3/36364/79066/6433dd81Fcd83e68b/b964ab9a876b846b.jpg!q70.dpg"
+							},
+							"ofn": "1",
+							"width": 1125,
+							"sameColor": "0",
+							"id": 92525484,
+							"moduleId": 92525484,
+							"floorNum": "1",
+							"height": 625
+						},
+						{
+							"template": "flex_cube",
+							"ofn": "3",
+							"floorConfig": {
+								"showMoreInfo": {
+									"link": "",
+									"linkType": "1"
+								},
+								"columns": 1,
+								"h": 0,
+								"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+								"scrollConfig": {
+									"showBar": "0",
+									"barBlockColor": "#FF445E",
+									"barColor": "rgba(255, 68, 94, 0.3)",
+									"autoPlay": "0",
+									"minMaterialCount": "3",
+									"barBgColor": "#FFFFFF"
+								},
+								"rows": 1,
+								"floorStyle": {
+									"leftPadding": 30,
+									"cardVPadding": 24,
+									"lRPadding": 30,
+									"topPadding": 9,
+									"rightPadding": 30,
+									"bottomPadding": 9,
+									"cardPadding": 24,
+									"uDPadding": 9,
+									"cardHPadding": 24
+								},
+								"w": 1125,
+								"viewStyle": {
+									"leftPadding": 0,
+									"topPadding": 0,
+									"rightPadding": 0,
+									"radiusRB": 0,
+									"_viewpaddingStyle": "0",
+									"bottomPadding": 0,
+									"radiusLB": 0,
+									"detached": "0",
+									"radiusRT": 0,
+									"bgInfo": {
+										"imgUrl": "",
+										"color": "rgba(255, 255, 255, 0)",
+										"type": "0"
+									},
+									"value": "0",
+									"_viewpadding": "0",
+									"radiusLT": 0
+								},
+								"showMore": "0",
+								"style": "scroll",
+								"bgInfo": {
+									"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/148611/18/35439/2740/6433fd1cF594f731f/e151d66993b71529.jpg",
+									"color": "#f2f2f2",
+									"sameColor": "0",
+									"type": "1"
+								}
+							},
+							"id": 92525489,
+							"moduleId": 92525489,
+							"canvasConfig": {
+								"maxW": 1125,
+								"clickEvent": {
+									"param": {
+										"jumpCode": "graphicNews"
+									},
+									"type": "jump"
+								},
+								"maxDimensionLimit": 0,
+								"maxH": 2500,
+								"w": 405,
+								"h": 609,
+								"bgInfo": {
+									"imgUrl": "",
+									"color": "rgba(178, 70, 70, 0)",
+									"w": "",
+									"h": "",
+									"type": "0"
+								},
+								"uuid": "45f484982e765b369d30795a722a4a6d",
+								"cfInfo": {
+									"detached": "0",
+									"radiusRT": 18,
+									"radiusRB": 18,
+									"value": "18",
+									"radiusLB": 18,
+									"radiusLT": 18
+								},
+								"canvasConfigUuid": "05dd240c995ef3e1e8b38f6a076958f4"
+							},
+							"elementList": [
+								{
+									"type": "200000",
+									"uuid": "b737e8206306b04b62ee85f891522c44",
+									"config": {
+										"autoFitType": "0",
+										"w": 405,
+										"h": 609,
+										"x": 0,
+										"y": 0,
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"src": "$adPictureUrl0"
+									}
+								},
+								{
+									"type": "200000",
+									"uuid": "9405173d3bd0b4a941536b867bc1cbe8",
+									"config": {
+										"autoFitType": "0",
+										"w": 405,
+										"h": 270,
+										"x": 0,
+										"y": 339,
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"src": "https://m.360buyimg.com/babel/jfs/t1/123096/5/21553/25119/626bb288Eec860bcb/3eed104ee70a9d1c.png"
+									}
+								},
+								{
+									"type": "100000",
+									"uuid": "437186ace7eada6687dda4b3a3137301",
+									"config": {
+										"maxRowNum": "2",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#000000"
+										},
+										"autoFitType": "0",
+										"color": "rgba(255, 255, 255, 1)",
+										"bgColor": "rgba(255, 255, 255, 0)",
+										"w": 369,
+										"h": 108,
+										"x": 18,
+										"y": 395,
+										"fontInfo": {
+											"strickout": "0",
+											"size": "36",
+											"underscore": "0",
+											"bold": "0",
+											"align": "1",
+											"italic": "0",
+											"jdFont": "0"
+										},
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 0
+										},
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"text": "$themeTitle2"
+									}
+								},
+								{
+									"type": "200000",
+									"uuid": "a5f9bdcfe62159d32474930d2cb10235",
+									"config": {
+										"autoFitType": "2",
+										"bgColor": "rgba(225, 225, 255, 0)",
+										"w": 63,
+										"h": 63,
+										"x": 18,
+										"y": 516,
+										"cfInfo": {
+											"radiusRT": 36,
+											"radiusRB": 36,
+											"radiusLB": 36,
+											"radiusLT": 36
+										}
+									},
+									"dataPath": {
+										"src": "$themeAuthorPic3"
+									}
+								},
+								{
+									"type": "100000",
+									"uuid": "f43ba8f0c5b7ccbb9d9692c9f00ebe33",
+									"config": {
+										"maxRowNum": "1",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#686868"
+										},
+										"autoFitType": "0",
+										"color": "rgba(255, 255, 255, 1)",
+										"bgColor": "rgba(255, 255, 255, 0)",
+										"w": 175,
+										"h": 42,
+										"x": 93,
+										"y": 527,
+										"fontInfo": {
+											"strickout": "0",
+											"size": "30",
+											"underscore": "0",
+											"bold": "0",
+											"align": "1",
+											"italic": "0",
+											"jdFont": "0"
+										},
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 0
+										},
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"text": "$themeAuthorName4"
+									}
+								},
+								{
+									"type": "600012",
+									"uuid": "1c14b5c8a83e17d0c0667d8cab942093",
+									"config": {
+										"imgTextDistance": 9,
+										"xAlign": "1",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#000000"
+										},
+										"textConfig": {
+											"maxRowNum": "1",
+											"color": "rgba(255, 255, 255, 1)",
+											"fontInfo": {
+												"strickout": "0",
+												"size": "30",
+												"underscore": "0",
+												"zoom": "0",
+												"bold": "0",
+												"align": "1",
+												"italic": "0",
+												"jdFont": "0"
+											}
+										},
+										"h": 54,
+										"bgImage": "",
+										"yAlign": "2",
+										"bgType": "0",
+										"imgConfig": {
+											"w": 21,
+											"h": 21
+										},
+										"autoFitType": "1",
+										"bgColor": "rgba(0, 0, 0, 0.5)",
+										"w": 210,
+										"x": 17,
+										"y": 25,
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 6
+										},
+										"cfInfo": {
+											"radiusRT": 24,
+											"radiusRB": 24,
+											"radiusLB": 24,
+											"radiusLT": 24
+										},
+										"imgTextOrder": "1"
+									},
+									"dataPath": {
+										"src": "https://m.360buyimg.com/babel/jfs/t1/193924/17/24137/279/626be2e7Ee73a4ac9/6fd2c1ff55aa723e.png",
+										"text": "$videoDuration5",
+										"degradeSrc": null
+									}
+								},
+								{
+									"type": "600012",
+									"uuid": "95a829b23b46ad14360f5c226cf0dbdc",
+									"config": {
+										"imgTextDistance": 6,
+										"xAlign": "1",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#000000"
+										},
+										"textConfig": {
+											"maxRowNum": "1",
+											"color": "rgba(255, 255, 255, 1)",
+											"fontInfo": {
+												"strickout": "0",
+												"size": "30",
+												"underscore": "0",
+												"zoom": "0",
+												"bold": "0",
+												"align": "1",
+												"italic": "0",
+												"jdFont": "0"
+											}
+										},
+										"h": 42,
+										"bgImage": "",
+										"yAlign": "2",
+										"bgType": "0",
+										"imgConfig": {
+											"w": 36,
+											"h": 36
+										},
+										"autoFitType": "1",
+										"bgColor": "rgba(255, 255, 255, 0)",
+										"w": 120,
+										"x": 268,
+										"y": 527,
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 0
+										},
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										},
+										"imgTextOrder": "1"
+									},
+									"dataPath": {
+										"src": "https://m.360buyimg.com/babel/jfs/t1/209758/16/21553/984/626be5abE0324959d/332e981e94da54dd.png",
+										"text": "$pageView6",
+										"degradeSrc": null
+									}
+								}
+							],
+							"materialGroupList": [
+								{
+									"groupInfoList": [
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952019\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"344153195\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"344153195\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"344153195\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793511-344153195#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793511\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952019",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "344153195",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"344153195\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793511-344153195#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793511\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "1401793511",
+											"flexData": {
+												"videoDuration5": "00:26",
+												"pageView6": "1417",
+												"themeTitle2": "馥蕾诗玫瑰润泽保湿双效睡眠面膜，香味好闻，补水效果明显",
+												"themeAuthorName4": "jd_CUzMzKewfWlq",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s800x1200_jfs/t1/208216/9/24885/83237/630e36dbE739f2e96/bc752443f16856d1.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f43557a4d7a4b657766576c7131363430303136323633313833_big.jpg"
+											}
+										},
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952019\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"335259847\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"335259847\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"335259847\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793513-335259847#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793513\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952019",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "335259847",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"335259847\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793513-335259847#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793513\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "1401793513",
+											"flexData": {
+												"videoDuration5": "00:34",
+												"pageView6": "900",
+												"themeTitle2": "滋养修复！补水保湿！吸收快！不粘腻！馥蕾诗保湿面霜！",
+												"themeAuthorName4": "小柠好物分享",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s1138x1707_jfs/t1/77267/17/19550/241199/62dbd4c5Efe7afc1d/87f0085ba80f452b.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/c3c0d7b1d0a1c1e931363536313431383734313334_big.jpg"
+											}
+										},
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952019\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"359345276\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"359345276\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"359345276\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793512-359345276#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793512\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952019",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "359345276",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"359345276\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793512-359345276#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793512\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "1401793512",
+											"flexData": {
+												"videoDuration5": "00:21",
+												"pageView6": "3373",
+												"themeTitle2": "馥蕾诗大马士革玫瑰润泽密集保湿水 护肤爽肤水",
+												"themeAuthorName4": "高品质-好物分享",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s1080x1620_jfs/t1/46017/10/21254/115259/636cd5a4E783ebd73/6ff0e06ff98e790f.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3437653932613834353433333531363631323535313037363531_big.jpg"
+											}
+										},
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952019\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"368396212\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"368396212\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"4\",\"uibi\":\"-100\",\"url\":\"368396212\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793514-368396212#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793514\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952019",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "368396212",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-1-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012458\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525489\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952019\",\"aord\":\"4\",\"uibi\":\"-100\",\"url\":\"368396212\",\"bord\":\"0\",\"mci\":\"06952019-20473345-1401793514-368396212#0-7-5--42-143-11#1-0-#1-88012458#h5\",\"adid\":\"1401793514\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "1401793514",
+											"flexData": {
+												"videoDuration5": "00:46",
+												"pageView6": "1414",
+												"themeTitle2": "馥蕾诗玫瑰保湿双萃精华",
+												"themeAuthorName4": "123木头喵",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s1080x1620_jfs/t1/129671/2/32614/79175/63aadcb3F8a4f9a9e/f560f479a3184f07.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/7764756e6a4c656a615279564c6a31363638393234373836383436_big.jpg"
+											}
+										}
+									],
+									"groupId": "06952019"
+								}
+							],
+							"floorNum": "2",
+							"tags": [
+								"articleFlex"
+							]
+						}
+					]
+				},
+				{
+					"groupId": 2,
+					"multiModuleFloorList": [
+						{
+							"template": "hotzone",
+							"externalBorder": "0",
+							"lrMargin": "0",
+							"backgroundColor": "#DEBDEF",
+							"hotZone": {
+								"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/169480/19/36726/62619/6433fe06Fbc4556aa/75c18eee14a8e421.jpg!q70.dpg"
+							},
+							"ofn": "1",
+							"width": 1125,
+							"sameColor": "0",
+							"id": 92525482,
+							"moduleId": 92525482,
+							"floorNum": "1",
+							"height": 625
+						},
+						{
+							"template": "flex_cube",
+							"ofn": "2",
+							"floorConfig": {
+								"flatConfig": {
+									"showMoreButtonStyle": "1",
+									"showMore": "0",
+									"showMoreButtonBgColor": "#FF5151",
+									"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+									"moreRows": 0,
+									"initialRows": 1
+								},
+								"columns": 1,
+								"w": 1125,
+								"h": 0,
+								"viewStyle": {
+									"leftPadding": 0,
+									"topPadding": 0,
+									"rightPadding": 0,
+									"radiusRB": 0,
+									"_viewpaddingStyle": "0",
+									"bottomPadding": 0,
+									"radiusLB": 0,
+									"detached": "0",
+									"radiusRT": 0,
+									"bgInfo": {
+										"imgUrl": "",
+										"color": "rgba(255, 255, 255, 0)",
+										"type": "0"
+									},
+									"value": "0",
+									"_viewpadding": "0",
+									"radiusLT": 0
+								},
+								"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+								"style": "flatview",
+								"bgInfo": {
+									"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/107429/35/27217/5376/6433fe56Fe5b59529/898d48a17c047819.jpg",
+									"color": "#DEBDEF",
+									"sameColor": "1",
+									"type": "1"
+								},
+								"rows": 1,
+								"floorStyle": {
+									"leftPadding": 0,
+									"cardVPadding": 0,
+									"lRPadding": 0,
+									"topPadding": 0,
+									"rightPadding": 0,
+									"bottomPadding": 0,
+									"cardPadding": 0,
+									"uDPadding": 0,
+									"cardHPadding": 0
+								},
+								"singleLine": "0"
+							},
+							"id": 92525485,
+							"moduleId": 92525485,
+							"canvasConfig": {
+								"maxW": 1125,
+								"clickEvent": null,
+								"maxDimensionLimit": 0,
+								"maxH": 2500,
+								"w": 1125,
+								"h": 555,
+								"bgInfo": {
+									"imgUrl": "",
+									"color": "rgba(255, 255, 255, 0)",
+									"w": "",
+									"h": "",
+									"type": "0"
+								},
+								"uuid": "85466c7103e6a6d297263a297aae202d",
+								"cfInfo": {
+									"detached": "0",
+									"radiusRT": 24,
+									"radiusRB": 24,
+									"value": 24,
+									"radiusLB": 24,
+									"radiusLT": 24
+								},
+								"canvasConfigUuid": "98baa8813f7a1576e3f7864fe2d35982"
+							},
+							"elementList": [
+								{
+									"floorConfig": {
+										"flatConfig": {
+											"showMoreButtonStyle": "1",
+											"showMore": "0",
+											"showMoreButtonBgColor": "#FF5151",
+											"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+											"moreRows": 0,
+											"initialRows": 1
+										},
+										"columns": 1,
+										"w": 460,
+										"h": 470,
+										"viewStyle": {
+											"leftPadding": 0,
+											"topPadding": 0,
+											"rightPadding": 0,
+											"radiusRB": 0,
+											"_viewpaddingStyle": "0",
+											"bottomPadding": 0,
+											"radiusLB": 0,
+											"detached": "0",
+											"radiusRT": 0,
+											"bgInfo": {
+												"imgUrl": "",
+												"color": "rgba(255, 255, 255, 0)",
+												"type": "0"
+											},
+											"value": "0",
+											"_viewpadding": "0",
+											"radiusLT": 0
+										},
+										"style": "flatview",
+										"bgInfo": {
+											"imgUrl": "",
+											"color": "rgba(0,0,0,0)",
+											"sameColor": "0",
+											"type": "0"
+										},
+										"rows": 1,
+										"floorStyle": {
+											"leftPadding": 0,
+											"lRPadding": 0,
+											"topPadding": 0,
+											"cardVPadding": 9,
+											"rightPadding": 0,
+											"bottomPadding": 0,
+											"uDPadding": 0,
+											"cardPadding": 9,
+											"cardHPadding": 9
+										}
+									},
+									"type": "800000",
+									"uuid": "99914b932bd37a50b983c5e7c90ae93b",
+									"config": {
+										"x": 64,
+										"y": 64
+									},
+									"canvasConfig": {
+										"maxW": 470,
+										"maxDimensionLimit": 0,
+										"clickEvent": {
+											"param": {
+												"jumpCode": "graphicNews"
+											},
+											"type": "jump"
+										},
+										"w": 460,
+										"maxH": 2500,
+										"h": 470,
+										"bgInfo": {
+											"imgUrl": "",
+											"color": "#ffffff",
+											"w": "",
+											"h": "",
+											"type": "0"
+										},
+										"cfInfo": {
+											"detached": "0",
+											"radiusRT": 24,
+											"radiusRB": 24,
+											"value": 24,
+											"radiusLB": 24,
+											"radiusLT": 24
+										}
+									},
+									"elementList": [
+										{
+											"type": "400000",
+											"uuid": null,
+											"config": {
+												"newWindowPlay": "0",
+												"videoInfo": {
+													"bgColor": "rgba(255, 255, 255, 0)",
+													"showPlayButton": "1",
+													"playButtonPosition": "m",
+													"playButtonUrl": ""
+												},
+												"h": 470,
+												"videoAutoFitType": "2",
+												"wifiPlayRule": "1",
+												"atmospherePicUrl": "",
+												"soundButton": "0",
+												"imgAutoFitType": "0",
+												"playerType": "1",
+												"w": 460,
+												"x": 0,
+												"y": 0,
+												"cfInfo": {
+													"radiusRT": 12,
+													"radiusRB": 12,
+													"radiusLB": 12,
+													"radiusLT": 12
+												}
+											},
+											"dataPath": {
+												"expoInfo": "$expoInfo",
+												"videoUrl": "$themeVideo0.videoUrl",
+												"pictureUrl": "$themeVideo0.pictureUrl",
+												"clickInfo": "$clickInfo"
+											}
+										},
+										{
+											"type": "100000",
+											"uuid": null,
+											"config": {
+												"maxRowNum": "2",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#000000"
+												},
+												"autoFitType": "0",
+												"color": "#000000",
+												"bgColor": "rgba(255, 255, 255, 0)",
+												"w": 404,
+												"h": 108,
+												"x": 20,
+												"y": 340,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "36",
+													"underscore": "0",
+													"bold": "0",
+													"align": "1",
+													"italic": "0",
+													"jdFont": "0"
+												},
+												"paddingInfo": {
+													"detached": "0",
+													"ltrbValue": "0,0,0,0",
+													"value": 0
+												},
+												"cfInfo": {
+													"radiusRT": 0,
+													"radiusRB": 0,
+													"radiusLB": 0,
+													"radiusLT": 0
+												}
+											},
+											"dataPath": {
+												"text": "$themeTitle1"
+											}
+										},
+										{
+											"type": "600012",
+											"uuid": null,
+											"config": {
+												"imgTextDistance": 9,
+												"xAlign": "1",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#000000"
+												},
+												"textConfig": {
+													"maxRowNum": "1",
+													"color": "rgba(255, 255, 255, 1)",
+													"fontInfo": {
+														"strickout": "0",
+														"size": "30",
+														"underscore": "0",
+														"zoom": "0",
+														"bold": "0",
+														"align": "1",
+														"italic": "0",
+														"jdFont": "0"
+													}
+												},
+												"h": 54,
+												"bgImage": "",
+												"yAlign": "2",
+												"bgType": "0",
+												"imgConfig": {
+													"w": 21,
+													"h": 21
+												},
+												"autoFitType": "1",
+												"bgColor": "rgba(0, 0, 0, 0.5)",
+												"w": 210,
+												"x": 14,
+												"y": 14,
+												"paddingInfo": {
+													"detached": "0",
+													"ltrbValue": "0,0,0,0",
+													"value": 6
+												},
+												"cfInfo": {
+													"radiusRT": 24,
+													"radiusRB": 24,
+													"radiusLB": 24,
+													"radiusLT": 24
+												},
+												"imgTextOrder": "1"
+											},
+											"dataPath": {
+												"src": "https://m.360buyimg.com/babel/jfs/t1/193924/17/24137/279/626be2e7Ee73a4ac9/6fd2c1ff55aa723e.png",
+												"text": "$videoDuration2",
+												"degradeSrc": null
+											}
+										}
+									],
+									"dataPath": {
+										"dataList": "$nestedCanvas0"
+									}
+								},
+								{
+									"floorConfig": {
+										"flatConfig": {
+											"showMoreButtonStyle": "1",
+											"showMore": "0",
+											"showMoreButtonBgColor": "#FF5151",
+											"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+											"moreRows": 0,
+											"initialRows": 1
+										},
+										"columns": 1,
+										"w": 460,
+										"h": 470,
+										"viewStyle": {
+											"leftPadding": 0,
+											"topPadding": 0,
+											"rightPadding": 0,
+											"radiusRB": 0,
+											"_viewpaddingStyle": "0",
+											"bottomPadding": 0,
+											"radiusLB": 0,
+											"detached": "0",
+											"radiusRT": 0,
+											"bgInfo": {
+												"imgUrl": "",
+												"color": "rgba(255, 255, 255, 0)",
+												"type": "0"
+											},
+											"value": "0",
+											"_viewpadding": "0",
+											"radiusLT": 0
+										},
+										"style": "flatview",
+										"bgInfo": {
+											"imgUrl": "",
+											"color": "rgba(0,0,0,0)",
+											"sameColor": "0",
+											"type": "0"
+										},
+										"rows": 1,
+										"floorStyle": {
+											"leftPadding": 0,
+											"lRPadding": 0,
+											"topPadding": 0,
+											"cardVPadding": 9,
+											"rightPadding": 0,
+											"bottomPadding": 0,
+											"uDPadding": 0,
+											"cardPadding": 9,
+											"cardHPadding": 9
+										}
+									},
+									"type": "800000",
+									"uuid": "99914b932bd37a50b983c5e7c90ae93b",
+									"config": {
+										"x": 584,
+										"y": 64
+									},
+									"canvasConfig": {
+										"maxW": 225,
+										"clickEvent": null,
+										"maxDimensionLimit": 0,
+										"exposureTracking": null,
+										"maxH": 2500,
+										"w": 460,
+										"h": 470,
+										"bgInfo": {
+											"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/152020/39/36315/20189/6433fbffFfe308eeb/19e1bc6292f0e56c.jpg",
+											"color": "#ffffff",
+											"w": "",
+											"h": "",
+											"type": "1"
+										},
+										"cfInfo": {
+											"detached": "0",
+											"radiusRT": 24,
+											"radiusRB": 24,
+											"value": 24,
+											"radiusLB": 24,
+											"radiusLT": 24
+										}
+									},
+									"elementList": [
+										{
+											"type": "200000",
+											"uuid": null,
+											"config": {
+												"autoFitType": "2",
+												"bgColor": "rgba(225, 225, 255, 0)",
+												"w": 435,
+												"h": 313,
+												"x": 7,
+												"y": 0,
+												"cfInfo": {
+													"radiusRT": 18,
+													"radiusRB": 18,
+													"radiusLB": 18,
+													"radiusLT": 18
+												}
+											},
+											"dataPath": {
+												"src": "$picUrl0"
+											}
+										},
+										{
+											"type": "100000",
+											"uuid": null,
+											"config": {
+												"maxRowNum": "1",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#000000"
+												},
+												"autoFitType": "0",
+												"color": "rgba(255, 255, 255, 1)",
+												"bgColor": "rgba(255, 255, 255, 0)",
+												"w": 251,
+												"h": 42,
+												"x": 56,
+												"y": 345,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "30",
+													"underscore": "0",
+													"bold": "0",
+													"align": "2",
+													"italic": "0",
+													"jdFont": "0"
+												},
+												"paddingInfo": {
+													"detached": "0",
+													"ltrbValue": "0,0,0,0",
+													"value": 0
+												},
+												"cfInfo": {
+													"radiusRT": 0,
+													"radiusRB": 0,
+													"radiusLB": 0,
+													"radiusLT": 0
+												}
+											},
+											"dataPath": {
+												"text": "$sellPoint1"
+											}
+										},
+										{
+											"type": "100000",
+											"uuid": null,
+											"config": {
+												"maxRowNum": "1",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#262626"
+												},
+												"autoFitType": "0",
+												"color": "#262626",
+												"bgColor": "rgba(255, 255, 255, 0)",
+												"w": 300,
+												"h": 51,
+												"x": 16,
+												"y": 294,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "36",
+													"underscore": "0",
+													"bold": "0",
+													"align": "1",
+													"italic": "0",
+													"jdFont": "0"
+												},
+												"paddingInfo": {
+													"detached": "0",
+													"value": 0
+												},
+												"cfInfo": {
+													"radiusRT": 0,
+													"radiusRB": 0,
+													"radiusLB": 0,
+													"radiusLT": 0
+												}
+											},
+											"dataPath": {
+												"text": "$name2"
+											}
+										},
+										{
+											"type": "300000",
+											"uuid": null,
+											"config": {
+												"color": "rgba(26, 26, 26, 1)",
+												"w": 300,
+												"h": 75,
+												"x": 7,
+												"y": 387,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "54",
+													"underscore": "0",
+													"zoom": "1",
+													"bold": "0",
+													"align": "1",
+													"italic": "0",
+													"jdFont": "1"
+												},
+												"priceLabel": {
+													"src": "",
+													"w": 0,
+													"h": 0
+												}
+											},
+											"dataPath": {
+												"value": "$pPrice3"
+											}
+										}
+									],
+									"dataPath": {
+										"dataList": "$nestedCanvas1"
+									}
+								}
+							],
+							"materialGroupList": [
+								{
+									"groupInfoList": [
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubePro",
+													"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-2-2\",\"ford2\":\"-100\",\"bi\":\"-100\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"-100\",\"exnum\":\"-100\",\"sgid\":\"statical_canvas_material_group_id\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"sku\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}",
+													"type": "none"
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeProExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-2-2\",\"ford2\":\"-100\",\"bi\":\"-100\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"-100\",\"exnum\":\"-100\",\"sgid\":\"statical_canvas_material_group_id\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"sku\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "statical_canvas_material_id0",
+											"flexData": {
+												"nestedCanvas0": [
+													{
+														"clickEvent": {
+															"type": "jump",
+															"jump": {
+																"eventId": "Babel_FlexCubeAd",
+																"des": "VideoImmersion",
+																"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952020\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{\"vw\":1280,\"vh\":720,\"videoDuration\":65,\"videoUrl\":\"https://jvod.300hu.com/vod/product/0a9e4666-a229-413d-92fb-cbfabe1b3108/7c6ab4ec42f147cf983e14e0807a13e6.mp4?source=2&h265=h265/19366/03a53ae82112453fb3b97416c393c355.mp4\",\"screenType\":1},\"modeid\":\"3\",\"style\":\"2\",\"id\":\"330302862\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+																"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"330302862\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"fno\":\"9-2-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40936\",\"bi2\":\"2\",\"agid\":\"06952020\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"330302862\",\"bord\":\"0\",\"mci\":\"06952020-19974857-6801750223-330302862#0-9134-5--1085-42-2#1-0-#76-#h5\",\"adid\":\"6801750223\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}",
+																"category": "jump",
+																"params": {
+																	"referpageid": "3943203",
+																	"adid": "06952020",
+																	"playtype": "5",
+																	"playInfo": {
+																		"vw": 1280,
+																		"vh": 720,
+																		"videoDuration": 65,
+																		"videoUrl": "https://jvod.300hu.com/vod/product/0a9e4666-a229-413d-92fb-cbfabe1b3108/7c6ab4ec42f147cf983e14e0807a13e6.mp4?source=2&h265=h265/19366/03a53ae82112453fb3b97416c393c355.mp4",
+																		"screenType": 1
+																	},
+																	"modeid": "3",
+																	"style": "2",
+																	"id": "330302862",
+																	"projectid": "01243409"
+																}
+															}
+														},
+														"exposureInfo": {
+															"eventId": "Babel_FlexCubeAdExpo",
+															"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+															"srv": "{\"fno\":\"9-2-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40936\",\"bi2\":\"2\",\"agid\":\"06952020\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"330302862\",\"bord\":\"0\",\"mci\":\"06952020-19974857-6801750223-330302862#0-9134-5--1085-42-2#1-0-#76-#h5\",\"adid\":\"6801750223\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}"
+														},
+														"materialId": "6801750223",
+														"flexData": {
+															"expoInfo": {
+																"eventId": "Babel_FlexCubeVideoExpo",
+																"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"ford2\":\"-100\",\"bi\":\"2\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"bi2\":\"2\",\"typ\":\"40936\",\"aord\":\"1\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"06952020-19974857-6801750223-330302862#0-9134-5--1085-42-2#1-0-#76-#h5\",\"adid\":\"6801750223\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"videoFlex\",\"fno\":\"9-2-2\",\"mord\":\"-100\",\"agid\":\"06952020\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+															},
+															"themeTitle1": "要美！也要更安全无瑕！瑕疵皮的妈生底妆秘诀就在这里啦！",
+															"clickInfo": {
+																"eventId": "Babel_FlexCubeVideo",
+																"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"ford2\":\"-100\",\"bi\":\"2\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"bi2\":\"2\",\"typ\":\"40936\",\"aord\":\"1\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"06952020-19974857-6801750223-330302862#0-9134-5--1085-42-2#1-0-#76-#h5\",\"adid\":\"6801750223\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"videoFlex\",\"fno\":\"9-2-2\",\"mord\":\"-100\",\"agid\":\"06952020\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+															},
+															"videoDuration2": "01:05",
+															"themeVideo0": {
+																"videoUrl": "https://jvod.300hu.com/vod/product/0a9e4666-a229-413d-92fb-cbfabe1b3108/7c6ab4ec42f147cf983e14e0807a13e6.mp4?source=2&h265=h265/19366/03a53ae82112453fb3b97416c393c355.mp4",
+																"pictureUrl": "//m.360buyimg.com/ceco/jfs/t1/44254/27/17200/8669/62c82328Ed2dc88c4/1a56f3b7aafcf26b.jpg!q70.dpg"
+															}
+														}
+													}
+												],
+												"nestedCanvas1": [
+													{
+														"clickEvent": {
+															"type": "jump",
+															"jump": {
+																"eventId": "Babel_FlexCubePro",
+																"des": "skudetail",
+																"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100018361098\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"fno\":\"9-2-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733909-70241736-6410118558-100018361098#1-0-1051--0--#1-0-#3-#h5\",\"exnum\":\"-100\",\"sgid\":\"20733909\",\"ftid2\":\"-100\",\"sord\":\"1\",\"ftid1\":\"-100\",\"sku\":\"100018361098\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}",
+																"params": {
+																	"sourceType": "babel_sale",
+																	"skuId": "100018361098"
+																}
+															}
+														},
+														"exposureInfo": {
+															"eventId": "Babel_FlexCubeProExpo",
+															"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+															"srv": "{\"fno\":\"9-2-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525485\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733909-70241736-6410118558-100018361098#1-0-1051--0--#1-0-#3-#h5\",\"exnum\":\"-100\",\"sgid\":\"20733909\",\"ftid2\":\"-100\",\"sord\":\"1\",\"ftid1\":\"-100\",\"sku\":\"100018361098\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}"
+														},
+														"materialId": "100018361098",
+														"flexData": {
+															"picUrl0": "//m.360buyimg.com/babel/jfs/t1/193188/5/33837/79720/642fb971F8ff333a1/56766f5fb3d17de7.jpg!q70.dpg",
+															"name2": "SUQQU日本晶采艳泽粉霜110色号 奶油粉底液30g 提亮遮瑕持久控油底妆",
+															"sellPoint1": "零妆感",
+															"pPrice3": "311"
+														}
+													}
+												]
+											}
+										}
+									],
+									"groupId": "statical_canvas_material_group_id"
+								}
+							],
+							"floorNum": "2",
+							"tags": [
+								"videoFlex"
+							]
+						},
+						{
+							"template": "flex_cube",
+							"ofn": "3",
+							"floorConfig": {
+								"showMoreInfo": {
+									"link": "",
+									"linkType": "1"
+								},
+								"columns": 1,
+								"h": 0,
+								"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+								"scrollConfig": {
+									"showBar": "0",
+									"barBlockColor": "#FF445E",
+									"barColor": "rgba(255, 68, 94, 0.3)",
+									"autoPlay": "0",
+									"minMaterialCount": "3",
+									"barBgColor": "#FFFFFF"
+								},
+								"rows": 1,
+								"floorStyle": {
+									"leftPadding": 30,
+									"cardVPadding": 24,
+									"lRPadding": 30,
+									"topPadding": 9,
+									"rightPadding": 30,
+									"bottomPadding": 9,
+									"cardPadding": 24,
+									"uDPadding": 9,
+									"cardHPadding": 24
+								},
+								"w": 1125,
+								"viewStyle": {
+									"leftPadding": 0,
+									"topPadding": 0,
+									"rightPadding": 0,
+									"radiusRB": 0,
+									"_viewpaddingStyle": "0",
+									"bottomPadding": 0,
+									"radiusLB": 0,
+									"detached": "0",
+									"radiusRT": 0,
+									"bgInfo": {
+										"imgUrl": "",
+										"color": "rgba(255, 255, 255, 0)",
+										"type": "0"
+									},
+									"value": "0",
+									"_viewpadding": "0",
+									"radiusLT": 0
+								},
+								"showMore": "0",
+								"style": "scroll",
+								"bgInfo": {
+									"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/196148/28/34814/2623/6433fe5fF244c8969/3e6f96648c996d60.jpg",
+									"color": "#f2f2f2",
+									"sameColor": "0",
+									"type": "1"
+								}
+							},
+							"id": 92525490,
+							"moduleId": 92525490,
+							"canvasConfig": {
+								"maxW": 1125,
+								"clickEvent": {
+									"param": {
+										"jumpCode": "graphicNews"
+									},
+									"type": "jump"
+								},
+								"maxDimensionLimit": 0,
+								"maxH": 2500,
+								"w": 405,
+								"h": 609,
+								"bgInfo": {
+									"imgUrl": "",
+									"color": "rgba(178, 70, 70, 0)",
+									"w": "",
+									"h": "",
+									"type": "0"
+								},
+								"uuid": "45f484982e765b369d30795a722a4a6d",
+								"cfInfo": {
+									"detached": "0",
+									"radiusRT": 18,
+									"radiusRB": 18,
+									"value": "18",
+									"radiusLB": 18,
+									"radiusLT": 18
+								},
+								"canvasConfigUuid": "05dd240c995ef3e1e8b38f6a076958f4"
+							},
+							"elementList": [
+								{
+									"type": "200000",
+									"uuid": "b737e8206306b04b62ee85f891522c44",
+									"config": {
+										"autoFitType": "0",
+										"w": 405,
+										"h": 609,
+										"x": 0,
+										"y": 0,
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"src": "$adPictureUrl0"
+									}
+								},
+								{
+									"type": "200000",
+									"uuid": "9405173d3bd0b4a941536b867bc1cbe8",
+									"config": {
+										"autoFitType": "0",
+										"w": 405,
+										"h": 270,
+										"x": 0,
+										"y": 339,
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"src": "https://m.360buyimg.com/babel/jfs/t1/123096/5/21553/25119/626bb288Eec860bcb/3eed104ee70a9d1c.png"
+									}
+								},
+								{
+									"type": "100000",
+									"uuid": "437186ace7eada6687dda4b3a3137301",
+									"config": {
+										"maxRowNum": "2",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#000000"
+										},
+										"autoFitType": "0",
+										"color": "rgba(255, 255, 255, 1)",
+										"bgColor": "rgba(255, 255, 255, 0)",
+										"w": 369,
+										"h": 108,
+										"x": 18,
+										"y": 395,
+										"fontInfo": {
+											"strickout": "0",
+											"size": "36",
+											"underscore": "0",
+											"bold": "0",
+											"align": "1",
+											"italic": "0",
+											"jdFont": "0"
+										},
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 0
+										},
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"text": "$themeTitle2"
+									}
+								},
+								{
+									"type": "200000",
+									"uuid": "a5f9bdcfe62159d32474930d2cb10235",
+									"config": {
+										"autoFitType": "2",
+										"bgColor": "rgba(225, 225, 255, 0)",
+										"w": 63,
+										"h": 63,
+										"x": 18,
+										"y": 516,
+										"cfInfo": {
+											"radiusRT": 36,
+											"radiusRB": 36,
+											"radiusLB": 36,
+											"radiusLT": 36
+										}
+									},
+									"dataPath": {
+										"src": "$themeAuthorPic3"
+									}
+								},
+								{
+									"type": "100000",
+									"uuid": "f43ba8f0c5b7ccbb9d9692c9f00ebe33",
+									"config": {
+										"maxRowNum": "1",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#686868"
+										},
+										"autoFitType": "0",
+										"color": "rgba(255, 255, 255, 1)",
+										"bgColor": "rgba(255, 255, 255, 0)",
+										"w": 175,
+										"h": 42,
+										"x": 93,
+										"y": 527,
+										"fontInfo": {
+											"strickout": "0",
+											"size": "30",
+											"underscore": "0",
+											"bold": "0",
+											"align": "1",
+											"italic": "0",
+											"jdFont": "0"
+										},
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 0
+										},
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										}
+									},
+									"dataPath": {
+										"text": "$themeAuthorName4"
+									}
+								},
+								{
+									"type": "600012",
+									"uuid": "1c14b5c8a83e17d0c0667d8cab942093",
+									"config": {
+										"imgTextDistance": 9,
+										"xAlign": "1",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#000000"
+										},
+										"textConfig": {
+											"maxRowNum": "1",
+											"color": "rgba(255, 255, 255, 1)",
+											"fontInfo": {
+												"strickout": "0",
+												"size": "30",
+												"underscore": "0",
+												"zoom": "0",
+												"bold": "0",
+												"align": "1",
+												"italic": "0",
+												"jdFont": "0"
+											}
+										},
+										"h": 54,
+										"bgImage": "",
+										"yAlign": "2",
+										"bgType": "0",
+										"imgConfig": {
+											"w": 21,
+											"h": 21
+										},
+										"autoFitType": "1",
+										"bgColor": "rgba(0, 0, 0, 0.5)",
+										"w": 210,
+										"x": 17,
+										"y": 25,
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 6
+										},
+										"cfInfo": {
+											"radiusRT": 24,
+											"radiusRB": 24,
+											"radiusLB": 24,
+											"radiusLT": 24
+										},
+										"imgTextOrder": "1"
+									},
+									"dataPath": {
+										"src": "https://m.360buyimg.com/babel/jfs/t1/193924/17/24137/279/626be2e7Ee73a4ac9/6fd2c1ff55aa723e.png",
+										"text": "$videoDuration5",
+										"degradeSrc": null
+									}
+								},
+								{
+									"type": "600012",
+									"uuid": "95a829b23b46ad14360f5c226cf0dbdc",
+									"config": {
+										"imgTextDistance": 6,
+										"xAlign": "1",
+										"frameInfo": {
+											"sameTextColor": "1",
+											"size": "0",
+											"color": "#000000"
+										},
+										"textConfig": {
+											"maxRowNum": "1",
+											"color": "rgba(255, 255, 255, 1)",
+											"fontInfo": {
+												"strickout": "0",
+												"size": "30",
+												"underscore": "0",
+												"zoom": "0",
+												"bold": "0",
+												"align": "1",
+												"italic": "0",
+												"jdFont": "0"
+											}
+										},
+										"h": 42,
+										"bgImage": "",
+										"yAlign": "2",
+										"bgType": "0",
+										"imgConfig": {
+											"w": 36,
+											"h": 36
+										},
+										"autoFitType": "1",
+										"bgColor": "rgba(255, 255, 255, 0)",
+										"w": 120,
+										"x": 268,
+										"y": 527,
+										"paddingInfo": {
+											"detached": "0",
+											"ltrbValue": "0,0,0,0",
+											"value": 0
+										},
+										"cfInfo": {
+											"radiusRT": 0,
+											"radiusRB": 0,
+											"radiusLB": 0,
+											"radiusLT": 0
+										},
+										"imgTextOrder": "1"
+									},
+									"dataPath": {
+										"src": "https://m.360buyimg.com/babel/jfs/t1/209758/16/21553/984/626be5abE0324959d/332e981e94da54dd.png",
+										"text": "$pageView6",
+										"degradeSrc": null
+									}
+								}
+							],
+							"materialGroupList": [
+								{
+									"groupInfoList": [
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952021\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"337881758\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"337881758\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-2-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012599\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525490\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952021\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"337881758\",\"bord\":\"0\",\"mci\":\"06952021-20473353-8501799647-337881758#0-7-5--42-143-11#1-0-#1-88012599#h5\",\"adid\":\"8501799647\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952021",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "337881758",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-2-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012599\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525490\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952021\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"337881758\",\"bord\":\"0\",\"mci\":\"06952021-20473353-8501799647-337881758#0-7-5--42-143-11#1-0-#1-88012599#h5\",\"adid\":\"8501799647\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "8501799647",
+											"flexData": {
+												"videoDuration5": "02:12",
+												"pageView6": "1471",
+												"themeTitle2": "植村秀（shu uemura）王一博同款羽纱持妆小方瓶粉底液",
+												"themeAuthorName4": "好货俱乐部",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s1176x1764_jfs/t1/128942/11/28630/170538/62ea37e7Ef46f1ecb/39a9a4fcb466261c.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f53446c536f6f5a6a4f63656e31363735363833373935363536_big.jpg"
+											}
+										},
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952021\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"408519982\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"408519982\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-2-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012599\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525490\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952021\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"408519982\",\"bord\":\"0\",\"mci\":\"06952021-20473353-8501799648-408519982#0-7-5--42-143-11#1-0-#1-88012599#h5\",\"adid\":\"8501799648\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952021",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "408519982",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-2-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012599\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525490\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952021\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"408519982\",\"bord\":\"0\",\"mci\":\"06952021-20473353-8501799648-408519982#0-7-5--42-143-11#1-0-#1-88012599#h5\",\"adid\":\"8501799648\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "8501799648",
+											"flexData": {
+												"videoDuration5": "00:51",
+												"pageView6": "56",
+												"themeTitle2": "植村秀羽纱持妆小方瓶粉底液584持色不暗沉",
+												"themeAuthorName4": "小鹤好物推荐",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s1080x1440_jfs/t1/144689/34/32568/102869/6497b7a3Fdba4a6e2/dd875d2d04efff95.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3566343537663836373661626531363838343538303537393732_big.jpg"
+											}
+										},
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubeAd",
+													"des": "VideoImmersion",
+													"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952021\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"319279542\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+													"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"319279542\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-2-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012599\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525490\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952021\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"319279542\",\"bord\":\"0\",\"mci\":\"06952021-20473353-8501799649-319279542#0-7-5--42-143-11#1-0-#1-88012599#h5\",\"adid\":\"8501799649\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+													"category": "jump",
+													"params": {
+														"referpageid": "3943203",
+														"adid": "06952021",
+														"playtype": "5",
+														"playInfo": {},
+														"modeid": "3",
+														"style": "11",
+														"id": "319279542",
+														"projectid": "01243409"
+													}
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeAdExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-2-3\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#88012599\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525490\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952021\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"319279542\",\"bord\":\"0\",\"mci\":\"06952021-20473353-8501799649-319279542#0-7-5--42-143-11#1-0-#1-88012599#h5\",\"adid\":\"8501799649\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "8501799649",
+											"flexData": {
+												"videoDuration5": "00:32",
+												"pageView6": "3498",
+												"themeTitle2": "被网红博主安利的植村秀小方瓶磨皮粉底液，上妆测评",
+												"themeAuthorName4": "小象_优选馆",
+												"adPictureUrl0": "//m.360buyimg.com/ceco/s800x1200_jfs/t1/94611/28/22979/97978/629f429eE55df265c/a863a4cdc6b94ecd.jpg!q70.dpg",
+												"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f424e447949717356486a484831363534373531393739323434_big.jpg"
+											}
+										}
+									],
+									"groupId": "06952021"
+								}
+							],
+							"floorNum": "3",
+							"tags": [
+								"articleFlex"
+							]
+						}
+					]
+				},
+				{
+					"groupId": 3,
+					"multiModuleFloorList": [
+						{
+							"template": "hotzone",
+							"externalBorder": "0",
+							"lrMargin": "0",
+							"backgroundColor": "#DEBDEF",
+							"hotZone": {
+								"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/199372/5/32630/116695/6433fef3F603a283b/aaa7b75083e063f2.jpg!q70.dpg"
+							},
+							"ofn": "1",
+							"width": 1125,
+							"sameColor": "0",
+							"id": 92525483,
+							"moduleId": 92525483,
+							"floorNum": "1",
+							"height": 625
+						},
+						{
+							"template": "flex_cube",
+							"ofn": "2",
+							"floorConfig": {
+								"flatConfig": {
+									"showMoreButtonStyle": "1",
+									"showMore": "0",
+									"showMoreButtonBgColor": "#FF5151",
+									"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+									"moreRows": 0,
+									"initialRows": 1
+								},
+								"columns": 1,
+								"w": 1125,
+								"h": 0,
+								"viewStyle": {
+									"leftPadding": 0,
+									"topPadding": 0,
+									"rightPadding": 0,
+									"radiusRB": 0,
+									"_viewpaddingStyle": "0",
+									"bottomPadding": 0,
+									"radiusLB": 0,
+									"detached": "0",
+									"radiusRT": 0,
+									"bgInfo": {
+										"imgUrl": "",
+										"color": "rgba(255, 255, 255, 0)",
+										"type": "0"
+									},
+									"value": "0",
+									"_viewpadding": "0",
+									"radiusLT": 0
+								},
+								"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+								"style": "flatview",
+								"bgInfo": {
+									"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/193931/30/33186/17802/6433ff00F58dfaf32/eb1c0a0c5b704ff8.jpg",
+									"color": "#DEBDEF",
+									"sameColor": "1",
+									"type": "1"
+								},
+								"rows": 1,
+								"floorStyle": {
+									"leftPadding": 0,
+									"cardVPadding": 0,
+									"lRPadding": 0,
+									"topPadding": 0,
+									"rightPadding": 0,
+									"bottomPadding": 0,
+									"cardPadding": 0,
+									"uDPadding": 0,
+									"cardHPadding": 0
+								},
+								"singleLine": "0"
+							},
+							"id": 92525486,
+							"moduleId": 92525486,
+							"canvasConfig": {
+								"maxW": 1125,
+								"clickEvent": null,
+								"maxDimensionLimit": 0,
+								"maxH": 2500,
+								"w": 1125,
+								"h": 555,
+								"bgInfo": {
+									"imgUrl": "",
+									"color": "rgba(255, 255, 255, 0)",
+									"w": "",
+									"h": "",
+									"type": "0"
+								},
+								"uuid": "571f22e3eea5377ab744161b7c448bfd",
+								"cfInfo": {
+									"detached": "0",
+									"radiusRT": 24,
+									"radiusRB": 24,
+									"value": 24,
+									"radiusLB": 24,
+									"radiusLT": 24
+								},
+								"canvasConfigUuid": "13d6a59fabc042147fe841b515e2f464"
+							},
+							"elementList": [
+								{
+									"floorConfig": {
+										"flatConfig": {
+											"showMoreButtonStyle": "1",
+											"showMore": "0",
+											"showMoreButtonBgColor": "#FF5151",
+											"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+											"moreRows": 0,
+											"initialRows": 1
+										},
+										"columns": 1,
+										"w": 460,
+										"h": 470,
+										"viewStyle": {
+											"leftPadding": 0,
+											"topPadding": 0,
+											"rightPadding": 0,
+											"radiusRB": 0,
+											"_viewpaddingStyle": "0",
+											"bottomPadding": 0,
+											"radiusLB": 0,
+											"detached": "0",
+											"radiusRT": 0,
+											"bgInfo": {
+												"imgUrl": "",
+												"color": "rgba(255, 255, 255, 0)",
+												"type": "0"
+											},
+											"value": "0",
+											"_viewpadding": "0",
+											"radiusLT": 0
+										},
+										"style": "flatview",
+										"bgInfo": {
+											"imgUrl": "",
+											"color": "rgba(0,0,0,0)",
+											"sameColor": "0",
+											"type": "0"
+										},
+										"rows": 1,
+										"floorStyle": {
+											"leftPadding": 0,
+											"lRPadding": 0,
+											"topPadding": 0,
+											"cardVPadding": 9,
+											"rightPadding": 0,
+											"bottomPadding": 0,
+											"uDPadding": 0,
+											"cardPadding": 9,
+											"cardHPadding": 9
+										}
+									},
+									"type": "800000",
+									"uuid": "99914b932bd37a50b983c5e7c90ae93b",
+									"config": {
+										"x": 64,
+										"y": 64
+									},
+									"canvasConfig": {
+										"maxW": 470,
+										"maxDimensionLimit": 0,
+										"clickEvent": {
+											"param": {
+												"jumpCode": "graphicNews"
+											},
+											"type": "jump"
+										},
+										"w": 460,
+										"maxH": 2500,
+										"h": 470,
+										"bgInfo": {
+											"imgUrl": "",
+											"color": "#ffffff",
+											"w": "",
+											"h": "",
+											"type": "0"
+										},
+										"cfInfo": {
+											"detached": "0",
+											"radiusRT": 24,
+											"radiusRB": 24,
+											"value": 24,
+											"radiusLB": 24,
+											"radiusLT": 24
+										}
+									},
+									"elementList": [
+										{
+											"type": "400000",
+											"uuid": null,
+											"config": {
+												"newWindowPlay": "0",
+												"videoInfo": {
+													"bgColor": "rgba(255, 255, 255, 0)",
+													"showPlayButton": "1",
+													"playButtonPosition": "m",
+													"playButtonUrl": ""
+												},
+												"h": 470,
+												"videoAutoFitType": "2",
+												"wifiPlayRule": "1",
+												"atmospherePicUrl": "",
+												"soundButton": "0",
+												"imgAutoFitType": "0",
+												"playerType": "1",
+												"w": 460,
+												"x": 0,
+												"y": 0,
+												"cfInfo": {
+													"radiusRT": 12,
+													"radiusRB": 12,
+													"radiusLB": 12,
+													"radiusLT": 12
+												}
+											},
+											"dataPath": {
+												"expoInfo": "$expoInfo",
+												"videoUrl": "$themeVideo0.videoUrl",
+												"pictureUrl": "$themeVideo0.pictureUrl",
+												"clickInfo": "$clickInfo"
+											}
+										},
+										{
+											"type": "100000",
+											"uuid": null,
+											"config": {
+												"maxRowNum": "2",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#000000"
+												},
+												"autoFitType": "0",
+												"color": "#000000",
+												"bgColor": "rgba(255, 255, 255, 0)",
+												"w": 404,
+												"h": 108,
+												"x": 20,
+												"y": 340,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "36",
+													"underscore": "0",
+													"bold": "0",
+													"align": "1",
+													"italic": "0",
+													"jdFont": "0"
+												},
+												"paddingInfo": {
+													"detached": "0",
+													"ltrbValue": "0,0,0,0",
+													"value": 0
+												},
+												"cfInfo": {
+													"radiusRT": 0,
+													"radiusRB": 0,
+													"radiusLB": 0,
+													"radiusLT": 0
+												}
+											},
+											"dataPath": {
+												"text": "$themeTitle1"
+											}
+										},
+										{
+											"type": "600012",
+											"uuid": null,
+											"config": {
+												"imgTextDistance": 9,
+												"xAlign": "1",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#000000"
+												},
+												"textConfig": {
+													"maxRowNum": "1",
+													"color": "rgba(255, 255, 255, 1)",
+													"fontInfo": {
+														"strickout": "0",
+														"size": "30",
+														"underscore": "0",
+														"zoom": "0",
+														"bold": "0",
+														"align": "1",
+														"italic": "0",
+														"jdFont": "0"
+													}
+												},
+												"h": 54,
+												"bgImage": "",
+												"yAlign": "2",
+												"bgType": "0",
+												"imgConfig": {
+													"w": 21,
+													"h": 21
+												},
+												"autoFitType": "1",
+												"bgColor": "rgba(0, 0, 0, 0.5)",
+												"w": 210,
+												"x": 14,
+												"y": 14,
+												"paddingInfo": {
+													"detached": "0",
+													"ltrbValue": "0,0,0,0",
+													"value": 6
+												},
+												"cfInfo": {
+													"radiusRT": 24,
+													"radiusRB": 24,
+													"radiusLB": 24,
+													"radiusLT": 24
+												},
+												"imgTextOrder": "1"
+											},
+											"dataPath": {
+												"src": "https://m.360buyimg.com/babel/jfs/t1/193924/17/24137/279/626be2e7Ee73a4ac9/6fd2c1ff55aa723e.png",
+												"text": "$videoDuration2",
+												"degradeSrc": null
+											}
+										}
+									],
+									"dataPath": {
+										"dataList": "$nestedCanvas0"
+									}
+								},
+								{
+									"floorConfig": {
+										"flatConfig": {
+											"showMoreButtonStyle": "1",
+											"showMore": "0",
+											"showMoreButtonBgColor": "#FF5151",
+											"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+											"moreRows": 0,
+											"initialRows": 1
+										},
+										"columns": 1,
+										"w": 460,
+										"h": 470,
+										"viewStyle": {
+											"leftPadding": 0,
+											"topPadding": 0,
+											"rightPadding": 0,
+											"radiusRB": 0,
+											"_viewpaddingStyle": "0",
+											"bottomPadding": 0,
+											"radiusLB": 0,
+											"detached": "0",
+											"radiusRT": 0,
+											"bgInfo": {
+												"imgUrl": "",
+												"color": "rgba(255, 255, 255, 0)",
+												"type": "0"
+											},
+											"value": "0",
+											"_viewpadding": "0",
+											"radiusLT": 0
+										},
+										"style": "flatview",
+										"bgInfo": {
+											"imgUrl": "",
+											"color": "rgba(0,0,0,0)",
+											"sameColor": "0",
+											"type": "0"
+										},
+										"rows": 1,
+										"floorStyle": {
+											"leftPadding": 0,
+											"lRPadding": 0,
+											"topPadding": 0,
+											"cardVPadding": 9,
+											"rightPadding": 0,
+											"bottomPadding": 0,
+											"uDPadding": 0,
+											"cardPadding": 9,
+											"cardHPadding": 9
+										}
+									},
+									"type": "800000",
+									"uuid": "99914b932bd37a50b983c5e7c90ae93b",
+									"config": {
+										"x": 584,
+										"y": 64
+									},
+									"canvasConfig": {
+										"maxW": 225,
+										"clickEvent": null,
+										"maxDimensionLimit": 0,
+										"exposureTracking": null,
+										"maxH": 2500,
+										"w": 460,
+										"h": 470,
+										"bgInfo": {
+											"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/152020/39/36315/20189/6433fbffFfe308eeb/19e1bc6292f0e56c.jpg",
+											"color": "#ffffff",
+											"w": "",
+											"h": "",
+											"type": "1"
+										},
+										"cfInfo": {
+											"detached": "0",
+											"radiusRT": 24,
+											"radiusRB": 24,
+											"value": 24,
+											"radiusLB": 24,
+											"radiusLT": 24
+										}
+									},
+									"elementList": [
+										{
+											"type": "200000",
+											"uuid": null,
+											"config": {
+												"autoFitType": "2",
+												"bgColor": "rgba(225, 225, 255, 0)",
+												"w": 435,
+												"h": 313,
+												"x": 7,
+												"y": 0,
+												"cfInfo": {
+													"radiusRT": 18,
+													"radiusRB": 18,
+													"radiusLB": 18,
+													"radiusLT": 18
+												}
+											},
+											"dataPath": {
+												"src": "$picUrl0"
+											}
+										},
+										{
+											"type": "100000",
+											"uuid": null,
+											"config": {
+												"maxRowNum": "1",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#000000"
+												},
+												"autoFitType": "0",
+												"color": "rgba(255, 255, 255, 1)",
+												"bgColor": "rgba(255, 255, 255, 0)",
+												"w": 251,
+												"h": 42,
+												"x": 56,
+												"y": 345,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "30",
+													"underscore": "0",
+													"bold": "0",
+													"align": "2",
+													"italic": "0",
+													"jdFont": "0"
+												},
+												"paddingInfo": {
+													"detached": "0",
+													"ltrbValue": "0,0,0,0",
+													"value": 0
+												},
+												"cfInfo": {
+													"radiusRT": 0,
+													"radiusRB": 0,
+													"radiusLB": 0,
+													"radiusLT": 0
+												}
+											},
+											"dataPath": {
+												"text": "$sellPoint1"
+											}
+										},
+										{
+											"type": "100000",
+											"uuid": null,
+											"config": {
+												"maxRowNum": "1",
+												"frameInfo": {
+													"sameTextColor": "1",
+													"size": "0",
+													"color": "#262626"
+												},
+												"autoFitType": "0",
+												"color": "#262626",
+												"bgColor": "rgba(255, 255, 255, 0)",
+												"w": 300,
+												"h": 51,
+												"x": 16,
+												"y": 294,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "36",
+													"underscore": "0",
+													"bold": "0",
+													"align": "1",
+													"italic": "0",
+													"jdFont": "0"
+												},
+												"paddingInfo": {
+													"detached": "0",
+													"value": 0
+												},
+												"cfInfo": {
+													"radiusRT": 0,
+													"radiusRB": 0,
+													"radiusLB": 0,
+													"radiusLT": 0
+												}
+											},
+											"dataPath": {
+												"text": "$name2"
+											}
+										},
+										{
+											"type": "300000",
+											"uuid": null,
+											"config": {
+												"color": "rgba(26, 26, 26, 1)",
+												"w": 300,
+												"h": 75,
+												"x": 7,
+												"y": 387,
+												"fontInfo": {
+													"strickout": "0",
+													"size": "54",
+													"underscore": "0",
+													"zoom": "1",
+													"bold": "0",
+													"align": "1",
+													"italic": "0",
+													"jdFont": "1"
+												},
+												"priceLabel": {
+													"src": "",
+													"w": 0,
+													"h": 0
+												}
+											},
+											"dataPath": {
+												"value": "$pPrice3"
+											}
+										}
+									],
+									"dataPath": {
+										"dataList": "$nestedCanvas1"
+									}
+								}
+							],
+							"materialGroupList": [
+								{
+									"groupInfoList": [
+										{
+											"clickEvent": {
+												"type": "jump",
+												"jump": {
+													"eventId": "Babel_FlexCubePro",
+													"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+													"srv": "{\"fno\":\"9-3-2\",\"ford2\":\"-100\",\"bi\":\"-100\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"-100\",\"exnum\":\"-100\",\"sgid\":\"statical_canvas_material_group_id\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"sku\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}",
+													"type": "none"
+												}
+											},
+											"exposureInfo": {
+												"eventId": "Babel_FlexCubeProExpo",
+												"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+												"srv": "{\"fno\":\"9-3-2\",\"ford2\":\"-100\",\"bi\":\"-100\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"-100\",\"exnum\":\"-100\",\"sgid\":\"statical_canvas_material_group_id\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"sku\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}"
+											},
+											"materialId": "statical_canvas_material_id0",
+											"flexData": {
+												"nestedCanvas0": [
+													{
+														"clickEvent": {
+															"type": "jump",
+															"jump": {
+																"eventId": "Babel_FlexCubeAd",
+																"des": "VideoImmersion",
+																"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952022\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{\"vw\":720,\"vh\":1280,\"videoDuration\":186,\"videoUrl\":\"https://dvod.300hu.com/vod/product/ef7996f2-898a-43b2-9063-5dab2cf061c4/265dc3b0116d48bb970c0407fac0591c.mp4?source=2&h265=h265/19366/3afda26003734bb894089c5b53f9fcfb.mp4\",\"screenType\":0},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"266002856\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+																"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"266002856\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"fno\":\"9-3-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40936\",\"bi2\":\"2\",\"agid\":\"06952022\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"266002856\",\"bord\":\"0\",\"mci\":\"06952022-19974859-7001753853-266002856#0-9134-5--1085-143-11#1-0-#76-#h5\",\"adid\":\"7001753853\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}",
+																"category": "jump",
+																"params": {
+																	"referpageid": "3943203",
+																	"adid": "06952022",
+																	"playtype": "5",
+																	"playInfo": {
+																		"vw": 720,
+																		"vh": 1280,
+																		"videoDuration": 186,
+																		"videoUrl": "https://dvod.300hu.com/vod/product/ef7996f2-898a-43b2-9063-5dab2cf061c4/265dc3b0116d48bb970c0407fac0591c.mp4?source=2&h265=h265/19366/3afda26003734bb894089c5b53f9fcfb.mp4",
+																		"screenType": 0
+																	},
+																	"modeid": "3",
+																	"style": "11",
+																	"id": "266002856",
+																	"projectid": "01243409"
+																}
+															}
+														},
+														"exposureInfo": {
+															"eventId": "Babel_FlexCubeAdExpo",
+															"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+															"srv": "{\"fno\":\"9-3-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40936\",\"bi2\":\"2\",\"agid\":\"06952022\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"266002856\",\"bord\":\"0\",\"mci\":\"06952022-19974859-7001753853-266002856#0-9134-5--1085-143-11#1-0-#76-#h5\",\"adid\":\"7001753853\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}"
+														},
+														"materialId": "7001753853",
+														"flexData": {
+															"expoInfo": {
+																"eventId": "Babel_FlexCubeVideoExpo",
+																"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"ford2\":\"-100\",\"bi\":\"2\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"bi2\":\"2\",\"typ\":\"40936\",\"aord\":\"1\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"06952022-19974859-7001753853-266002856#0-9134-5--1085-143-11#1-0-#76-#h5\",\"adid\":\"7001753853\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"videoFlex\",\"fno\":\"9-3-2\",\"mord\":\"-100\",\"agid\":\"06952022\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+															},
+															"themeTitle1": "Selsun黄瓶|控油止痒缓解脱发强效去屑!",
+															"clickInfo": {
+																"eventId": "Babel_FlexCubeVideo",
+																"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"ford2\":\"-100\",\"bi\":\"2\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"bi2\":\"2\",\"typ\":\"40936\",\"aord\":\"1\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"06952022-19974859-7001753853-266002856#0-9134-5--1085-143-11#1-0-#76-#h5\",\"adid\":\"7001753853\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"videoFlex\",\"fno\":\"9-3-2\",\"mord\":\"-100\",\"agid\":\"06952022\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+															},
+															"videoDuration2": "03:06",
+															"themeVideo0": {
+																"videoUrl": "https://dvod.300hu.com/vod/product/ef7996f2-898a-43b2-9063-5dab2cf061c4/265dc3b0116d48bb970c0407fac0591c.mp4?source=2&h265=h265/19366/3afda26003734bb894089c5b53f9fcfb.mp4",
+																"pictureUrl": "//m.360buyimg.com/ceco/jfs/t1/192268/6/18048/167665/6115ee4eE59c211b8/d7cfe0ce30ed723c.jpg!q70.dpg"
+															}
+														}
+													}
+												],
+												"nestedCanvas1": [
+													{
+														"clickEvent": {
+															"type": "jump",
+															"jump": {
+																"eventId": "Babel_FlexCubePro",
+																"des": "skudetail",
+																"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100006066946\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+																"srv": "{\"fno\":\"9-3-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733910-70242060-1310112048-100006066946#1-0-1051--0--#1-0-#3-#h5\",\"exnum\":\"-100\",\"sgid\":\"20733910\",\"ftid2\":\"-100\",\"sord\":\"1\",\"ftid1\":\"-100\",\"sku\":\"100006066946\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}",
+																"params": {
+																	"sourceType": "babel_sale",
+																	"skuId": "100006066946"
+																}
+															}
+														},
+														"exposureInfo": {
+															"eventId": "Babel_FlexCubeProExpo",
+															"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+															"srv": "{\"fno\":\"9-3-2\",\"ford2\":\"-100\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525486\",\"bi2\":\"2\",\"typ\":\"40936\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733910-70242060-1310112048-100006066946#1-0-1051--0--#1-0-#3-#h5\",\"exnum\":\"-100\",\"sgid\":\"20733910\",\"ftid2\":\"-100\",\"sord\":\"1\",\"ftid1\":\"-100\",\"sku\":\"100006066946\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"videoFlex\",\"feedtyp\":\"-100\"}"
+														},
+														"materialId": "100006066946",
+														"flexData": {
+															"picUrl0": "//m.360buyimg.com/babel/jfs/t1/66406/21/24847/93104/6419654eFdd5887de/9906b361a57c930e.jpg!q70.dpg",
+															"name2": "SELSUN紫瓶澳洲进口硫化硒控油去屑止痒洗发水男女士洗发露洗头膏",
+															"sellPoint1": "硫化硒去屑成分",
+															"pPrice3": "34.8"
+														}
+													}
+												]
+											}
+										}
+									],
+									"groupId": "statical_canvas_material_group_id"
+								}
+							],
+							"floorNum": "2",
+							"tags": [
+								"videoFlex"
+							]
+						}
+					]
+				}
+			],
+			"bgPic": "",
+			"tabList": [
+				{
+					"srv": "{\"bord\":\"0\",\"fno\":\"0-0-9\",\"mid\":\"92525477\",\"typ\":\"s1\",\"bi2\":\"2\",\"tabord\":\"1\",\"bid\":\"0\",\"aid\":\"01243409\",\"tid\":\"1\"}",
+					"groupId": 1,
+					"name": "",
+					"activePicUrl": "//m.360buyimg.com/babel/jfs/t1/6580/23/13712/5971/6433dc3bF1e67a37e/15d5052e4126eba0.jpg!q70.dpg",
+					"width": "375",
+					"defaultPicUrl": "//m.360buyimg.com/babel/jfs/t1/114713/19/32046/6850/6433dc36Fed22fe45/b27c947ca03ee1a1.jpg!q70.dpg",
+					"secondTabList": [
+						{
+							"srv": "{\"bord\":\"0\",\"fno\":\"0-0-9\",\"mid\":\"92525477\",\"typ\":\"s1\",\"bi2\":\"2\",\"tabord\":\"1\",\"bid\":\"0\",\"aid\":\"01243409\",\"tid\":\"1\"}",
+							"groupId": 1,
+							"name": ""
+						}
+					],
+					"height": "150"
+				},
+				{
+					"srv": "{\"bord\":\"0\",\"fno\":\"0-0-9\",\"mid\":\"92525477\",\"typ\":\"s1\",\"bi2\":\"2\",\"tabord\":\"2\",\"bid\":\"0\",\"aid\":\"01243409\",\"tid\":\"2\"}",
+					"groupId": 2,
+					"name": "一级分类_1",
+					"activePicUrl": "//m.360buyimg.com/babel/jfs/t1/173688/22/35850/6033/6433fd95Fa5494b3c/8a7967fc543c23b7.jpg!q70.dpg",
+					"width": "375",
+					"defaultPicUrl": "//m.360buyimg.com/babel/jfs/t1/57199/25/18684/6870/6433fd91F7c436aa8/61f0fa6839ced8d3.jpg!q70.dpg",
+					"secondTabList": [
+						{
+							"srv": "{\"bord\":\"0\",\"fno\":\"0-0-9\",\"mid\":\"92525477\",\"typ\":\"s1\",\"bi2\":\"2\",\"tabord\":\"2\",\"bid\":\"0\",\"aid\":\"01243409\",\"tid\":\"2\"}",
+							"groupId": 2,
+							"name": ""
+						}
+					],
+					"height": "150"
+				},
+				{
+					"srv": "{\"bord\":\"0\",\"fno\":\"0-0-9\",\"mid\":\"92525477\",\"typ\":\"s1\",\"bi2\":\"2\",\"tabord\":\"3\",\"bid\":\"0\",\"aid\":\"01243409\",\"tid\":\"3\"}",
+					"groupId": 3,
+					"name": "一级分类_1_1",
+					"activePicUrl": "//m.360buyimg.com/babel/jfs/t1/157125/36/30913/6369/6433fe94F0834c31c/a95310776d8d0022.jpg!q70.dpg",
+					"width": "375",
+					"defaultPicUrl": "//m.360buyimg.com/babel/jfs/t1/99106/29/38632/7340/6433fe8fF46451f9f/bc0e3d12d8a5f377.jpg!q70.dpg",
+					"secondTabList": [
+						{
+							"srv": "{\"bord\":\"0\",\"fno\":\"0-0-9\",\"mid\":\"92525477\",\"typ\":\"s1\",\"bi2\":\"2\",\"tabord\":\"3\",\"bid\":\"0\",\"aid\":\"01243409\",\"tid\":\"3\"}",
+							"groupId": 3,
+							"name": ""
+						}
+					],
+					"height": "150"
+				}
+			],
+			"tabAlign": "2",
+			"distanceAngle": {
+				"tabRadius0": 0,
+				"tabRadius1": 0,
+				"tabRadius2": 0,
+				"tabRadius3": 0,
+				"tabPadding": 0
+			},
+			"ofn": "9",
+			"id": 92525477,
+			"moduleId": 92525477
+		},
+		{
+			"template": "hotzone",
+			"externalBorder": "0",
+			"lrMargin": "0",
+			"backgroundColor": "#DEBDEF",
+			"hotZone": {
+				"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/123323/8/35947/10415/6433ff30Fc69b0844/67cb23d44eaf7eeb.jpg!q70.dpg"
+			},
+			"ofn": "10",
+			"width": 1125,
+			"sameColor": "0",
+			"id": 92525478,
+			"moduleId": 92525478,
+			"floorNum": "2",
+			"height": 255
+		},
+		{
+			"template": "flex_cube",
+			"ofn": "11",
+			"floorConfig": {
+				"columns": 1,
+				"w": 1125,
+				"h": 0,
+				"viewStyle": {
+					"leftPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"radiusRB": 0,
+					"_viewpaddingStyle": "0",
+					"bottomPadding": 0,
+					"radiusLB": 0,
+					"detached": "0",
+					"radiusRT": 0,
+					"bgInfo": {
+						"imgUrl": "",
+						"color": "rgba(204, 24, 24, 0)",
+						"type": "0"
+					},
+					"value": "0",
+					"_viewpadding": "0",
+					"radiusLT": 0
+				},
+				"style": "bannerFocus",
+				"bgInfo": {
+					"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/179996/31/34836/23616/643405e5F76a649dc/c1aec683ad18215c.jpg",
+					"color": "#DEBDEF",
+					"sameColor": "1",
+					"type": "1"
+				},
+				"viewStyleUuid": "aa3fb9daa90fe1283078892038b8583a",
+				"rows": 1,
+				"floorStyle": {
+					"leftPadding": 0,
+					"lRPadding": 0,
+					"topPadding": 15,
+					"cardVPadding": 30,
+					"rightPadding": 0,
+					"bottomPadding": 15,
+					"uDPadding": "15",
+					"cardPadding": "30",
+					"cardHPadding": 30
+				},
+				"bannerConfig": {
+					"unselectedColor": "rgba(0,0,0,0.5)",
+					"showAnchor": "1",
+					"interval": "3",
+					"position": "ex",
+					"autoPlay": "1",
+					"selectedColor": "#fa2c19"
+				}
+			},
+			"id": 92525479,
+			"moduleId": 92525479,
+			"canvasConfig": {
+				"maxW": 1125,
+				"maxDimensionLimit": 0,
+				"w": 675,
+				"maxH": 2500,
+				"h": 840,
+				"bgInfo": {
+					"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/113120/16/32411/58290/64340d4cFfb07312a/610e621a891ca1f6.png",
+					"color": "#ffffff",
+					"w": "",
+					"h": "",
+					"type": "1"
+				},
+				"scalingRatio": "0.8",
+				"uuid": "70b5c5eb5f5f7caff01db1d593cdc263",
+				"cfInfo": {
+					"detached": "0",
+					"radiusRT": 24,
+					"radiusRB": 24,
+					"value": 24,
+					"radiusLB": 24,
+					"radiusLT": 24
+				},
+				"canvasConfigUuid": "7edeefd3f33e283ab43dd7e1ceee54d8"
+			},
+			"elementList": [
+				{
+					"type": "200000",
+					"uuid": "734111a45888a0681adc0d7c24b2f7ad",
+					"config": {
+						"autoFitType": "2",
+						"bgColor": "rgba(225, 225, 255, 0)",
+						"w": 448,
+						"h": 438,
+						"x": 104,
+						"y": 57,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$picUrl0"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "3f4840ddcb19d92bd299664cdce66371",
+					"config": {
+						"maxRowNum": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#262626"
+						},
+						"autoFitType": "0",
+						"color": "#FFFFFF",
+						"bgColor": "rgba(26, 26, 26, 0.8)",
+						"w": 616,
+						"h": 72,
+						"x": 30,
+						"y": 591,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "39",
+							"underscore": "0",
+							"bold": "0",
+							"align": "2",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "30, 9,30, 9",
+							"value": 9
+						},
+						"cfInfo": {
+							"radiusRT": 36,
+							"radiusRB": 36,
+							"radiusLB": 36,
+							"radiusLT": 36
+						}
+					},
+					"dataPath": {
+						"text": "$name1"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "6515480b86287411e9eacaba75cb108f",
+					"config": {
+						"maxRowNum": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#E8220E"
+						},
+						"autoFitType": "0",
+						"color": "rgba(162, 115, 255, 1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 538,
+						"h": 54,
+						"x": 51,
+						"y": 675,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "39",
+							"underscore": "0",
+							"bold": "0",
+							"align": "2",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$bigPromoMoney2"
+					}
+				},
+				{
+					"type": "300000",
+					"uuid": "a3fe49ccf7b69cbbc0098d895a06bd1f",
+					"config": {
+						"color": "rgba(255, 255, 255, 1)",
+						"w": 182,
+						"h": 66,
+						"x": 202,
+						"y": 745,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "48",
+							"underscore": "0",
+							"zoom": "1",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "1"
+						},
+						"priceLabel": {
+							"src": "",
+							"w": 0,
+							"h": 0
+						}
+					},
+					"dataPath": {
+						"value": "$pPrice3"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "4171eb902470c0248aa79dc6e4e6e7c2",
+					"config": {
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "rgba(255, 255, 255, 1)"
+						},
+						"autoFitType": "1",
+						"color": "rgba(255, 255, 255, 1)",
+						"bgColor": "#E8220E",
+						"w": 300,
+						"h": 57,
+						"x": 22,
+						"y": 26,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "33",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "15, 6,15, 6",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 18,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$tag4"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "5007a91a2ac22a8a9b5f314275189f14",
+					"config": {
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#FA2B1A"
+						},
+						"autoFitType": "1",
+						"color": "rgba(26, 26, 26, 1)",
+						"bgColor": "rgba(26, 26, 26, 0)",
+						"w": 178,
+						"h": 42,
+						"x": 82,
+						"y": 506,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "30",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "1"
+						},
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "9,6,9,6",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 6,
+							"radiusRB": 6,
+							"radiusLB": 6,
+							"radiusLT": 6
+						}
+					},
+					"dataPath": {
+						"text": "$promoTag5"
+					}
+				}
+			],
+			"materialGroupList": [
+				{
+					"groupInfoList": [
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100040222484\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155470-100040222484#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"1\",\"ftid1\":\"-100\",\"sku\":\"100040222484\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100040222484"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155470-100040222484#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"1\",\"ftid1\":\"-100\",\"sku\":\"100040222484\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100040222484",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/127116/6/36142/117801/642f7e6dF4602fd06/5b68ecd5013c91fb.jpg!q70.dpg",
+								"promoTag5": "热卖中",
+								"name1": "欧德堡（Oldenburger）德国DMK进口牛奶 全脂纯牛奶200ml*24盒",
+								"bigPromoMoney2": "满6减5",
+								"pPrice3": "69.90"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100037916804\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155464-100037916804#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"2\",\"ftid1\":\"-100\",\"sku\":\"100037916804\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100037916804"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155464-100037916804#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"2\",\"ftid1\":\"-100\",\"sku\":\"100037916804\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100037916804",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/175397/14/35865/119616/6433e284F098eec05/4f26ecd6c35f78b4.jpg!q70.dpg",
+								"promoTag5": "满减",
+								"name1": "instinct生鲜本能 经典无谷 鸭肉 全猫粮10磅/4.5kg",
+								"bigPromoMoney2": "礼金立减￥20",
+								"pPrice3": "308"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100050172181\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155465-100050172181#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"3\",\"ftid1\":\"-100\",\"sku\":\"100050172181\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100050172181"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155465-100050172181#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"3\",\"ftid1\":\"-100\",\"sku\":\"100050172181\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100050172181",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/110687/25/33668/92575/642fab08Fec6abd0b/75656e3ffca4a868.jpg!q70.dpg",
+								"promoTag5": "热卖中",
+								"name1": "SOAP&GLORY丝芙格芮滋养黄油身体乳500ml 润而不腻顺滑易推开",
+								"bigPromoMoney2": "满59减10",
+								"pPrice3": "82"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100027548769\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155466-100027548769#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"4\",\"ftid1\":\"-100\",\"sku\":\"100027548769\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100027548769"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155466-100027548769#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"4\",\"ftid1\":\"-100\",\"sku\":\"100027548769\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100027548769",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/209939/27/31585/66495/6433f7afF481502d7/f1baeac15909735f.jpg!q70.dpg",
+								"promoTag5": "满减",
+								"name1": "olaplex4C深层净油清洁洗发水250ml 控油高颅顶 去油蓬松 头发护理",
+								"bigPromoMoney2": "每满300减30",
+								"pPrice3": "232"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100043024746\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155467-100043024746#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"5\",\"ftid1\":\"-100\",\"sku\":\"100043024746\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100043024746"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155467-100043024746#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"5\",\"ftid1\":\"-100\",\"sku\":\"100043024746\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100043024746",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/157192/17/23509/143443/642fe186Fa06f8199/9e2d03ecb525210c.jpg!q70.dpg",
+								"promoTag5": "满减",
+								"name1": "SABON身体磨砂膏芒果奇异果600g死海盐去鸡皮去角质滋润全身嫩白留香",
+								"bigPromoMoney2": "满198减40",
+								"pPrice3": "218"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100042850106\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155468-100042850106#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"6\",\"ftid1\":\"-100\",\"sku\":\"100042850106\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100042850106"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155468-100042850106#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"6\",\"ftid1\":\"-100\",\"sku\":\"100042850106\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100042850106",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/150816/7/22816/66043/6433a7ddF6a41552d/dcd19e37c2b72b2e.jpg!q70.dpg",
+								"promoTag5": "满减",
+								"name1": "Ulike蓝宝石冰点脱毛仪Air3星黛粉激光剃毛器脱毛女士身体四肢强效家用脱毛净毛美容仪女朋友情人节礼物",
+								"bigPromoMoney2": "每满300减30",
+								"pPrice3": "1869"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100048713813\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155469-100048713813#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"7\",\"ftid1\":\"-100\",\"sku\":\"100048713813\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100048713813"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155469-100048713813#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"7\",\"ftid1\":\"-100\",\"sku\":\"100048713813\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100048713813",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/169039/36/36359/85020/6419515eFe301a4c2/4bd9fd5733d5101e.jpg!q70.dpg",
+								"promoTag5": "满减",
+								"name1": "汾酒清香型白酒 出口玻汾（玻瓶）黄盖53度750ml *12瓶  整箱装",
+								"bigPromoMoney2": "每满300减30",
+								"pPrice3": "1110"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubePro",
+									"des": "skudetail",
+									"srvData": "{\"des\":\"skudetail\",\"suburl\":\"100041255150\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155473-100041255150#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"8\",\"ftid1\":\"-100\",\"sku\":\"100041255150\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"sourceType": "babel_sale",
+										"skuId": "100041255150"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeProExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-11\",\"ford2\":\"-100\",\"bi\":\"1#2#13f4f6aab4e47cde905d63643c61c692e1834449-101-710007#79298082\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525479\",\"bi2\":\"2\",\"typ\":\"40174\",\"uibi\":\"-100\",\"bord\":\"0\",\"mci\":\"20733911-70242228-0710155473-100041255150#1-0-1051--0--#1-0-#3-79298082#h5\",\"exnum\":\"-100\",\"sgid\":\"20733911\",\"ftid2\":\"-100\",\"sord\":\"8\",\"ftid1\":\"-100\",\"sku\":\"100041255150\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"productFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "100041255150",
+							"flexData": {
+								"picUrl0": "//m.360buyimg.com/babel/jfs/t1/201092/23/29021/124625/642fe663F71ab5bd6/475ecd5318e06ceb.jpg!q70.dpg",
+								"promoTag5": "满减",
+								"name1": "Mistine（蜜丝婷）柔雾锁妆气垫BB霜13g*2粉底液持妆LF110自然色",
+								"bigPromoMoney2": "每满160减10",
+								"pPrice3": "134"
+							}
+						}
+					],
+					"groupId": "20733911"
+				}
+			],
+			"floorNum": "3",
+			"tags": [
+				"productFlex"
+			]
+		},
+		{
+			"template": "flex_cube",
+			"ofn": "12",
+			"floorConfig": {
+				"columns": 1,
+				"w": 1125,
+				"h": 0,
+				"viewStyle": {
+					"leftPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"radiusRB": 0,
+					"_viewpaddingStyle": "0",
+					"bottomPadding": 0,
+					"radiusLB": 0,
+					"detached": "0",
+					"radiusRT": 0,
+					"bgInfo": {
+						"imgUrl": "",
+						"color": "rgba(255, 255, 255, 0)",
+						"type": "0"
+					},
+					"value": "0",
+					"_viewpadding": "0",
+					"radiusLT": 0
+				},
+				"style": "bannerFocus",
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "#DEBDEF",
+					"sameColor": "1",
+					"type": "0"
+				},
+				"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+				"rows": 1,
+				"floorStyle": {
+					"leftPadding": 30,
+					"lRPadding": 30,
+					"topPadding": 26,
+					"cardVPadding": 9,
+					"rightPadding": 30,
+					"bottomPadding": 26,
+					"uDPadding": 26,
+					"cardPadding": 9,
+					"cardHPadding": 9
+				},
+				"bannerConfig": {
+					"unselectedColor": "rgba(0, 0, 0, 0.5)",
+					"showAnchor": "0",
+					"interval": "3",
+					"position": "ex",
+					"autoPlay": "0",
+					"selectedColor": "#fa2c19"
+				}
+			},
+			"id": 93886216,
+			"moduleId": 93886216,
+			"canvasConfig": {
+				"maxW": 1125,
+				"clickEvent": {
+					"param": {
+						"jumpCode": "live"
+					},
+					"type": "jump"
+				},
+				"maxDimensionLimit": 0,
+				"maxH": 2500,
+				"w": 899,
+				"h": 675,
+				"scalingRatio": "0.8",
+				"bgInfo": {
+					"imgUrl": "https://bimg1-local.jd.com/i/4/16f579054090139481aced521bd9e14c56936ebb56384629168d9972afa688c8.png",
+					"color": "#ffffff",
+					"w": 900,
+					"h": 675,
+					"type": "0"
+				},
+				"uuid": "86ddec9558dcc2f0f68592be0c582244",
+				"cfInfo": {
+					"detached": "0",
+					"radiusRT": 30,
+					"radiusRB": 30,
+					"value": "30",
+					"radiusLB": 30,
+					"radiusLT": 30
+				},
+				"canvasConfigUuid": "94fbad91ed2274a178bed452d7b4267a"
+			},
+			"elementList": [
+				{
+					"type": "200000",
+					"uuid": "fbbde57f6ce0e93f2cccea0d848605d3",
+					"config": {
+						"autoFitType": "0",
+						"w": 899,
+						"h": 675,
+						"x": 0,
+						"y": 0,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$sqIndexImage0"
+					}
+				},
+				{
+					"type": "400000",
+					"uuid": "fbf69619b4c51a8df40cd430c0736be0",
+					"config": {
+						"newWindowPlay": "0",
+						"videoInfo": {
+							"bgColor": "rgba(0, 0, 0, 0.2)",
+							"showPlayButton": "1",
+							"playButtonPosition": "m",
+							"playButtonUrl": ""
+						},
+						"h": 675,
+						"videoAutoFitType": "2",
+						"wifiPlayRule": "2",
+						"atmospherePicUrl": "",
+						"soundButton": "0",
+						"imgAutoFitType": "0",
+						"playerType": "2",
+						"w": 899,
+						"x": 0,
+						"y": 0,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"expoInfo": "$expoInfo",
+						"videoUrl": "$liveUrlSqIndexImage1.videoUrl",
+						"pictureUrl": "$liveUrlSqIndexImage1.pictureUrl",
+						"clickInfo": "$clickInfo"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "2e6e89968907f4241aca455d49f98b06",
+					"config": {
+						"autoFitType": "0",
+						"w": 899,
+						"h": 226,
+						"x": 0,
+						"y": 449,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/105563/18/31014/3789/62bd8c5bE8cee2040/8649563b0a7a4f1b.png"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "5692343d7850dc97e90d266ca186d780",
+					"config": {
+						"autoFitType": "0",
+						"w": 60,
+						"h": 60,
+						"x": 30,
+						"y": 514,
+						"cfInfo": {
+							"radiusRT": 30,
+							"radiusRB": 30,
+							"radiusLB": 30,
+							"radiusLT": 30
+						}
+					},
+					"dataPath": {
+						"src": "$userPic3"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "1140833107d1c1045dac2297c0abfc63",
+					"config": {
+						"maxRowNum": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"autoFitType": "0",
+						"color": "rgba(255,255,255,1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 758,
+						"h": 45,
+						"x": 108,
+						"y": 529,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "33",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$userName4"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "bca7b9578eab71c4d78a05af0505e1bc",
+					"config": {
+						"maxRowNum": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"autoFitType": "0",
+						"color": "rgba(255,255,255,1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 836,
+						"h": 51,
+						"x": 30,
+						"y": 589,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "36",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$liveTitle5"
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "61addf7be6f732bd4bd4508bbc5953f7",
+					"config": {
+						"imgTextDistance": 9,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(255, 2, 13, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "30",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 48,
+						"bgImage": "",
+						"yAlign": "2",
+						"bgType": "0",
+						"imgConfig": {
+							"w": 66,
+							"h": 48
+						},
+						"autoFitType": "1",
+						"bgColor": "rgba(254, 235, 234, 1)",
+						"w": 500,
+						"x": 30,
+						"y": 30,
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "0,3,24,3",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 24,
+							"radiusRB": 24,
+							"radiusLB": 24,
+							"radiusLT": 24
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/63437/14/21908/3004/63219477Ea16f82ba/158967e7a20ef7ec.png",
+						"text": "$liveStatusLabel6",
+						"degradeSrc": null
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "2e96b92884237a3927fd4032fe4b62b2",
+					"config": {
+						"imgTextDistance": 9,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(77, 206, 204, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "30",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 48,
+						"bgImage": "",
+						"yAlign": "2",
+						"bgType": "0",
+						"imgConfig": {
+							"w": 104,
+							"h": 64
+						},
+						"autoFitType": "1",
+						"bgColor": "rgba(231, 250, 250, 1)",
+						"w": 500,
+						"x": 30,
+						"y": 30,
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "0,3,24,3",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 24,
+							"radiusRB": 24,
+							"radiusLB": 24,
+							"radiusLT": 24
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/207838/39/26317/5107/6321834dEfe397f9f/77ea1ac98b0ea204.png",
+						"text": "$livePreStatusLabel7",
+						"degradeSrc": null
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "7f06f5dcce873b264d9a52369c0bec9e",
+					"config": {
+						"imgTextDistance": 9,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(255, 255, 255, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "30",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 48,
+						"bgImage": "",
+						"yAlign": "2",
+						"bgType": "0",
+						"imgConfig": {
+							"w": 104,
+							"h": 64
+						},
+						"autoFitType": "1",
+						"bgColor": "rgba(26, 26, 26, 0.5)",
+						"w": 500,
+						"x": 30,
+						"y": 30,
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "0,3,24,3",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 24,
+							"radiusRB": 24,
+							"radiusLB": 24,
+							"radiusLT": 24
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/82194/31/19997/5299/63217f83E52270d43/ac0a0aa37ea7633b.png",
+						"text": "$liveBackStatusLabel8",
+						"degradeSrc": null
+					}
+				}
+			],
+			"materialGroupList": [
+				{
+					"groupInfoList": [
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"https://lives.jd.com/#/13355116?origin=4&appid=jdzbhc\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-12\",\"ford2\":\"-100\",\"bi\":\"9##\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40402\",\"bi2\":\"2\",\"agid\":\"07005408\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"13355116\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773423-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773423\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"liveFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"url": "https://lives.jd.com/#/13355116?origin=4&appid=jdzbhc"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-12\",\"ford2\":\"-100\",\"bi\":\"9##\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40402\",\"bi2\":\"2\",\"agid\":\"07005408\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"13355116\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773423-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773423\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"liveFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "4501773423",
+							"flexData": {
+								"expoInfo": {
+									"eventId": "Babel_FlexCubeVideoExpo",
+									"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"ford2\":\"-100\",\"bi\":\"9##\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"bi2\":\"2\",\"typ\":\"40402\",\"aord\":\"1\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773423-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773423\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"liveFlex\",\"fno\":\"0-0-12\",\"mord\":\"-100\",\"agid\":\"07005408\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+								},
+								"sqIndexImage0": "//m.360buyimg.com/babel/jfs/t1/96208/8/38323/234656/6464e371Ff3f5061b/d0bdcce4f790e756.png",
+								"liveBackStatusLabel8": "3.0万人观看",
+								"userPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3436376133343031363762343031363338373538313133373038_big.jpg",
+								"userName4": "阿晶同学",
+								"liveTitle5": "5月跨境cp玩出圈",
+								"clickInfo": {
+									"eventId": "Babel_FlexCubeVideo",
+									"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"ford2\":\"-100\",\"bi\":\"9##\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"bi2\":\"2\",\"typ\":\"40402\",\"aord\":\"1\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773423-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773423\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"liveFlex\",\"fno\":\"0-0-12\",\"mord\":\"-100\",\"agid\":\"07005408\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+								},
+								"liveUrlSqIndexImage1": {
+									"videoUrl": "",
+									"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/96208/8/38323/234656/6464e371Ff3f5061b/d0bdcce4f790e756.png"
+								}
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"https://lives.jd.com/#/13355103?origin=4&appid=jdzbhc\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-12\",\"ford2\":\"-100\",\"bi\":\"9##\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40402\",\"bi2\":\"2\",\"agid\":\"07005408\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"13355103\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773422-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773422\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"liveFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"url": "https://lives.jd.com/#/13355103?origin=4&appid=jdzbhc"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-12\",\"ford2\":\"-100\",\"bi\":\"9##\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40402\",\"bi2\":\"2\",\"agid\":\"07005408\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"13355103\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773422-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773422\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"liveFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "4501773422",
+							"flexData": {
+								"expoInfo": {
+									"eventId": "Babel_FlexCubeVideoExpo",
+									"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"ford2\":\"-100\",\"bi\":\"9##\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"bi2\":\"2\",\"typ\":\"40402\",\"aord\":\"2\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773422-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773422\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"liveFlex\",\"fno\":\"0-0-12\",\"mord\":\"-100\",\"agid\":\"07005408\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+								},
+								"sqIndexImage0": "//m.360buyimg.com/babel/jfs/t1/34468/15/18958/238920/6464e3cbF08c75f27/4b749c54ca83e303.png",
+								"liveBackStatusLabel8": "3.3万人观看",
+								"userPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3561376538363732366135333931363339313035373237363437_big.jpg",
+								"userName4": "小77oo",
+								"liveTitle5": "5月跨境cp玩出圈",
+								"clickInfo": {
+									"eventId": "Babel_FlexCubeVideo",
+									"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"ford2\":\"-100\",\"bi\":\"9##\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"bi2\":\"2\",\"typ\":\"40402\",\"aord\":\"2\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501773422-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501773422\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"liveFlex\",\"fno\":\"0-0-12\",\"mord\":\"-100\",\"agid\":\"07005408\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+								},
+								"liveUrlSqIndexImage1": {
+									"videoUrl": "",
+									"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/34468/15/18958/238920/6464e3cbF08c75f27/4b749c54ca83e303.png"
+								}
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"https://lives.jd.com/#/13355127?origin=4&appid=jdzbhc\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-12\",\"ford2\":\"-100\",\"bi\":\"9##\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40402\",\"bi2\":\"2\",\"agid\":\"07005408\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"13355127\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501781392-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501781392\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"liveFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"url": "https://lives.jd.com/#/13355127?origin=4&appid=jdzbhc"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-12\",\"ford2\":\"-100\",\"bi\":\"9##\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40402\",\"bi2\":\"2\",\"agid\":\"07005408\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"13355127\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501781392-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501781392\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"liveFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "4501781392",
+							"flexData": {
+								"expoInfo": {
+									"eventId": "Babel_FlexCubeVideoExpo",
+									"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"ford2\":\"-100\",\"bi\":\"9##\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"bi2\":\"2\",\"typ\":\"40402\",\"aord\":\"3\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501781392-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501781392\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"liveFlex\",\"fno\":\"0-0-12\",\"mord\":\"-100\",\"agid\":\"07005408\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+								},
+								"sqIndexImage0": "//m.360buyimg.com/livecms/jfs/t1/55864/12/23683/43055/63f464a1F2f664614/9b95e58bdafb761a.png",
+								"liveBackStatusLabel8": "3.5万人观看",
+								"userPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3537313432656563646237376131363339313035383036363438_big.jpg",
+								"userName4": "是陈多妮",
+								"liveTitle5": "5月跨境cp玩出圈",
+								"clickInfo": {
+									"eventId": "Babel_FlexCubeVideo",
+									"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"ford2\":\"-100\",\"bi\":\"9##\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93886216\",\"bi2\":\"2\",\"typ\":\"40402\",\"aord\":\"3\",\"vid\":\"-100\",\"bord\":\"0\",\"mci\":\"07005408-20133152-4501781392-N#0--127--66--#1-0-#529-82193071#h5\",\"adid\":\"4501781392\",\"sgid\":\"-100\",\"sku\":\"-100\",\"fclabel\":\"liveFlex\",\"fno\":\"0-0-12\",\"mord\":\"-100\",\"agid\":\"07005408\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"sord\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"feedtyp\":\"-100\"}"
+								},
+								"liveUrlSqIndexImage1": {
+									"videoUrl": "",
+									"pictureUrl": "//m.360buyimg.com/livecms/jfs/t1/55864/12/23683/43055/63f464a1F2f664614/9b95e58bdafb761a.png"
+								}
+							}
+						}
+					],
+					"groupId": "07005408"
+				}
+			],
+			"floorNum": "4",
+			"tags": [
+				"liveFlex"
+			]
+		},
+		{
+			"template": "flex_cube",
+			"ofn": "13",
+			"floorConfig": {
+				"showMoreInfo": {
+					"link": "",
+					"linkType": "1"
+				},
+				"columns": 1,
+				"h": 0,
+				"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+				"scrollConfig": {
+					"showBar": "0",
+					"barBlockColor": "#FF445E",
+					"barColor": "rgba(255, 68, 94, 0.3)",
+					"autoPlay": "0",
+					"minMaterialCount": "3",
+					"barBgColor": "#FFFFFF"
+				},
+				"rows": 1,
+				"floorStyle": {
+					"leftPadding": 30,
+					"lRPadding": 30,
+					"topPadding": 36,
+					"cardVPadding": 24,
+					"rightPadding": 30,
+					"bottomPadding": 36,
+					"uDPadding": 36,
+					"cardPadding": 24,
+					"cardHPadding": 24
+				},
+				"w": 1125,
+				"viewStyle": {
+					"leftPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"radiusRB": 0,
+					"_viewpaddingStyle": "0",
+					"bottomPadding": 0,
+					"radiusLB": 0,
+					"detached": "0",
+					"radiusRT": 0,
+					"bgInfo": {
+						"imgUrl": "",
+						"color": "rgba(255, 255, 255, 0)",
+						"type": "0"
+					},
+					"value": "0",
+					"_viewpadding": "0",
+					"radiusLT": 0
+				},
+				"showMore": "0",
+				"style": "scroll",
+				"bgInfo": {
+					"imgUrl": "https://m.360buyimg.com/babel/jfs/t1/97355/6/39027/10516/6434139aF085a8ef0/94f885f68c041d71.jpg",
+					"color": "#f2f2f2",
+					"sameColor": "0",
+					"type": "1"
+				}
+			},
+			"id": 92525480,
+			"moduleId": 92525480,
+			"canvasConfig": {
+				"maxW": 1125,
+				"maxDimensionLimit": 0,
+				"clickEvent": {
+					"param": {
+						"jumpCode": "graphicNews"
+					},
+					"type": "jump"
+				},
+				"w": 405,
+				"maxH": 2500,
+				"h": 609,
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "rgba(178, 70, 70, 0)",
+					"w": "",
+					"h": "",
+					"type": "0"
+				},
+				"uuid": "e860a62ca3d57aeb71a5fac38ee35050",
+				"cfInfo": {
+					"detached": "0",
+					"radiusRT": 18,
+					"radiusRB": 18,
+					"value": "18",
+					"radiusLB": 18,
+					"radiusLT": 18
+				},
+				"canvasConfigUuid": "88f83493263f88e56a6eef21d07ed1d9"
+			},
+			"elementList": [
+				{
+					"type": "200000",
+					"uuid": "b737e8206306b04b62ee85f891522c44",
+					"config": {
+						"autoFitType": "0",
+						"w": 405,
+						"h": 609,
+						"x": 0,
+						"y": 0,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$adPictureUrl0"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "9405173d3bd0b4a941536b867bc1cbe8",
+					"config": {
+						"autoFitType": "0",
+						"w": 405,
+						"h": 270,
+						"x": 0,
+						"y": 339,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/123096/5/21553/25119/626bb288Eec860bcb/3eed104ee70a9d1c.png"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "437186ace7eada6687dda4b3a3137301",
+					"config": {
+						"maxRowNum": "2",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"autoFitType": "0",
+						"color": "rgba(255, 255, 255, 1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 369,
+						"h": 108,
+						"x": 18,
+						"y": 395,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "36",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$themeTitle2"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "a5f9bdcfe62159d32474930d2cb10235",
+					"config": {
+						"autoFitType": "2",
+						"bgColor": "rgba(225, 225, 255, 0)",
+						"w": 63,
+						"h": 63,
+						"x": 18,
+						"y": 516,
+						"cfInfo": {
+							"radiusRT": 36,
+							"radiusRB": 36,
+							"radiusLB": 36,
+							"radiusLT": 36
+						}
+					},
+					"dataPath": {
+						"src": "$themeAuthorPic3"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "f43ba8f0c5b7ccbb9d9692c9f00ebe33",
+					"config": {
+						"maxRowNum": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#686868"
+						},
+						"autoFitType": "0",
+						"color": "rgba(255, 255, 255, 1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 175,
+						"h": 42,
+						"x": 93,
+						"y": 527,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "30",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$themeAuthorName4"
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "1c14b5c8a83e17d0c0667d8cab942093",
+					"config": {
+						"imgTextDistance": 9,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(255, 255, 255, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "30",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 54,
+						"bgImage": "",
+						"yAlign": "2",
+						"bgType": "0",
+						"imgConfig": {
+							"w": 21,
+							"h": 21
+						},
+						"autoFitType": "1",
+						"bgColor": "rgba(0, 0, 0, 0.5)",
+						"w": 210,
+						"x": 17,
+						"y": 25,
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 6
+						},
+						"cfInfo": {
+							"radiusRT": 24,
+							"radiusRB": 24,
+							"radiusLB": 24,
+							"radiusLT": 24
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/193924/17/24137/279/626be2e7Ee73a4ac9/6fd2c1ff55aa723e.png",
+						"text": "$videoDuration5",
+						"degradeSrc": null
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "95a829b23b46ad14360f5c226cf0dbdc",
+					"config": {
+						"imgTextDistance": 6,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(255, 255, 255, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "30",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 42,
+						"bgImage": "",
+						"yAlign": "2",
+						"bgType": "0",
+						"imgConfig": {
+							"w": 36,
+							"h": 36
+						},
+						"autoFitType": "1",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 120,
+						"x": 268,
+						"y": 527,
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/209758/16/21553/984/626be5abE0324959d/332e981e94da54dd.png",
+						"text": "$pageView6",
+						"degradeSrc": null
+					}
+				}
+			],
+			"materialGroupList": [
+				{
+					"groupInfoList": [
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "VideoImmersion",
+									"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952294\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"394442428\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+									"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"394442428\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"394442428\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775761-394442428#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775761\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"referpageid": "3943203",
+										"adid": "06952294",
+										"playtype": "5",
+										"playInfo": {},
+										"modeid": "3",
+										"style": "11",
+										"id": "394442428",
+										"projectid": "01243409"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"394442428\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775761-394442428#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775761\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "7201775761",
+							"flexData": {
+								"videoDuration5": "00:46",
+								"pageView6": "3407",
+								"themeTitle2": "气垫——平价油皮本命，这款气垫我不允许还有姐妹不知道",
+								"themeAuthorName4": "靓悠悠",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/s900x1200_jfs/t1/93073/19/38065/63847/644b4820Fc8c13c41/6049a44e63b3578b.jpg!q70.dpg",
+								"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/776c663836383731363339373332343735393836_big.jpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "VideoImmersion",
+									"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952294\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"398230477\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+									"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"398230477\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"398230477\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775760-398230477#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775760\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"referpageid": "3943203",
+										"adid": "06952294",
+										"playtype": "5",
+										"playInfo": {},
+										"modeid": "3",
+										"style": "11",
+										"id": "398230477",
+										"projectid": "01243409"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"398230477\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775760-398230477#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775760\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "7201775760",
+							"flexData": {
+								"videoDuration5": "01:25",
+								"pageView6": "28",
+								"themeTitle2": "这里有一份超强头皮控油指南请查收",
+								"themeAuthorName4": "买手小明星",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/s1080x1440_jfs/t1/204688/39/35142/79476/646384ddFcf34f2fb/607d07b18ad2ee8d.jpg!q70.dpg",
+								"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/b4d3b7bdcdf8bfc631363338393536313137363735_big.jpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "VideoImmersion",
+									"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952294\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"396063699\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+									"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"396063699\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"396063699\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775755-396063699#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775755\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"referpageid": "3943203",
+										"adid": "06952294",
+										"playtype": "5",
+										"playInfo": {},
+										"modeid": "3",
+										"style": "11",
+										"id": "396063699",
+										"projectid": "01243409"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"396063699\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775755-396063699#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775755\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "7201775755",
+							"flexData": {
+								"videoDuration5": "01:03",
+								"pageView6": "3813",
+								"themeTitle2": "行走的氛围感--高级伪体香身体乳",
+								"themeAuthorName4": "家电家装严选",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/s900x1200_jfs/t1/120838/33/37509/50721/64562cf1F304669ff/dd77145266453a03.jpg!q70.dpg",
+								"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3561383139663336333034633131363739333936333434393636_big.jpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "VideoImmersion",
+									"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952294\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"398229530\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+									"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"398229530\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"4\",\"uibi\":\"-100\",\"url\":\"398229530\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775754-398229530#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775754\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"referpageid": "3943203",
+										"adid": "06952294",
+										"playtype": "5",
+										"playInfo": {},
+										"modeid": "3",
+										"style": "11",
+										"id": "398229530",
+										"projectid": "01243409"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"4\",\"uibi\":\"-100\",\"url\":\"398229530\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775754-398229530#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775754\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "7201775754",
+							"flexData": {
+								"videoDuration5": "00:30",
+								"pageView6": "164",
+								"themeTitle2": "一款经久不衰的口粮酒，53度黄盖玻汾",
+								"themeAuthorName4": "指南购物车",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/jfs/t1/91445/14/34234/614042/646383f1Fcdcc101c/a678a26b514c4ada.png",
+								"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f3461633638353636653939393431363338393536333733323234_big.jpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "VideoImmersion",
+									"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952294\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"398229124\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+									"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"398229124\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"5\",\"uibi\":\"-100\",\"url\":\"398229124\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775753-398229124#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775753\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"referpageid": "3943203",
+										"adid": "06952294",
+										"playtype": "5",
+										"playInfo": {},
+										"modeid": "3",
+										"style": "11",
+										"id": "398229124",
+										"projectid": "01243409"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"5\",\"uibi\":\"-100\",\"url\":\"398229124\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775753-398229124#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775753\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "7201775753",
+							"flexData": {
+								"videoDuration5": "00:52",
+								"pageView6": "15",
+								"themeTitle2": "伪体香腌入味爆好闻！无限回购的身体乳！",
+								"themeAuthorName4": "好物大推荐",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/s1080x1440_jfs/t1/132436/12/32848/109087/6463825fFf82f0464/9d88ba644c2e0a45.jpg!q70.dpg",
+								"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/6a645f526175725a625257654a6e7831363338393536383039323531_big.jpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "VideoImmersion",
+									"openApp": "openApp.jdMobile://virtual?params={\"referpageid\":\"3943203\",\"adid\":\"06952294\",\"des\":\"VideoImmersion\",\"playtype\":\"5\",\"playInfo\":{},\"modeid\":\"3\",\"style\":\"11\",\"id\":\"395974367\",\"category\":\"jump\",\"projectid\":\"01243409\"}",
+									"srvData": "{\"des\":\"VideoImmersion\",\"suburl\":\"395974367\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"6\",\"uibi\":\"-100\",\"url\":\"395974367\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775759-395974367#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775759\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}",
+									"category": "jump",
+									"params": {
+										"referpageid": "3943203",
+										"adid": "06952294",
+										"playtype": "5",
+										"playInfo": {},
+										"modeid": "3",
+										"style": "11",
+										"id": "395974367",
+										"projectid": "01243409"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-13\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#82706975\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"92525480\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40257\",\"bi2\":\"2\",\"agid\":\"06952294\",\"aord\":\"6\",\"uibi\":\"-100\",\"url\":\"395974367\",\"bord\":\"0\",\"mci\":\"06952294-20162928-7201775759-395974367#0-7-5--42-143-11#1-0-#1-82706975#h5\",\"adid\":\"7201775759\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"articleFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "7201775759",
+							"flexData": {
+								"videoDuration5": "00:42",
+								"pageView6": "3438",
+								"themeTitle2": "变身水煮蛋女孩，夏天偷偷惊艳所有人",
+								"themeAuthorName4": "电圈清流",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/s1080x1440_jfs/t1/122793/27/36929/54603/6455e57fFd445ae98/a7b529293bdc91f1.jpg!q70.dpg",
+								"themeAuthorPic3": "//storage.360buyimg.com/i.imageUpload/c2f4c5aebaa2b5c4d0a1bbf0b2f13230313431343830393836363938393139_big.jpg"
+							}
+						}
+					],
+					"groupId": "06952294"
+				}
+			],
+			"floorNum": "5",
+			"tags": [
+				"articleFlex"
+			]
+		},
+		{
+			"template": "hotzone",
+			"externalBorder": "0",
+			"lrMargin": "0",
+			"backgroundColor": "#DEBDEF",
+			"hotZone": {
+				"pictureUrl": "//m.360buyimg.com/babel/jfs/t1/4369/6/21424/7459/643419b3F206787d5/092f26d16d71f309.jpg!q70.dpg"
+			},
+			"ofn": "14",
+			"width": 1125,
+			"sameColor": "0",
+			"id": 92525481,
+			"moduleId": 92525481,
+			"floorNum": "6",
+			"height": 172
+		},
+		{
+			"template": "flex_cube",
+			"ofn": "16",
+			"floorConfig": {
+				"showMoreInfo": {
+					"link": "",
+					"linkType": "1"
+				},
+				"columns": 1,
+				"h": 0,
+				"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+				"scrollConfig": {
+					"autoPlay": "1",
+					"minMaterialCount": "3"
+				},
+				"rows": 1,
+				"floorStyle": {
+					"leftPadding": 27,
+					"lRPadding": "27",
+					"topPadding": 18,
+					"cardVPadding": 15,
+					"rightPadding": 27,
+					"bottomPadding": 18,
+					"uDPadding": 18,
+					"cardPadding": 15,
+					"cardHPadding": 15
+				},
+				"w": 1125,
+				"viewStyle": {
+					"leftPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"radiusRB": 0,
+					"_viewpaddingStyle": "0",
+					"bottomPadding": 0,
+					"radiusLB": 0,
+					"detached": "0",
+					"radiusRT": 0,
+					"bgInfo": {
+						"imgUrl": "",
+						"color": "rgba(255, 255, 255, 0)",
+						"type": "0"
+					},
+					"value": "0",
+					"_viewpadding": "0",
+					"radiusLT": 0
+				},
+				"showMore": "0",
+				"style": "scroll",
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "#DEBDEF",
+					"sameColor": "1",
+					"type": "0"
+				}
+			},
+			"id": 93831271,
+			"moduleId": 93831271,
+			"canvasConfig": {
+				"maxW": 1125,
+				"clickEvent": null,
+				"maxDimensionLimit": 0,
+				"w": 450,
+				"maxH": 2500,
+				"h": 500,
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "#ffffff",
+					"w": "",
+					"h": "",
+					"type": "0"
+				},
+				"uuid": "ce9e2eafb509855100932c022c9b4a37",
+				"cfInfo": {
+					"detached": "0",
+					"radiusRT": 24,
+					"radiusRB": 24,
+					"value": 24,
+					"radiusLB": 24,
+					"radiusLT": 24
+				},
+				"canvasConfigUuid": "bf40d9cad825397fb14f99e6f90a5d64"
+			},
+			"elementList": [
+				{
+					"type": "200000",
+					"uuid": "b5a6b9f1540aa71f67e9055c36819463",
+					"config": {
+						"autoFitType": "0",
+						"w": 450,
+						"h": 500,
+						"x": 0,
+						"y": 0,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$adPictureUrl0"
+					}
+				}
+			],
+			"materialGroupList": [
+				{
+					"groupInfoList": [
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400050939&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400050939&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770088-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770088\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400050939&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400050939&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770088-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770088\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770088",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/220469/34/29508/31852/645cda39Fbe077620/a915d9fe3b03b797.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400033618&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400033618&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770089-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770089\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400033618&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"2\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400033618&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770089-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770089\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770089",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/141345/4/35671/27807/645cda49F5e112415/48893667e18d2a47.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390600720&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390600720&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770090-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770090\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390600720&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"3\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390600720&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770090-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770090\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770090",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/98070/27/35463/36676/645cda57F1896b4e2/d0d05757bb58891d.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390594624&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"4\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390594624&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770091-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770091\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390594624&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"4\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390594624&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770091-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770091\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770091",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/81998/39/22082/36072/645cda6dF9f571fe7/6ddd812f00fe804a.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400021380&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"5\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400021380&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770092-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770092\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400021380&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"5\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400021380&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770092-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770092\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770092",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/181120/18/34297/36726/645cda7fFb5cad9e4/5d30530f609615e9.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390661411&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"6\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390661411&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770093-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770093\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390661411&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"6\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=390661411&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770093-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770093\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770093",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/110322/15/38442/31829/645cda91F4d2f5257/c726f9d9a3af4f81.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046242&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"7\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046242&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770112-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770112\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046242&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"7\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046242&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770112-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770112\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770112",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/98875/24/34968/31632/6470253bFf7869678/abfe9953e425dd59.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=392815160&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"8\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=392815160&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770086-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770086\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=392815160&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"8\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=392815160&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770086-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770086\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770086",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/142592/25/31716/37695/645cd9e2F777c2d4b/b5eabd6ebba3b0bc.jpg!q70.dpg"
+							}
+						},
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046935&type=link\",\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+									"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"9\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046935&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770087-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770087\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}",
+									"params": {
+										"innerLink": "",
+										"url": "//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046935&type=link"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+								"srv": "{\"fno\":\"0-0-16\",\"ford2\":\"-100\",\"bi\":\"1#2756366c21e09ecfcc2528bf8ff3049ed44462a1-100-619036-1#83106121\",\"mord\":\"-100\",\"ford1\":\"-100\",\"feedjud\":\"0\",\"mid\":\"93831271\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40023\",\"bi2\":\"2\",\"agid\":\"06994675\",\"aord\":\"9\",\"uibi\":\"-100\",\"url\":\"//ranking.m.jd.com/goodsLandingPage/goodsLandingPage?contentId=400046935&type=link\",\"bord\":\"0\",\"mci\":\"06994675-20199592-0501770087-M#0-2-1--66--#1-0-#1-83106121#h5\",\"adid\":\"0501770087\",\"exnum\":\"-100\",\"ftid2\":\"-100\",\"ftid1\":\"-100\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"adFlex\",\"feedtyp\":\"-100\"}"
+							},
+							"materialId": "0501770087",
+							"flexData": {
+								"adPictureUrl0": "//m.360buyimg.com/babel/s450x500_jfs/t1/115742/17/35333/32445/645cda26F242cb25b/bf4d054eff337010.jpg!q70.dpg"
+							}
+						}
+					],
+					"groupId": "06994675"
+				}
+			],
+			"floorNum": "7",
+			"tags": [
+				"adFlex"
+			]
+		},
+		{
+			"template": "feeds",
+			"backgroundColor": "#DEBDEF",
+			"cardMargin": 18,
+			"bgSameColor": "1",
+			"feedsStaggeredSwitch": 1,
+			"tabConfig": {
+				"tabBgColor": "#FFFFFF",
+				"color": "#1A1A1A",
+				"unSelectColor": "#1A1A1A",
+				"subTabCfg": {
+					"tabBgColor": "#FFFFFF",
+					"color": "#000000",
+					"unSelectColor": "#666666"
+				},
+				"tabStyle": "0"
+			},
+			"floorNum": "8",
+			"leftRightMargin": 30,
+			"tabList": [
+				{
+					"srv": "{\"ford1\":\"1\",\"mid\":\"85170756\",\"ftid1\":\"1\",\"aid\":\"01243409\"}",
+					"name": "趋势推荐",
+					"activePicUrl": "",
+					"width": "0",
+					"defaultPicUrl": "",
+					"secondTabList": [
+						{
+							"isMaterialFeed": "0",
+							"secondTabId": "1",
+							"isCustomcode": "0",
+							"abTestList": null,
+							"feedParam": "{\"id\":85170756,\"tabId\":1,\"subTabId\":1,\"idx\":1,\"subIdx\":1,\"staggeredSwitch\":1,\"feedType\":\"0\",\"innerAnchorUrl\":\"https://pro.m.jd.com/mall/active/2wWznPwPCABJp5iHvQdJCiL4S749/index.html?hideFoot=1\",\"degradeMatId\":\"\",\"businessScene\":\"\"}",
+							"srv": "{\"ford2\":\"1\",\"ford1\":\"1\",\"mid\":\"85170756\",\"ftid2\":\"1\",\"ftid1\":\"1\",\"aid\":\"01243409\"}",
+							"name": ""
+						}
+					],
+					"height": "0"
+				},
+				{
+					"srv": "{\"ford1\":\"2\",\"mid\":\"85170756\",\"ftid1\":\"2\",\"aid\":\"01243409\"}",
+					"name": "其他",
+					"activePicUrl": "",
+					"width": "0",
+					"defaultPicUrl": "",
+					"secondTabList": [
+						{
+							"isMaterialFeed": "0",
+							"secondTabId": "2",
+							"isCustomcode": "0",
+							"abTestList": null,
+							"feedParam": "{\"id\":85170756,\"tabId\":2,\"subTabId\":2,\"idx\":2,\"subIdx\":1,\"staggeredSwitch\":1,\"feedType\":\"0\",\"degradeMatId\":\"\",\"businessScene\":\"\"}",
+							"srv": "{\"ford2\":\"1\",\"ford1\":\"2\",\"mid\":\"85170756\",\"ftid2\":\"2\",\"ftid1\":\"2\",\"aid\":\"01243409\"}",
+							"name": ""
+						}
+					],
+					"height": "0"
+				}
+			],
+			"distanceAngle": {
+				"lRPadding": 30,
+				"cardRadius1": 24,
+				"cardRadius0": 24,
+				"tabRadius0": 24,
+				"tabRadius1": 24,
+				"cardRadius3": 24,
+				"tabRadius2": 24,
+				"cardRadius2": 24,
+				"tabRadius3": 24,
+				"cardPadding": 18
+			},
+			"ofn": "17",
+			"clickNum": 0,
+			"id": 85170756,
+			"moduleId": 85170756
+		}
+	],
+	"item": "0",
+	"backgroundColor": "",
+	"paginationParams": [
+		"1",
+		"2"
+	],
+	"gridInfo": "",
+	"pageSrvInfo": null,
+	"pageId": "3943203",
+	"visReState": {
+		"matGrpN": 13,
+		"matReN": 12
+	},
+	"returnMsg": "success",
+	"hasPerData": "0",
+	"hasIdentification": "0",
+	"encodeActivityId": "2wWznPwPCABJp5iHvQdJCiL4S749",
+	"utmFlag": "0",
+	"useDiscovery": "",
+	"debugFlag": 0,
+	"pageSrvData": "{\"request_id\":[\"10190700072-117142-1692502425131\"]}",
+	"repFloorGr": null
+}

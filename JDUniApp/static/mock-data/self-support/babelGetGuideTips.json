@@ -1,0 +1,30 @@
+{
+	"msg": "success",
+	"activityId": "2wWznPwPCABJp5iHvQdJCiL4S749",
+	"returnMsg": "success",
+	"code": "0",
+	"subCode": "0",
+	"transParam": "",
+	"channelPoint": {
+		"babelChannel": "",
+		"greytp": "1",
+		"rec_broker": "",
+		"loginCellularNetwork": 0,
+		"pageId": ""
+	},
+	"tipsInfo": {
+		"pictureUrl": "//img11.360buyimg.com/vvipservice/jfs/t1/223422/3/5622/51580/621635deEe5509945/bf1d8eeed0ccff4c.png",
+		"expoSrv": "{\"busid\":\"1\",\"bord\":\"\",\"fno\":\"\",\"mid\":\"\",\"bi2\":\"\",\"bid\":\"22\",\"aid\":\"01243409\",\"grayscale\":\"30\"}",
+		"jump": {
+			"des": "m",
+			"srvData": "{\"des\":\"m\",\"suburl\":\"//mcard.jd.com/?cardIdEnc=_vxHkMHQS98=&channel=1073741824\"}",
+			"srv": "{\"busid\":\"1\",\"bord\":\"\",\"fno\":\"\",\"mid\":\"\",\"bi2\":\"\",\"bid\":\"22\",\"aid\":\"01243409\",\"grayscale\":\"30\"}",
+			"params": {
+				"innerLink": "",
+				"url": "//mcard.jd.com/?cardIdEnc=_vxHkMHQS98=&channel=1073741824"
+			}
+		},
+		"title": ""
+	},
+	"isShow": "1"
+}

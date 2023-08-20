@@ -2,7 +2,7 @@
   "navigationBarTitleText": "自营",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "jd-safearea": "/components/jd-safearea/jd-safearea",
-    "jd-tabbar": "/components/jd-tabbar/jd-tabbar"
+    "jd-tabbar": "/components/jd-tabbar/jd-tabbar",
+    "waterfall": "/pages/self-support/components/waterfall/index"
   }
 }
