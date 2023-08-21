@@ -25,27 +25,36 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.page.data-v-682a9774 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tabBar-placeholder.data-v-682a9774 {
+  height: calc(70px + env(safe-area-inset-bottom));
+}
 .content.data-v-682a9774 {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
-  border: 1px solid black;
-  overflow: hidden;
-  height: 100%;
-  padding: 0;
-  margin-bottom: calc(70px + env(safe-area-inset-bottom));
+  margin-top: 0px;
 }
-.content .rightNav.data-v-682a9774 {
+.leftNav.data-v-682a9774 {
+  width: 100px;
+  overflow: scroll;
+}
+.rightNav.data-v-682a9774 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  border: 1px solid red;
-  margin-left: 10px;
-  padding: 0;
+  margin-left: 4rpx;
+  padding: 12rpx;
   overflow: scroll;
 }
-.content .rightNav__group.data-v-682a9774 {
+.rightNav__group.data-v-682a9774 {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -53,31 +62,31 @@
   background-color: #FFF;
   border-radius: 10px;
 }
-.content .rightNav__group__nav_title.data-v-682a9774 {
+.rightNav__group__nav_title.data-v-682a9774 {
   height: 30px;
   line-height: 30px;
 }
-.content .rightNav__group__content.data-v-682a9774 {
+.rightNav__group__content.data-v-682a9774 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.content .rightNav__group__content__item.data-v-682a9774 {
+.rightNav__group__content__item.data-v-682a9774 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 33.3%;
 }
-.content .rightNav__group__content__item__image.data-v-682a9774 {
+.rightNav__group__content__item__image.data-v-682a9774 {
   width: 50%;
   aspect-ratio: 1;
   background-color: #EEE;
 }
-.content .rightNav__group__content__item__image image.data-v-682a9774 {
+.rightNav__group__content__item__image image.data-v-682a9774 {
   width: 100%;
   height: 100%;
 }
-.content .rightNav__group__content__item text.data-v-682a9774 {
+.rightNav__group__content__item text.data-v-682a9774 {
   font-size: 12px;
 }
 

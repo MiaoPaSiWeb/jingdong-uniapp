@@ -1,29 +1,36 @@
 <template>
-	<view class="content">
-		<scrollbar :industryList='industryList' :curIndustryId='curIndustryId' @clickLeftNavItem='clickLeftNavItem'>
-		</scrollbar>
-		<view class="rightNav">
-			<view v-if="moduleList.length == 0">
-				暂无数据
-			</view>
-			<view v-else>
-				<view v-for="(group,index) in moduleList" :key="index" class="rightNav__group">
-					<view class="rightNav__group__nav_title">
-						{{group.title}}
+	<view>
+		<view class="page">
+			<view class="content" :style="{height:contentStyle.height}">
+				<view class="leftNav" :style="{height:'100%'}">
+					<scrollbar :industryList='industryList' :curIndustryId='curIndustryId'
+						@clickLeftNavItem='clickLeftNavItem' />
+				</view>
+				<view class="rightNav">
+					<view v-if="moduleList.length == 0">
+						暂无数据
 					</view>
-					<view class="rightNav__group__content">
-						<view v-for="(item,index) in group.items" :key="index" class="rightNav__group__content__item">
-							<view class="rightNav__group__content__item__image">
-								<image :src="item.pic"></image>
+					<view v-else>
+						<view v-for="(group,index) in moduleList" :key="index" class="rightNav__group">
+							<view class="rightNav__group__nav_title">
+								{{group.title}}
 							</view>
-							<text>{{item.show_name}}</text>
+							<view class="rightNav__group__content">
+								<view v-for="(item,index) in group.items" :key="index"
+									class="rightNav__group__content__item">
+									<view class="rightNav__group__content__item__image">
+										<image :src="item.pic"></image>
+									</view>
+									<text>{{item.show_name}}</text>
+								</view>
+							</view>
 						</view>
 					</view>
 				</view>
 			</view>
-
+			<view class="tabBar-placeholder"></view>
+			<jd-tabbar pagePath='pages/category/category' />
 		</view>
-		<jd-tabbar pagePath='pages/category/category' />
 	</view>
 </template>
 
@@ -38,6 +45,9 @@
 		},
 		data() {
 			return {
+				contentStyle: {
+					height: ''
+				},
 				curIndustryId: "",
 				industryList: [],
 				moduleList: [],
@@ -48,6 +58,15 @@
 			// #ifndef MP-WEIXIN
 			uni.hideTabBar()
 			// #endif
+
+			this.$nextTick(() => {
+				const query = uni.createSelectorQuery().in(this);
+				query.select('.content').boundingClientRect(data => {
+					console.log("得到布局位置信息" + JSON.stringify(data));
+					console.log("节点离页面顶部的距离为" + data.top);
+					this.contentStyle.height = data.height + 'px'
+				}).exec();
+			})
 		},
 		onHide() {
 
@@ -112,101 +131,88 @@
 				this.curIndustryId = item.industryId
 				this.queryRightData(item.industryId);
 			},
-			// loadData(isRefresh = false) {
-			// 	if (this.loadStatus == 'loadmore') {
-			// 		this.loadStatus = 'loading';
-			// 		console.log("loadData")
-			// 		if (isRefresh) {
-			// 			this.page = 1;
-			// 		} else {
-			// 			this.page++;
-			// 		}
-			// 		this.$http
-			// 			.get(`${queryCategoryData}/result_${this.page}`, {})
-			// 			.then(r => {
-			// 				const recommondList = r.data.data.feeds.content;
-			// 				if (this.page == 1) {
-			// 					this.list = [...recommondList];
-			// 				} else {
-			// 					this.list = [...this.list, ...recommondList];
-			// 				}
-			// 				this.loadStatus = 'loadmore';
-			// 			})
-			// 			.catch((e) => {
-			// 				console.log("error:" + e);
-			// 				this.page--;
-			// 				this.loadStatus = 'loadmore';
-			// 			});
-			// 	}
-			// },
+
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
+	.page {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0rpx;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.tabBar-placeholder {
+		height: calc(70px + env(safe-area-inset-bottom));
+	}
+
 	.content {
+		flex: 1;
 		display: flex;
 		flex-direction: row;
-		box-sizing: border-box;
-		border: 1px solid black;
-		overflow: hidden;
-		height: 100%;
-		padding: 0;
-		margin-bottom: calc(70px + env(safe-area-inset-bottom));
+		margin-top: var(--window-top);
+	}
 
-		.rightNav {
-			flex: 1;
+	//////////////
+	//////////////
+	//////////////
+	.leftNav {
+		width: 100px;
+		overflow: scroll;
+	}
+
+	.rightNav {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin-left: 4rpx;
+		padding: 12rpx;
+		overflow: scroll;
+
+		&__group {
+			margin-bottom: 10px;
 			display: flex;
 			flex-direction: column;
-			box-sizing: border-box;
-			border: 1px solid red;
-			margin-left: 10px;
-			padding: 0;
-			overflow: scroll;
+			padding: 10px;
+			background-color: #FFF;
+			border-radius: 10px;
 
-			&__group {
-				margin-bottom: 10px;
+			&__nav_title {
+				height: 30px;
+				line-height: 30px;
+			}
+
+			&__content {
 				display: flex;
-				flex-direction: column;
-				padding: 10px;
-				background-color: #FFF;
-				border-radius: 10px;
+				flex-direction: row;
+				flex-wrap: wrap;
 
-				&__nav_title {
-					height: 30px;
-					line-height: 30px;
-				}
-
-				&__content {
+				&__item {
 					display: flex;
-					flex-direction: row;
-					flex-wrap: wrap;
+					flex-direction: column;
+					align-items: center;
+					width: 33.3%;
 
-					&__item {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						width: 33.3%;
+					&__image {
+						width: 50%;
+						aspect-ratio: 1;
+						background-color: #EEE;
 
-						&__image {
-							width: 50%;
-							aspect-ratio: 1;
-							background-color: #EEE;
-
-							image {
-								width: 100%;
-								height: 100%;
-							}
+						image {
+							width: 100%;
+							height: 100%;
 						}
+					}
 
-						text {
-							font-size: 12px;
-						}
+					text {
+						font-size: 12px;
 					}
 				}
 			}
-
 		}
-
 	}
 </style>

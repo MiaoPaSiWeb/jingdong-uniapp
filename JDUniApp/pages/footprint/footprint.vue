@@ -4,10 +4,10 @@
 			<text>最多为您展示100条</text>
 		</view>
 		<view class="list-wrap">
-			<view v-for="(group,index) in list" :key="index" class="group">
+			<view v-for="(group,index) in list" :key="group.datetime" class="group">
 				<text class="title">{{formatDate(group.datetime)}}</text>
 				<view class="items-wrap">
-					<view v-for="(item,index) in group.items" :key="index" class="item">
+					<view v-for="item in group.items" :key="item.ts" class="item">
 						<view class="image-wrap">
 							<jd-image :src='item.img'></jd-image>
 						</view>

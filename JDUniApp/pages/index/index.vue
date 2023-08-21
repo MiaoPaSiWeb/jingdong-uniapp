@@ -1,14 +1,18 @@
 <template>
-	<view class="content">
-		<view v-for="channel in channelsList" :key="channel.floorId" @click="tapItem()">
-			<inGridFloor v-if="channel.floorType === 'GRID_FLOOR'" :fdata='channel' />
-			<inAdBanner v-else-if="channel.floorType === 'AD_BANNER'" :fdata='channel' />
-			<inChannelWidget v-else-if="channel.floorType === 'CHANNEL_WIDGET'" :fdata='channel' />
-			<inFeedWidget v-else-if="channel.floorType === 'FEED_WIDGET'" :fdata='channel' />
-			<view v-else></view>
+	<view>
+		<view class="page">
+			<view class="content" :style="contentStyle">
+				<view v-for="channel in channelsList" :key="channel.floorId" @click="tapItem()">
+					<inGridFloor v-if="channel.floorType === 'GRID_FLOOR'" :fdata='channel' />
+					<inAdBanner v-else-if="channel.floorType === 'AD_BANNER'" :fdata='channel' />
+					<inChannelWidget v-else-if="channel.floorType === 'CHANNEL_WIDGET'" :fdata='channel' />
+					<inFeedWidget v-else-if="channel.floorType === 'FEED_WIDGET'" :fdata='channel' />
+					<view v-else></view>
+				</view>
+			</view>
+			<view class="tabBar-placeholder"></view>
+			<jd-tabbar pagePath='pages/index/index' />
 		</view>
-		<waterfall></waterfall>
-		<jd-tabbar pagePath='pages/index/index' />
 	</view>
 </template>
 
@@ -87,8 +91,26 @@
 </script>
 
 <style lang="scss" scoped>
-	.content {
-		background-color: #eee;
-		padding-bottom: calc(70px + env(safe-area-inset-bottom));
+	.page {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0rpx;
+		display: flex;
+		flex-direction: column;
 	}
+	.tabBar-placeholder {
+		height: calc(70px + env(safe-area-inset-bottom));
+	}
+
+	.content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin-top: var(--window-top);
+		overflow: scroll;
+	}
+	//////////////
+	//////////////
+	//////////////
 </style>

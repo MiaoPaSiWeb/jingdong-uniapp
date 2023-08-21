@@ -25,21 +25,20 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-view.data-v-1625041b, scroll-view.data-v-1625041b, swiper-item.data-v-1625041b {
+.item.data-v-424cb84a {
+  box-sizing: border-box;
+  border: 1px solid transparent;
   display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-basis: auto;
-  align-items: stretch;
-  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #666;
 }
-.u-overlay.data-v-1625041b {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+.item_active.data-v-424cb84a {
+  color: orangered;
+  font-weight: 700;
+  font-size: 15px;
 }
 

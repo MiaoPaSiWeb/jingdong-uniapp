@@ -25,15 +25,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.leftNav.data-v-67b85610 {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  width: 80px;
-  overflow: scroll;
-}
-.leftNav__item.data-v-67b85610 {
+.item.data-v-67b85610 {
   box-sizing: border-box;
   border: 1px solid transparent;
   display: flex;
@@ -44,7 +36,7 @@
   font-size: 13px;
   color: #666;
 }
-.leftNav__item_active.data-v-67b85610 {
+.item_active.data-v-67b85610 {
   color: orangered;
   font-weight: 700;
   font-size: 15px;

@@ -54,6 +54,8 @@ Vue.component('jd-image', jdImage);
 Vue.component('jd-modal', jdModal);
 Vue.component('jd-confirmation', jdConfirmation);
 
+
+
 if (process.env.NODE_ENV === 'production') {
 	Vue.config.productionTip = false;
 }

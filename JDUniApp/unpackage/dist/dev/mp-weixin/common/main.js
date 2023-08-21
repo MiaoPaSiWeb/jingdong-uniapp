@@ -31,27 +31,27 @@ _vue.default.use(_uviewUi.default);
 // 引入全局配置
 var jdTabbar = function jdTabbar() {
   __webpack_require__.e(/*! require.ensure | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 238));
+    return resolve(__webpack_require__(/*! @/components/jd-tabbar/jd-tabbar */ 244));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdSafearea = function jdSafearea() {
   __webpack_require__.e(/*! require.ensure | components/jd-safearea/jd-safearea */ "components/jd-safearea/jd-safearea").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 245));
+    return resolve(__webpack_require__(/*! @/components/jd-safearea/jd-safearea */ 251));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdImage = function jdImage() {
   Promise.all(/*! require.ensure | components/jd-image/jd-image */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jd-image/jd-image")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 252));
+    return resolve(__webpack_require__(/*! @/components/jd-image/jd-image */ 258));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdModal = function jdModal() {
   __webpack_require__.e(/*! require.ensure | components/jd-modal/jd-modal */ "components/jd-modal/jd-modal").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-modal/jd-modal */ 431));
+    return resolve(__webpack_require__(/*! @/components/jd-modal/jd-modal */ 265));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var jdConfirmation = function jdConfirmation() {
   __webpack_require__.e(/*! require.ensure | components/jd-confirmation/jd-confirmation */ "components/jd-confirmation/jd-confirmation").then((function () {
-    return resolve(__webpack_require__(/*! @/components/jd-confirmation/jd-confirmation */ 438));
+    return resolve(__webpack_require__(/*! @/components/jd-confirmation/jd-confirmation */ 272));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 //🔥 引入国际化语言包
@@ -179,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -191,11 +191,32 @@ var _default = {
     // let vConsole = new Vconsole();
   },
   data: function data() {
-    return {};
+    return {
+      globalData: {
+        screenHeight: '',
+        primaryTabHeight: '',
+        tabBarHeight: ''
+      }
+    };
   },
   onLaunch: function onLaunch() {
     console.log('App Launch');
+    uni.getSystemInfo({
+      success: function success(res) {
+        console.log("getSystemInfo：" + JSON.stringify(res));
+        // this.globalData.tabBarHeight = 70 + res.safeAreaInsets.bottom;
+
+        // let tops = e.statusBarHeight;
+        // 			let custom = uni.getMenuButtonBoundingClientRect();
+        // 			let  height = custom.height + (custom.top - e.statusBarHeight) * 2;
+
+        // this.globalData.screenHeight = res.screenHeight;
+        // this.globalData.primaryTabHeight = res.screenHeight - this.globalData.tabBarHeight - height;
+        // console.log('globalData：',JSON.stringify(this.globalData))
+      }
+    });
   },
+
   onShow: function onShow() {
     console.log('App Show');
   },
@@ -204,6 +225,7 @@ var _default = {
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

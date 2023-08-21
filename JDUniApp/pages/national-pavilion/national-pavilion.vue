@@ -1,7 +1,7 @@
 <template>
-	<view>
-		<view class="content">
-			<view class="content-bg" :style="{ backgroundImage: 'url(' + bgUrl + ')' }">
+	<view class="page">
+		<view class="content" :style="{height:contentStyle.height}">
+			<view class="content-bg" :style="{ height:'100%',backgroundImage: 'url(' + bgUrl + ')' }">
 				<myHeader></myHeader>
 				<plusBlack></plusBlack>
 				<favInfo></favInfo>
@@ -11,8 +11,9 @@
 				<activity></activity>
 				<waterfall></waterfall>
 			</view>
-			<jd-tabbar pagePath="pages/national-pavilion/national-pavilion" />
 		</view>
+		<view class="tabBar-placeholder"></view>
+		<jd-tabbar pagePath="pages/national-pavilion/national-pavilion" />
 	</view>
 </template>
 
@@ -42,6 +43,9 @@
 		},
 		data() {
 			return {
+				contentStyle: {
+					height: ''
+				},
 				bgUrl: this.$mConfig.assetsRemotePath + '/mine/bg.png',
 			}
 		},
@@ -49,7 +53,14 @@
 			// #ifndef MP-WEIXIN
 			uni.hideTabBar()
 			// #endif
-
+			this.$nextTick(() => {
+				const query = uni.createSelectorQuery().in(this);
+				query.select('.content').boundingClientRect(data => {
+					console.log("得到布局位置信息" + JSON.stringify(data));
+					console.log("节点离页面顶部的距离为" + data.top);
+					this.contentStyle.height = data.height + 'px'
+				}).exec();
+			})
 		},
 		onHide() {
 
@@ -58,10 +69,10 @@
 
 		},
 		onReachBottom() {
-			uni.$emit('national-pavilion:onReachBottom');
+			// uni.$emit('national-pavilion:onReachBottom');
 		},
 		methods: {
-			
+
 		},
 		computed: {
 
@@ -70,60 +81,77 @@
 </script>
 
 <style lang="scss" scoped>
-	.content {
-		background: #f5f5f5;
-
-		.content-bg {
-			background-repeat: no-repeat;
-			padding-bottom: calc(70px + env(safe-area-inset-bottom));
-		}
+	.page {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0rpx;
+		display: flex;
+		flex-direction: column;
 	}
 
-	.recommond_wrap {
-		width: 750rpx;
+	.content {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		margin-top: var(--window-top);
+	}
 
-		.title {
-			box-sizing: border-box;
-			border: 2px solid red;
-		}
+	.tabBar-placeholder {
+		height: calc(70px + env(safe-area-inset-bottom));
+	}
 
-		.waterfall {
-			width: 750rpx;
+	//////////////
+	//////////////
+	//////////////
+	.content-bg {
+		background-repeat: no-repeat;
+		height: 100%;
+		overflow: scroll;
 
-			.waterfall-item {
-				overflow: hidden;
-				margin-top: 10px;
-				border-radius: 6px;
+		.recommond_wrap {
 
-				&_image {
-					box-sizing: border-box;
-					border: 1px solid red;
-					max-width: 100%;
-					min-height: 150px;
-				}
+			.title {
+				box-sizing: border-box;
+				border: 2px solid red;
+			}
 
-				&__ft {
-					padding: 20rpx;
-					background: #fff;
+			.waterfall {
+				.waterfall-item {
+					overflow: hidden;
+					margin-top: 10px;
+					border-radius: 6px;
 
-					&__title {
-						margin-bottom: 10rpx;
-						line-height: 48rpx;
-						font-weight: 700;
+					&_image {
+						box-sizing: border-box;
+						border: 1px solid red;
+						max-width: 100%;
+						min-height: 150px;
+					}
 
-						.value {
-							font-size: 32rpx;
-							color: #303133;
+					&__ft {
+						padding: 20rpx;
+						background: #fff;
+
+						&__title {
+							margin-bottom: 10rpx;
+							line-height: 48rpx;
+							font-weight: 700;
+
+							.value {
+								font-size: 32rpx;
+								color: #303133;
+							}
 						}
-					}
 
-					&__desc .value {
-						font-size: 28rpx;
-						color: #606266;
-					}
+						&__desc .value {
+							font-size: 28rpx;
+							color: #606266;
+						}
 
-					&__btn {
-						padding: 10px 0;
+						&__btn {
+							padding: 10px 0;
+						}
 					}
 				}
 			}

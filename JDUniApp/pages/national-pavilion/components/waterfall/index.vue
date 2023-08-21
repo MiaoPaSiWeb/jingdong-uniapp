@@ -1,52 +1,56 @@
 <template>
-	<view class="waterfall">
-		<uv-waterfall ref="waterfall" v-model="list" left-gap="10" right-gap="10" column-gap="8"
-			@changeList="changeList">
-			<!-- 第一列数据 -->
-			<template v-slot:list1>
-				<!-- 为了磨平部分平台的BUG，必须套一层view -->
-				<view>
-					<view v-for="(item, index) in list1" :key="item.id + index" class="waterfall-item"
-						:style="{width:item.width+'px'}" @click="clickProductItem(item)">
-						<view class="waterfall-item__image">
-							<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
-								:style="{width:item.width+'px'}"></image>
-						</view>
-						<view class="waterfall-item__ft">
-							<view class="waterfall-item__ft__title">
-								<text class="value">{{item.name}}</text>
+	<view>
+		<view class="container">
+			<uv-waterfall ref="waterfall" v-model="list" left-gap="10" right-gap="10" column-gap="8"
+				@changeList="changeList">
+				<!-- 第一列数据 -->
+				<template v-slot:list1>
+					<!-- 为了磨平部分平台的BUG，必须套一层view -->
+					<view>
+						<view v-for="(item, index) in list1" :key="index" class="waterfall-item"
+							:style="{width:item.width+'px'}" @click="clickProductItem(item)">
+							<view class="waterfall-item__image">
+								<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
+									:style="{width:item.width+'px'}"></image>
 							</view>
-							<view class="waterfall-item__ft__desc">
-								<text class="value">{{item.oriprice}}</text>
-							</view>
-						</view>
-					</view>
-				</view>
-			</template>
-			<!-- 第二列数据 -->
-			<template v-slot:list2>
-				<!-- 为了磨平部分平台的BUG，必须套一层view -->
-				<view>
-					<view v-for="(item, index) in list2" :key="item.id + index" class="waterfall-item"
-						:style="{width:item.width+'px'}" @click="clickProductItem(item)">
-						<view class="waterfall-item__image">
-							<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
-								:style="{width:item.width+'px'}"></image>
-						</view>
-						<view class="waterfall-item__ft">
-							<view class="waterfall-item__ft__title">
-								<text class="value">{{item.name}}</text>
-							</view>
-							<view class="waterfall-item__ft__desc uv-line-2">
-								<text class="value">{{item.oriprice}}</text>
+							<view class="waterfall-item__ft">
+								<view class="waterfall-item__ft__title">
+									<text class="value">{{item.name}}</text>
+								</view>
+								<view class="waterfall-item__ft__desc">
+									<text class="value">{{item.oriprice}}</text>
+								</view>
 							</view>
 						</view>
 					</view>
-				</view>
-			</template>
-		</uv-waterfall>
-		<!-- 加载更多组件 -->
-		<uv-load-more :status="loadStatus"></uv-load-more>
+				</template>
+				<!-- 第二列数据 -->
+				<template v-slot:list2>
+					<!-- 为了磨平部分平台的BUG，必须套一层view -->
+					<view>
+						<view v-for="(item, index) in list2" :key="index" class="waterfall-item"
+							:style="{width:item.width+'px'}" @click="clickProductItem(item)">
+							<view class="waterfall-item__image">
+								<image :src="'https:'+item.imgprefix+item.imgbase" mode="widthFix"
+									:style="{width:item.width+'px'}"></image>
+							</view>
+							<view class="waterfall-item__ft">
+								<view class="waterfall-item__ft__title">
+									<text class="value">{{item.name}}</text>
+								</view>
+								<view class="waterfall-item__ft__desc uv-line-2">
+									<text class="value">{{item.oriprice}}</text>
+								</view>
+							</view>
+						</view>
+					</view>
+				</template>
+			</uv-waterfall>
+			<!-- 加载更多组件 -->
+			<view class="load-more">
+				<uv-load-more :status="loadStatus"></uv-load-more>
+			</view>
+		</view>
 	</view>
 </template>
 <script>
@@ -56,10 +60,13 @@
 	import {
 		recommend_like_m
 	} from '@/api/mine.js';
+
+	let observer = null;
+
 	export default {
 		data() {
 			return {
-				page: 1,
+				page: -1,
 				loadStatus: 'loadmore',
 				list: [], // 瀑布流全部数据
 				list1: [], // 瀑布流第一列数据
@@ -68,14 +75,24 @@
 		},
 		mounted() {
 			console.log("我的-猜你喜欢-mounted")
-			//监听下拉加载更多
-			uni.$on('national-pavilion:onReachBottom', () => {
-				this.loadData();
+			observer = uni.createIntersectionObserver(this);
+			observer.relativeToViewport({
+				bottom: 0
+			}).observe('.load-more', (res) => {
+				console.log("createIntersectionObserver：")
+				if (res.intersectionRatio > 0 && !this.appear) {
+					this.loadData()
+				} else if (!res.intersectionRatio > 0 && this.appear) {
+
+				}
 			})
+
 			this.loadData(true)
 		},
 		beforeDestroy() {
-			uni.$off('national-pavilion:onReachBottom');
+			if (observer) {
+				observer.disconnect()
+			}
 		},
 		methods: {
 			// 这点非常重要：e.name在这里返回是list1或list2，要手动将数据追加到相应列
@@ -103,9 +120,12 @@
 							this.loadStatus = 'loadmore';
 						})
 						.catch((e) => {
-							console.log("error:" + e);
+							console.log("error:" + JSON.stringify(e));
 							this.page--;
 							this.loadStatus = 'loadmore';
+							uni.showToast({
+								title:"获取数据失败"
+							})
 						});
 				}
 			},
@@ -113,58 +133,16 @@
 				uni.navigateTo({
 					url: '/pages/product/product'
 				})
-			
+
 			},
-			// 模拟的后端数据
-			// getData() {
-			// 	return new Promise((resolve) => {
-			// 		const imgs = [
-			// 			'https://cdn.uviewui.com/uview/album/1.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/2.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/3.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/4.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/5.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/6.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/7.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/8.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/9.jpg',
-			// 			'https://cdn.uviewui.com/uview/album/10.jpg',
-			// 		];
-			// 		let list = [];
-			// 		const doFn = (i) => {
-			// 			const randomIndex = Math.floor(Math.random() * 10);
-			// 			return {
-			// 				id: guid(),
-			// 				allowEdit: i == 0,
-			// 				image: imgs[randomIndex],
-			// 				title: i % 2 == 0 ? `(${this.list.length + i + 1})体验uv-ui框架` :
-			// 					`(${this.list.length + i +1})uv-ui支持多平台`,
-			// 				desc: i % 2 == 0 ? `(${this.list.length + i + 1})欢迎使用uv-ui，uni-app生态专用的UI框架` :
-			// 					`(${this.list.length + i})开发者编写一套代码， 可发布到iOS、Android、H5、以及各种小程序`
-			// 			}
-			// 		};
-			// 		// 模拟异步
-			// 		setTimeout(() => {
-			// 			for (let i = 0; i < 20; i++) {
-			// 				list.push(doFn(i));
-			// 			}
-			// 			resolve({
-			// 				data: list
-			// 			});
-			// 		}, 200)
-			// 	})
-			// }
 		}
 	}
 </script>
-<style>
-	page {
-		background: #f1f1f1;
-	}
-</style>
 <style scoped lang="scss">
-	$show-lines: 1;
-	@import '@/uni_modules/uv-ui-tools/libs/css/variable.scss';
+	.container {
+		box-sizing: border-box;
+		border: 1px solid red;
+	}
 
 	.waterfall-item {
 		overflow: hidden;

@@ -101,7 +101,7 @@ var components
 try {
   components = {
     jdTabbar: function () {
-      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 238))
+      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 244))
     },
   }
 } catch (e) {
@@ -167,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -203,9 +203,16 @@ var _category = __webpack_require__(/*! @/api/category.js */ 178);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var scrollbar = function scrollbar() {
   __webpack_require__.e(/*! require.ensure | pages/category/components/scrollbar/index */ "pages/category/components/scrollbar/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/scrollbar */ 420));
+    return resolve(__webpack_require__(/*! ./components/scrollbar */ 307));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -214,13 +221,26 @@ var _default = {
   },
   data: function data() {
     return {
+      contentStyle: {
+        height: ''
+      },
       curIndustryId: "",
       industryList: [],
       moduleList: [],
       rightInfoMap: {}
     };
   },
-  onShow: function onShow() {},
+  onShow: function onShow() {
+    var _this = this;
+    this.$nextTick(function () {
+      var query = uni.createSelectorQuery().in(_this);
+      query.select('.content').boundingClientRect(function (data) {
+        console.log("得到布局位置信息" + JSON.stringify(data));
+        console.log("节点离页面顶部的距离为" + data.top);
+        _this.contentStyle.height = data.height + 'px';
+      }).exec();
+    });
+  },
   onHide: function onHide() {},
   onLoad: function onLoad() {
     this.queryLeftData();
@@ -231,7 +251,7 @@ var _default = {
       this.queryRightData(item.industryId);
     },
     queryLeftData: function queryLeftData() {
-      var _this = this;
+      var _this2 = this;
       var industryId = '4';
       this.$http.get("".concat(_category.queryCategoryData, "/").concat(industryId), {}).then(function (r) {
         var data = r.data;
@@ -239,10 +259,10 @@ var _default = {
         for (var i = 0; i < result.length; i++) {
           var item = result[i];
           if (item.industryId == industryId) {
-            _this.curIndustryId = item.industryId;
-            _this.industryList = item.industryList;
-            _this.moduleList = item.moduleList;
-            _this.rightInfoMap[industryId] = item.moduleList;
+            _this2.curIndustryId = item.industryId;
+            _this2.industryList = item.industryList;
+            _this2.moduleList = item.moduleList;
+            _this2.rightInfoMap[industryId] = item.moduleList;
           }
         }
       }).catch(function (e) {
@@ -250,7 +270,7 @@ var _default = {
       });
     },
     queryRightData: function queryRightData(industryId) {
-      var _this2 = this;
+      var _this3 = this;
       var moduleList = this.rightInfoMap[industryId];
       if (moduleList != undefined) {
         this.moduleList = moduleList;
@@ -261,14 +281,14 @@ var _default = {
           for (var i = 0; i < result.length; i++) {
             var item = result[i];
             if (item.industryId == industryId) {
-              _this2.curIndustryId = item.industryId;
-              _this2.moduleList = item.moduleList;
-              _this2.rightInfoMap[industryId] = item.moduleList;
+              _this3.curIndustryId = item.industryId;
+              _this3.moduleList = item.moduleList;
+              _this3.rightInfoMap[industryId] = item.moduleList;
             }
           }
         }).catch(function (e) {
           console.log("error:" + e);
-          _this2.moduleList = [];
+          _this3.moduleList = [];
         });
       }
     },
@@ -276,36 +296,11 @@ var _default = {
       console.log("clickLeftNavItem：" + item);
       this.curIndustryId = item.industryId;
       this.queryRightData(item.industryId);
-    } // loadData(isRefresh = false) {
-    // 	if (this.loadStatus == 'loadmore') {
-    // 		this.loadStatus = 'loading';
-    // 		console.log("loadData")
-    // 		if (isRefresh) {
-    // 			this.page = 1;
-    // 		} else {
-    // 			this.page++;
-    // 		}
-    // 		this.$http
-    // 			.get(`${queryCategoryData}/result_${this.page}`, {})
-    // 			.then(r => {
-    // 				const recommondList = r.data.data.feeds.content;
-    // 				if (this.page == 1) {
-    // 					this.list = [...recommondList];
-    // 				} else {
-    // 					this.list = [...this.list, ...recommondList];
-    // 				}
-    // 				this.loadStatus = 'loadmore';
-    // 			})
-    // 			.catch((e) => {
-    // 				console.log("error:" + e);
-    // 				this.page--;
-    // 				this.loadStatus = 'loadmore';
-    // 			});
-    // 	}
-    // },
+    }
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

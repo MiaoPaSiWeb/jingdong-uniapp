@@ -101,7 +101,7 @@ var components
 try {
   components = {
     jdTabbar: function () {
-      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 238))
+      return __webpack_require__.e(/*! import() | components/jd-tabbar/jd-tabbar */ "components/jd-tabbar/jd-tabbar").then(__webpack_require__.bind(null, /*! @/components/jd-tabbar/jd-tabbar.vue */ 244))
     },
   }
 } catch (e) {
@@ -179,24 +179,28 @@ var _home = __webpack_require__(/*! @/api/home */ 169);
 //
 //
 //
+//
+//
+//
+//
 var inGridFloor = function inGridFloor() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-grid-floor/index */ "pages/index/components/in-grid-floor/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 259));
+    return resolve(__webpack_require__(/*! ./components/in-grid-floor */ 279));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inAdBanner = function inAdBanner() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-ad-banner/index */ "pages/index/components/in-ad-banner/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 266));
+    return resolve(__webpack_require__(/*! ./components/in-ad-banner */ 286));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inChannelWidget = function inChannelWidget() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-channel-widget/index */ "pages/index/components/in-channel-widget/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-channel-widget */ 273));
+    return resolve(__webpack_require__(/*! ./components/in-channel-widget */ 293));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var inFeedWidget = function inFeedWidget() {
   __webpack_require__.e(/*! require.ensure | pages/index/components/in-feed-widget/index */ "pages/index/components/in-feed-widget/index").then((function () {
-    return resolve(__webpack_require__(/*! ./components/in-feed-widget */ 280));
+    return resolve(__webpack_require__(/*! ./components/in-feed-widget */ 300));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
