@@ -151,6 +151,9 @@
 		box-sizing: border-box;
 		border: 1px solid red;
 	}
+	.waterfall-item__image {
+		width: 100%;
+	}
 
 	.waterfall-item__ft {
 		padding: 20rpx;

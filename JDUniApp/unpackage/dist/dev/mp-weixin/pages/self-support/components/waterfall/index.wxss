@@ -36,6 +36,9 @@
   box-sizing: border-box;
   border: 1px solid red;
 }
+.waterfall-item__image.data-v-dd9133d8 {
+  width: 100%;
+}
 .waterfall-item__ft.data-v-dd9133d8 {
   padding: 20rpx;
   background: #fff;
