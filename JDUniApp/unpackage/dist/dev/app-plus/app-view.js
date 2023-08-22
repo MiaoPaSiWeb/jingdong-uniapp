@@ -5368,12 +5368,13 @@ var render = function () {
             _vm._l(_vm._$g(5, "f"), function (item, index, $21, $31) {
               return _c(
                 "v-uni-swiper-item",
-                {
-                  key: item,
-                  staticClass: _vm._$g("5-" + $31, "sc"),
-                  attrs: { _i: "5-" + $31 },
-                },
-                [_c("waterfall", { attrs: { _i: "6-" + $31 } })],
+                { key: item, attrs: { _i: "5-" + $31 } },
+                [
+                  _c("waterfall", {
+                    staticClass: _vm._$g("6-" + $31, "sc"),
+                    attrs: { _i: "6-" + $31 },
+                  }),
+                ],
                 1
               )
             }),
@@ -5554,6 +5555,7 @@ var render = function () {
         [
           _c("uv-waterfall", {
             ref: "waterfall",
+            staticClass: _vm._$g(2, "sc"),
             attrs: { _i: 2 },
             on: {
               changeList: function ($event) {
@@ -5666,6 +5668,34 @@ var render = function () {
                                     ],
                                     1
                                   ),
+                                  _c(
+                                    "uni-view",
+                                    {
+                                      staticClass: _svm._$g(
+                                        "13-" + _si + $30,
+                                        "sc"
+                                      ),
+                                      attrs: { _i: "13-" + _si + $30 },
+                                    },
+                                    [
+                                      _c(
+                                        "v-uni-text",
+                                        {
+                                          staticClass: _svm._$g(
+                                            "14-" + _si + $30,
+                                            "sc"
+                                          ),
+                                          attrs: { _i: "14-" + _si + $30 },
+                                        },
+                                        [
+                                          _vm._v(
+                                            _svm._$g("14-" + _si + $30, "t0-0")
+                                          ),
+                                        ]
+                                      ),
+                                    ],
+                                    1
+                                  ),
                                 ],
                                 1
                               ),
@@ -5685,17 +5715,17 @@ var render = function () {
                   return [
                     _c(
                       "uni-view",
-                      { attrs: { _i: "14-" + _si } },
+                      { attrs: { _i: "16-" + _si } },
                       _vm._l(
-                        _svm._$g("15-" + _si, "f"),
+                        _svm._$g("17-" + _si, "f"),
                         function (item, index, $21, $31) {
                           return _c(
                             "uni-view",
                             {
                               key: item,
-                              staticClass: _svm._$g("15-" + _si + $31, "sc"),
-                              style: _svm._$g("15-" + _si + $31, "s"),
-                              attrs: { _i: "15-" + _si + $31 },
+                              staticClass: _svm._$g("17-" + _si + $31, "sc"),
+                              style: _svm._$g("17-" + _si + $31, "s"),
+                              attrs: { _i: "17-" + _si + $31 },
                               on: {
                                 click: function ($event) {
                                   return _vm.$handleViewEvent($event)
@@ -5707,18 +5737,18 @@ var render = function () {
                                 "uni-view",
                                 {
                                   staticClass: _svm._$g(
-                                    "16-" + _si + $31,
+                                    "18-" + _si + $31,
                                     "sc"
                                   ),
-                                  attrs: { _i: "16-" + _si + $31 },
+                                  attrs: { _i: "18-" + _si + $31 },
                                 },
                                 [
                                   _c("v-uni-image", {
-                                    style: _svm._$g("17-" + _si + $31, "s"),
+                                    style: _svm._$g("19-" + _si + $31, "s"),
                                     attrs: {
-                                      src: _svm._$g("17-" + _si + $31, "a-src"),
+                                      src: _svm._$g("19-" + _si + $31, "a-src"),
                                       mode: "widthFix",
-                                      _i: "17-" + _si + $31,
+                                      _i: "19-" + _si + $31,
                                     },
                                   }),
                                 ],
@@ -5728,40 +5758,12 @@ var render = function () {
                                 "uni-view",
                                 {
                                   staticClass: _svm._$g(
-                                    "18-" + _si + $31,
+                                    "20-" + _si + $31,
                                     "sc"
                                   ),
-                                  attrs: { _i: "18-" + _si + $31 },
+                                  attrs: { _i: "20-" + _si + $31 },
                                 },
                                 [
-                                  _c(
-                                    "uni-view",
-                                    {
-                                      staticClass: _svm._$g(
-                                        "19-" + _si + $31,
-                                        "sc"
-                                      ),
-                                      attrs: { _i: "19-" + _si + $31 },
-                                    },
-                                    [
-                                      _c(
-                                        "v-uni-text",
-                                        {
-                                          staticClass: _svm._$g(
-                                            "20-" + _si + $31,
-                                            "sc"
-                                          ),
-                                          attrs: { _i: "20-" + _si + $31 },
-                                        },
-                                        [
-                                          _vm._v(
-                                            _svm._$g("20-" + _si + $31, "t0-0")
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
                                   _c(
                                     "uni-view",
                                     {
@@ -5790,6 +5792,34 @@ var render = function () {
                                     ],
                                     1
                                   ),
+                                  _c(
+                                    "uni-view",
+                                    {
+                                      staticClass: _svm._$g(
+                                        "23-" + _si + $31,
+                                        "sc"
+                                      ),
+                                      attrs: { _i: "23-" + _si + $31 },
+                                    },
+                                    [
+                                      _c(
+                                        "v-uni-text",
+                                        {
+                                          staticClass: _svm._$g(
+                                            "24-" + _si + $31,
+                                            "sc"
+                                          ),
+                                          attrs: { _i: "24-" + _si + $31 },
+                                        },
+                                        [
+                                          _vm._v(
+                                            _svm._$g("24-" + _si + $31, "t0-0")
+                                          ),
+                                        ]
+                                      ),
+                                    ],
+                                    1
+                                  ),
                                 ],
                                 1
                               ),
@@ -5812,8 +5842,8 @@ var render = function () {
           }),
           _c(
             "uni-view",
-            { staticClass: _vm._$g(23, "sc"), attrs: { _i: 23 } },
-            [_c("uv-load-more", { attrs: { _i: 24 } })],
+            { staticClass: _vm._$g(25, "sc"), attrs: { _i: 25 } },
+            [_c("uv-load-more", { attrs: { _i: 26 } })],
             1
           ),
         ],
@@ -5917,7 +5947,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* uni.scss */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.container[data-v-dd9133d8] {\n  box-sizing: border-box;\n  border: 1px solid red;\n}\n.waterfall-item[data-v-dd9133d8] {\n  overflow: hidden;\n  margin-top: 10px;\n  border-radius: 6px;\n  box-sizing: border-box;\n  border: 1px solid red;\n}\n.waterfall-item__image[data-v-dd9133d8] {\n  width: 100%;\n}\n.waterfall-item__ft[data-v-dd9133d8] {\n  padding: 20rpx;\n  background: #fff;\n}\n.waterfall-item__ft__title[data-v-dd9133d8] {\n  margin-bottom: 10rpx;\n}\n.waterfall-item__ft__title .value[data-v-dd9133d8] {\n  text-align: left;\n  line-height: 1.05rem;\n  height: 2.1rem;\n  font-size: 0.7rem;\n  font-family: -apple-system, Helvetica, sans-serif;\n  overflow: hidden;\n  color: #434343;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  word-break: break-all;\n  -webkit-box-orient: vertical;\n}\n.waterfall-item__ft__desc .value[data-v-dd9133d8] {\n  font-style: normal;\n  font-family: JDZH-Regular, sans-serif;\n  display: inline-block;\n  font-size: 0.7rem;\n  line-height: 1.5rem;\n  color: #ff4142;\n}\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* uni.scss */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.container[data-v-dd9133d8] {\n  width: 100%;\n  height: 100%;\n  overflow-y: auto;\n}\n.waterfall-item[data-v-dd9133d8] {\n  overflow: hidden;\n  margin-top: 10px;\n  border-radius: 6px;\n  box-sizing: border-box;\n  border: 1px solid red;\n}\n.waterfall-item__image[data-v-dd9133d8] {\n  width: 100%;\n}\n.waterfall-item__ft[data-v-dd9133d8] {\n  padding: 20rpx;\n  background: #fff;\n}\n.waterfall-item__ft__title[data-v-dd9133d8] {\n  margin-bottom: 10rpx;\n}\n.waterfall-item__ft__title .value[data-v-dd9133d8] {\n  text-align: left;\n  line-height: 1.05rem;\n  height: 2.1rem;\n  font-size: 0.7rem;\n  font-family: -apple-system, Helvetica, sans-serif;\n  overflow: hidden;\n  color: #434343;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  word-break: break-all;\n  -webkit-box-orient: vertical;\n}\n.waterfall-item__ft__desc .value[data-v-dd9133d8] {\n  font-style: normal;\n  font-family: JDZH-Regular, sans-serif;\n  display: inline-block;\n  font-size: 0.7rem;\n  line-height: 1.5rem;\n  color: #ff4142;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5970,7 +6000,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* uni.scss */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.page[data-v-3e4449d4] {\n  height: 100%;\n  width: 100%;\n  position: fixed;\n  top: 0rpx;\n  display: flex;\n  flex-direction: column;\n}\n.tabBar-placeholder[data-v-3e4449d4] {\n  height: calc(70px + env(safe-area-inset-bottom));\n}\n.content[data-v-3e4449d4] {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  margin-top: var(--window-top);\n}\n.category-nav[data-v-3e4449d4] {\n  white-space: nowrap;\n  width: 100%;\n}\n.category-nav .category[data-v-3e4449d4] {\n  display: inline-block;\n  padding: 20rpx;\n  text-align: center;\n  font-size: 26rpx;\n}\n.category-nav .category-active[data-v-3e4449d4] {\n  font-size: 32rpx;\n  font-weight: bold;\n}\n.vc_wrap[data-v-3e4449d4] {\n  flex: 1;\n}\n.vc_wrap .vc[data-v-3e4449d4] {\n  display: block;\n  width: 100%;\n  height: 100%;\n  overflow-y: auto;\n}\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/**\n * 这里是uni-app内置的常用样式变量\n *\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\n *\n */\n/**\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\n *\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\n */\n/* uni.scss */\n/* 颜色变量 */\n/* 行为相关颜色 */\n/* 文字基本颜色 */\n/* 背景颜色 */\n/* 边框颜色 */\n/* 尺寸变量 */\n/* 文字尺寸 */\n/* 图片尺寸 */\n/* Border Radius */\n/* 水平间距 */\n/* 垂直间距 */\n/* 透明度 */\n/* 文章场景相关 */\n.page[data-v-3e4449d4] {\n  height: 100%;\n  width: 100%;\n  position: fixed;\n  top: 0rpx;\n  display: flex;\n  flex-direction: column;\n}\n.tabBar-placeholder[data-v-3e4449d4] {\n  height: calc(70px + env(safe-area-inset-bottom));\n}\n.content[data-v-3e4449d4] {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  margin-top: var(--window-top);\n}\n.category-nav[data-v-3e4449d4] {\n  white-space: nowrap;\n  width: 100%;\n}\n.category-nav .category[data-v-3e4449d4] {\n  display: inline-block;\n  padding: 20rpx;\n  text-align: center;\n  font-size: 26rpx;\n}\n.category-nav .category-active[data-v-3e4449d4] {\n  font-size: 32rpx;\n  font-weight: bold;\n}\n.vc_wrap[data-v-3e4449d4] {\n  flex: 1;\n}\n.vc_wrap .vc[data-v-3e4449d4] {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n", ""]);
 // Exports
 module.exports = exports;
 

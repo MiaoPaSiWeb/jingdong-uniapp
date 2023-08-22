@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="container">
-			<uv-waterfall ref="waterfall" v-model="list" left-gap="10" right-gap="10" column-gap="8"
+			<uv-waterfall class="waterfall" ref="waterfall" v-model="list" left-gap="10" right-gap="10" column-gap="8"
 				@changeList="changeList">
 				<!-- 第一列数据 -->
 				<template v-slot:list1>
@@ -16,6 +16,9 @@
 							<view class="waterfall-item__ft">
 								<view class="waterfall-item__ft__title">
 									<text class="value">{{item.name}}</text>
+								</view>
+								<view class="waterfall-item__ft__desc">
+									<text class="value">{{item.oriprice}}</text>
 								</view>
 								<view class="waterfall-item__ft__desc">
 									<text class="value">{{item.oriprice}}</text>
@@ -140,8 +143,9 @@
 </script>
 <style scoped lang="scss">
 	.container {
-		box-sizing: border-box;
-		border: 1px solid red;
+		width: 100%;
+		height: 100%;;
+		overflow-y: auto;
 	}
 
 	.waterfall-item {

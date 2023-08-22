@@ -8,8 +8,8 @@
 				</view>
 			</scroll-view>
 			<swiper class="vc_wrap" scroll-x="true" :current="tabIndex" @change='swiperOnChange'>
-				<swiper-item class="vc" v-for="(item,index) in categorys" :key="index">
-					<waterfall></waterfall>
+				<swiper-item  v-for="(item,index) in categorys" :key="index">
+					<waterfall class="vc"></waterfall>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -110,8 +110,6 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-			//解决uni-app 的swiper 高度限制导致页面过长无法滚动的问题
-			overflow-y: auto;
 		}
 	}
 
