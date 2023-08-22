@@ -2,31 +2,9 @@
 	<view>
 		<view class="page">
 			<view class="content" :style="{height:contentStyle.height}">
-				<view class="leftNav" :style="{height:'100%'}">
-					<scrollbar :industryList='industryList' :curIndustryId='curIndustryId'
-						@clickLeftNavItem='clickLeftNavItem' />
-				</view>
-				<view class="rightNav">
-					<view v-if="moduleList.length == 0">
-						暂无数据
-					</view>
-					<view v-else>
-						<view v-for="(group,index) in moduleList" :key="index" class="rightNav__group">
-							<view class="rightNav__group__nav_title">
-								{{group.title}}
-							</view>
-							<view class="rightNav__group__content">
-								<view v-for="(item,index) in group.items" :key="index"
-									class="rightNav__group__content__item">
-									<view class="rightNav__group__content__item__image">
-										<image :src="item.pic"></image>
-									</view>
-									<text>{{item.show_name}}</text>
-								</view>
-							</view>
-						</view>
-					</view>
-				</view>
+				<Scrollbar class="leftNav" :industryList='industryList' :curIndustryId='curIndustryId'
+					@clickLeftNavItem='clickLeftNavItem' />
+				<CategoryContent class="rightNav" :moduleList='moduleList' />
 			</view>
 			<view class="tabBar-placeholder"></view>
 			<jd-tabbar pagePath='pages/category/category' />
@@ -38,10 +16,14 @@
 	import {
 		queryCategoryData
 	} from '@/api/category.js';
-	import scrollbar from "./components/scrollbar"
+	import Scrollbar from "./components/scrollbar"
+	import CategoryContent from "./components/category-content"
+
+
 	export default {
 		components: {
-			scrollbar,
+			Scrollbar,
+			CategoryContent
 		},
 		data() {
 			return {
@@ -163,57 +145,10 @@
 	//////////////
 	.leftNav {
 		width: 100px;
-		overflow: scroll;
+		height: 100%;
 	}
 
 	.rightNav {
 		flex: 1;
-		display: flex;
-		flex-direction: column;
-		margin-left: 4rpx;
-		padding: 12rpx;
-		overflow: scroll;
-
-		&__group {
-			margin-bottom: 10px;
-			display: flex;
-			flex-direction: column;
-			padding: 10px;
-			background-color: #FFF;
-			border-radius: 10px;
-
-			&__nav_title {
-				height: 30px;
-				line-height: 30px;
-			}
-
-			&__content {
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-
-				&__item {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					width: 33.3%;
-
-					&__image {
-						width: 50%;
-						aspect-ratio: 1;
-						background-color: #EEE;
-
-						image {
-							width: 100%;
-							height: 100%;
-						}
-					}
-
-					text {
-						font-size: 12px;
-					}
-				}
-			}
-		}
 	}
 </style>
