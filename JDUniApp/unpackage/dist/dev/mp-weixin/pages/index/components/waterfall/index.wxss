@@ -27,7 +27,7 @@
 /* 文章场景相关 */
 .container.data-v-76aa51f2 {
   box-sizing: border-box;
-  border: 1px solid red;
+  border: 10px solid red;
 }
 .waterfall-item.data-v-76aa51f2 {
   overflow: hidden;

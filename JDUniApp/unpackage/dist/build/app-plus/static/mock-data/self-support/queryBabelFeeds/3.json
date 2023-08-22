@@ -1,0 +1,712 @@
+{
+	"msg": "success",
+	"currentTimeVal": "2023-08-20 11:39:50",
+	"currentTimeStr": "1692502790287",
+	"queryCode": "0",
+	"floorList": [
+		{
+			"template": "flex_cube",
+			"ofn": null,
+			"floorConfig": {
+				"flatConfig": {
+					"showMoreButtonStyle": "1",
+					"showMore": "0",
+					"showMoreButtonBgColor": "#FF5151",
+					"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+					"moreRows": 0,
+					"initialRows": 1
+				},
+				"columns": 1,
+				"w": 531,
+				"h": 0,
+				"viewStyle": {
+					"leftPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"radiusRB": 0,
+					"_viewpaddingStyle": "0",
+					"bottomPadding": 0,
+					"radiusLB": 0,
+					"detached": "0",
+					"radiusRT": 0,
+					"bgInfo": {
+						"imgUrl": "",
+						"color": "rgba(255, 255, 255, 0)",
+						"type": "0"
+					},
+					"value": "0",
+					"_viewpadding": "0",
+					"radiusLT": 0
+				},
+				"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+				"style": "flatview",
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "rgba(255,255,255,0)",
+					"sameColor": "0",
+					"type": "0"
+				},
+				"rows": 1,
+				"floorStyle": {
+					"leftPadding": 0,
+					"cardVPadding": 0,
+					"lRPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"bottomPadding": 0,
+					"cardPadding": 0,
+					"uDPadding": 0,
+					"cardHPadding": 0
+				}
+			},
+			"moduleId": 85170758,
+			"canvasConfig": {
+				"maxW": 531,
+				"maxDimensionLimit": 0,
+				"maxH": 2500,
+				"w": 531,
+				"h": 882,
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "#ffffff",
+					"w": "",
+					"h": "",
+					"type": "0"
+				},
+				"uuid": "781fdcb2e56a2de47bd327d5a41fb7da",
+				"cfInfo": {
+					"detached": "0",
+					"radiusRT": 24,
+					"radiusRB": 24,
+					"value": "24",
+					"radiusLB": 24,
+					"radiusLT": 24
+				},
+				"canvasConfigUuid": "e5942aad1171a40c14458c9ed5f13f29"
+			},
+			"elementList": [
+				{
+					"type": "200000",
+					"uuid": "2c7537cb66b390b2471a5d64841207df",
+					"config": {
+						"autoFitType": "0",
+						"w": 531,
+						"h": 531,
+						"x": 0,
+						"y": 0,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$adPictureUrl0"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "c56e001bddf2b7b2faa5b662dfd6b99a",
+					"config": {
+						"autoFitType": "0",
+						"w": 132,
+						"h": 42,
+						"x": 28,
+						"y": 508,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/154249/12/22633/5901/626becd5E1afc51a3/7931a7dc9748b31a.png"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "fff8cfb3e8b1b87330926ba5f86de477",
+					"config": {
+						"maxRowNum": "2",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#111111"
+						},
+						"autoFitType": "0",
+						"color": "#1A1A1A",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 472,
+						"h": 108,
+						"x": 30,
+						"y": 561,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "36",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$adName2"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "1403deafe4f1737d1092327cf7c7bc17",
+					"config": {
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#F37664"
+						},
+						"autoFitType": "1",
+						"color": "#FA2C19",
+						"bgColor": "rgba(250, 44, 25, 0.1)",
+						"w": 300,
+						"h": 54,
+						"x": 30,
+						"y": 686,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "30",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 6
+						},
+						"cfInfo": {
+							"radiusRT": 6,
+							"radiusRB": 6,
+							"radiusLB": 6,
+							"radiusLT": 6
+						}
+					},
+					"dataPath": {
+						"text": "$likeNum3"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "46b4ac4382512a26abdfae57f36d4af6",
+					"config": {
+						"maxRowNum": "2",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "rgba(155, 155, 155, 1)"
+						},
+						"autoFitType": "0",
+						"color": "#808080",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 476,
+						"h": 108,
+						"x": 28,
+						"y": 752,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "36",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$adDesc4"
+					}
+				}
+			],
+			"floorNum": "1",
+			"materialGroupList": [
+				{
+					"groupInfoList": [
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"//h5.m.jd.com/active/jmp/haohuotuijian/index.html?ad_od=1&id=325092372\",\"request_id\":[\"10192121644-117097-1692502790276\"]}",
+									"srv": "{\"fno\":\"0-1-3\",\"ford2\":\"1\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"1\",\"feedjud\":\"1\",\"mid\":\"85170758\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40261\",\"bi2\":\"2\",\"agid\":\"06569497\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"325092372\",\"bord\":\"0\",\"mci\":\"06569497-18149225-9001650110-325092372#0-9-110--120-8-100#1-0-#674-59951142#h5\",\"adid\":\"9001650110\",\"exnum\":\"-100\",\"ftid2\":\"1\",\"ftid1\":\"1\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"goodStuffFlex\",\"feedtyp\":\"f0\"}",
+									"params": {
+										"url": "//h5.m.jd.com/active/jmp/haohuotuijian/index.html?ad_od=1&id=325092372"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10192121644-117097-1692502790276\"]}",
+								"srv": "{\"fno\":\"0-1-3\",\"ford2\":\"1\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"1\",\"feedjud\":\"1\",\"mid\":\"85170758\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40261\",\"bi2\":\"2\",\"agid\":\"06569497\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"325092372\",\"bord\":\"0\",\"mci\":\"06569497-18149225-9001650110-325092372#0-9-110--120-8-100#1-0-#674-59951142#h5\",\"adid\":\"9001650110\",\"exnum\":\"-100\",\"ftid2\":\"1\",\"ftid1\":\"1\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"goodStuffFlex\",\"feedtyp\":\"f0\"}"
+							},
+							"materialId": "9001650110",
+							"flexData": {
+								"likeNum3": "29人加入心愿单",
+								"adPictureUrl0": "//m.360buyimg.com/ceco/jfs/t1/57372/14/19865/15105/62b07e52E86dd0d39/6895d46b4dcc1372.jpg!q70.dpg",
+								"adName2": "ETVOS 滋润不卡纹 三色遮瑕膏",
+								"adDesc4": "#天然矿物轻薄亲肤#蕴含天然矿物成分，粉末细腻，修饰力强，能紧密贴合肌肤，修饰毛孔和痘印，隐藏瑕疵。支持免妆洁面，轻薄易清洗，减轻肌肤负担。"
+							}
+						}
+					],
+					"groupId": "06569497"
+				}
+			],
+			"tags": [
+				"goodStuffFlex"
+			]
+		},
+		{
+			"template": "flex_cube",
+			"ofn": null,
+			"floorConfig": {
+				"flatConfig": {
+					"showMoreButtonStyle": "1",
+					"showMore": "0",
+					"showMoreButtonBgColor": "#FF5151",
+					"showMoreButtonUrl": "https://m.360buyimg.com/babel/jfs/t1/104530/20/21692/8050/643910a0F2e9061d3/02868871e96b5c78.png",
+					"moreRows": 0,
+					"initialRows": 1
+				},
+				"columns": 1,
+				"w": 531,
+				"h": 0,
+				"viewStyle": {
+					"leftPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"radiusRB": 0,
+					"_viewpaddingStyle": "0",
+					"bottomPadding": 0,
+					"radiusLB": 0,
+					"detached": "0",
+					"radiusRT": 0,
+					"bgInfo": {
+						"imgUrl": "",
+						"color": "rgba(255, 255, 255, 0)",
+						"type": "0"
+					},
+					"value": "0",
+					"_viewpadding": "0",
+					"radiusLT": 0
+				},
+				"viewStyleUuid": "2cd41db37462c1445c99c72aa35f7644",
+				"style": "flatview",
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "rgba(255,255,255,0)",
+					"sameColor": "0",
+					"type": "0"
+				},
+				"rows": 1,
+				"floorStyle": {
+					"leftPadding": 0,
+					"cardVPadding": 0,
+					"lRPadding": 0,
+					"topPadding": 0,
+					"rightPadding": 0,
+					"bottomPadding": 0,
+					"cardPadding": 0,
+					"uDPadding": 0,
+					"cardHPadding": 0
+				}
+			},
+			"moduleId": 85170759,
+			"canvasConfig": {
+				"maxW": 531,
+				"clickEvent": {
+					"param": {
+						"jumpCode": "shareOrderUgcContent"
+					},
+					"type": "jump"
+				},
+				"maxDimensionLimit": 0,
+				"maxH": 2500,
+				"w": 531,
+				"h": 949,
+				"bgInfo": {
+					"imgUrl": "",
+					"color": "#ffffff",
+					"w": "",
+					"h": "",
+					"type": "0"
+				},
+				"uuid": "dd00eb6f1e54d4582a84af93f795796d",
+				"cfInfo": {
+					"detached": "0",
+					"radiusRT": 18,
+					"radiusRB": 18,
+					"value": "18",
+					"radiusLB": 18,
+					"radiusLT": 18
+				},
+				"canvasConfigUuid": "ce1d1e45615f1e2f3a5de5dac49c9b8a"
+			},
+			"elementList": [
+				{
+					"type": "200000",
+					"uuid": "daaf04a9ccef848b2885d48e92536705",
+					"config": {
+						"autoFitType": "0",
+						"w": 531,
+						"h": 708,
+						"x": 0,
+						"y": 0,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$adPictureUrl0"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "c8c0eecef95f2f68ab0e36a75783ff9f",
+					"config": {
+						"maxRowNum": "2",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "rgba(26, 26, 26, 1)"
+						},
+						"autoFitType": "0",
+						"color": "rgba(26, 26, 26, 1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 472,
+						"h": 126,
+						"x": 30,
+						"y": 728,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "42",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$postContent1"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "80263b9ae63ea5135d0523021005fdde",
+					"config": {
+						"autoFitType": "0",
+						"w": 48,
+						"h": 48,
+						"x": 30,
+						"y": 883,
+						"cfInfo": {
+							"radiusRT": 72,
+							"radiusRB": 72,
+							"radiusLB": 72,
+							"radiusLT": 72
+						}
+					},
+					"dataPath": {
+						"src": "$headImg2"
+					}
+				},
+				{
+					"type": "100000",
+					"uuid": "e76d40c3448fa1383d3cc6ac082c2cae",
+					"config": {
+						"maxRowNum": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "rgba(128, 128, 128, 1)"
+						},
+						"autoFitType": "0",
+						"color": "rgba(128, 128, 128, 1)",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 234,
+						"h": 45,
+						"x": 88,
+						"y": 885,
+						"fontInfo": {
+							"strickout": "0",
+							"size": "33",
+							"underscore": "0",
+							"bold": "0",
+							"align": "1",
+							"italic": "0",
+							"jdFont": "0"
+						},
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"text": "$nickName3"
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "109de1abdc5f0e62a3fcc14f45bbc3af",
+					"config": {
+						"imgTextDistance": 9,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(128, 128, 128, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "36",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 53,
+						"bgImage": "",
+						"yAlign": "2",
+						"bgType": "0",
+						"imgConfig": {
+							"w": 36,
+							"h": 36
+						},
+						"autoFitType": "0",
+						"bgColor": "rgba(255, 255, 255, 0)",
+						"w": 132,
+						"x": 393,
+						"y": 878,
+						"paddingInfo": {
+							"detached": "0",
+							"ltrbValue": "0,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/120515/14/24053/1647/626398f6E395ed269/61eda45d499bdadb.png",
+						"text": "$likeCount4",
+						"degradeSrc": null
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "edf8cb0427b69008312fe92670a8c1e5",
+					"config": {
+						"autoFitType": "0",
+						"w": 45,
+						"h": 45,
+						"x": 470,
+						"y": 15,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "$ugcVideoFlag5"
+					}
+				},
+				{
+					"type": "200000",
+					"uuid": "dc223c99f87404e7af36c1983168bfb2",
+					"config": {
+						"autoFitType": "0",
+						"w": 120,
+						"h": 45,
+						"x": 15,
+						"y": 15,
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						}
+					},
+					"dataPath": {
+						"src": "https://m.360buyimg.com/babel/jfs/t1/191281/23/23587/3258/62654d61E26fdec95/39d1e73868d61ea4.png"
+					}
+				},
+				{
+					"type": "600012",
+					"uuid": "11acab84d146b4e5b20f7d75cd8b8e5d",
+					"config": {
+						"imgTextDistance": 9,
+						"xAlign": "1",
+						"frameInfo": {
+							"sameTextColor": "1",
+							"size": "0",
+							"color": "#000000"
+						},
+						"textConfig": {
+							"maxRowNum": "1",
+							"color": "rgba(255, 255, 255, 1)",
+							"fontInfo": {
+								"strickout": "0",
+								"size": "33",
+								"underscore": "0",
+								"zoom": "0",
+								"bold": "0",
+								"align": "1",
+								"italic": "0",
+								"jdFont": "0"
+							}
+						},
+						"h": 48,
+						"bgImage": "https://m.360buyimg.com/babel/jfs/t1/20147/19/16024/1874/627a1106E00090d44/010423e542dd3da5.png",
+						"yAlign": "2",
+						"bgType": "1",
+						"imgConfig": {
+							"w": 92,
+							"h": 30
+						},
+						"autoFitType": "0",
+						"bgColor": "",
+						"w": 92,
+						"x": 413,
+						"y": 632,
+						"paddingInfo": {
+							"detached": "1",
+							"ltrbValue": "51,0,0,0",
+							"value": 0
+						},
+						"cfInfo": {
+							"radiusRT": 0,
+							"radiusRB": 0,
+							"radiusLB": 0,
+							"radiusLT": 0
+						},
+						"imgTextOrder": "1"
+					},
+					"dataPath": {
+						"src": "",
+						"text": "$mediaCount7",
+						"degradeSrc": null
+					}
+				}
+			],
+			"floorNum": "2",
+			"materialGroupList": [
+				{
+					"groupInfoList": [
+						{
+							"clickEvent": {
+								"type": "jump",
+								"jump": {
+									"eventId": "Babel_FlexCubeAd",
+									"des": "m",
+									"srvData": "{\"des\":\"m\",\"suburl\":\"https://capturehomeshare.m.jd.com/aha/ugcShare.html?contentId=44688119&channel=babel&cmtType=4\",\"request_id\":[\"10192121644-117097-1692502790276\"]}",
+									"srv": "{\"fno\":\"0-1-4\",\"ford2\":\"1\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"1\",\"feedjud\":\"1\",\"mid\":\"85170759\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40234\",\"bi2\":\"2\",\"agid\":\"06568905\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"44688119\",\"bord\":\"0\",\"mci\":\"06568905-18148213-1401673795-N#0-1001---1083--#1-0-#-#h5\",\"adid\":\"1401673795\",\"exnum\":\"-100\",\"ftid2\":\"1\",\"ftid1\":\"1\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"ugcShareFlex\",\"feedtyp\":\"f0\"}",
+									"category": "jump",
+									"params": {
+										"url": "https://capturehomeshare.m.jd.com/aha/ugcShare.html?contentId=44688119&channel=babel&cmtType=4"
+									}
+								}
+							},
+							"exposureInfo": {
+								"eventId": "Babel_FlexCubeAdExpo",
+								"srvData": "{\"request_id\":[\"10192121644-117097-1692502790276\"]}",
+								"srv": "{\"fno\":\"0-1-4\",\"ford2\":\"1\",\"bi\":\"2\",\"mord\":\"-100\",\"ford1\":\"1\",\"feedjud\":\"1\",\"mid\":\"85170759\",\"lingLongBiInfo\":\"-100\",\"typ\":\"40234\",\"bi2\":\"2\",\"agid\":\"06568905\",\"aord\":\"1\",\"uibi\":\"-100\",\"url\":\"44688119\",\"bord\":\"0\",\"mci\":\"06568905-18148213-1401673795-N#0-1001---1083--#1-0-#-#h5\",\"adid\":\"1401673795\",\"exnum\":\"-100\",\"ftid2\":\"1\",\"ftid1\":\"1\",\"bid\":\"0\",\"aid\":\"01243409\",\"fclabel\":\"ugcShareFlex\",\"feedtyp\":\"f0\"}"
+							},
+							"materialId": "1401673795",
+							"flexData": {
+								"mediaCount7": "1",
+								"postContent1": "用这个眼影的时候，上色的时候记得少量多次哦嘻嘻 萌萌哒\n",
+								"likeCount4": "5",
+								"adPictureUrl0": "//m.360buyimg.com/occupy/jfs/t1/36693/17/17931/106045/63369843Ec8eee4b4/05fc665a06d5416a.jpg!q70.dpg",
+								"headImg2": "//storage.360buyimg.com/i.imageUpload/cbfdd4dab7b1d0c7cfc231363639363231393334363937_big.jpg",
+								"nickName3": "小南和你聊聊"
+							}
+						}
+					],
+					"groupId": "06568905"
+				}
+			],
+			"tags": [
+				"ugcShareFlex"
+			]
+		}
+	],
+	"returnMsg": "success",
+	"code": "0",
+	"transParam": "",
+	"channelPoint": {
+		"babelChannel": "",
+		"greytp": "1",
+		"rec_broker": "",
+		"loginCellularNetwork": 0,
+		"pageId": "3943203"
+	},
+	"pageNum": 3,
+	"flexCubeCustomizedElementUrl": {}
+}

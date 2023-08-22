@@ -155,6 +155,7 @@
 		display: flex;
 		flex-direction: row;
 		margin-top: var(--window-top);
+		overflow: hidden;
 	}
 
 	//////////////

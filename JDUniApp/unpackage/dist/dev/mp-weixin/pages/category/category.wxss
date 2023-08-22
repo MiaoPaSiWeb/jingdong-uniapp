@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 0px;
+  overflow: hidden;
 }
 .leftNav.data-v-682a9774 {
   width: 100px;
