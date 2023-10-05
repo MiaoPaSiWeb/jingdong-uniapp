@@ -10,7 +10,7 @@
 					<view v-else></view>
 				</view>
 			</view>
-			<view class="tabBar-placeholder"></view>
+			<jd-mainpage-bottom />
 			<jd-tabbar pagePath='pages/index/index' />
 		</view>
 	</view>

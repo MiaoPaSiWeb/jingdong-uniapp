@@ -141,7 +141,7 @@
 <style scoped lang="scss">
 	.container {
 		box-sizing: border-box;
-		border: 10px solid red;
+		border: 1px solid red;
 	}
 
 	.waterfall-item {

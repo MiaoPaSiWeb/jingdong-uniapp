@@ -6,7 +6,7 @@
 					@clickLeftNavItem='clickLeftNavItem' />
 				<CategoryContent class="rightNav" :moduleList='moduleList' />
 			</view>
-			<view class="tabBar-placeholder"></view>
+			<jd-mainpage-bottom />
 			<jd-tabbar pagePath='pages/category/category' />
 		</view>
 	</view>
@@ -126,10 +126,6 @@
 		top: 0rpx;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.tabBar-placeholder {
-		height: calc(70px + env(safe-area-inset-bottom));
 	}
 
 	.content {

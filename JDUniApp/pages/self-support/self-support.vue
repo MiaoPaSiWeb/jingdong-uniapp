@@ -13,7 +13,7 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<view class="tabBar-placeholder"></view>
+		<jd-mainpage-bottom />
 		<jd-tabbar pagePath='pages/self-support/self-support' />
 	</view>
 </template>
@@ -73,10 +73,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	.tabBar-placeholder {
-		height: calc(70px + env(safe-area-inset-bottom));
-	}
-
+	
 	.content {
 		flex: 1;
 		display: flex;

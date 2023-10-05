@@ -21,6 +21,7 @@ import jdSafearea from '@/components/jd-safearea/jd-safearea';
 import jdImage from '@/components/jd-image/jd-image';
 import jdModal from '@/components/jd-modal/jd-modal';
 import jdConfirmation from '@/components/jd-confirmation/jd-confirmation';
+import jdMainpageBottom from '@/components/jd-mainpage-bottom/jd-mainpage-bottom';
 
 //🔥 引入国际化语言包
 
@@ -53,6 +54,7 @@ Vue.component('jd-safearea', jdSafearea);
 Vue.component('jd-image', jdImage);
 Vue.component('jd-modal', jdModal);
 Vue.component('jd-confirmation', jdConfirmation);
+Vue.component('jd-mainpage-bottom', jdMainpageBottom);
 
 
 

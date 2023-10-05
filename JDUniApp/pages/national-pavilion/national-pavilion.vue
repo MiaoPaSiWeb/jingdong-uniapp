@@ -12,7 +12,7 @@
 				<waterfall></waterfall>
 			</view>
 		</view>
-		<view class="tabBar-placeholder"></view>
+		<jd-mainpage-bottom />
 		<jd-tabbar pagePath="pages/national-pavilion/national-pavilion" />
 	</view>
 </template>

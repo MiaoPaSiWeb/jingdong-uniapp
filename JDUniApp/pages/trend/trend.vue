@@ -28,7 +28,7 @@
 					</view>
 				</view>
 			</view>
-			<view class="tabBar-placeholder"></view>
+			<jd-mainpage-bottom />
 			<jd-tabbar pagePath='pages/trend/trend' />
 		</view>
 	</view>
